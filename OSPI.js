@@ -56,7 +56,7 @@ function buttonclick(score) {
         android = android + score
     }
 
-    if (current_question > 19){
+    if (current_question > (questions.length - 1)){
         document.getElementById("question_number").style.display = "none";
         document.getElementById("Statement").innerHTML = "Finished!";
         ios = Math.round((ios / 24) * 100)

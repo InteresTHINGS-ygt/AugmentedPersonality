@@ -38,7 +38,7 @@ function buttonclick(score) {
         test_status = 1;
         document.getElementById("test").style.display = "block"
         document.getElementById("start").style.display = "none"
-    }
+    } 
 
     current_question += 1;
     document.getElementById("question_number").innerHTML = "Question " + (current_question + 1);
@@ -56,7 +56,7 @@ function buttonclick(score) {
         a = a + score
     }
 
-    if (current_question > 19){
+    if (current_question > (questions.length - 1)){
         document.getElementById("question_number").style.display = "none";
         document.getElementById("Statement").innerHTML = "Finished!";
         m = Math.round((m / 24) * 100)
