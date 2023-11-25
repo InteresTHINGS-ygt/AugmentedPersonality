@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel = "stylesheet" href = "Similarity.css">
+        <script src="Similarity.js"></script>
+        <title>
+            Similarity Assessment Tool
+        </title>
+    </head>
+    <body>
+        <h1>How similar are you to your friend? (or another person)</h1>
+        <h3>This tool is based on Big Five Aspect Scales from IPIP.</h3>
+        <h3>Enter your trait scores in appropriate areas.</h3>
+        <h3>The result you get is an approximation, not a precise value.</h3>
+        <hr>
+        <h2 id="question_number"></h2>
+        <h2 id="Statement">Enter the trait scores down below:</h2>
+        <h3>Trait scores are between 0 and 100.</h3>
+        <div id="tool">
+            <table>
+                <tr>
+                    <th></th>
+                    <th>Intellect</th>
+                    <th>Openness</th>
+                    <th>Intrdustriousness</th>
+                    <th>Orderliness</th>
+                    <th>Enthusiasm</th>
+                    <th>Assertiveness</th>
+                    <th>Compassion</th>
+                    <th>Politeness</th>
+                    <th>Withdrawal</th>
+                    <th>Volatility</th>
+                </tr>
+                <tr>
+                    <td><p style="font-weight: bold;">You</p></td>
+                    <td><input type="number" id="int_you" min="0" max="100" value = "90"></td>
+                    <td><input type="number" id="opn_you" min="0" max="100" value = "80"></td>
+                    <td><input type="number" id="ind_you" min="0" max="100" value = "30"></td>
+                    <td><input type="number" id="ord_you" min="0" max="100" value = "45"></td>
+                    <td><input type="number" id="ent_you" min="0" max="100" value = "60"></td>
+                    <td><input type="number" id="asr_you" min="0" max="100" value = "25"></td>
+                    <td><input type="number" id="com_you" min="0" max="100" value = "40"></td>
+                    <td><input type="number" id="pol_you" min="0" max="100" value = "65"></td>
+                    <td><input type="number" id="wtd_you" min="0" max="100" value = "85"></td>
+                    <td><input type="number" id="vol_you" min="0" max="100" value = "75"></td>
+                </tr>
+                <tr>
+                    <td><p style="font-weight: bold;">Other Person</p></td>
+                    <td><input type="number" id="int_oth" min="0" max="100" value = ""></td>
+                    <td><input type="number" id="opn_oth" min="0" max="100" value = ""></td>
+                    <td><input type="number" id="ind_oth" min="0" max="100" value = ""></td>
+                    <td><input type="number" id="ord_oth" min="0" max="100" value = ""></td>
+                    <td><input type="number" id="ent_oth" min="0" max="100" value = ""></td>
+                    <td><input type="number" id="asr_oth" min="0" max="100" value = ""></td>
+                    <td><input type="number" id="com_oth" min="0" max="100" value = ""></td>
+                    <td><input type="number" id="pol_oth" min="0" max="100" value = ""></td>
+                    <td><input type="number" id="wtd_oth" min="0" max="100" value = ""></td>
+                    <td><input type="number" id="vol_oth" min="0" max="100" value = ""></td>
+                </tr>
+            </table>
+            <input type="button" onclick=log() value="Enter">
+        </div>
+        <div id = "similarity_percentage">
+            <h3 id = "Similarity" style="display:none"></h3>
+            <h3 id = "Similarity_b" style="display:none"></h3>
+            <h3 id = "Similarity_c" style="display:none"></h3>
+            <h3 id = "Similarity_d"></h3>
+         </div>
+    </body>
+</html>
