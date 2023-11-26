@@ -39,6 +39,19 @@ var cent_factor;
 
 var oth_name = "";
 
+function autofill() {
+    document.getElementById("int_you").value = 80;
+    document.getElementById("opn_you").value = 80;
+    document.getElementById("ind_you").value = 80;
+    document.getElementById("ord_you").value = 80;
+    document.getElementById("ent_you").value = 80;
+    document.getElementById("asr_you").value = 80;
+    document.getElementById("com_you").value = 80;
+    document.getElementById("pol_you").value = 80;
+    document.getElementById("wtd_you").value = 80;
+    document.getElementById("vol_you").value = 80;
+}
+
 function log() {
     int_you = document.getElementById("int_you").valueAsNumber;
     opn_you = document.getElementById("opn_you").valueAsNumber;
@@ -169,6 +182,11 @@ function log() {
     document.getElementById("Similarity").innerHTML = "You are " + similarity + "% similar to each other! (Pearson)";
     document.getElementById("Similarity_b").innerHTML = "You are " + similarity_b + "% similar to each other! (Mean Distance)";
     document.getElementById("Similarity_c").innerHTML = "You are " + similarity_c + "% similar to each other! (Quadratic Distance)";
-    document.getElementById("Similarity_d").innerHTML = "You are " + Math.round(final_sim) + "% similar to " + oth_name + "!";
+    if (oth_name == "") {
+        document.getElementById("Similarity_d").innerHTML = "You are " + Math.round(final_sim) + "% similar to each other!";
+    }
+    else {
+        document.getElementById("Similarity_d").innerHTML = "You are " + Math.round(final_sim) + "% similar to " + oth_name + "!";
+    }
 }
 
