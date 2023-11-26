@@ -144,17 +144,14 @@ function log() {
         dis_from_center = Math.abs(50-((you[i]+oth[i])/2));
         dis_similarity = 100-(Math.abs(you[i]-oth[i]));
         dis_factor = (0.00774 * dis_similarity) + 0.226;
-        cent_factor = ((0.0056 * dis_from_center) + 0.72) + (0.28 * (dis_similarity / 100));
-        similarity_d = (dis_similarity * dis_factor * cent_factor) * 0.1;
+        cent_factor = ((0.0056 * dis_from_center) + 0.72) + (0.28 * (dis_similarity / 100)^3);
+        similarity_d = (dis_similarity * dis_factor * cent_factor) * 0.095;
         lichnost_sim += similarity_d;
-        console.log("Distance From Center: " + dis_from_center);
-        console.log("Distance Factor: " + dis_factor);
-        console.log("Center Factor: " + cent_factor);
-        console.log("Distance Similarity: " + dis_similarity);
-        console.log("One Trait Similarity: " + similarity_d);
-        console.log("Lichnost Similarity: " + lichnost_sim);
     }
     
+    if (lichnost_sim > 100) {
+        lichnost_sim = 100;
+    }
 
     document.getElementById("Similarity").innerHTML = "You are " + similarity + "% similar to each other! (Pearson)";
     document.getElementById("Similarity_b").innerHTML = "You are " + similarity_b + "% similar to each other! (Mean Distance)";
