@@ -37,6 +37,8 @@ var dis_similarity;
 var dis_factor;
 var cent_factor;
 
+var oth_name = "";
+
 function log() {
     int_you = document.getElementById("int_you").valueAsNumber;
     opn_you = document.getElementById("opn_you").valueAsNumber;
@@ -72,6 +74,7 @@ function log() {
     you = [];
     oth = [];
     dis = [];
+    oth_name = document.getElementById("oth_name").value;
 
     int_dis = Math.abs(int_you - int_oth);
     opn_dis = Math.abs(opn_you - opn_oth);
@@ -139,23 +142,33 @@ function log() {
     var similarity_b = Math.round(100 - avg_dis);
     var similarity_c = Math.round((Math.pow((similarity_b / 100),2))*100);
 
-    
     for (let i = 0; i < you.length; i++) {
-        dis_from_center = Math.abs(50-((you[i]+oth[i])/2));
-        dis_similarity = 100-(Math.abs(you[i]-oth[i]));
-        dis_factor = (0.00774 * dis_similarity) + 0.226;
-        cent_factor = ((0.0056 * dis_from_center) + 0.72) + (0.28 * (dis_similarity / 100)^3);
-        similarity_d = (dis_similarity * dis_factor * cent_factor) * 0.095;
+        dis_from_center = Math.abs(50-((you[i]+oth[i])/2)); // Between 0 and 50
+        dis_similarity = 100-(Math.abs(you[i]-oth[i])); // Between 0 and 100
+        dis_factor = (0.00774 * dis_similarity) + 0.226; // Makes the curve steeper
+        cent_factor = ((0.0056 * dis_from_center) + 0.72);
+        similarity_d = (dis_similarity * dis_factor * cent_factor) * 0.11;
+        if (similarity_d > 10) {
+            similarity_d = 10;
+        }
         lichnost_sim += similarity_d;
     }
-    
-    if (lichnost_sim > 100) {
-        lichnost_sim = 100;
+
+    var final_sim = 0;
+    var interest_sim = document.getElementById("interest_sim").valueAsNumber;
+    var interest_factor = (interest_sim - 50) * 0.6;
+    final_sim = lichnost_sim + interest_factor;
+
+    if (final_sim > 100) {
+        final_sim = 100;
+    }
+    else if (final_sim < 0) {
+        final_sim = 0;
     }
 
     document.getElementById("Similarity").innerHTML = "You are " + similarity + "% similar to each other! (Pearson)";
     document.getElementById("Similarity_b").innerHTML = "You are " + similarity_b + "% similar to each other! (Mean Distance)";
     document.getElementById("Similarity_c").innerHTML = "You are " + similarity_c + "% similar to each other! (Quadratic Distance)";
-    document.getElementById("Similarity_d").innerHTML = "You are " + Math.round(lichnost_sim) + "% similar to each other!";
+    document.getElementById("Similarity_d").innerHTML = "You are " + Math.round(final_sim) + "% similar to " + oth_name + "!";
 }
 

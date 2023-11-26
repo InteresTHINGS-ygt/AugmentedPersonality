@@ -3,6 +3,10 @@ input[type="number"] {
     height: 2em;
 }
 
+input[type="text"] {
+    height: 2em;
+}
+
 table {
     border-collapse: collapse;
 }
@@ -10,5 +14,4 @@ table {
 td, th {
     border: 2px dashed;
     text-align: center;
-
 }
