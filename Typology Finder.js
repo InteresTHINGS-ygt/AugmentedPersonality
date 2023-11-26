@@ -1,10 +1,22 @@
 var current_question = -1;
 var score = 0;
 
-var chol = 0;
-var mel = 0;
-var san = 0;
-var phleg = 0;
+var int = 0;
+var opn = 0;
+var ind = 0;
+var ord = 0;
+var ent = 0;
+var asr = 0;
+var com = 0;
+var pol = 0;
+var wtd = 0;
+var vol = 0;
+
+var openness = 0;
+var conscientiousness = 0;
+var extraversion = 0;
+var agreeableness = 0;
+var neuroticism = 0;
 
 var test_status = 0;
 
@@ -121,28 +133,89 @@ function buttonclick(score) {
     } 
 
     current_question += 1;
-    document.getElementById("question_number").innerHTML = "Question " + (current_question);
+    document.getElementById("question_number").innerHTML = "Question " + (current_question + 1);
     document.getElementById("Statement").innerHTML = questions[current_question];
-    if (current_question < 5){
-        chol = chol + score
+
+    if (current_question < 6){
+        int += score
     }
-    else if (current_question < 10){
-        mel = mel + score
+    else if (current_question < 11){
+        int += (4 - score)
     }
-    else if (current_question < 15){
-        san = san + score
+    else if (current_question < 16){
+        opn += score
     }
-    else if (current_question < 20){
-        phleg = phleg + score
+    else if (current_question < 21){
+        opn += (4 - score)
+    }
+    else if (current_question < 26){
+        ind += score
+    }
+    else if (current_question < 31){
+        ind += (4 - score)
+    }
+    else if (current_question < 36){
+        ord += score
+    }
+    else if (current_question < 41){
+        ord += (4 - score)
+    }
+    else if (current_question < 46){
+        ent += score
+    }
+    else if (current_question < 51){
+        ent += (4 - score)
+    }
+    else if (current_question < 56){
+        asr += score
+    }
+    else if (current_question < 61){
+        asr += (4 - score)
+    }
+    else if (current_question < 66){
+        com += score
+    }
+    else if (current_question < 71){
+        com += (4 - score)
+    }
+    else if (current_question < 76){
+        pol += score
+    }
+    else if (current_question < 81){
+        pol += (4 - score)
+    }
+    else if (current_question < 86){
+        wtd += score
+    }
+    else if (current_question < 91){
+        wtd += (4 - score)
+    }
+    else if (current_question < 96){
+        vol += score
+    }
+    else if (current_question < 111){
+        vol += (4 - score)
     }
 
     if (current_question > (questions.length - 1)){
         document.getElementById("question_number").style.display = "none";
         document.getElementById("Statement").innerHTML = "Finished!";
-        chol = Math.round((chol / 64) * 100)
-        mel = Math.round((mel / 64) * 100)
-        san = Math.round((san / 64) * 100)
-        phleg = Math.round((phleg / 64) * 100)
+        int = Math.round((int / 40) * 100)
+        opn = Math.round((opn / 40) * 100)
+        ind = Math.round((ind / 40) * 100)
+        ord = Math.round((ord / 40) * 100)
+        ent = Math.round((ent / 40) * 100)
+        asr = Math.round((asr / 40) * 100)
+        com = Math.round((com / 40) * 100)
+        pol = Math.round((pol / 40) * 100)
+        wtd = Math.round((wtd / 40) * 100)
+        vol = Math.round((vol / 40) * 100)
+
+        openness = Math.round((int + opn) / 2)
+        conscientiousness = Math.round((ind + ord) / 2)
+        extraversion = Math.round((ent + asr) / 2)
+        agreeableness = Math.round((com + pol) / 2)
+        neuroticism = Math.round((wtd + vol) / 2)
         get_result();
     }
     
@@ -152,10 +225,21 @@ function get_result() {
     document.getElementById("results").style.display = "block";
     document.getElementById("test").style.display = "none";
     document.getElementById("question_number").style.display = "none";
-    document.getElementById("result_chol").innerHTML = "Choleric: " + chol + "%"
-    document.getElementById("result_mel").innerHTML = "Melancholic: " + mel + "%"
-    document.getElementById("result_san").innerHTML = "Sanguine: " + san + "%"
-    document.getElementById("result_phleg").innerHTML = "Phlegmatic: " + phleg + "%"
+    document.getElementById("OTE").innerHTML = "Openess to Experience: " + openness + "%"
+    document.getElementById("int").innerHTML = "Intellect: " + int + "%"
+    document.getElementById("opn").innerHTML = "Openness: " + opn + "%"
+    document.getElementById("CON").innerHTML = "Conscientiousness: " + conscientiousness + "%"
+    document.getElementById("ind").innerHTML = "Industriousness: " + ind + "%"
+    document.getElementById("ord").innerHTML = "Orderliness: " + ord + "%"
+    document.getElementById("EXT").innerHTML = "Extraversion: " + extraversion + "%"
+    document.getElementById("ent").innerHTML = "Enthusiasm: " + ent + "%"
+    document.getElementById("asr").innerHTML = "Assertiveness: " + asr + "%"
+    document.getElementById("AGR").innerHTML = "Agreeableness: " + agreeableness + "%"
+    document.getElementById("com").innerHTML = "Compassion: " + com + "%"
+    document.getElementById("pol").innerHTML = "Politeness: " + pol + "%"
+    document.getElementById("NEU").innerHTML = "Neuroticism: " + neuroticism + "%"
+    document.getElementById("wtd").innerHTML = "Withdrawal: " + wtd + "%"
+    document.getElementById("vol").innerHTML = "Volatility: " + vol + "%"
     
 }
 
