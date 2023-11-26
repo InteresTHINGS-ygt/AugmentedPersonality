@@ -169,7 +169,7 @@ function log() {
 
     var final_sim = 0;
     var interest_sim = document.getElementById("interest_sim").valueAsNumber;
-    var interest_factor = (interest_sim - 50) * 0.6;
+    var interest_factor = (interest_sim - 50) * 0.4;
     final_sim = lichnost_sim + interest_factor;
 
     if (final_sim > 100) {
