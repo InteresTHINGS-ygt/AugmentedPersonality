@@ -12,3 +12,26 @@ a {
 span {
     font-weight: bold;
 }
+
+input[type="number"] {
+    width: 4em;
+    height: 2em;
+    background-color: darkgreen;
+    border: 2px rgb(78, 194, 0) solid;
+}
+
+input[type="text"] {
+    height: 2em;
+    background-color: darkgreen;
+    border: 2px rgb(78, 194, 0) solid;
+}
+
+table {
+    border-collapse: collapse;
+    background-color: black;
+}
+
+td, th {
+    border: 2px solid;
+    text-align: center;
+}
