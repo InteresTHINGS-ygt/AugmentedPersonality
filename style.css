@@ -29,6 +29,7 @@ input[type="number"] {
     border-radius: 0.5em;
     font-family: system-ui, Arial, Helvetica, sans-serif;
     font-weight: bold;
+    font-size: 9pt;
 }
 
 input[type="text"] {
@@ -38,6 +39,7 @@ input[type="text"] {
     border-radius: 0.5em;
     font-family: system-ui, Arial, Helvetica, sans-serif;
     font-weight: bold;
+    font-size: 9pt;
 }
 
 table {
@@ -45,6 +47,7 @@ table {
     background-color: rgb(225, 232, 218);
     border-radius: 0.5em;
     font-weight: bold;
+    font-size: 9pt;
 }
 
 td, th, tr {
