@@ -1,12 +1,20 @@
 body {
     font-family: system-ui, Arial, Helvetica, sans-serif;
-    background-color: darkgreen;
-    color: white;
+    background-color: rgb(40, 120, 24);
+    color: rgb(5, 10, 2);
+    font-weight: bold;
 }
 
 a {
     color: greenyellow;
     text-decoration: none;
+}
+
+div.main {
+    border-radius: 20px;
+    background-color: rgb(245, 252, 238);
+    padding: 1.5em;
+    margin: 0.5em;
 }
 
 span {
@@ -16,22 +24,56 @@ span {
 input[type="number"] {
     width: 4em;
     height: 2em;
-    background-color: darkgreen;
-    border: 2px rgb(78, 194, 0) solid;
+    background-color: rgb(245, 252, 238);
+    border: none;
+    border-radius: 0.5em;
+    font-family: system-ui, Arial, Helvetica, sans-serif;
 }
 
 input[type="text"] {
     height: 2em;
-    background-color: darkgreen;
-    border: 2px rgb(78, 194, 0) solid;
+    background-color: rgb(245, 252, 238);
+    border: none;
+    border-radius: 0.5em;
+    font-family: system-ui, Arial, Helvetica, sans-serif;
+    font-weight: bold;
 }
 
 table {
     border-collapse: collapse;
-    background-color: black;
+    background-color: rgb(225, 232, 218);
+    border-radius: 0.5em;
+    font-weight: bold;
 }
 
-td, th {
-    border: 2px solid;
+td, th, tr {
+    border-radius: 0.5em;
     text-align: center;
+    padding: 0.5em;
+}
+
+th {
+    width: 15em;
+}
+
+input[type="button"] {
+    padding: 0.7em;
+    font-family: system-ui, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 12pt;
+    background-color: rgb(20, 140, 100);
+    border: none;
+    border-radius: 0.5em;
+    margin: 0.2em;
+    width: 12em;
+    text-align: left;
+    color: rgb(245, 252, 238);
+}
+
+input[type="range"] {
+    width: 20em;
+}
+
+hr {
+    border: 2px solid rgb(180, 195, 178)
 }

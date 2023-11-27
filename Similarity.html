@@ -8,7 +8,8 @@
         </title>
     </head>
     <body>
-        <h1>How similar are you to your friend? (or another person)</h1>
+        <div class="main">
+        <h1>How similar are you to your friend? (or another person or character)</h1>
         <h3>This tool is based on Big Five Aspect Scales from IPIP.</h3>
         <h3>Enter your trait scores in appropriate areas.</h3>
         <h3>The result you get is an approximation, not a precise value.</h3>
@@ -16,11 +17,11 @@
         <h2 id="question_number"></h2>
         <h2 id="Statement">Enter the trait scores down below:</h2>
         <h3>Trait scores are between 0 and 100.</h3>
-        <input type="button" id="auto_fill" onclick=autofill() value="Use the developer's trait scores!"><br><br>
+        <input type="button" id="auto_fill" onclick=autofill() value="Use the developer's trait scores!" style="width: 17em"><br><br>
         <div id="tool">
             <table>
                 <tr>
-                    <th></th>
+                    <th>Characters</th>
                     <th>Intellect</th>
                     <th>Openness</th>
                     <th>Industriousness</th>
@@ -59,19 +60,20 @@
                     <td><input type="number" id="vol_oth" min="0" max="100" value = ""></td>
                 </tr>
             </table>
-            <p>How similar are your interests and preferences to this person?</p>
+            <p style="font-weight: bold;">How similar are your interests and preferences to this person?</p>
             <span>Very Dissimilar</span>
             <input type="range" min="0" max="100" id="interest_sim">
             <span>Very Similar</span>
             <br>
             <br>
-            <input type="button" onclick=log() value="Submit">
+            <input type="button" onclick=log() value="Submit" style="width: 5em;">
         </div>
         <div id = "similarity_percentage">
             <h3 id = "Similarity" style="display:none"></h3>
             <h3 id = "Similarity_b" style="display:none"></h3>
             <h3 id = "Similarity_c" style="display:none"></h3>
             <h3 id = "Similarity_d"></h3>
+         </div>
          </div>
     </body>
 </html>
