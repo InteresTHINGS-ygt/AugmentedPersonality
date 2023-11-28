@@ -124,7 +124,7 @@ hr {
         padding: 8px;
         border-radius: 8px;
         display: inline-block;
-        box-shadow: 10px 10px 20px rgba(40, 37, 30, 0.2);
+        box-shadow: 7px 7px 14px rgba(40, 37, 30, 0.2);
     }
 
     div.main {
