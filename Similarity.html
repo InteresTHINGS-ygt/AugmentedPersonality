@@ -19,9 +19,66 @@
         <h2 id="question_number"></h2>
         <h2 id="Statement">Enter the trait scores down below:</h2>
         <h3>Trait scores are between 0 and 100.</h3>
-        <input type="button" id="auto_fill" onclick=autofill() value="Use the developer's trait scores!" style="width: 17em"><br><br>
+        <input type="button" id="auto_fill" onclick=autofill_dev() value="Use the developer's trait scores!" style="width: 17em"><br><br>
         <div id="tool">
-            <table>
+            <table id="current" class="current">
+                <tr>
+                    <th>Traits</th>
+                    <th><input type="text" id="you_name" placeholder="Your Name"></th>
+                    <th><input type="text" id="oth_name" placeholder="Other's Name"></th>
+                </tr>
+                <tr>
+                    <td>Intellect</td>
+                    <td><input type="number" id="int_you" min="0" max="100" value = ""></td>
+                    <td><input type="number" id="int_oth" min="0" max="100" value = ""></td>
+                </tr>
+                <tr>
+                    <td>Openness</td>
+                    <td><input type="number" id="opn_you" min="0" max="100" value = ""></td>
+                    <td><input type="number" id="opn_oth" min="0" max="100" value = ""></td>
+                </tr>
+                <tr>
+                    <td>Industriousness</td>
+                    <td><input type="number" id="ind_you" min="0" max="100" value = ""></td>
+                    <td><input type="number" id="ind_oth" min="0" max="100" value = ""></td>
+                </tr>
+                <tr>
+                    <td>Orderliness</td>
+                    <td><input type="number" id="ord_you" min="0" max="100" value = ""></td>
+                    <td><input type="number" id="ord_oth" min="0" max="100" value = ""></td>
+                </tr>
+                <tr>
+                    <td>Enthusiasm</td>
+                    <td><input type="number" id="ent_you" min="0" max="100" value = ""></td>
+                    <td><input type="number" id="ent_oth" min="0" max="100" value = ""></td>
+                </tr>
+                <tr>
+                    <td>Assertiveness</td>
+                    <td><input type="number" id="asr_you" min="0" max="100" value = ""></td>
+                    <td><input type="number" id="asr_oth" min="0" max="100" value = ""></td>
+                </tr>
+                <tr>
+                    <td>Compassion</td>
+                    <td><input type="number" id="com_you" min="0" max="100" value = ""></td>
+                    <td><input type="number" id="com_oth" min="0" max="100" value = ""></td>
+                </tr>
+                <tr>
+                    <td>Politeness</td>
+                    <td><input type="number" id="pol_you" min="0" max="100" value = ""></td>
+                    <td><input type="number" id="pol_oth" min="0" max="100" value = ""></td>
+                </tr>
+                <tr>
+                    <td>Withdrawal</td>
+                    <td><input type="number" id="wtd_you" min="0" max="100" value = ""></td>
+                    <td><input type="number" id="wtd_oth" min="0" max="100" value = ""></td>
+                </tr>
+                <tr>
+                    <td>Volatility</td>
+                    <td><input type="number" id="vol_you" min="0" max="100" value = ""></td>
+                    <td><input type="number" id="vol_oth" min="0" max="100" value = ""></td>
+                </tr>
+            </table>
+            <!--<table id="backup" class="backup">
                 <tr>
                     <th>Characters</th>
                     <th>Intellect</th>
@@ -61,7 +118,7 @@
                     <td><input type="number" id="wtd_oth" min="0" max="100" value = ""></td>
                     <td><input type="number" id="vol_oth" min="0" max="100" value = ""></td>
                 </tr>
-            </table>
+            </table> -->
             <p style="font-weight: bold;">How similar are your interests and preferences to this person? (Leave it at the middle if you want raw personality similarity)</p>
             <span>Very Dissimilar</span>
             <input type="range" min="0" max="100" id="interest_sim">

@@ -26,6 +26,7 @@ div.main {
     text-align: center;
     margin: auto;
     margin-top: 3vw;
+    margin-bottom: 3vw;
 }
 
 span {
@@ -33,42 +34,45 @@ span {
 }
 
 input[type="number"] {
-    width: 5em;
-    height: 2em;
+    width: 14vw;
+    height: 6vw;
     background-color: rgb(240, 235, 225);
     border: none;
-    border-radius: 0.67em;
+    border-radius: 1vw;
     font-family: system-ui, Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-size: 9pt;
 }
 
 input[type="text"] {
-    height: 2em;
+    height: 6vw;
+    width: 25vw;
     background-color: rgb(240, 235, 225);
     border: none;
-    border-radius: 0.67em;
+    border-radius: 1vw;
     font-family: system-ui, Arial, Helvetica, sans-serif;
     font-weight: bold;
-    font-size: 9pt;
+    font-size: 3.5vw;
 }
 
 table {
     border-collapse: collapse;
     background-color: rgb(210, 205, 195);
-    border-radius: 0.67em;
+    border-radius: 1.5vw;
     font-weight: bold;
-    font-size: 9pt;
+    font-size: 3vw;
+    margin: auto;
+    width: 10vw;
 }
 
 td, th, tr {
-    border-radius: 0.5em;
     text-align: center;
-    padding: 0.5em;
+    padding: 1.2vw;
+    margin: 2vw;
 }
 
 th {
-    width: 12em;
+    font-size: 3.5vw;
 }
 
 input[type="button"] {
@@ -104,7 +108,7 @@ input[type="button"]:active {
 }
 
 input[type="range"] {
-    width: 20em;
+    width: 32vw;
 }
 
 hr {
@@ -127,7 +131,7 @@ hr {
         border-radius: 15px;
         background-color: rgb(230, 225, 215);
         padding: 12px;
-        box-shadow: 20px 20px 40px rgba(40, 37, 30, 0.2);
+        box-shadow: 14px 14px 28px rgba(40, 37, 30, 0.2);
         font-size: 16px;
         width: 550px;
         text-align: center;
@@ -149,7 +153,7 @@ hr {
         text-align: center;
         color: rgb(240, 235, 225);
         transition-duration: 0.2s;
-        box-shadow: 10px 10px 20px rgba(40, 37, 30, 0.2);
+        box-shadow: 7px 7px 14px rgba(40, 37, 30, 0.2);
     }
     
     input[type="button"]:default {
@@ -159,16 +163,62 @@ hr {
     input[type="button"]:hover {
         background-color: rgb(94, 94, 94);
         transition-duration: 0.2s;
-        box-shadow: 10px 10px 20px rgba(40, 37, 30, 0.2);
+        box-shadow: 7px 7px 14px rgba(40, 37, 30, 0.4);
     }
     
     input[type="button"]:active {
         background-color: rgb(20, 20, 20);
         transition-duration: 0.2s;
-        box-shadow: 10px 10px 20px rgba(40, 37, 30, 0.2);
+        box-shadow: 7px 7px 14px rgba(40, 37, 30, 0.6);
     }
 
     hr {
         border: 2px solid rgb(210, 205, 195);
+    }
+
+    input[type="number"] {
+        width: 75px;
+        height: 30px;
+        background-color: rgb(240, 235, 225);
+        border: none;
+        border-radius: 6px;
+        font-family: system-ui, Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 12pt;
+    }
+    
+    input[type="text"] {
+        height: 30px;
+        width: 150px;
+        background-color: rgb(240, 235, 225);
+        border: none;
+        border-radius: 6px;
+        font-family: system-ui, Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 14pt;
+    }
+    
+    table {
+        border-collapse: collapse;
+        background-color: rgb(210, 205, 195);
+        border-radius: 10px;
+        font-weight: bold;
+        font-size: 12pt;
+        margin: auto;
+        width: 450px;
+    }
+    
+    td, th, tr {
+        text-align: center;
+        padding: 8px;
+        margin: 8px;
+    }
+    
+    th {
+        font-size: 14pt;
+    }
+
+    input[type="range"] {
+        width: 200px;
     }
 }

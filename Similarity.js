@@ -40,9 +40,10 @@ var sim_weight;
 var sim_sum;
 var weight_sum;
 
+var you_name = "";
 var oth_name = "";
 
-function autofill() {
+function autofill_dev() {
     document.getElementById("int_you").value = 88;
     document.getElementById("opn_you").value = 78;
     document.getElementById("ind_you").value = 35;
@@ -93,6 +94,7 @@ function log() {
     you = [];
     oth = [];
     dis = [];
+    you_name = document.getElementById("you_name").value;
     oth_name = document.getElementById("oth_name").value;
 
     int_dis = Math.abs(int_you - int_oth);
@@ -189,11 +191,17 @@ function log() {
     document.getElementById("Similarity").innerHTML = "You are " + similarity + "% similar to each other! (Pearson)";
     document.getElementById("Similarity_b").innerHTML = "You are " + similarity_b + "% similar to each other! (Mean Distance)";
     document.getElementById("Similarity_c").innerHTML = "You are " + similarity_c + "% similar to each other! (Quadratic Distance)";
-    if (oth_name == "") {
+    if (oth_name == "" && you_name == "") {
         document.getElementById("Similarity_d").innerHTML = "You are " + Math.round(final_sim) + "% similar to each other!";
     }
-    else {
+    else if (you_name == "") {
         document.getElementById("Similarity_d").innerHTML = "You are " + Math.round(final_sim) + "% similar to " + oth_name + "!";
+    }
+    else if (oth_name == "") {
+        document.getElementById("Similarity_d").innerHTML = you_name + " is " + Math.round(final_sim) + "% similar to the other person/character!";
+    }
+    else {
+        document.getElementById("Similarity_d").innerHTML = you_name + " is " + Math.round(final_sim) + "% similar to " + oth_name + "!";
     }
 }
 
