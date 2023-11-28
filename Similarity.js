@@ -43,16 +43,16 @@ var weight_sum;
 var oth_name = "";
 
 function autofill() {
-    document.getElementById("int_you").value = 90;
-    document.getElementById("opn_you").value = 75;
-    document.getElementById("ind_you").value = 25;
+    document.getElementById("int_you").value = 88;
+    document.getElementById("opn_you").value = 78;
+    document.getElementById("ind_you").value = 35;
     document.getElementById("ord_you").value = 40;
-    document.getElementById("ent_you").value = 65;
-    document.getElementById("asr_you").value = 35;
+    document.getElementById("ent_you").value = 53;
+    document.getElementById("asr_you").value = 45;
     document.getElementById("com_you").value = 60;
-    document.getElementById("pol_you").value = 80;
-    document.getElementById("wtd_you").value = 90;
-    document.getElementById("vol_you").value = 70;
+    document.getElementById("pol_you").value = 70;
+    document.getElementById("wtd_you").value = 88;
+    document.getElementById("vol_you").value = 68;
 }
 
 function log() {

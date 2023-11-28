@@ -1,7 +1,7 @@
 body {
     font-family: system-ui, Arial, Helvetica, sans-serif;
     background-color: rgb(40, 120, 24);
-    color: rgb(5, 10, 2);
+    color: rgb(40, 37, 30);
     font-weight: bold;
 }
 
@@ -12,7 +12,7 @@ a {
 
 div.main {
     border-radius: 20px;
-    background-color: rgb(245, 252, 238);
+    background-color: rgb(230, 225, 215);
     padding: 1.5em;
     margin: 0.5em;
 }
@@ -26,7 +26,7 @@ input[type="number"] {
     height: 2em;
     background-color: rgb(245, 252, 238);
     border: none;
-    border-radius: 0.5em;
+    border-radius: 0.67em;
     font-family: system-ui, Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-size: 9pt;
@@ -36,7 +36,7 @@ input[type="text"] {
     height: 2em;
     background-color: rgb(245, 252, 238);
     border: none;
-    border-radius: 0.5em;
+    border-radius: 0.67em;
     font-family: system-ui, Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-size: 9pt;
@@ -44,8 +44,8 @@ input[type="text"] {
 
 table {
     border-collapse: collapse;
-    background-color: rgb(225, 232, 218);
-    border-radius: 0.5em;
+    background-color: rgb(210, 205, 195);
+    border-radius: 0.67em;
     font-weight: bold;
     font-size: 9pt;
 }
@@ -79,5 +79,5 @@ input[type="range"] {
 }
 
 hr {
-    border: 2px solid rgb(180, 195, 178)
+    border: 2px solid rgb(210, 205, 195)
 }
