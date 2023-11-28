@@ -36,6 +36,9 @@ var dis_from_center;
 var dis_similarity;
 var dis_factor;
 var cent_factor;
+var sim_weight;
+var sim_sum;
+var weight_sum;
 
 var oth_name = "";
 
@@ -84,6 +87,9 @@ function log() {
     dis_similarity = 0;
     dis_factor = 0;
     cent_factor = 0;
+    sim_weight = 0;
+    sim_sum = 0;
+    weight_sum = 0;
     you = [];
     oth = [];
     dis = [];
@@ -160,16 +166,17 @@ function log() {
         dis_similarity = 100-(Math.abs(you[i]-oth[i])); // Between 0 and 100
         dis_factor = (0.00774 * dis_similarity) + 0.226; // Makes the curve steeper
         cent_factor = ((0.0056 * dis_from_center) + 0.72);
-        similarity_d = (dis_similarity * dis_factor * cent_factor) * 0.11;
-        if (similarity_d > 10) {
-            similarity_d = 10;
-        }
-        lichnost_sim += similarity_d;
+        sim_weight = (Math.max(Math.abs(50-you[i]), Math.abs(50-oth[i]))/25) + 0.5;
+        similarity_d = (dis_similarity * dis_factor * cent_factor) * 1.1 * sim_weight;
+        sim_sum += similarity_d;
+        weight_sum += sim_weight;
+        lichnost_sim = sim_sum / weight_sum;
+        console.log(sim_weight)
     }
 
     var final_sim = 0;
     var interest_sim = document.getElementById("interest_sim").valueAsNumber;
-    var interest_factor = (interest_sim - 50) * 0.4;
+    var interest_factor = (interest_sim - 50) * 0.3;
     final_sim = lichnost_sim + interest_factor;
 
     if (final_sim > 100) {
