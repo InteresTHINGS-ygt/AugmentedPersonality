@@ -20,7 +20,7 @@
         <h2 id="question_number"></h2>
         <h2 id="Statement">Enter the trait scores down below:</h2>
         <h3>Trait scores are between 0 and 100.</h3>
-        <input type="button" id="auto_fill" onclick=autofill_dev() value="Use the developer's trait scores!" style="width: 17em"><br><br>
+        <input type="button" class="auto_fill" onclick=autofill_dev() value="Use the developer's trait scores!"><br><br>
         <div id="tool">
             <table id="current" class="current">
                 <tr>
@@ -126,7 +126,7 @@
             <span>Very Similar</span>
             <br>
             <br>
-            <input type="button" onclick=log() value="Submit" style="width: 5em;">
+            <input type="button" onclick=log() value="Submit" id="submit_sim">
         </div>
         <div id = "similarity_percentage">
             <h3 id = "Similarity" style="display:none"></h3>

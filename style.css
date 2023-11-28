@@ -1,3 +1,7 @@
+.submit_sim {
+    width: 20vw;
+}
+
 body {
     font-family: system-ui, Arial, Helvetica, sans-serif;
     background-color: rgb(156, 156, 156);
@@ -46,7 +50,7 @@ input[type="number"] {
 
 input[type="text"] {
     height: 6vw;
-    width: 25vw;
+    width: 24vw;
     background-color: rgb(240, 235, 225);
     border: none;
     border-radius: 1vw;
@@ -84,7 +88,7 @@ input[type="button"] {
     border: none;
     border-radius: 0.5em;
     margin: 0.2em;
-    width: 35vw;
+    min-width: 35vw;
     text-align: center;
     color: rgb(240, 235, 225);
     transition-duration: 0.2s;
@@ -149,7 +153,7 @@ hr {
         border: none;
         border-radius: 0.5em;
         margin: 0.2em;
-        width: 180px;
+        min-width: 180px;
         text-align: center;
         color: rgb(240, 235, 225);
         transition-duration: 0.2s;
