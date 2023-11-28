@@ -1,1 +1,49 @@
 <!DOCTYPE html>
+<html>
+    <head>
+        <link rel = "stylesheet" href = "style.css">
+        <link rel = "stylesheet" href = "Coffee Test.css">
+        <script src="HBNT.js"></script>
+        <title>
+            Herrmann-Based Neurotype Test
+        </title>
+    </head>
+    <body>
+        <div class="main">
+            <h1>Herrmann-Based Neurotype Test</h1>
+            <h3>There are 16 questions.</h3>
+            <h3>Indicate how much do you agree with each statement.</h3>
+            <hr>
+            <h2 id="question_number"></h2>
+            <h2 id="Statement">Click to start!</h2>
+            <input type="button" onclick=buttonclick(0) id="start" value="Start Test">
+            <div id="test" style="display:none">
+                <input type="button" onclick=buttonclick(0) id="sd" value="Strongly Disagree"><br>
+                <input type="button" onclick=buttonclick(1) id="d" value="Disagree"><br>
+                <input type="button" onclick=buttonclick(2) id="n" value="Neutral"><br>
+                <input type="button" onclick=buttonclick(3) id="a" value="Agree"><br>
+                <input type="button" onclick=buttonclick(4) id="sa" value="Strongly Agree"><br>
+            </div>
+            <div id = "tiebreaker_c" style = "display:none">
+                <h2>Tiebreaker</h2>
+                <h4>It looks like you have a tie on one or both scales!</h4>
+                <h2>Which word do you resonate with more?</h2>
+                <input type="button" onclick=tiebreakerclick_c(1) value="Contemplation"><br>
+                <input type="button" onclick=tiebreakerclick_c(-1) value="Action"><br>
+            </div>
+            <div id = "tiebreaker_r" style = "display:none">
+                <h2>Tiebreaker</h2>
+                <h4>It looks like you have a tie on one or both scales!</h4>
+                <h2>Which word do you resonate with more?</h2>
+                <input type="button" onclick=tiebreakerclick_r(1) value="Flow"><br>
+                <input type="button" onclick=tiebreakerclick_r(-1) value="Plan"><br>
+            </div>
+            <h4 id = "tiebreaker"></h4>
+            <div id = "results" style = "display:none">
+                <h3 id = "result1"></h3>
+                <h3 id = "result2"></h3>
+                <h3 id = "result3"></h3>
+            </div>
+        </div>
+    </body>
+</html>
