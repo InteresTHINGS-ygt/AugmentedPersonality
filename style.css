@@ -77,6 +77,15 @@ input[type="button"] {
     width: 12em;
     text-align: left;
     color: rgb(240, 235, 225);
+    transition-duration: 0.3s;
+}
+
+input[type="button"]:hover {
+    background-color: rgb(94, 94, 94);
+}
+
+input[type="button"]:active {
+    background-color: rgb(20, 20, 20);
 }
 
 input[type="range"] {
