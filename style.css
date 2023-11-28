@@ -1,13 +1,18 @@
 body {
     font-family: system-ui, Arial, Helvetica, sans-serif;
-    background-color: rgb(40, 120, 24);
+    background-color: rgb(156, 156, 156);
     color: rgb(40, 37, 30);
     font-weight: bold;
 }
 
 a {
-    color: rgb(20, 140, 70);
+    color: rgb(240, 235, 225);
     text-decoration: none;
+    background-color: rgb(0, 0, 0);
+    margin: 0.2em;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    display: inline-block;
 }
 
 div.main {
@@ -24,7 +29,7 @@ span {
 input[type="number"] {
     width: 5em;
     height: 2em;
-    background-color: rgb(245, 252, 238);
+    background-color: rgb(240, 235, 225);
     border: none;
     border-radius: 0.67em;
     font-family: system-ui, Arial, Helvetica, sans-serif;
@@ -34,7 +39,7 @@ input[type="number"] {
 
 input[type="text"] {
     height: 2em;
-    background-color: rgb(245, 252, 238);
+    background-color: rgb(240, 235, 225);
     border: none;
     border-radius: 0.67em;
     font-family: system-ui, Arial, Helvetica, sans-serif;
@@ -71,7 +76,7 @@ input[type="button"] {
     margin: 0.2em;
     width: 12em;
     text-align: left;
-    color: rgb(245, 252, 238);
+    color: rgb(240, 235, 225);
 }
 
 input[type="range"] {
