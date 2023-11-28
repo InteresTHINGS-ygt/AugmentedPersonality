@@ -417,40 +417,33 @@ Let's do the Naranjo one here.
 
 "I see myself as fluid in self-concept, so I don’t have a predetermined internal identity."
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 Enneagram Test
 Will be based on different triads.
 3 options per question. Choose the one that fits you the best.
 There are a total of 54 questions.
 
 
+What about "Third Region"?
+
+4 types, 3 traits for each. It's tetrahedral.
+The axes are:
+
+Emotionally Controlled - Emotionally Free
+Specialist - Generalist
+Professional - Casual
+
+12 questions. Very short yet effective.
 
 
+"I have an easy time controlling my reactions.",
+"I tend to repress my emotions in order to stay rational.",
+"I try to express myself as freely as possible.",
+"I am pretty much authentic and unfiltered.",
+"My interests are very selective and personal.",
+"I focus on one thing to become really good at it.",
+"I feel bored when I am not exploring new interests.",
+"I feel the need to be good at everything.",
+"I take my job seriously and want to perform high.",
+"I care a lot about my performance and presentation.",
+"I just do what I enjoy regardless of performance.",
+"My content tends to have an "everyday" vibe."

@@ -3,15 +3,16 @@
     <head>
         <link rel = "stylesheet" href = "style.css">
         <link rel = "stylesheet" href = "Third Region.css">
-        <script src="HBNT.js"></script>
+        <script src="Third Region.js"></script>
         <title>
-            Herrmann-Based Neurotype Test
+            Content Creator Style Test
         </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
         <div class="main">
-            <h1>Herrmann-Based Neurotype Test</h1>
-            <h3>There are 16 questions.</h3>
+            <h1>Content Creator Style Test</h1>
+            <h3>There are 12 questions. Short, yet effective, just like espresso!</h3>
             <h3>Indicate how much do you agree with each statement.</h3>
             <hr>
             <h2 id="question_number"></h2>
@@ -24,21 +25,6 @@
                 <input type="button" onclick=buttonclick(3) id="a" value="Agree"><br>
                 <input type="button" onclick=buttonclick(4) id="sa" value="Strongly Agree"><br>
             </div>
-            <div id = "tiebreaker_c" style = "display:none">
-                <h2>Tiebreaker</h2>
-                <h4>It looks like you have a tie on one or both scales!</h4>
-                <h2>Which word do you resonate with more?</h2>
-                <input type="button" onclick=tiebreakerclick_c(1) value="Contemplation"><br>
-                <input type="button" onclick=tiebreakerclick_c(-1) value="Action"><br>
-            </div>
-            <div id = "tiebreaker_r" style = "display:none">
-                <h2>Tiebreaker</h2>
-                <h4>It looks like you have a tie on one or both scales!</h4>
-                <h2>Which word do you resonate with more?</h2>
-                <input type="button" onclick=tiebreakerclick_r(1) value="Flow"><br>
-                <input type="button" onclick=tiebreakerclick_r(-1) value="Plan"><br>
-            </div>
-            <h4 id = "tiebreaker"></h4>
             <div id = "results" style = "display:none">
                 <h3 id = "result1"></h3>
                 <h3 id = "result2"></h3>
