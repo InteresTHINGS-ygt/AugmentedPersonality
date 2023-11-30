@@ -23,7 +23,7 @@ var test_status = 0;
 function buttonclick(score) {
     var questions = [
 
-        "I feel at home with abstract concepts.",
+        "I feel at home with abstract concepts.", 
         "I often get lost in thought.",
         "I feel alive with mental stimulation.",
         "I have an hunger for knowledge.",
@@ -82,7 +82,7 @@ function buttonclick(score) {
         "I prefer taking more passive roles.",
         "I take a long time to make decisions.",
         "I am not keen on speaking my mind.",
-        "I prefer working behindthescenes.",
+        "I prefer working behind-the-scenes.",
         "I often inquire about others' well being.",
         "I enjoy helping and doing for others.",
         "I often take care of others' feelings.",

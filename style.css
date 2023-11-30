@@ -6,7 +6,6 @@ body {
     font-family: system-ui, Arial, Helvetica, sans-serif;
     background-color: rgb(156, 156, 156);
     color: rgb(40, 37, 30);
-    font-weight: bold;
 }
 
 a {
@@ -16,8 +15,81 @@ a {
     margin: 0.8vw;
     padding: 1.5vw;
     border-radius: 1.5vw;
-    display: inline-block;
+    font-size: 3vw;
     box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
+    transition-duration: 0.2s;
+    font-weight: bold;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+h2 {
+    font-weight: bold;
+}
+
+h3 {
+    font-weight: bold;
+}
+
+h4 {
+    font-weight: bold;
+}
+
+a.sim {
+    background-color: rgb(16, 113, 120);
+}
+a.hbnt {
+    background-color: rgb(80, 120, 16);
+}
+a.bc {
+    background-color: rgb(16, 34, 120);
+}
+a.ms {
+    background-color: rgb(180, 34, 20);
+}
+a.meta {
+    background-color: rgb(99, 16, 120);
+}
+a.ospi {
+    background-color: rgb(107, 107, 107);
+}
+a.fourh {
+    background-color: rgb(120, 84, 16);
+}
+a.creator {
+    background-color: rgb(86, 87, 139);
+}
+a.cpti {
+    background-color: rgb(196, 176, 0);
+}
+a.ennea {
+    background-color: rgb(0, 161, 22);
+}
+a.bfive {
+    background-color: rgb(230, 111, 0);
+}
+a.coffee {
+    background-color: rgb(90, 74, 49);
+}
+a.gd {
+    background-color: rgb(22, 95, 190);
+}
+a.portal {
+    background-color: rgb(136, 136, 136);
+}
+
+a:hover {
+    background-color: rgb(94, 94, 94);
+    transition-duration: 0.2s;
+    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.4);
+}
+
+a:active {
+    background-color: rgb(20, 20, 20);
+    transition-duration: 0.2s;
+    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.6);
 }
 
 div.main {
@@ -31,6 +103,14 @@ div.main {
     margin: auto;
     margin-top: 3vw;
     margin-bottom: 3vw;
+}
+
+div.grid_menu {
+    display: grid;
+    grid-template-columns: 41vw 41vw;
+    grid-template-rows: 30vw 30vw 30vw 30vw 30vw 30vw 30vw;
+    gap: 1vw;
+    justify-content: space-evenly;
 }
 
 span {
@@ -80,14 +160,14 @@ th {
 }
 
 input[type="button"] {
-    padding: 0.7em;
     font-family: system-ui, Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-size: 3vw;
     background-color: rgb(20, 140, 100);
     border: none;
-    border-radius: 0.5em;
-    margin: 0.2em;
+    margin: 0.8vw;
+    padding: 1.5vw;
+    border-radius: 1.5vw;
     min-width: 35vw;
     text-align: center;
     color: rgb(240, 235, 225);
