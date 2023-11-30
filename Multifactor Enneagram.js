@@ -141,7 +141,7 @@ function buttonclick(score) {
 
         "My resigned attitude makes me laid-back and self-effacing.",
 
-        "I see myself as fluid in self-concept, so I don’t have a predetermined internal identity."
+        "I see myself as adaptable in self-concept, so I don’t have a strong internal identity."
         ];
 
     if (test_status == 0) {
