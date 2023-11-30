@@ -140,76 +140,76 @@ function buttonclick(score) {
         int += score
     }
     else if (current_question < 11){
-        int += (4 - score)
+        int += (5 - score)
     }
     else if (current_question < 16){
         opn += score
     }
     else if (current_question < 21){
-        opn += (4 - score)
+        opn += (5 - score)
     }
     else if (current_question < 26){
         ind += score
     }
     else if (current_question < 31){
-        ind += (4 - score)
+        ind += (5 - score)
     }
     else if (current_question < 36){
         ord += score
     }
     else if (current_question < 41){
-        ord += (4 - score)
+        ord += (5 - score)
     }
     else if (current_question < 46){
         ent += score
     }
     else if (current_question < 51){
-        ent += (4 - score)
+        ent += (5 - score)
     }
     else if (current_question < 56){
         asr += score
     }
     else if (current_question < 61){
-        asr += (4 - score)
+        asr += (5 - score)
     }
     else if (current_question < 66){
         com += score
     }
     else if (current_question < 71){
-        com += (4 - score)
+        com += (5 - score)
     }
     else if (current_question < 76){
         pol += score
     }
     else if (current_question < 81){
-        pol += (4 - score)
+        pol += (5 - score)
     }
     else if (current_question < 86){
         wtd += score
     }
     else if (current_question < 91){
-        wtd += (4 - score)
+        wtd += (5 - score)
     }
     else if (current_question < 96){
         vol += score
     }
     else if (current_question < 111){
-        vol += (4 - score)
+        vol += (5 - score)
     }
 
     if (current_question > (questions.length - 1)){
         document.getElementById("question_number").style.display = "none";
         document.getElementById("Statement").innerHTML = "Finished!";
-        int = Math.round((int / 40) * 100)
-        opn = Math.round((opn / 40) * 100)
-        ind = Math.round((ind / 40) * 100)
-        ord = Math.round((ord / 40) * 100)
-        ent = Math.round((ent / 40) * 100)
-        asr = Math.round((asr / 40) * 100)
-        com = Math.round((com / 40) * 100)
-        pol = Math.round((pol / 40) * 100)
-        wtd = Math.round((wtd / 40) * 100)
-        vol = Math.round((vol / 40) * 100)
+        int = Math.round((int / 50) * 100)
+        opn = Math.round((opn / 50) * 100)
+        ind = Math.round((ind / 50) * 100)
+        ord = Math.round((ord / 50) * 100)
+        ent = Math.round((ent / 50) * 100)
+        asr = Math.round((asr / 50) * 100)
+        com = Math.round((com / 50) * 100)
+        pol = Math.round((pol / 50) * 100)
+        wtd = Math.round((wtd / 50) * 100)
+        vol = Math.round((vol / 50) * 100)
 
         openness = Math.round((int + opn) / 2)
         conscientiousness = Math.round((ind + ord) / 2)
