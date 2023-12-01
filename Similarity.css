@@ -1,8 +1,15 @@
 body {
-    background-color: rgb(16, 113, 120)
+    background-color: rgb(16, 113, 120);
 }
 
 input[type="button"] {
-    background-color: rgb(32, 160, 160)
+    background-color: rgb(32, 160, 160);
 }
 
+.slider::-webkit-slider-thumb {
+    background-color: rgb(32, 160, 160);
+}
+  
+.slider::-moz-range-thumb {
+    background-color: rgb(32, 160, 160);
+}

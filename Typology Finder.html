@@ -27,27 +27,30 @@
             <input type="button" onclick=buttonclick(4) id="sa" value="Moderately Agree"><br>
             <input type="button" onclick=buttonclick(5) id="sa" value="Strongly Agree"><br>
         </div>
-        <div id = "results" style="display:none">
-            <h2 id = "OTE">Openness To Experience</h2>
-            <h3 id = "int">Intellect</h3>
-            <h3 id = "opn">Openness</h3>
+        <div id = "results" class="results" style="display:none">
+            <div class = "bigfive">
+            <h2 id = "OTE">Openness To Experience</h2><input type="range" class="slider" disabled="true" value="0" id="OTEs" min="0" max="100">
+            <h3 id = "int">Intellect</h3><input type="range" class="slider" disabled="true" value="0" id="ints" min="0" max="100">
+            <h3 id = "opn">Openness</h3><input type="range" class="slider" disabled="true" value="0" id="opns" min="0" max="100">
             <br>
-            <h2 id = "CON">Conscientiousness</h2>
-            <h3 id = "ind">Industriousness</h3>
-            <h3 id = "ord">Orderliness</h3>
+            <h2 id = "CON">Conscientiousness</h2><input type="range" class="slider" disabled="true" value="0" id="CONs" min="0" max="100">
+            <h3 id = "ind">Industriousness</h3><input type="range" class="slider" disabled="true" value="0" id="inds" min="0" max="100">
+            <h3 id = "ord">Orderliness</h3><input type="range" class="slider" disabled="true" value="0" id="ords" min="0" max="100">
             <br>
-            <h2 id = "EXT">Extraversion</h2>
-            <h3 id = "ent">Enthusiasm</h3>
-            <h3 id = "asr">Assertiveness</h3>
+            <h2 id = "EXT">Extraversion</h2><input type="range" class="slider" disabled="true" value="0" id="EXTs" min="0" max="100">
+            <h3 id = "ent">Enthusiasm</h3><input type="range" class="slider" disabled="true" value="0" id="ents" min="0" max="100">
+            <h3 id = "asr">Assertiveness</h3><input type="range" class="slider" disabled="true" value="0" id="asrs" min="0" max="100">
             <br>
-            <h2 id = "AGR">Agreeableness</h2>
-            <h3 id = "com">Compassion</h3>
-            <h3 id = "pol">Politeness</h3>
+            <h2 id = "AGR">Agreeableness</h2><input type="range" class="slider" disabled="true" value="0" id="AGRs" min="0" max="100">
+            <h3 id = "com">Compassion</h3><input type="range" class="slider" disabled="true" value="0" id="coms" min="0" max="100">
+            <h3 id = "pol">Politeness</h3><input type="range" class="slider" disabled="true" value="0" id="pols" min="0" max="100">
             <br>
-            <h2 id = "NEU">Neuroticism</h2>
-            <h3 id = "wtd">Withdrawal</h3>
-            <h3 id = "vol">Volatility</h3>
+            <h2 id = "NEU">Neuroticism</h2><input type="range" class="slider" disabled="true" value="0" id="NEUs" min="0" max="100">
+            <h3 id = "wtd">Withdrawal</h3><input type="range" class="slider" disabled="true" value="0" id="wtds" min="0" max="100">
+            <h3 id = "vol">Volatility</h3><input type="range" class="slider" disabled="true" value="0" id="vols" min="0" max="100">
             <br>
+            </div>
+            </div>
          </div>
          </div>
     </body>

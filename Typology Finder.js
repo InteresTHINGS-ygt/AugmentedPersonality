@@ -225,22 +225,37 @@ function get_result() {
     document.getElementById("results").style.display = "block";
     document.getElementById("test").style.display = "none";
     document.getElementById("question_number").style.display = "none";
-    document.getElementById("OTE").innerHTML = "Openess to Experience: " + openness + "%"
-    document.getElementById("int").innerHTML = "Intellect: " + int + "%"
-    document.getElementById("opn").innerHTML = "Openness: " + opn + "%"
-    document.getElementById("CON").innerHTML = "Conscientiousness: " + conscientiousness + "%"
-    document.getElementById("ind").innerHTML = "Industriousness: " + ind + "%"
-    document.getElementById("ord").innerHTML = "Orderliness: " + ord + "%"
-    document.getElementById("EXT").innerHTML = "Extraversion: " + extraversion + "%"
-    document.getElementById("ent").innerHTML = "Enthusiasm: " + ent + "%"
-    document.getElementById("asr").innerHTML = "Assertiveness: " + asr + "%"
-    document.getElementById("AGR").innerHTML = "Agreeableness: " + agreeableness + "%"
-    document.getElementById("com").innerHTML = "Compassion: " + com + "%"
-    document.getElementById("pol").innerHTML = "Politeness: " + pol + "%"
-    document.getElementById("NEU").innerHTML = "Neuroticism: " + neuroticism + "%"
-    document.getElementById("wtd").innerHTML = "Withdrawal: " + wtd + "%"
-    document.getElementById("vol").innerHTML = "Volatility: " + vol + "%"
-    
+    document.getElementById("OTE").innerHTML = "Openess to Experience: " + openness + "%";
+    document.getElementById("int").innerHTML = "Intellect: " + int + "%";
+    document.getElementById("opn").innerHTML = "Openness: " + opn + "%";
+    document.getElementById("CON").innerHTML = "Conscientiousness: " + conscientiousness + "%";
+    document.getElementById("ind").innerHTML = "Industriousness: " + ind + "%";
+    document.getElementById("ord").innerHTML = "Orderliness: " + ord + "%";
+    document.getElementById("EXT").innerHTML = "Extraversion: " + extraversion + "%";
+    document.getElementById("ent").innerHTML = "Enthusiasm: " + ent + "%";
+    document.getElementById("asr").innerHTML = "Assertiveness: " + asr + "%";
+    document.getElementById("AGR").innerHTML = "Agreeableness: " + agreeableness + "%";
+    document.getElementById("com").innerHTML = "Compassion: " + com + "%";
+    document.getElementById("pol").innerHTML = "Politeness: " + pol + "%";
+    document.getElementById("NEU").innerHTML = "Neuroticism: " + neuroticism + "%";
+    document.getElementById("wtd").innerHTML = "Withdrawal: " + wtd + "%";
+    document.getElementById("vol").innerHTML = "Volatility: " + vol + "%";
+
+    document.getElementById("OTEs").value = openness;
+    document.getElementById("ints").value = int;
+    document.getElementById("opns").value = opn;
+    document.getElementById("CONs").value = conscientiousness;
+    document.getElementById("inds").value = ind;
+    document.getElementById("ords").value = ord;
+    document.getElementById("EXTs").value = extraversion;
+    document.getElementById("ents").value = ent;
+    document.getElementById("asrs").value = asr;
+    document.getElementById("AGRs").value = agreeableness;
+    document.getElementById("coms").value = com;
+    document.getElementById("pols").value = pol;
+    document.getElementById("NEUs").value = neuroticism;
+    document.getElementById("wtds").value = wtd;
+    document.getElementById("vols").value = vol;
 }
 
 
