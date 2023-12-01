@@ -45,15 +45,80 @@ var oth_name = "";
 
 function autofill_dev() {
     document.getElementById("int_you").value = 88;
-    document.getElementById("opn_you").value = 78;
-    document.getElementById("ind_you").value = 35;
-    document.getElementById("ord_you").value = 40;
-    document.getElementById("ent_you").value = 53;
-    document.getElementById("asr_you").value = 45;
-    document.getElementById("com_you").value = 60;
-    document.getElementById("pol_you").value = 70;
+    document.getElementById("opn_you").value = 70;
+    document.getElementById("ind_you").value = 33;
+    document.getElementById("ord_you").value = 38;
+    document.getElementById("ent_you").value = 48;
+    document.getElementById("asr_you").value = 43;
+    document.getElementById("com_you").value = 50;
+    document.getElementById("pol_you").value = 75;
     document.getElementById("wtd_you").value = 88;
-    document.getElementById("vol_you").value = 68;
+    document.getElementById("vol_you").value = 65;
+}
+function autofill_1() {
+    document.getElementById("oth_name").value = "Naruto Uzumaki"
+    document.getElementById("int_oth").value = 88;
+    document.getElementById("opn_oth").value = 70;
+    document.getElementById("ind_oth").value = 33;
+    document.getElementById("ord_oth").value = 38;
+    document.getElementById("ent_oth").value = 48;
+    document.getElementById("asr_oth").value = 43;
+    document.getElementById("com_oth").value = 50;
+    document.getElementById("pol_oth").value = 75;
+    document.getElementById("wtd_oth").value = 88;
+    document.getElementById("vol_oth").value = 65;
+}
+function autofill_2() {
+    document.getElementById("oth_name").value = "Albert Einstein"
+    document.getElementById("int_oth").value = 88;
+    document.getElementById("opn_oth").value = 70;
+    document.getElementById("ind_oth").value = 33;
+    document.getElementById("ord_oth").value = 38;
+    document.getElementById("ent_oth").value = 48;
+    document.getElementById("asr_oth").value = 43;
+    document.getElementById("com_oth").value = 50;
+    document.getElementById("pol_oth").value = 75;
+    document.getElementById("wtd_oth").value = 88;
+    document.getElementById("vol_oth").value = 65;
+}
+function autofill_3() {
+    document.getElementById("oth_name").value = "Pikachu"
+    document.getElementById("int_oth").value = 88;
+    document.getElementById("opn_oth").value = 70;
+    document.getElementById("ind_oth").value = 33;
+    document.getElementById("ord_oth").value = 38;
+    document.getElementById("ent_oth").value = 48;
+    document.getElementById("asr_oth").value = 43;
+    document.getElementById("com_oth").value = 50;
+    document.getElementById("pol_oth").value = 75;
+    document.getElementById("wtd_oth").value = 88;
+    document.getElementById("vol_oth").value = 65;
+}
+function autofill_4() {
+    document.getElementById("oth_name").value = "ChatGPT"
+    document.getElementById("int_oth").value = 88;
+    document.getElementById("opn_oth").value = 70;
+    document.getElementById("ind_oth").value = 33;
+    document.getElementById("ord_oth").value = 38;
+    document.getElementById("ent_oth").value = 48;
+    document.getElementById("asr_oth").value = 43;
+    document.getElementById("com_oth").value = 50;
+    document.getElementById("pol_oth").value = 75;
+    document.getElementById("wtd_oth").value = 88;
+    document.getElementById("vol_oth").value = 65;
+}
+function autofill_5() {
+    document.getElementById("oth_name").value = "Golden Retriever"
+    document.getElementById("int_oth").value = 88;
+    document.getElementById("opn_oth").value = 70;
+    document.getElementById("ind_oth").value = 33;
+    document.getElementById("ord_oth").value = 38;
+    document.getElementById("ent_oth").value = 48;
+    document.getElementById("asr_oth").value = 43;
+    document.getElementById("com_oth").value = 50;
+    document.getElementById("pol_oth").value = 75;
+    document.getElementById("wtd_oth").value = 88;
+    document.getElementById("vol_oth").value = 65;
 }
 
 function log() {

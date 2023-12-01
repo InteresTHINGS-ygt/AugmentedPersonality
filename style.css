@@ -113,8 +113,6 @@ div.grid_menu {
     justify-content: space-evenly;
 }
 
-
-
 span {
     font-weight: bold;
 }
@@ -127,7 +125,7 @@ input[type="number"] {
     border-radius: 1vw;
     font-family: system-ui, Arial, Helvetica, sans-serif;
     font-weight: bold;
-    font-size: 9pt;
+    font-size: 3vw;
     box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
 }
 
@@ -387,7 +385,7 @@ hr {
         box-shadow: 7px 7px 14px rgba(40, 37, 30, 0.2);
     }
       
-      .slider::-moz-range-thumb {
+    .slider::-moz-range-thumb {
         width: 25px;
         height: 25px;
         background: #04AA6D;
