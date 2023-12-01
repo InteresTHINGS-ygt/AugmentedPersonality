@@ -447,3 +447,69 @@ Professional - Casual
 "I care a lot about my performance and presentation.",
 "I just do what I enjoy regardless of performance.",
 "My content tends to have an "everyday" vibe."
+
+
+RELEASE VERSION MUST HAVES
+
+Character Comparison
+* Updated Developer scores
+* Import from your results
+* MBTI + Enneagram options
+* Character presets + rapid compare
+* Other ways of measurement rather than just percentage
+* Descriptions of traits
+
+HBNT
+* Visual results (neurotype chart)
+* Type Descriptions
+
+Business Chemistry
+* Visual results (Bc chart)
+* Type Descriptions
+
+Medical Suitability
+* Probably done!
+
+META 
+* Visual results (again)
+* Proper META types
+* Descriptions
+
+OSPI 
+* Visual results
+* Descriptions
+
+Temperament Test
+* Descriptions
+* Visual results
+
+Content Creator Style
+* Proper type Descriptions
+* Visual results
+
+CPTI 
+* Needs to be added
+* Personality type indicated
+
+Enneagram
+* More testing methods
+* Visual results
+* Descriptions
+
+Big Five
+* Add the damn Typology Finder!
+* Descriptions
+* Predictions
+* Most similar Character
+* Export option
+* Save results
+* Visual results
+* Pattern types
+
+Coffee
+* Add the test!
+* Flowchart Style
+
+GD 
+* Add the test!
+* Flowchart Style
