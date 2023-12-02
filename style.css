@@ -209,6 +209,10 @@ input[type="button"] {
     box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
 }
 
+input[type="button"].auto_fill {
+    min-width: 0vw;
+}
+
 input[type="button"]:default {
     transition-duration: 0.2s;
 }
