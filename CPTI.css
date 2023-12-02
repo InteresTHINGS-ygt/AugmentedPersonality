@@ -31,6 +31,14 @@ span {
     margin-bottom: 2vw;
 }
 
+.slider::-webkit-slider-thumb {
+    background: rgb(214, 193, 0);
+}
+  
+.slider::-moz-range-thumb {
+    background: rgb(214, 193, 0);
+}
+
 @media only screen and (min-width: 600px){
     div.results {
         display: grid;
