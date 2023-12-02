@@ -513,3 +513,62 @@ Coffee
 GD 
 * Add the test!
 * Flowchart Style
+
+
+CPTI test will have 3 parts:
+
+1- Temperament (IP IJ EP EJ)
+2- Find the dominant function
+3- Find the second function
+
+CPTI Temperament questions
+
+"I prioritize my own criteria in my decisions.",
+"My worldview is based on my independent judgments.",
+"I am able to do what I want without being pressured by others.",
+"I prioritize personal uniqueness in my lifestyle.",
+"I have a hard time adapting to the objective criteria.",
+"I may be perceived as self-centered.",
+
+"I organize information to form internal impressions and keep things predictable.",
+"I plan things out well in advance in order to avoid too much risk.",
+"One of my strengths is my ability to plan ahead and organize.",
+"I am great at preventing bad consequences by preparation.",
+"I have a hard time with unexpected changes.",
+"I can often be rigid and stubborn.",
+
+"I am considered as spontaneous and somewhat impulsive.",
+"I often seek new experiences or possibilities.",
+"I easily adapt to new and novel information.",
+"One of my strengths is my flexibility and adaptability.",
+"I have a hard time focusing on one thing for a long time as I feel bored.",
+"I can come across as scattered and unprepared.",
+
+"I adjust myself to external expectations to contribute to others.",
+"I make decisions primarily based on external and objective factors.",
+"I am considered a natural teamplayer.",
+"I excel at adapting to my chosen group.",
+"I have a hard time actually knowing myself.",
+"I tend to devalue individuality either in myself or others."
+
+
+
+CPTI Dom Function questions
+
+Ti vs Fi
+I am all about what makes logical sense to me.
+My sense of identity is detached from my own feelings.
+I 
+
+Si vs Ni 
+
+Se vs Ne 
+
+Te vs Fe 
+
+
+CPTI Aux Function questions
+
+Perceiving (for IP and EJ)
+
+Judging (for IJ and EP)

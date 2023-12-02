@@ -1,7 +1,51 @@
 body {
-    background-color: rgb(196, 176, 0)
+    background-color: rgb(196, 176, 0);
 }
 
 input[type="button"] {
-    background-color: rgb(214, 193, 0)
+    background-color: rgb(214, 193, 0);
+}
+
+div.results {
+    display: grid;
+    grid-template-columns: 25vw 34vw 30vw;
+    gap: 1vw
+}
+
+div.one {
+    text-align: right;
+}
+
+div.three {
+    text-align: left;
+}
+
+span {
+    display: block;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+}
+
+.slider {
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+}
+
+@media only screen and (min-width: 600px){
+    div.results {
+        display: grid;
+        grid-template-columns: 150px 230px 150px;
+        gap: 10px
+    }
+
+    span {
+        display: block;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    
+    .slider {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
 }

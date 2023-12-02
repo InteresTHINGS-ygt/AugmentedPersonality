@@ -8,6 +8,8 @@ var right = 0;
 
 var cerebrality = 0;
 var rightness = 0;
+var cereb_status = "";
+var right_status = "";
 
 var test_status = 0;
 
@@ -97,9 +99,34 @@ function tiebreakerclick_r(score) {
 }
 
 function get_result() {
+    if (cerebrality > 8){
+        cereb_status = "Very Cerebral"
+    }
+    else if (cerebrality > 0){
+        cereb_status = "Fairly Cerebral"
+    }
+    else if (cerebrality > -9){
+        cereb_status = "Fairly Limbic"
+    }
+    else {
+        cereb_status = "Very Limbic"
+    }
+
+    if (rightness > 8){
+        right_status = "Very Right"
+    }
+    else if (rightness > 0){
+        right_status = "Fairly Right"
+    }
+    else if (rightness > -9){
+        right_status = "Fairly Left"
+    }
+    else {
+        right_status = "Very Left"
+    }
     document.getElementById("results").style.display = "block";
-    document.getElementById("result1").innerHTML = "Your cerebrality is " + cerebrality;
-    document.getElementById("result2").innerHTML = "Your rightness is " + rightness;
+    document.getElementById("result1").innerHTML = "Your cerebrality is " + cerebrality + " (" + cereb_status + ")";
+    document.getElementById("result2").innerHTML = "Your rightness is " + rightness + " (" + right_status + ")";
     document.getElementById("test").style.display = "none";
     document.getElementById("question_number").style.display = "none";
 

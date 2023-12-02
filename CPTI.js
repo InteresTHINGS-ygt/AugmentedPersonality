@@ -1,33 +1,44 @@
 var current_question = -1;
 var score = 0;
 
-var cerebral = 0;
-var left = 0;
-var limbic = 0;
-var right = 0;
+var IP = 0;
+var IJ = 0;
+var EP = 0;
+var EJ = 0;
 
-var cerebrality = 0;
-var rightness = 0;
+var EP_IJ = 0;
+var EJ_IP = 0;
 
 var test_status = 0;
 
 function buttonclick(score) {
-    var questions = ["I am intellectually curious and have a love for learning.",
-    "I am a rational thinker who tends to contain emotions.",
-    "I am realistic and prefer concrete interests.",
-    "I am flexible and like to go with the flow.",
-    "I enjoy engaging in complex thought.",
-    "I make my decisions primarily based on facts and logic.",
-    "I am generally an instinctive and action-oriented person.",
-    "I listen to emotions and intuition while making decisions.",
-    "I feel at home with abstract concepts and ideas.",
-    "I am more of a planner than someone who acts spontaneously.",
-    "I learn best with a practical, hands-on style.",
-    "I am more people-oriented than task-oriented.",
-    "I prefer a job with high intellectual stimulation.",
-    "I highly favor efficiency and accuracy in my lifestyle.",
-    "I am better at executing ideas than generating them.",
-    "I am enthusiastic and express my feelings easily."];
+    var questions = ["I prioritize my personal criteria in my decisions.",
+                    "My worldview is based on my independent judgments.",
+                    "I am able to do what I want without being pressured by others.",
+                    "I prioritize personal uniqueness in my lifestyle.",
+                    "I have a hard time adapting to the objective criteria.",
+                    "I may be perceived as self-centered.",
+                    
+                    "I organize information to form internal impressions and keep things predictable.",
+                    "I plan things out well in advance in order to avoid too much risk.",
+                    "One of my strengths is my ability to plan ahead and organize.",
+                    "I am great at preventing bad consequences by preparation.",
+                    "I have a hard time with unexpected changes.",
+                    "I can often be rigid and stubborn.",
+                    
+                    "I am considered as spontaneous and somewhat impulsive.",
+                    "I often seek new experiences or possibilities.",
+                    "I easily adapt to new and novel information.",
+                    "One of my strengths is my flexibility and adaptability.",
+                    "I have a hard time focusing on one thing for a long time as I feel bored.",
+                    "I can come across as scattered and unprepared.",
+                    
+                    "I adjust myself to external expectations to contribute to others.",
+                    "I make decisions primarily based on external and objective factors.",
+                    "I am considered a natural teamplayer.",
+                    "I excel at adapting to my chosen group.",
+                    "I have a hard time actually knowing myself.",
+                    "I tend to devalue individuality either in myself or others."];
 
     if (test_status == 0) {
         test_status = 1;
@@ -38,127 +49,36 @@ function buttonclick(score) {
     current_question += 1;
     document.getElementById("question_number").innerHTML = "Question " + (current_question + 1);
     document.getElementById("Statement").innerHTML = questions[current_question];
-    if (current_question % 4 == 1){
-        cerebral = cerebral + score
+    if (current_question < 7){
+        IP = IP + score
     }
-    else if (current_question % 4 == 2){
-        left = left + score
+    else if (current_question < 13){
+        IJ = IJ + score
     }
-    else if (current_question % 4 == 3){
-        limbic = limbic + score
+    else if (current_question < 19){
+        EP = EP + score
     }
-    else if (current_question % 4 == 0){
-        right = right + score
+    else if (current_question < 25){
+        EJ = EJ + score
     }
 
     if (current_question > (questions.length - 1)){
         document.getElementById("question_number").style.display = "none";
         document.getElementById("Statement").innerHTML = "Finished!";
-        cerebrality = cerebral - limbic
-        rightness = right - left
-        if (cerebrality == 0) {
-            tiebreaker_c();
-        }
-        else if (rightness == 0) {
-            tiebreaker_r();
-        }
-        else {
-            get_result();
-        }
+        EP_IJ = IJ - EP;
+        EJ_IP = IP - EJ;
+        get_result();
     }
     
 }
 
-function tiebreaker_c() {
-    document.getElementById("test").style.display = "none";
-    document.getElementById("tiebreaker_c").style.display = "block";
-}
-
-function tiebreaker_r() {
-    document.getElementById("test").style.display = "none";
-    document.getElementById("tiebreaker_r").style.display = "block";
-}
-
-function tiebreakerclick_c(score) {
-    cerebrality += score;
-    document.getElementById("tiebreaker_c").style.display = "none";
-    if (rightness == 0) {
-        tiebreaker_r();
-    }
-    else {
-        get_result();
-    }
-}
-
-function tiebreakerclick_r(score) {
-    rightness += score;
-    document.getElementById("tiebreaker_r").style.display = "none";
-    get_result();
-}
-
 function get_result() {
-    document.getElementById("results").style.display = "block";
-    document.getElementById("result1").innerHTML = "Your cerebrality is " + cerebrality;
-    document.getElementById("result2").innerHTML = "Your rightness is " + rightness;
+    document.getElementById("results").style.display = "grid";
     document.getElementById("test").style.display = "none";
     document.getElementById("question_number").style.display = "none";
+    document.getElementById("EP_IJ").value = EP_IJ;
+    document.getElementById("EJ_IP").value = EJ_IP;
 
-    if (cerebrality > 8){
-        if (rightness > 8){
-            document.getElementById("result3").innerHTML = "You are a fascinator!";
-        }
-        else if (rightness <= 8 && rightness > 0){
-            document.getElementById("result3").innerHTML = "You are an inventor!";
-        }
-        else if (rightness >= -8 && rightness < 0){
-            document.getElementById("result3").innerHTML = "You are a scientist!";
-        }
-        else {
-            document.getElementById("result3").innerHTML = "You are a technician!";
-        }
-    }
-    else if (cerebrality <= 8 && cerebrality > 0){
-        if (rightness > 8){
-            document.getElementById("result3").innerHTML = "You are an adventurer!";
-        }
-        else if (rightness <= 8 && rightness > 0){
-            document.getElementById("result3").innerHTML = "You are an entrepreneur!";
-        }
-        else if (rightness >= -8 && rightness < 0){
-            document.getElementById("result3").innerHTML = "You are a professor!";
-        }
-        else {
-            document.getElementById("result3").innerHTML = "You are an architect!";
-        }
-    }
-    else if (cerebrality >= -8 && cerebrality < 0){
-        if (rightness > 8){
-            document.getElementById("result3").innerHTML = "You are an influencer!";
-        }
-        else if (rightness <= 8 && rightness > 0){
-            document.getElementById("result3").innerHTML = "You are a coach!";
-        }
-        else if (rightness >= -8 && rightness < 0){
-            document.getElementById("result3").innerHTML = "You are a go-getter!";
-        }
-        else {
-            document.getElementById("result3").innerHTML = "You are an inspector!";
-        }
-    }
-    else {
-        if (rightness > 8){
-            document.getElementById("result3").innerHTML = "You are an entertainer!";
-        }
-        else if (rightness <= 8 && rightness > 0){
-            document.getElementById("result3").innerHTML = "You are a caregiver!";
-        }
-        else if (rightness >= -8 && rightness < 0){
-            document.getElementById("result3").innerHTML = "You are a guardian!";
-        }
-        else {
-            document.getElementById("result3").innerHTML = "You are an administrator!";
-        }
-    }
 }
 
 
