@@ -4,6 +4,7 @@
         <link rel = "stylesheet" href = "style.css">
         <link rel = "stylesheet" href = "Similarity.css">
         <script src="Similarity.js"></script>
+        <script src="presets_characters.js"></script>
         <title>
             Character Comparison Tool
         </title>
@@ -111,11 +112,123 @@
          </div>
          <div class="main">
             <h2>Presets</h2>
-            <input type="button" class="auto_fill" onclick=autofill_1() value="Use the developer's trait scores!"><br><br>
-            <input type="button" class="auto_fill" onclick=autofill_2() value="Use the developer's trait scores!"><br><br>
-            <input type="button" class="auto_fill" onclick=autofill_3() value="Use the developer's trait scores!"><br><br>
-            <input type="button" class="auto_fill" onclick=autofill_4() value="Use the developer's trait scores!"><br><br>
-            <input type="button" class="auto_fill" onclick=autofill_5() value="Use the developer's trait scores!"><br><br>
-         </div>
+            <div class="Anime">
+                <h3>Anime</h3>
+                <input type="button" class="auto_fill" onclick=autofill_naruto() value="Naruto Uzumaki">
+                <input type="button" class="auto_fill" onclick=autofill_sasuke() value="Sasuke Uchiha">
+                <input type="button" class="auto_fill" onclick=autofill_shinji() value="Shinji Ikari">
+                <input type="button" class="auto_fill" onclick=autofill_eren() value="Eren Yeager">
+            </div>
+            <div class="scientists">
+                <h3>Scientists and Philosophers</h3>
+                <input type="button" class="auto_fill" onclick=autofill_socrates() value="Socrates">
+                <input type="button" class="auto_fill" onclick=autofill_plato() value="Plato">
+                <input type="button" class="auto_fill" onclick=autofill_einstein() value="Albert Einstein">
+                <input type="button" class="auto_fill" onclick=autofill_newton() value="Isaac Newton">
+                <input type="button" class="auto_fill" onclick=autofill_tesla() value="Nikola Tesla">
+                <input type="button" class="auto_fill" onclick=autofill_avicenna() value="Avicenna">
+                <input type="button" class="auto_fill" onclick=autofill_pasteur() value="Louis Pasteur">
+                <input type="button" class="auto_fill" onclick=autofill_da_vinci() value="Leonardo Da Vinci">
+                <input type="button" class="auto_fill" onclick=autofill_curie() value="Marie Curie">
+            </div>
+            <div class="leaders">
+                <h3>World Leaders</h3>
+                <input type="button" class="auto_fill" onclick=autofill_ataturk() value="Mustafa Kemal Atatürk">
+                <input type="button" class="auto_fill" onclick=autofill_washington() value="George Washington">
+                <input type="button" class="auto_fill" onclick=autofill_lincoln() value="Abraham Lincoln">
+            </div>
+            <div class="Artists">
+                <h3>Artists</h3>
+                <input type="button" class="auto_fill" onclick=autofill_vivaldi() value="Antonio Vivaldi">
+                <input type="button" class="auto_fill" onclick=autofill_beethoven() value="Ludwig Van Beethoven">
+                <input type="button" class="auto_fill" onclick=autofill_mj() value="Michael Jackson">
+                <input type="button" class="auto_fill" onclick=autofill_weeknd() value="The Weeknd">
+                <input type="button" class="auto_fill" onclick=autofill_lennon() value="John Lennon">
+                <input type="button" class="auto_fill" onclick=autofill_ts() value="Taylor Swift">
+                <input type="button" class="auto_fill" onclick=autofill_kd() value="Kenan Doğulu">
+            </div>
+            <div class="sport">
+                <h3>Athletes</h3>
+                <input type="button" class="auto_fill" onclick=autofill_jordan() value="Michael Jordan">
+                <input type="button" class="auto_fill" onclick=autofill_messi() value="Lionel Messi">
+                <input type="button" class="auto_fill" onclick=autofill_phelps() value="Michael Phelps">
+                <input type="button" class="auto_fill" onclick=autofill_karakurt() value="Ebrar Karakurt">
+                <input type="button" class="auto_fill" onclick=autofill_mg() value="Mete Gazoz">
+            </div>
+            <div class="social">
+                <h3>Social Media Personalities</h3>
+                <input type="button" class="auto_fill" onclick=autofill_pwd() value="PewDiePie">
+                <input type="button" class="auto_fill" onclick=autofill_mrbeast() value="MrBeast">
+                <input type="button" class="auto_fill" onclick=autofill_saniye() value="Saniye">
+                <input type="button" class="auto_fill" onclick=autofill_vsauce() value="Vsauce">
+                <input type="button" class="auto_fill" onclick=autofill_mkbhd() value="Marques Brownlee">
+                <input type="button" class="auto_fill" onclick=autofill_ea() value="Evrim Ağacı">
+            </div>
+            <div class="hero">
+                <h3>Superheroes</h3>
+                <input type="button" class="auto_fill" onclick=autofill_thor() value="Thor">
+                <input type="button" class="auto_fill" onclick=autofill_spider_man() value="Spider-Man">
+                <input type="button" class="auto_fill" onclick=autofill_iron_man() value="Iron Man">
+                <input type="button" class="auto_fill" onclick=autofill_flash() value="Flash">
+            </div>
+            <div class="game">
+                <h3>Video Game Characters</h3>
+                <input type="button" class="auto_fill" onclick=autofill_freminet() value="Freminet">
+                <input type="button" class="auto_fill" onclick=autofill_steve() value="Steve">
+                <input type="button" class="auto_fill" onclick=autofill_enderman() value="Enderman">
+                <input type="button" class="auto_fill" onclick=autofill_fc() value="Franklin Clinton">
+                <input type="button" class="auto_fill" onclick=autofill_vm() value="Vladimir Makarov">
+                <input type="button" class="auto_fill" onclick=autofill_sans() value="Sans">
+            </div>
+            <div class="cartoons">
+                <h3>Cartoon Characters</h3>
+                <input type="button" class="auto_fill" onclick=autofill_gtc() value="Garfield The Cat">
+                <input type="button" class="auto_fill" onclick=autofill_rick() value="Rick Sanchez">
+                <input type="button" class="auto_fill" onclick=autofill_morty() value="Morty Smith">
+                <input type="button" class="auto_fill" onclick=autofill_cb() value="Charlie Brown">
+            </div>
+            <div class="Animals">
+                <h3>Animals</h3>
+                <input type="button" class="auto_fill" onclick=autofill_cat() value="Cat">
+                <input type="button" class="auto_fill" onclick=autofill_dog() value="Dog">
+                <input type="button" class="auto_fill" onclick=autofill_dolphin() value="Dolphin">
+                <input type="button" class="auto_fill" onclick=autofill_monkey() value="Monkey">
+                <input type="button" class="auto_fill" onclick=autofill_lion() value="Lion">
+                <input type="button" class="auto_fill" onclick=autofill_bear() value="Bear">
+                <input type="button" class="auto_fill" onclick=autofill_eagle() value="Eagle">
+                <input type="button" class="auto_fill" onclick=autofill_butterfly() value="Butterfly">
+                <input type="button" class="auto_fill" onclick=autofill_bat() value="Bat">
+            </div>
+            <div class="obj">
+                <h3>Objects</h3>
+                <input type="button" class="auto_fill" onclick=autofill_rubik() value="Rubik's Cube">
+                <input type="button" class="auto_fill" onclick=autofill_ipad() value="iPad Pro">
+                <input type="button" class="auto_fill" onclick=autofill_espresso() value="Espresso Machine">
+                <input type="button" class="auto_fill" onclick=autofill_headphones() value="Headphones">
+                <input type="button" class="auto_fill" onclick=autofill_lb() value="Light Bulb">
+            </div>
+            <div class="misc">
+                <h3>Miscellaneous</h3>
+                <input type="button" class="auto_fill" onclick=autofill_chatgpt() value="ChatGPT">
+            </div>
+            <div class="pt">
+                <h3>Personality Types</h3>
+                <input type="button" class="auto_fill" onclick=autofill_1() value="ISTJ">
+                <input type="button" class="auto_fill" onclick=autofill_2() value="ISFJ">
+                <input type="button" class="auto_fill" onclick=autofill_3() value="INFJ">
+                <input type="button" class="auto_fill" onclick=autofill_4() value="INTJ">
+                <input type="button" class="auto_fill" onclick=autofill_5() value="ISTP">
+                <input type="button" class="auto_fill" onclick=autofill_6() value="ISFP">
+                <input type="button" class="auto_fill" onclick=autofill_7() value="INFP">
+                <input type="button" class="auto_fill" onclick=autofill_8() value="INTP">
+                <input type="button" class="auto_fill" onclick=autofill_9() value="ESTP">
+                <input type="button" class="auto_fill" onclick=autofill_10() value="ESFP">
+                <input type="button" class="auto_fill" onclick=autofill_11() value="ENFP">
+                <input type="button" class="auto_fill" onclick=autofill_12() value="ENTP">
+                <input type="button" class="auto_fill" onclick=autofill_13() value="ESTJ">
+                <input type="button" class="auto_fill" onclick=autofill_14() value="ESFJ">
+                <input type="button" class="auto_fill" onclick=autofill_15() value="ENFJ">
+                <input type="button" class="auto_fill" onclick=autofill_16() value="ENTJ">
+            </div>
     </body>
 </html>
