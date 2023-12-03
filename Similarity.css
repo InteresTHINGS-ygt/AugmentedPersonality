@@ -13,3 +13,32 @@ input[type="button"] {
 .slider::-moz-range-thumb {
     background-color: rgb(32, 160, 160);
 }
+
+@media only screen and (min-width: 1200px) {
+    .grand {
+        display: grid;
+        grid-template-columns: auto 550px auto;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    div.main {
+        width: auto;
+        max-width: 550px;
+    }
+
+    div.desc {
+        order: 1;
+    } 
+
+    div.main_col {
+        order: 2;
+        display: flex;
+        flex-direction: column;
+        width: 550px
+    }
+
+    div.presets {
+        order: 3;
+    }
+}
