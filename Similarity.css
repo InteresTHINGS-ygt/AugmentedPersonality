@@ -25,6 +25,8 @@ input[type="button"] {
     div.main {
         width: auto;
         max-width: 550px;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
 
     div.desc {
@@ -35,7 +37,7 @@ input[type="button"] {
         order: 2;
         display: flex;
         flex-direction: column;
-        width: 550px
+        width: 550px;
     }
 
     div.presets {
