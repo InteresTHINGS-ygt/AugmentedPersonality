@@ -14,7 +14,7 @@ input[type="button"] {
     background-color: rgb(32, 160, 160);
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1000px) {
     .grand {
         display: grid;
         grid-template-columns: auto 550px auto;
