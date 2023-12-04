@@ -65,20 +65,23 @@ function buttonclick(score) {
     if (current_question > (questions.length - 1)){
         document.getElementById("question_number").style.display = "none";
         document.getElementById("Statement").innerHTML = "Finished!";
-        EP_IJ = IJ - EP;
-        EJ_IP = IP - EJ;
+        IP  = (IP/30) * 100;
+        IJ  = (IJ/30) * 100;
+        EP  = (EP/30) * 100;
+        EJ  = (EJ/30) * 100;
         get_result();
     }
     
 }
 
 function get_result() {
-    document.getElementById("results").style.display = "grid";
+    document.getElementById("results").style.display = "block";
     document.getElementById("test").style.display = "none";
     document.getElementById("question_number").style.display = "none";
-    document.getElementById("EP_IJ").value = EP_IJ;
-    document.getElementById("EJ_IP").value = EJ_IP;
-
+    document.getElementById("IP").innerHTML = "Individualist - IxxP: " + IP;
+    document.getElementById("IJ").innerHTML = "Builder - IxxJ: " + IJ;
+    document.getElementById("EP").innerHTML = "Explorer - ExxP: " + EP;
+    document.getElementById("EJ").innerHTML = "Teamplayer - ExxJ: " + EJ;
 }
 
 
