@@ -29,6 +29,10 @@ input[type="button"] {
         margin-bottom: 10px;
     }
 
+    div.main_col {
+        max-width: 500px;
+    }
+
     div.desc {
         order: 1;
     } 
