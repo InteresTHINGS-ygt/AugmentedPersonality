@@ -553,3 +553,48 @@ CPTI Temperament questions
 
 
 
+Now, time for progress log:
+
+Character Comparison Tool 
+* It's nearly done, just presets need to be inserted
+* Maybe MBTI + Enneagram option?
+* Multi comparison feature?
+
+HBNT
+* Graphical results and descriptions needed
+
+Business Chemistry
+* Full results needed + descriptions
+
+Medical Suitability
+* Pretty much done
+
+META
+* This is for fun so I call this done, just descriptions
+
+OSPI
+* Maybe an axial system?
+
+Four Humors
+* Descriptions needed
+
+CreatorStyle
+* Descriptions needed again
+
+CPTI
+* The test will just get an overhaul.
+
+Enneagram Tests
+* More tests will be added
+
+Big Five
+* Big updates coming soon. Here are some of them:
+* Predictions based on your personality (Music taste, majors, health, lifestyle, etc.)
+* Typology finder, estimator, elimination tool, etc.
+* More contextual, specific, and predictive questions
+* Export to character comparison tool
+* Personalized Descriptions
+
+Other tests will be added as well.
+
+
