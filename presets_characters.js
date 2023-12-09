@@ -1095,127 +1095,127 @@ function autofill_entj() {
 }
 
 function autofill_1() {
-    document.getElementById("oth_name").value = "Golden Retriever"
-    document.getElementById("int_oth").value = 88;
-    document.getElementById("opn_oth").value = 70;
-    document.getElementById("ind_oth").value = 33;
-    document.getElementById("ord_oth").value = 38;
-    document.getElementById("ent_oth").value = 48;
-    document.getElementById("asr_oth").value = 43;
-    document.getElementById("com_oth").value = 50;
-    document.getElementById("pol_oth").value = 75;
-    document.getElementById("wtd_oth").value = 88;
-    document.getElementById("vol_oth").value = 65;
+    document.getElementById("oth_name").value = "Enneagram 1"
+    document.getElementById("int_oth").value = 60;
+    document.getElementById("opn_oth").value = 16;
+    document.getElementById("ind_oth").value = 90;
+    document.getElementById("ord_oth").value = 95;
+    document.getElementById("ent_oth").value = 20;
+    document.getElementById("asr_oth").value = 61;
+    document.getElementById("com_oth").value = 30;
+    document.getElementById("pol_oth").value = 67;
+    document.getElementById("wtd_oth").value = 70;
+    document.getElementById("vol_oth").value = 77;
 }
 
 function autofill_2() {
-    document.getElementById("oth_name").value = "Golden Retriever"
-    document.getElementById("int_oth").value = 88;
-    document.getElementById("opn_oth").value = 70;
-    document.getElementById("ind_oth").value = 33;
-    document.getElementById("ord_oth").value = 38;
-    document.getElementById("ent_oth").value = 48;
-    document.getElementById("asr_oth").value = 43;
-    document.getElementById("com_oth").value = 50;
-    document.getElementById("pol_oth").value = 75;
-    document.getElementById("wtd_oth").value = 88;
+    document.getElementById("oth_name").value = "Enneagram 2"
+    document.getElementById("int_oth").value = 24;
+    document.getElementById("opn_oth").value = 58;
+    document.getElementById("ind_oth").value = 67;
+    document.getElementById("ord_oth").value = 64;
+    document.getElementById("ent_oth").value = 90;
+    document.getElementById("asr_oth").value = 70;
+    document.getElementById("com_oth").value = 92;
+    document.getElementById("pol_oth").value = 35;
+    document.getElementById("wtd_oth").value = 55;
     document.getElementById("vol_oth").value = 65;
 }
 
 function autofill_3() {
-    document.getElementById("oth_name").value = "Golden Retriever"
-    document.getElementById("int_oth").value = 88;
-    document.getElementById("opn_oth").value = 70;
-    document.getElementById("ind_oth").value = 33;
-    document.getElementById("ord_oth").value = 38;
-    document.getElementById("ent_oth").value = 48;
-    document.getElementById("asr_oth").value = 43;
-    document.getElementById("com_oth").value = 50;
-    document.getElementById("pol_oth").value = 75;
-    document.getElementById("wtd_oth").value = 88;
-    document.getElementById("vol_oth").value = 65;
+    document.getElementById("oth_name").value = "Enneagram 3"
+    document.getElementById("int_oth").value = 55;
+    document.getElementById("opn_oth").value = 57;
+    document.getElementById("ind_oth").value = 87;
+    document.getElementById("ord_oth").value = 63;
+    document.getElementById("ent_oth").value = 72;
+    document.getElementById("asr_oth").value = 84;
+    document.getElementById("com_oth").value = 22;
+    document.getElementById("pol_oth").value = 16;
+    document.getElementById("wtd_oth").value = 40;
+    document.getElementById("vol_oth").value = 32;
 }
 
 function autofill_4() {
-    document.getElementById("oth_name").value = "Golden Retriever"
-    document.getElementById("int_oth").value = 88;
-    document.getElementById("opn_oth").value = 70;
-    document.getElementById("ind_oth").value = 33;
-    document.getElementById("ord_oth").value = 38;
-    document.getElementById("ent_oth").value = 48;
-    document.getElementById("asr_oth").value = 43;
+    document.getElementById("oth_name").value = "Enneagram 4"
+    document.getElementById("int_oth").value = 67;
+    document.getElementById("opn_oth").value = 88;
+    document.getElementById("ind_oth").value = 27;
+    document.getElementById("ord_oth").value = 24;
+    document.getElementById("ent_oth").value = 22;
+    document.getElementById("asr_oth").value = 23;
     document.getElementById("com_oth").value = 50;
-    document.getElementById("pol_oth").value = 75;
-    document.getElementById("wtd_oth").value = 88;
-    document.getElementById("vol_oth").value = 65;
+    document.getElementById("pol_oth").value = 20;
+    document.getElementById("wtd_oth").value = 86;
+    document.getElementById("vol_oth").value = 80;
 }
 
 function autofill_5() {
-    document.getElementById("oth_name").value = "Golden Retriever"
-    document.getElementById("int_oth").value = 88;
-    document.getElementById("opn_oth").value = 70;
-    document.getElementById("ind_oth").value = 33;
-    document.getElementById("ord_oth").value = 38;
-    document.getElementById("ent_oth").value = 48;
-    document.getElementById("asr_oth").value = 43;
-    document.getElementById("com_oth").value = 50;
-    document.getElementById("pol_oth").value = 75;
-    document.getElementById("wtd_oth").value = 88;
-    document.getElementById("vol_oth").value = 65;
+    document.getElementById("oth_name").value = "Enneagram 5"
+    document.getElementById("int_oth").value = 90;
+    document.getElementById("opn_oth").value = 62;
+    document.getElementById("ind_oth").value = 29;
+    document.getElementById("ord_oth").value = 70;
+    document.getElementById("ent_oth").value = 12;
+    document.getElementById("asr_oth").value = 18;
+    document.getElementById("com_oth").value = 10;
+    document.getElementById("pol_oth").value = 23;
+    document.getElementById("wtd_oth").value = 78;
+    document.getElementById("vol_oth").value = 27;
 }
 
 function autofill_6() {
-    document.getElementById("oth_name").value = "Golden Retriever"
-    document.getElementById("int_oth").value = 88;
-    document.getElementById("opn_oth").value = 70;
-    document.getElementById("ind_oth").value = 33;
-    document.getElementById("ord_oth").value = 38;
-    document.getElementById("ent_oth").value = 48;
-    document.getElementById("asr_oth").value = 43;
+    document.getElementById("oth_name").value = "Enneagram 6"
+    document.getElementById("int_oth").value = 68;
+    document.getElementById("opn_oth").value = 39;
+    document.getElementById("ind_oth").value = 64;
+    document.getElementById("ord_oth").value = 72;
+    document.getElementById("ent_oth").value = 40;
+    document.getElementById("asr_oth").value = 38;
     document.getElementById("com_oth").value = 50;
-    document.getElementById("pol_oth").value = 75;
-    document.getElementById("wtd_oth").value = 88;
-    document.getElementById("vol_oth").value = 65;
+    document.getElementById("pol_oth").value = 65;
+    document.getElementById("wtd_oth").value = 90;
+    document.getElementById("vol_oth").value = 76;
 }
 
 function autofill_7() {
-    document.getElementById("oth_name").value = "Golden Retriever"
-    document.getElementById("int_oth").value = 88;
-    document.getElementById("opn_oth").value = 70;
-    document.getElementById("ind_oth").value = 33;
-    document.getElementById("ord_oth").value = 38;
-    document.getElementById("ent_oth").value = 48;
-    document.getElementById("asr_oth").value = 43;
-    document.getElementById("com_oth").value = 50;
-    document.getElementById("pol_oth").value = 75;
-    document.getElementById("wtd_oth").value = 88;
-    document.getElementById("vol_oth").value = 65;
+    document.getElementById("oth_name").value = "Enneagram 7"
+    document.getElementById("int_oth").value = 75;
+    document.getElementById("opn_oth").value = 92;
+    document.getElementById("ind_oth").value = 22;
+    document.getElementById("ord_oth").value = 12;
+    document.getElementById("ent_oth").value = 93;
+    document.getElementById("asr_oth").value = 69;
+    document.getElementById("com_oth").value = 30;
+    document.getElementById("pol_oth").value = 50;
+    document.getElementById("wtd_oth").value = 35;
+    document.getElementById("vol_oth").value = 50;
 }
 
 function autofill_8() {
-    document.getElementById("oth_name").value = "Golden Retriever"
-    document.getElementById("int_oth").value = 88;
-    document.getElementById("opn_oth").value = 70;
-    document.getElementById("ind_oth").value = 33;
-    document.getElementById("ord_oth").value = 38;
-    document.getElementById("ent_oth").value = 48;
-    document.getElementById("asr_oth").value = 43;
-    document.getElementById("com_oth").value = 50;
-    document.getElementById("pol_oth").value = 75;
-    document.getElementById("wtd_oth").value = 88;
-    document.getElementById("vol_oth").value = 65;
+    document.getElementById("oth_name").value = "Enneagram 8"
+    document.getElementById("int_oth").value = 37;
+    document.getElementById("opn_oth").value = 67;
+    document.getElementById("ind_oth").value = 77;
+    document.getElementById("ord_oth").value = 30;
+    document.getElementById("ent_oth").value = 50;
+    document.getElementById("asr_oth").value = 94;
+    document.getElementById("com_oth").value = 32;
+    document.getElementById("pol_oth").value = 10;
+    document.getElementById("wtd_oth").value = 23;
+    document.getElementById("vol_oth").value = 69;
 }
 
 function autofill_9() {
-    document.getElementById("oth_name").value = "Golden Retriever"
-    document.getElementById("int_oth").value = 88;
-    document.getElementById("opn_oth").value = 70;
-    document.getElementById("ind_oth").value = 33;
-    document.getElementById("ord_oth").value = 38;
-    document.getElementById("ent_oth").value = 48;
-    document.getElementById("asr_oth").value = 43;
-    document.getElementById("com_oth").value = 50;
-    document.getElementById("pol_oth").value = 75;
-    document.getElementById("wtd_oth").value = 88;
-    document.getElementById("vol_oth").value = 65;
+    document.getElementById("oth_name").value = "Enneagram 9"
+    document.getElementById("int_oth").value = 40;
+    document.getElementById("opn_oth").value = 55;
+    document.getElementById("ind_oth").value = 20;
+    document.getElementById("ord_oth").value = 24;
+    document.getElementById("ent_oth").value = 42;
+    document.getElementById("asr_oth").value = 11;
+    document.getElementById("com_oth").value = 79;
+    document.getElementById("pol_oth").value = 94;
+    document.getElementById("wtd_oth").value = 45;
+    document.getElementById("vol_oth").value = 30;
 }
