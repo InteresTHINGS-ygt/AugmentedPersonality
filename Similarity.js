@@ -204,5 +204,56 @@ function log() {
     else {
         document.getElementById("Similarity_d").innerHTML = you_name + " is " + Math.round(final_sim) + "% similar to " + oth_name + "!";
     }
-}
 
+    document.getElementById("light_1").style = "background-color: rgb(60, 60, 60)"
+    document.getElementById("light_2").style = "background-color: rgb(60, 60, 60)"
+    document.getElementById("light_3").style = "background-color: rgb(60, 60, 60)"
+    document.getElementById("light_4").style = "background-color: rgb(60, 60, 60)"
+    document.getElementById("light_5").style = "background-color: rgb(60, 60, 60)"
+    document.getElementById("light_6").style = "background-color: rgb(60, 60, 60)"
+
+    document.getElementById("light_7").style = "background-color: rgb(60, 60, 60)"
+    document.getElementById("light_8").style = "background-color: rgb(60, 60, 60)"
+    document.getElementById("light_9").style = "background-color: rgb(60, 60, 60)"
+    document.getElementById("light_10").style = "background-color: rgb(60, 60, 60)"
+    document.getElementById("light_11").style = "background-color: rgb(60, 60, 60)"
+    document.getElementById("light_12").style = "background-color: rgb(60, 60, 60)"
+    
+
+    if (final_sim > 10) {
+        document.getElementById("light_1").style = "background-color: rgb(14, 117, 0)"
+    }
+    if (final_sim > 20) {
+        document.getElementById("light_2").style = "background-color: rgb(14, 117, 0)"
+    }
+    if (final_sim > 30) {
+        document.getElementById("light_3").style = "background-color: rgb(14, 117, 0)"
+    }
+    if (final_sim > 40) {
+        document.getElementById("light_4").style = "background-color: rgb(14, 117, 0)"
+    }
+    if (final_sim > 50) {
+        document.getElementById("light_5").style = "background-color: rgb(255, 140, 0)"
+    }
+    if (final_sim > 55) {
+        document.getElementById("light_6").style = "background-color: rgb(255, 140, 0)"
+    }
+    if (final_sim > 60) {
+        document.getElementById("light_7").style = "background-color: rgb(255, 140, 0)"
+    }
+    if (final_sim > 65) {
+        document.getElementById("light_8").style = "background-color: rgb(255, 140, 0)"
+    }
+    if (final_sim > 70) {
+        document.getElementById("light_9").style = "background-color: rgb(255, 0, 0)"
+    }
+    if (final_sim > 75) {
+        document.getElementById("light_10").style = "background-color: rgb(255, 0, 0)"
+    }
+    if (final_sim > 80) {
+        document.getElementById("light_11").style = "background-color: rgb(255, 0, 0)"
+    }
+    if (final_sim > 85) {
+        document.getElementById("light_12").style = "background-color: rgb(255, 0, 0)"
+    }
+}

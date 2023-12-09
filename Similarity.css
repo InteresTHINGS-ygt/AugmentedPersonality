@@ -14,6 +14,23 @@ input[type="button"] {
     background-color: rgb(32, 160, 160);
 }
 
+.indicator_lights {
+    display: flex;
+    gap: 1.5vw;
+    justify-content: center;
+    background-color: rgb(10, 10, 10);
+    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
+    padding: 2vw;
+    border-radius: 1.5vw;;
+}
+
+.light {
+    background-color: rgb(60, 60, 60);
+    width: 5vw;
+    height: 3vw;
+    border-radius: 1vw;
+}
+
 @media only screen and (min-width: 1000px) {
     .grand {
         display: grid;
