@@ -186,6 +186,15 @@ function get_result() {
             document.getElementById("result3").innerHTML = "You are an administrator!";
         }
     }
+
+    var cerebrality_percentage = Math.round(((cerebrality + 16)/32) * 100);
+    var rightness_percentage = Math.round(((rightness + 16)/32) * 100);
+
+    var cp = cerebrality_percentage + "%";
+    var rp = rightness_percentage + "%";
+
+    document.getElementById("point").style.bottom = cp;
+    document.getElementById("point").style.left = rp;
 }
 
 
