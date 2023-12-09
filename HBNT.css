@@ -134,6 +134,26 @@ input[type="button"] {
         width: 100%;
         text-align: center;
     }
+
+    .Technician {
+        background-color: rgb(0, 102, 255);
+        border-radius: 10px 0 0 0;
+    }
+
+    .Fascinator {
+        background-color: rgb(255, 187, 0);
+        border-radius: 0 10px 0 0;
+    }
+
+    .Administrator {
+        background-color: rgb(0, 182, 15);
+        border-radius: 0 0 0 10px;
+    }
+
+    .Entertainer {
+        background-color: rgb(255, 0, 0);
+        border-radius: 0 0 10px 0;
+    }
 }
 
 
