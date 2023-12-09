@@ -1,5 +1,5 @@
 // Anime
-function autofill_naruto() {
+/*function autofill_naruto() {
     document.getElementById("oth_name").value = "Naruto Uzumaki"
     document.getElementById("int_oth").value = 88;
     document.getElementById("opn_oth").value = 70;
@@ -869,7 +869,7 @@ function autofill_chatgpt() {
     document.getElementById("vol_oth").value = 65;
 }
 
-// Personality Types
+// Personality Types*/
 function autofill_istj() {
     document.getElementById("oth_name").value = "ISTJ"
     document.getElementById("int_oth").value = 50;
