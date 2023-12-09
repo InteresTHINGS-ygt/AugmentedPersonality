@@ -972,126 +972,126 @@ function autofill_intp() {
     document.getElementById("oth_name").value = "INTP"
     document.getElementById("int_oth").value = 90;
     document.getElementById("opn_oth").value = 72;
-    document.getElementById("ind_oth").value = 8;
-    document.getElementById("ord_oth").value = 30;
-    document.getElementById("ent_oth").value = 24;
-    document.getElementById("asr_oth").value = 22;
-    document.getElementById("com_oth").value = 16;
-    document.getElementById("pol_oth").value = 32;
-    document.getElementById("wtd_oth").value = 58;
-    document.getElementById("vol_oth").value = 54;
+    document.getElementById("ind_oth").value = 10;
+    document.getElementById("ord_oth").value = 27;
+    document.getElementById("ent_oth").value = 20;
+    document.getElementById("asr_oth").value = 13;
+    document.getElementById("com_oth").value = 20;
+    document.getElementById("pol_oth").value = 40;
+    document.getElementById("wtd_oth").value = 56;
+    document.getElementById("vol_oth").value = 57;
 }
 
 function autofill_estp() {
     document.getElementById("oth_name").value = "ESTP"
-    document.getElementById("int_oth").value = 25;
-    document.getElementById("opn_oth").value = 45;
-    document.getElementById("ind_oth").value = 50;
-    document.getElementById("ord_oth").value = 18;
-    document.getElementById("ent_oth").value = 48;
-    document.getElementById("asr_oth").value = 43;
-    document.getElementById("com_oth").value = 50;
-    document.getElementById("pol_oth").value = 75;
-    document.getElementById("wtd_oth").value = 88;
-    document.getElementById("vol_oth").value = 65;
+    document.getElementById("int_oth").value = 28;
+    document.getElementById("opn_oth").value = 40;
+    document.getElementById("ind_oth").value = 60;
+    document.getElementById("ord_oth").value = 21;
+    document.getElementById("ent_oth").value = 81;
+    document.getElementById("asr_oth").value = 80;
+    document.getElementById("com_oth").value = 27;
+    document.getElementById("pol_oth").value = 22;
+    document.getElementById("wtd_oth").value = 40;
+    document.getElementById("vol_oth").value = 50;
 }
 
 function autofill_esfp() {
     document.getElementById("oth_name").value = "ESFP"
-    document.getElementById("int_oth").value = 19;
-    document.getElementById("opn_oth").value = 70;
-    document.getElementById("ind_oth").value = 33;
-    document.getElementById("ord_oth").value = 38;
-    document.getElementById("ent_oth").value = 48;
-    document.getElementById("asr_oth").value = 43;
-    document.getElementById("com_oth").value = 50;
-    document.getElementById("pol_oth").value = 75;
-    document.getElementById("wtd_oth").value = 88;
-    document.getElementById("vol_oth").value = 65;
+    document.getElementById("int_oth").value = 16;
+    document.getElementById("opn_oth").value = 55;
+    document.getElementById("ind_oth").value = 39;
+    document.getElementById("ord_oth").value = 24;
+    document.getElementById("ent_oth").value = 87;
+    document.getElementById("asr_oth").value = 67;
+    document.getElementById("com_oth").value = 72;
+    document.getElementById("pol_oth").value = 50;
+    document.getElementById("wtd_oth").value = 50;
+    document.getElementById("vol_oth").value = 56;
 }
 
 function autofill_enfp() {
-    document.getElementById("oth_name").value = "Golden Retriever"
-    document.getElementById("int_oth").value = 88;
-    document.getElementById("opn_oth").value = 70;
-    document.getElementById("ind_oth").value = 33;
-    document.getElementById("ord_oth").value = 38;
-    document.getElementById("ent_oth").value = 48;
-    document.getElementById("asr_oth").value = 43;
-    document.getElementById("com_oth").value = 50;
-    document.getElementById("pol_oth").value = 75;
-    document.getElementById("wtd_oth").value = 88;
-    document.getElementById("vol_oth").value = 65;
+    document.getElementById("oth_name").value = "ENFP"
+    document.getElementById("int_oth").value = 70;
+    document.getElementById("opn_oth").value = 90;
+    document.getElementById("ind_oth").value = 35;
+    document.getElementById("ord_oth").value = 20;
+    document.getElementById("ent_oth").value = 84;
+    document.getElementById("asr_oth").value = 64;
+    document.getElementById("com_oth").value = 78;
+    document.getElementById("pol_oth").value = 56;
+    document.getElementById("wtd_oth").value = 47;
+    document.getElementById("vol_oth").value = 54;
 }
 
 function autofill_entp() {
-    document.getElementById("oth_name").value = "Golden Retriever"
-    document.getElementById("int_oth").value = 88;
-    document.getElementById("opn_oth").value = 70;
-    document.getElementById("ind_oth").value = 33;
-    document.getElementById("ord_oth").value = 38;
-    document.getElementById("ent_oth").value = 48;
-    document.getElementById("asr_oth").value = 43;
-    document.getElementById("com_oth").value = 50;
-    document.getElementById("pol_oth").value = 75;
-    document.getElementById("wtd_oth").value = 88;
-    document.getElementById("vol_oth").value = 65;
+    document.getElementById("oth_name").value = "ENTP"
+    document.getElementById("int_oth").value = 87;
+    document.getElementById("opn_oth").value = 88;
+    document.getElementById("ind_oth").value = 48;
+    document.getElementById("ord_oth").value = 17;
+    document.getElementById("ent_oth").value = 78;
+    document.getElementById("asr_oth").value = 78;
+    document.getElementById("com_oth").value = 30;
+    document.getElementById("pol_oth").value = 26;
+    document.getElementById("wtd_oth").value = 38;
+    document.getElementById("vol_oth").value = 50;
 }
 
 function autofill_estj() {
-    document.getElementById("oth_name").value = "Golden Retriever"
-    document.getElementById("int_oth").value = 88;
-    document.getElementById("opn_oth").value = 70;
-    document.getElementById("ind_oth").value = 33;
-    document.getElementById("ord_oth").value = 38;
-    document.getElementById("ent_oth").value = 48;
-    document.getElementById("asr_oth").value = 43;
-    document.getElementById("com_oth").value = 50;
-    document.getElementById("pol_oth").value = 75;
-    document.getElementById("wtd_oth").value = 88;
-    document.getElementById("vol_oth").value = 65;
+    document.getElementById("oth_name").value = "ESTJ"
+    document.getElementById("int_oth").value = 40;
+    document.getElementById("opn_oth").value = 20;
+    document.getElementById("ind_oth").value = 92;
+    document.getElementById("ord_oth").value = 89;
+    document.getElementById("ent_oth").value = 50;
+    document.getElementById("asr_oth").value = 87;
+    document.getElementById("com_oth").value = 25;
+    document.getElementById("pol_oth").value = 28;
+    document.getElementById("wtd_oth").value = 42;
+    document.getElementById("vol_oth").value = 45;
 }
 
 function autofill_esfj() {
-    document.getElementById("oth_name").value = "Golden Retriever"
-    document.getElementById("int_oth").value = 88;
-    document.getElementById("opn_oth").value = 70;
-    document.getElementById("ind_oth").value = 33;
-    document.getElementById("ord_oth").value = 38;
-    document.getElementById("ent_oth").value = 48;
-    document.getElementById("asr_oth").value = 43;
-    document.getElementById("com_oth").value = 50;
-    document.getElementById("pol_oth").value = 75;
-    document.getElementById("wtd_oth").value = 88;
-    document.getElementById("vol_oth").value = 65;
+    document.getElementById("oth_name").value = "ESFJ"
+    document.getElementById("int_oth").value = 14;
+    document.getElementById("opn_oth").value = 24;
+    document.getElementById("ind_oth").value = 75;
+    document.getElementById("ord_oth").value = 69;
+    document.getElementById("ent_oth").value = 86;
+    document.getElementById("asr_oth").value = 72;
+    document.getElementById("com_oth").value = 84;
+    document.getElementById("pol_oth").value = 73;
+    document.getElementById("wtd_oth").value = 50;
+    document.getElementById("vol_oth").value = 50;
 }
 
 function autofill_enfj() {
-    document.getElementById("oth_name").value = "Golden Retriever"
-    document.getElementById("int_oth").value = 88;
-    document.getElementById("opn_oth").value = 70;
-    document.getElementById("ind_oth").value = 33;
-    document.getElementById("ord_oth").value = 38;
-    document.getElementById("ent_oth").value = 48;
-    document.getElementById("asr_oth").value = 43;
-    document.getElementById("com_oth").value = 50;
-    document.getElementById("pol_oth").value = 75;
-    document.getElementById("wtd_oth").value = 88;
-    document.getElementById("vol_oth").value = 65;
+    document.getElementById("oth_name").value = "ENFJ"
+    document.getElementById("int_oth").value = 50;
+    document.getElementById("opn_oth").value = 85;
+    document.getElementById("ind_oth").value = 77;
+    document.getElementById("ord_oth").value = 58;
+    document.getElementById("ent_oth").value = 82;
+    document.getElementById("asr_oth").value = 77;
+    document.getElementById("com_oth").value = 88;
+    document.getElementById("pol_oth").value = 69;
+    document.getElementById("wtd_oth").value = 47;
+    document.getElementById("vol_oth").value = 50;
 }
 
 function autofill_entj() {
-    document.getElementById("oth_name").value = "Golden Retriever"
-    document.getElementById("int_oth").value = 88;
-    document.getElementById("opn_oth").value = 70;
-    document.getElementById("ind_oth").value = 33;
-    document.getElementById("ord_oth").value = 38;
-    document.getElementById("ent_oth").value = 48;
-    document.getElementById("asr_oth").value = 43;
-    document.getElementById("com_oth").value = 50;
-    document.getElementById("pol_oth").value = 75;
-    document.getElementById("wtd_oth").value = 88;
-    document.getElementById("vol_oth").value = 65;
+    document.getElementById("oth_name").value = "ENTJ"
+    document.getElementById("int_oth").value = 68;
+    document.getElementById("opn_oth").value = 50;
+    document.getElementById("ind_oth").value = 93;
+    document.getElementById("ord_oth").value = 85;
+    document.getElementById("ent_oth").value = 45;
+    document.getElementById("asr_oth").value = 88;
+    document.getElementById("com_oth").value = 23;
+    document.getElementById("pol_oth").value = 25;
+    document.getElementById("wtd_oth").value = 41;
+    document.getElementById("vol_oth").value = 48;
 }
 
 function autofill_1() {
