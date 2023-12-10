@@ -161,6 +161,15 @@ function get_result() {
             document.getElementById("result3").innerHTML = "You are an integrator!";
         }
     }
+    
+    var rapidity_percentage = Math.round(((rapidity + 20)/40) * 100);
+    var rightness_percentage = Math.round(((rightness + 20)/40) * 100);
+
+    var a = rapidity_percentage + "%";
+    var b = rightness_percentage + "%";
+
+    document.getElementById("point").style.bottom = a;
+    document.getElementById("point").style.left = b;
 }
 
 
