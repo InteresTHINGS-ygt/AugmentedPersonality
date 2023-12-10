@@ -17,6 +17,7 @@ input[type="button"] {
     height: 0.1vw;
     border-radius: 2vw;
     outline: rgb(0, 0, 0) solid 2vw;
+    background-color: black;
     bottom: 0%;
     left: 0%;
 }
