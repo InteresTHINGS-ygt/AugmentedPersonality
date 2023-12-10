@@ -40,7 +40,8 @@ input[type="button"] {
         box-shadow: 7px 7px 14px rgba(40, 37, 30, 0.2);
         padding: 10px;
         border-radius: 10px;
-        
+        max-width: 400px;
+        margin-left: 12%;
     }
     
     .light {
@@ -82,5 +83,9 @@ input[type="button"] {
 
     div.presets {
         order: 3;
+    }
+
+    .indicator_lights {
+        margin-left: 5.8%;
     }
 }
