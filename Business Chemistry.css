@@ -9,6 +9,8 @@ input[type="button"] {
 .visual_container {
     margin: 3.5vw;
     position: relative;
+    border-radius: 2vw;
+    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.4);
 }
 
 .point {
@@ -44,6 +46,8 @@ input[type="button"] {
     .visual_container {
         margin: 26px;
         position: relative;
+        border-radius: 10px;
+        box-shadow: 7px 7px 14px rgba(40, 37, 30, 0.4);
     }
     
     .point {

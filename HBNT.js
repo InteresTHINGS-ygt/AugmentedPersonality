@@ -99,26 +99,26 @@ function tiebreakerclick_r(score) {
 }
 
 function get_result() {
-    if (cerebrality > 8){
+    if (cerebrality > 6){
         cereb_status = "Very Cerebral"
     }
     else if (cerebrality > 0){
         cereb_status = "Fairly Cerebral"
     }
-    else if (cerebrality > -9){
+    else if (cerebrality > -7){
         cereb_status = "Fairly Limbic"
     }
     else {
         cereb_status = "Very Limbic"
     }
 
-    if (rightness > 8){
+    if (rightness > 6){
         right_status = "Very Right"
     }
     else if (rightness > 0){
         right_status = "Fairly Right"
     }
-    else if (rightness > -9){
+    else if (rightness > -7){
         right_status = "Fairly Left"
     }
     else {
@@ -130,42 +130,42 @@ function get_result() {
     document.getElementById("test").style.display = "none";
     document.getElementById("question_number").style.display = "none";
 
-    if (cerebrality > 8){
-        if (rightness > 8){
+    if (cerebrality > 6){
+        if (rightness > 6){
             document.getElementById("result3").innerHTML = "You are a fascinator!";
         }
-        else if (rightness <= 8 && rightness > 0){
+        else if (rightness <= 6 && rightness > 0){
             document.getElementById("result3").innerHTML = "You are an inventor!";
         }
-        else if (rightness >= -8 && rightness < 0){
+        else if (rightness >= -6 && rightness < 0){
             document.getElementById("result3").innerHTML = "You are a scientist!";
         }
         else {
             document.getElementById("result3").innerHTML = "You are a technician!";
         }
     }
-    else if (cerebrality <= 8 && cerebrality > 0){
-        if (rightness > 8){
+    else if (cerebrality <= 6 && cerebrality > 0){
+        if (rightness > 6){
             document.getElementById("result3").innerHTML = "You are an adventurer!";
         }
-        else if (rightness <= 8 && rightness > 0){
+        else if (rightness <= 6 && rightness > 0){
             document.getElementById("result3").innerHTML = "You are an entrepreneur!";
         }
-        else if (rightness >= -8 && rightness < 0){
+        else if (rightness >= -6 && rightness < 0){
             document.getElementById("result3").innerHTML = "You are a professor!";
         }
         else {
             document.getElementById("result3").innerHTML = "You are an architect!";
         }
     }
-    else if (cerebrality >= -8 && cerebrality < 0){
-        if (rightness > 8){
+    else if (cerebrality >= -6 && cerebrality < 0){
+        if (rightness > 6){
             document.getElementById("result3").innerHTML = "You are an influencer!";
         }
-        else if (rightness <= 8 && rightness > 0){
+        else if (rightness <= 6 && rightness > 0){
             document.getElementById("result3").innerHTML = "You are a coach!";
         }
-        else if (rightness >= -8 && rightness < 0){
+        else if (rightness >= -6 && rightness < 0){
             document.getElementById("result3").innerHTML = "You are a go-getter!";
         }
         else {
@@ -173,13 +173,13 @@ function get_result() {
         }
     }
     else {
-        if (rightness > 8){
+        if (rightness > 6){
             document.getElementById("result3").innerHTML = "You are an entertainer!";
         }
-        else if (rightness <= 8 && rightness > 0){
+        else if (rightness <= 6 && rightness > 0){
             document.getElementById("result3").innerHTML = "You are a caregiver!";
         }
-        else if (rightness >= -8 && rightness < 0){
+        else if (rightness >= -6 && rightness < 0){
             document.getElementById("result3").innerHTML = "You are a guardian!";
         }
         else {
@@ -187,8 +187,8 @@ function get_result() {
         }
     }
 
-    var cerebrality_percentage = Math.round(((cerebrality + 16)/32) * 100);
-    var rightness_percentage = Math.round(((rightness + 16)/32) * 100);
+    var cerebrality_percentage = Math.round(((cerebrality + 12)/24) * 100);
+    var rightness_percentage = Math.round(((rightness + 12)/24) * 100);
 
     var cp = cerebrality_percentage + "%";
     var rp = rightness_percentage + "%";

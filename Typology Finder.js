@@ -23,106 +23,66 @@ var test_status = 0;
 function buttonclick(score) {
     var questions = [
 
-        "I feel at home with abstract concepts.", 
-        "I often get lost in thought.",
-        "I feel alive with mental stimulation.",
-        "I have an hunger for knowledge.",
-        "I am considered an idea generator.",
-        "I am more physical than mental.",
-        "I prefer simple tasks over complex ones.",
-        "I am not very keen on learning.",
-        "I don't learn for the sake of it.",
-        "I wouldn't be an academic researcher.",
-        "I am often engaged with aesthetics.",
-        "I feel the best when I try new things.",
-        "I enjoy wild flights of fantasy.",
-        "I highly appreciate variety and diversity.",
-        "I need to engage in creative outlets.",
-        "I am not a very artistic person.",
-        "I prefer reality over fantasy.",
-        "I prefer staying in my comfort zone.",
-        "I tend to have a conservative approach to life.",
-        "I am generally practical and down-to-earth.",
-        "I am ambitious and goal-oriented.",
-        "I easily concentrate in my work.",
-        "I can be some sort of a workaholic.",
-        "I am about getting things done efficiently.",
-        "I manage my time and work hard.",
-        "I tend to get distracted easily.",
-        "I am more about play than work.",
-        "I tend to waste time with useless things.",
-        "I often procrastinate and postpone.",
-        "I am often seen as lazy.",
-        "I make plans and organize things.",
-        "I am precise and perfectionistic.",
-        "I tend to schedule and routinize my days.",
-        "I often feel the need to clean up.",
-        "I make my decisions carefully.",
-        "I often forget why I went there in the first place.",
-        "I am not bothered by messy places.",
-        "I think routines are too limiting.",
-        "I don't have set places for everything.",
-        "I act spontaneously rather than planfully.",
-        "I am often the life of the party.",
-        "I regularly make new friends.",
-        "I enjoy time with others more than alone time.",
-        "I don't like missing out on social events.",
-        "I am cheerful and laugh a lot.",
-        "I don't get excited and amused easily.",
-        "I often distance myself from other people.",
-        "I tend to come across as reserved.",
-        "I am private and have strong boundaries.",
-        "I am a serious person who doesn't laugh easily.",
-        "I take charge and lead my environment.",
-        "I am often the first person to act.",
-        "I would make for an effective leader.",
-        "I try to persuade people.",
-        "I often find myself initiating conversations.",
-        "I rarely dominate the conversations.",
-        "I prefer taking more passive roles.",
-        "I take a long time to make decisions.",
-        "I am not keen on speaking my mind.",
-        "I prefer working behind-the-scenes.",
-        "I often inquire about others' well being.",
-        "I enjoy helping and doing for others.",
-        "I often take care of others' feelings.",
-        "I have a soft heart for the underdog.",
-        "I think mercy is important.",
-        "I am more tough-minded than tender-hearted.",
-        "I tend to stay cold and rational in my decisions.",
-        "I can be unsympathetic to others.",
-        "I can't stand weak and needy people.",
-        "I am not very interested in being charitable.",
-        "I try to act as fairly as possible.",
-        "I don't like flaunting my abilities.",
-        "I steer clear of conflict.",
-        "I am respectful of my social community.",
-        "I communicate tactfully with others.",
-        "I often think I am a superior person.",
-        "I often lie and cheat to get ahead.",
-        "I feel stimulated by a good fight.",
-        "I tend to be direct and unfiltered.",
-        "I don't really care about social niceties.",
-        "I am familiar with feelings of doubt and worry.",
-        "I get caught up in my past failures.",
-        "I often feel overwhelmed by the demands of life.",
-        "I am considered a sensitive and vulnerable person.",
-        "I often feel insecure and threatened.",
-        "I rarely feel on edge.",
-        "I don't worry much about worst case scenarios.",
-        "I feel comfortable in my own skin.",
-        "I am generally secure and confident.",
-        "I often think too little about my problems.",
-        "I am generally an impatient person.",
-        "I can be sort of an emotional rollarcoaster.",
-        "I often find myself overindulging in things.",
-        "I feel angry when things don't go my way.",
-        "I don't have much emotional control.",
-        "I am generally chill and calm.",
-        "I am not a person who gets annoyed easily.",
-        "I easily control my reactions to things.", 
-        "I tend to calm down easily.",
-        "I don't have many pet peeves."
+        "Frequently consume educational content during free time.",
+        "Set specific goals and work hard to achieve them.",
+        "Pursue making new friends and keeping a wide social sphere.",
+        "Give emotional support to others rather than giving rational solutions.",
+        "Frequently imagine worst-case scenarios and threats.",
+        "Be viewed as a creative, artistic, and unconventional person.",
+        "Make schedules or routines for your day as it stabilizes your life.",
+        "Make quick decisions with your action-oriented attitude.",
+        "Steer clear of interpersonal conflict as much as possible.",
+        "Often get angry or upset over seemingly minor inconveniences.",
+        "Prefer mentally stimulating activities or jobs over simple ones.",
+        "Be intentional with spending your time and don’t waste much of it.",
+        "Often be considered as the enthusiastic one in the group.",
+        "Often help or donate to others in order to take care of them.",
+        "Feel easily discouraged by bad events or performance.",
+        "Embrace alternative and eccentric lifestyles over traditional ones.",
+        "Use your detail-oriented attitude to prevent mistakes and omissions.",
+        "Prefer taking charge and leading over more passive roles.",
+        "Focus on calming others down rather than shaking them up.",
+        "Frequently be seen as having a temperamental attitude.",
+        "Engage in solving puzzles such as Sudoku or Rubik’s Cube.",
+        "Focus on getting things done and checking things off from a to-do list.",
+        "Seek exciting and fun experiences to not feel bored.",
+        "Vicariously feel pain if someone else is also experiencing pain.",
+        "Often feel insecure and doubtful about your own abilities.",
+        "Often daydream and view it as an essential part of life.",
+        "Consider details and contingencies to make careful decisions.",
+        "Be considered as having a strong personality.",
+        "Prefer collaborating with others rather than competing with them.",
+        "Often binge on food, social media, etc. to escape the moment.",
+        "Often engage in philosophical or complex thought.",
+        "Easily focus on finishing the task at hand.",
+        "Usually prefer the company of others over alone time.",
+        "Frequently inquire if others are feeling good or not.",
+        "Be considered as a person with frequent negative feelings.",
+        "Pursue understanding yourself and your feelings, values, and lifestyle.",
+        "Often utilize planners or agendas to keep your life in order.",
+        "Be eager to share your thoughts and opinions.",
+        "Make a point to act and play as fair as possible.",
+        "Frequently experience volatile mood shifts throughout the day.",
+        "Be viewed as having an inquisitive and cerebral attitude.",
+        "Prefer a productive lifestyle over a laid-back one.",
+        "Frequently have a good laugh with others or yourself.",
+        "Often be viewed as having a soft and tender heart.",
+        "Often feel stopped by your fears and negative attitude.",
+        "Prefer a new place, route, or method over a known one.",
+        "Frequently be reminded of your organizational attitude.",
+        "Often find yourself dominating the conversations.",
+        "Rarely try to flaunt yourself and your abilities.",
+        "Have somewhat extreme reactions to things in general.",
+        "Feel satisfied by consuming complex, challenging material.",
+        "Be seen as an ambitious and hardworking person.",
+        "Often feel excited about social events such as parties.",
+        "Often put others’ needs and well-being over your own.",
+        "Easily get caught up in negative or pessimistic patterns.",
+        "Frequently engage in creative outlets such as music and art.",
+        "Work to keep your spaces as clean and orderly as possible.",
+        "Often feel bored if you have to work behind-the-scenes.",
+        "Be seen as a very humble and polite person.",
+        "Be easily made to lose control of my own feelings."
 
         ];
 
@@ -136,80 +96,60 @@ function buttonclick(score) {
     document.getElementById("question_number").innerHTML = "Question " + (current_question + 1);
     document.getElementById("Statement").innerHTML = questions[current_question];
 
-    if (current_question < 6){
+    if (current_question % 10 == 1){
         int += score
     }
-    else if (current_question < 11){
-        int += (5 - score)
-    }
-    else if (current_question < 16){
-        opn += score
-    }
-    else if (current_question < 21){
-        opn += (5 - score)
-    }
-    else if (current_question < 26){
+
+    else if (current_question % 10 == 2){
         ind += score
     }
-    else if (current_question < 31){
-        ind += (5 - score)
-    }
-    else if (current_question < 36){
-        ord += score
-    }
-    else if (current_question < 41){
-        ord += (5 - score)
-    }
-    else if (current_question < 46){
+   
+    else if (current_question % 10 == 3){
         ent += score
     }
-    else if (current_question < 51){
-        ent += (5 - score)
-    }
-    else if (current_question < 56){
-        asr += score
-    }
-    else if (current_question < 61){
-        asr += (5 - score)
-    }
-    else if (current_question < 66){
+    
+    else if (current_question % 10 == 4){
         com += score
     }
-    else if (current_question < 71){
-        com += (5 - score)
-    }
-    else if (current_question < 76){
-        pol += score
-    }
-    else if (current_question < 81){
-        pol += (5 - score)
-    }
-    else if (current_question < 86){
+    
+    else if (current_question % 10 == 5){
         wtd += score
     }
-    else if (current_question < 91){
-        wtd += (5 - score)
+    
+    else if (current_question % 10 == 6){
+        opn += score
     }
-    else if (current_question < 96){
+    
+    else if (current_question % 10 == 7){
+        ord += score
+    }
+    
+    else if (current_question % 10 == 8){
+        asr += score
+    }
+    
+    else if (current_question % 10 == 9){
+        pol += score
+    }
+    
+    else if (current_question % 10 == 0){
         vol += score
     }
-    else if (current_question < 111){
-        vol += (5 - score)
-    }
+    
 
     if (current_question > (questions.length - 1)){
         document.getElementById("question_number").style.display = "none";
         document.getElementById("Statement").innerHTML = "Finished!";
-        int = Math.round((int / 50) * 100)
-        opn = Math.round((opn / 50) * 100)
-        ind = Math.round((ind / 50) * 100)
-        ord = Math.round((ord / 50) * 100)
-        ent = Math.round((ent / 50) * 100)
-        asr = Math.round((asr / 50) * 100)
-        com = Math.round((com / 50) * 100)
-        pol = Math.round((pol / 50) * 100)
-        wtd = Math.round((wtd / 50) * 100)
-        vol = Math.round((vol / 50) * 100)
+        int = Math.round((int / 18) * 100)
+        opn = Math.round((opn / 18) * 100)
+        ind = Math.round((ind / 18) * 100)
+        ord = Math.round((ord / 18) * 100)
+        ent = Math.round((ent / 18) * 100)
+        asr = Math.round((asr / 18) * 100)
+        com = Math.round((com / 18) * 100)
+        pol = Math.round((pol / 18) * 100)
+        wtd = Math.round((wtd / 18) * 100)
+        vol = Math.round((vol / 18) * 100)
 
         openness = Math.round((int + opn) / 2)
         conscientiousness = Math.round((ind + ord) / 2)

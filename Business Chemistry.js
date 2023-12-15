@@ -105,42 +105,42 @@ function get_result() {
     document.getElementById("test").style.display = "none";
     document.getElementById("question_number").style.display = "none";
 
-    if (rapidity > 8){
-        if (rightness > 8){
+    if (rapidity > 7.5){
+        if (rightness > 7.5){
             document.getElementById("result3").innerHTML = "You are a driver!";
         }
-        else if (rightness <= 8 && rightness > 0){
+        else if (rightness <= 7.5 && rightness > 0){
             document.getElementById("result3").innerHTML = "You are a driver with pioneer tendencies!";
         }
-        else if (rightness >= -8 && rightness < 0){
+        else if (rightness >= -7.5 && rightness < 0){
             document.getElementById("result3").innerHTML = "You are a pioneer with driver tendencies!";
         }
         else {
             document.getElementById("result3").innerHTML = "You are a pioneer!";
         }
     }
-    else if (rapidity <= 8 && rapidity > 0){
-        if (rightness > 8){
+    else if (rapidity <= 7.5 && rapidity > 0){
+        if (rightness > 7.5){
             document.getElementById("result3").innerHTML = "You are a driver with guardian tendencies!";
         }
-        else if (rightness <= 8 && rightness > 0){
+        else if (rightness <= 7.5 && rightness > 0){
             document.getElementById("result3").innerHTML = "You are a driver with integrator tendencies!";
         }
-        else if (rightness >= -8 && rightness < 0){
+        else if (rightness >= -7.5 && rightness < 0){
             document.getElementById("result3").innerHTML = "You are a pioneer with guardian tendencies!";
         }
         else {
             document.getElementById("result3").innerHTML = "You are a pioneer with integrator tendencies!";
         }
     }
-    else if (rapidity >= -8 && rapidity < 0){
-        if (rightness > 8){
+    else if (rapidity >= -7.5 && rapidity < 0){
+        if (rightness > 7.5){
             document.getElementById("result3").innerHTML = "You are a guardian with driver tendencies!";
         }
-        else if (rightness <= 8 && rightness > 0){
+        else if (rightness <= 7.5 && rightness > 0){
             document.getElementById("result3").innerHTML = "You are a guardian with pioneer tendencies!";
         }
-        else if (rightness >= -8 && rightness < 0){
+        else if (rightness >= -7.5 && rightness < 0){
             document.getElementById("result3").innerHTML = "You are an integrator with driver tendencies!";
         }
         else {
@@ -148,13 +148,13 @@ function get_result() {
         }
     }
     else {
-        if (rightness > 8){
+        if (rightness > 7.5){
             document.getElementById("result3").innerHTML = "You are a guardian!";
         }
-        else if (rightness <= 8 && rightness > 0){
+        else if (rightness <= 7.5 && rightness > 0){
             document.getElementById("result3").innerHTML = "You are a guardian with integrator tendencies!";
         }
-        else if (rightness >= -8 && rightness < 0){
+        else if (rightness >= -7.5 && rightness < 0){
             document.getElementById("result3").innerHTML = "You are an integrator with guardian tendencies!";
         }
         else {
@@ -162,8 +162,8 @@ function get_result() {
         }
     }
     
-    var rapidity_percentage = Math.round(((rapidity + 20)/40) * 100);
-    var rightness_percentage = Math.round(((rightness + 20)/40) * 100);
+    var rapidity_percentage = Math.round(((rapidity + 15)/30) * 100);
+    var rightness_percentage = Math.round(((rightness + 15)/30) * 100);
 
     var a = rapidity_percentage + "%";
     var b = rightness_percentage + "%";

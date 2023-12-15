@@ -65,10 +65,10 @@ function buttonclick(score) {
     if (current_question > (questions.length - 1)){
         document.getElementById("question_number").style.display = "none";
         document.getElementById("Statement").innerHTML = "Finished!";
-        IP  = Math.round((IP/30) * 100);
-        IJ  = Math.round((IJ/30) * 100);
-        EP  = Math.round((EP/30) * 100);
-        EJ  = Math.round((EJ/30) * 100);
+        IP  = Math.round((IP/18) * 100);
+        IJ  = Math.round((IJ/18) * 100);
+        EP  = Math.round((EP/18) * 100);
+        EJ  = Math.round((EJ/18) * 100);
         get_result();
     }
     
