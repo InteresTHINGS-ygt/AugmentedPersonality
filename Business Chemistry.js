@@ -170,6 +170,11 @@ function get_result() {
 
     document.getElementById("point").style.bottom = a;
     document.getElementById("point").style.left = b;
+
+    document.getElementById("desc1").style.display = "";
+    document.getElementById("desc2").style.display = "";
+    document.getElementById("desc3").style.display = "";
+    document.getElementById("desc4").style.display = "";
 }
 
 

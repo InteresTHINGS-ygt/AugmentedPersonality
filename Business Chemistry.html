@@ -20,40 +20,56 @@
         <h2 id="question_number"></h2>
         <h2 id="Statement">Click to start!</h2>
         <input type="button" onclick=buttonclick(0) id="start" value="Start Test">
-        <div id="test" style="display:none">
-            <input type="button" onclick=buttonclick(0) id="sd" value="Strongly Disagree"><br>
-            <input type="button" onclick=buttonclick(1) id="d" value="Disagree"><br>
-            <input type="button" onclick=buttonclick(2) id="a" value="Agree"><br>
-            <input type="button" onclick=buttonclick(3) id="sa" value="Strongly Agree"><br>
-        </div>
-        <div id = "tiebreaker_c" style = "display:none">
-            <h2>Tiebreaker</h2>
-            <h4>It looks like you have a tie on one or both scales!</h4>
-            <h2>Which word do you resonate with more?</h2>
-            <input type="button" onclick=tiebreakerclick_c(1) value="Energetic"><br>
-            <input type="button" onclick=tiebreakerclick_c(-1) value="Steady"><br>
-        </div>
-        <div id = "tiebreaker_r" style = "display:none">
-            <h2>Tiebreaker</h2>
-            <h4>It looks like you have a tie on one or both scales!</h4>
-            <h2>Which word do you resonate with more?</h2>
-            <input type="button" onclick=tiebreakerclick_r(1) value="Planner"><br>
-            <input type="button" onclick=tiebreakerclick_r(-1) value="Networker"><br>
-        </div>
-        <h4 id = "tiebreaker"></h4>
-        <div id = "results" style = "display:none">
-            <h3 id = "result3"></h3>
-            <div class="visual_container">
-                <div class = "visual_results" style = "display:grid">
-                    <div class="Pioneer"><div class="center_text">Pioneer</div></div>
-                    <div class="Driver"><div class="center_text">Driver</div></div>
-                    <div class="Integrator"><div class="center_text">Integrator</div></div>
-                    <div class="Guardian"><div class="center_text">Guardian</div></div>
-                </div>
-                <div class="point" id="point">
+            <div id="test" style="display:none">
+                <input type="button" onclick=buttonclick(0) id="sd" value="Strongly Disagree"><br>
+                <input type="button" onclick=buttonclick(1) id="d" value="Disagree"><br>
+                <input type="button" onclick=buttonclick(2) id="a" value="Agree"><br>
+                <input type="button" onclick=buttonclick(3) id="sa" value="Strongly Agree"><br>
+            </div>
+            <div id = "tiebreaker_c" style = "display:none">
+                <h2>Tiebreaker</h2>
+                <h4>It looks like you have a tie on one or both scales!</h4>
+                <h2>Which word do you resonate with more?</h2>
+                <input type="button" onclick=tiebreakerclick_c(1) value="Energetic"><br>
+                <input type="button" onclick=tiebreakerclick_c(-1) value="Steady"><br>
+            </div>
+            <div id = "tiebreaker_r" style = "display:none">
+                <h2>Tiebreaker</h2>
+                <h4>It looks like you have a tie on one or both scales!</h4>
+                <h2>Which word do you resonate with more?</h2>
+                <input type="button" onclick=tiebreakerclick_r(1) value="Planner"><br>
+                <input type="button" onclick=tiebreakerclick_r(-1) value="Networker"><br>
+            </div>
+            <h4 id = "tiebreaker"></h4>
+            <div id = "results" style = "display:none">
+                <h3 id = "result3"></h3>
+                <div class="visual_container">
+                    <div class = "visual_results" style = "display:grid">
+                        <div class="Pioneer"><div class="center_text">Pioneer</div></div>
+                        <div class="Driver"><div class="center_text">Driver</div></div>
+                        <div class="Integrator"><div class="center_text">Integrator</div></div>
+                        <div class="Guardian"><div class="center_text">Guardian</div></div>
+                    </div>
+                    <div class="point" id="point">
+                    </div>
                 </div>
             </div>
-         </div>
+        </div>
+        <div class="main" id="desc1" style="display:none">
+            <h2>Pioneer</h2>
+            <p>Pioneers are adaptable, imaginative, and risk takers. They make quick decisions and are emotionally expressive. This style is also trusting when it comes to people and they shrug off mistakes easily. They struggle the most with overly structured and unchanging enviroments.</p>
+        </div>
+        <div class="main" id="desc2" style="display:none">
+            <h2>Driver</h2>
+            <p>Drivers are competitive, directive, and focused. They are the most decisive and assertive out of all styles. They are comfortable with conflict and taking risks. They are individualists who value performance and competence. They struggle the most with being overly direct and not considerate enough.</p>
+        </div>
+        <div class="main" id="desc3" style="display:none">
+            <h2>Guardian</h2>
+            <p>Guardians are reserved, cautious, and methodical. They are detail-oriented, logical, and focused on correcting mistakes. Their decisions are careful and deliberate. They are the most likely out of all styles to incorporate tried-and-true methods. They struggle the most with uncertainty and unstable environments.</p>
+        </div>
+        <div class="main" id="desc4" style="display:none">
+            <h2>Integrator</h2>
+            <p>Integrators are diplomatic, people-oriented, and helpful. For them, consensus and avoiding conflict is essential. They make decisions based on how others would feel about it. They are the most patient and empathetic out of all styles. They struggle the most with overly competitive and emotionally intense environments.</p>
         </div>
     </body>
 </html>

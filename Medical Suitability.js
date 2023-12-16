@@ -31,7 +31,7 @@ function buttonclick(score) {
     document.getElementById("Statement").innerHTML = questions[current_question];
 
     if (current_question > 8){
-        suitability = suitability + (4 - score)
+        suitability = suitability + (3 - score)
     }
     else {
         suitability = suitability + score
@@ -40,7 +40,7 @@ function buttonclick(score) {
     if (current_question > (questions.length - 1)){
         document.getElementById("question_number").style.display = "none";
         document.getElementById("Statement").innerHTML = "Finished!";
-        suitability = Math.round((suitability / 52) * 100)
+        suitability = Math.round((suitability / 39) * 100)
         get_result();
     }
     
@@ -50,17 +50,21 @@ function get_result() {
     document.getElementById("results").style.display = "block";
     document.getElementById("test").style.display = "none";
     document.getElementById("question_number").style.display = "none";
-    document.getElementById("result").innerHTML = "Your medical career suitability is " + suitability + "%"
+    document.getElementById("result").innerHTML = "Your medical career suitability is " + suitability + "%";
 
     if (suitability >= 80) {
-        document.getElementById("description").innerHTML = "You would have a great time pursuing a medical lifestyle!"
+        document.getElementById("description").innerHTML = "You would have a great time pursuing a medical lifestyle!";
     }
     else if (suitability >=50) {
-        document.getElementById("description").innerHTML = "Although you may have a good time having a medical lifestyle, make sure to check out other options before deciding."
+        document.getElementById("description").innerHTML = "Although you may have a good time having a medical lifestyle, make sure to check out other options before deciding.";
     }
     else {
-        document.getElementById("description").innerHTML = "You are better off pursuing something else. Medical lifestyle may not be for you."
+        document.getElementById("description").innerHTML = "You are better off pursuing something else. Medical lifestyle may not be for you.";
     }
+
+    var suitability_bar = suitability + "%";
+    
+    document.getElementById("bar").style.width = suitability_bar;
 }
 
 
