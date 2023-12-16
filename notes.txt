@@ -695,3 +695,109 @@ Guardian: This neurotype is safekeeping and protective. This type puts a great d
 Caregiver: This is a highly altruistic and sacrifical neurotype. This type is all about helping others and taking care of them. They tend to put others' needs over their own. They may struggle with logical analysis and mental pursuits, prefering to attend to others' feelings instead.
 
 Entertainer: This is the most interpersonal, emotional, and kinesthetic neurotype. They put a lot of focus on physical activity and entertaining others and themselves. This type is all about being fully immersed in the moment. They may struggle with analytical approaches, prefering immediate experience.
+
+Process log
+
+Character Comparison
+* Pretty much ready, just more presets
+
+HBNT
+* Complete test
+
+Business Chemistry
+* Complete Test
+
+Medical
+* Complete Test
+
+META
+* 24 types will be created.
+* And type descriptions for each.
+
+OSPI
+* Pretty much done
+
+Four Humors
+* Measurement method may or may not change.
+* Temperament blends descriptions will be added.
+
+Content Creator Style
+* 8 creator styles will be added with descriptions.
+
+CPTI
+* The test may get an overhaul with new questions.
+
+Enneagram
+* Naranjo one will get descriptions and visual results.
+* More enneagram testsmay come as well.
+
+Big Five + Typology Finder
+* The Big Five portion is Complete
+* Typology Finder portion will be added
+
+Coffee
+* Flowchart-style test will be added.
+* Or I may make a complass-style test measuring coffee-related metrics.
+
+GD
+* Not sure about that.
+* This will include Meltdown + Subzero levels for a total of 27 levels. +1 if 2.2 comes out :D
+
+Spotify Hero Test
+* Will be added to measure your listening style
+* Maybe there'll be a general version as well
+
+Spotify Mandala Test
+* This is for 2022 wrapped
+
+
+META type descriptions
+
+Four Attitudes
+M style: 
+E style: 
+T style: 
+A style: 
+
+First one is your dominant style.
+Second one is your flavor style.
+Last one is your blindspot.
+
+META: 
+MEAT:
+EMTA:
+EMAT:
+
+MTEA:
+MTAE:
+TMEA:
+TMAE:
+
+MAET:
+MATE:
+AMET:
+AMTE:
+
+ETMA:
+ETAM:
+TEMA:
+TEAM:
+
+EAMT:
+EATM:
+AEMT:
+AETM:
+
+TAME:
+TAEM:
+ATME:
+ATEM:
+
+
+
+
+
+
+
+
+

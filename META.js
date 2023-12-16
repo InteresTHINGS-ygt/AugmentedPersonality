@@ -70,6 +70,7 @@ function buttonclick(score) {
 
 function get_result() {
     document.getElementById("results").style.display = "block";
+    document.getElementById("descs").style.display = "";
     document.getElementById("test").style.display = "none";
     document.getElementById("question_number").style.display = "none";
     document.getElementById("result_m").innerHTML = "Your M factor is " + m + "%"
