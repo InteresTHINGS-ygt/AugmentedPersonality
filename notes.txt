@@ -660,3 +660,38 @@ Enneagram Comparative Test
 "Often feel bored if you have to work behind-the-scenes.",
 "Be seen as a very humble and polite person.",
 "Be easily made to lose control of my own feelings."
+
+
+Herrmann Neurotypes Descriptions
+
+Technician: This is the most analytical and logical neurotype. This type is all about technical and logical analysis, with little room for action or feelings. They almost always make decisions based on cold, hard facts. They may struggle with expressing their feelings.
+
+Scientist: This neurotype enjoys learning and analyzing scientific concepts. They put a great deal of focus on mental and intellectual pursuits. This is the type most focused on culvitating their minds. They may struggle with irrational or needy people.
+
+Inventor: This neurotype is all about new ideas and inventions. They love brainstorming and finding novel solutions to problems. They tend to feel bored with routine and prefer changing things up instead. They may struggle with doing things by-the-book.
+
+Fascinator: This is the most imaginative and synthesizing neurotype. This type is all about imaginative exploration and experimentation. They are the most creative out of all 16 neurotypes. They may struggle with rigid routines and administrative tasks.
+
+Architect: This type is analytical, precise, and cautious. This neurotype is most concerned with accurate information and logical consistency. They can be somewhat perfectionistic. They may struggle with being overly reserved and not enthusiastic enough.
+
+Professor: This neurotype is the true professor or teacher. This is one of the more balanced neurotypes: Mostly logical and analytical, yet also people-oriented. They are about relaying the most accurate information to people. They may struggle with emotionally unstable people and environments.
+
+Entrepreneur: This neurotype is great at generating ideas and then executing them. They are visionary and future-oriented. This neurotype is quite ambitious. They may struggle with lazy and overly complacent people. 
+
+Adventurer: This is the most adventurous and thrill-seeking neurotype. There's a big emphasis on action and experimentation with this type. They are flexible and adaptable. They may struggle with being too impulsive and not careful enough with decisions.
+
+Inspector: This type is all about organization and details. This is the most detail-oriented out of all neurotypes. They are highly focused and don't get distracted easily. They may struggle with adapting and trying new things.
+
+Go-Getter: This neurotype is highly action-oriented and decisive. They have a great desire to work hard and achieve a lot. They primarily focus on the use of information. They may struggle with overly relaxed and laid-back environments and they feel compelled to take charge of these situations.
+
+Coach: This neurotype is the true coach or mentor. They understand other people's desires, and then find the right way to help them. This is a neurotype of emotional intelligence. They may struggle with overly technical and one-size-fits-all approaches.
+
+Influencer: This is one of the most people-oriented neurotypes. This neurotype is great at interacting with and persuading people. They are enthusiastic and flexible, with a dramatic bent. They may struggle with overly formal and crtical anvironments.
+
+Administrator: This is the most organizational and administrative neurotype. They are all about planning, order, and getting things done in a steady fashion. They tend to have conservative approaches. They may struggle with creativity and they can be overly conventional.
+
+Guardian: This neurotype is safekeeping and protective. This type puts a great deal of focus on practical tasks. They are routine-oriented and patient. They don't just protect themselves, but also others. They may struggle with new and novel approaches to problem-solving.
+
+Caregiver: This is a highly altruistic and sacrifical neurotype. This type is all about helping others and taking care of them. They tend to put others' needs over their own. They may struggle with logical analysis and mental pursuits, prefering to attend to others' feelings instead.
+
+Entertainer: This is the most interpersonal, emotional, and kinesthetic neurotype. They put a lot of focus on physical activity and entertaining others and themselves. This type is all about being fully immersed in the moment. They may struggle with analytical approaches, prefering immediate experience.

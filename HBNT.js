@@ -133,57 +133,73 @@ function get_result() {
     if (cerebrality > 6){
         if (rightness > 6){
             document.getElementById("result3").innerHTML = "You are a fascinator!";
+            document.getElementById("Fascinator").style.display = "";
         }
         else if (rightness <= 6 && rightness > 0){
             document.getElementById("result3").innerHTML = "You are an inventor!";
+            document.getElementById("Inventor").style.display = "";
         }
         else if (rightness >= -6 && rightness < 0){
             document.getElementById("result3").innerHTML = "You are a scientist!";
+            document.getElementById("Scientist").style.display = "";
         }
         else {
             document.getElementById("result3").innerHTML = "You are a technician!";
+            document.getElementById("Technician").style.display = "";
         }
     }
     else if (cerebrality <= 6 && cerebrality > 0){
         if (rightness > 6){
             document.getElementById("result3").innerHTML = "You are an adventurer!";
+            document.getElementById("Adventurer").style.display = "";
         }
         else if (rightness <= 6 && rightness > 0){
             document.getElementById("result3").innerHTML = "You are an entrepreneur!";
+            document.getElementById("Entrepreneur").style.display = "";
         }
         else if (rightness >= -6 && rightness < 0){
             document.getElementById("result3").innerHTML = "You are a professor!";
+            document.getElementById("Professor").style.display = "";
         }
         else {
             document.getElementById("result3").innerHTML = "You are an architect!";
+            document.getElementById("Architect").style.display = "";
         }
     }
     else if (cerebrality >= -6 && cerebrality < 0){
         if (rightness > 6){
             document.getElementById("result3").innerHTML = "You are an influencer!";
+            document.getElementById("Influencer").style.display = "";
         }
         else if (rightness <= 6 && rightness > 0){
             document.getElementById("result3").innerHTML = "You are a coach!";
+            document.getElementById("Coach").style.display = "";
         }
         else if (rightness >= -6 && rightness < 0){
             document.getElementById("result3").innerHTML = "You are a go-getter!";
+            document.getElementById("Go-Getter").style.display = "";
         }
         else {
             document.getElementById("result3").innerHTML = "You are an inspector!";
+            document.getElementById("Inspector").style.display = "";
         }
     }
     else {
         if (rightness > 6){
             document.getElementById("result3").innerHTML = "You are an entertainer!";
+            document.getElementById("Entertainer").style.display = "";
         }
         else if (rightness <= 6 && rightness > 0){
             document.getElementById("result3").innerHTML = "You are a caregiver!";
+            document.getElementById("Caregiver").style.display = "";
         }
         else if (rightness >= -6 && rightness < 0){
             document.getElementById("result3").innerHTML = "You are a guardian!";
+            document.getElementById("Guardian").style.display = "";
         }
         else {
             document.getElementById("result3").innerHTML = "You are an administrator!";
+            document.getElementById("Administrator").style.display = "";
         }
     }
 
@@ -197,6 +213,23 @@ function get_result() {
     document.getElementById("point").style.left = rp;
 }
 
-
+function show_all() {
+    document.getElementById("Technician").style.display = "";
+    document.getElementById("Scientist").style.display = "";
+    document.getElementById("Inventor").style.display = "";
+    document.getElementById("Fascinator").style.display = "";
+    document.getElementById("Architect").style.display = "";
+    document.getElementById("Professor").style.display = "";
+    document.getElementById("Entrepreneur").style.display = "";
+    document.getElementById("Adventurer").style.display = "";
+    document.getElementById("Inspector").style.display = "";
+    document.getElementById("Go-Getter").style.display = "";
+    document.getElementById("Coach").style.display = "";
+    document.getElementById("Influencer").style.display = "";
+    document.getElementById("Administrator").style.display = "";
+    document.getElementById("Guardian").style.display = "";
+    document.getElementById("Caregiver").style.display = "";
+    document.getElementById("Entertainer").style.display = "";
+}
 
 
