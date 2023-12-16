@@ -59,10 +59,10 @@ function buttonclick(score) {
     if (current_question > (questions.length - 1)){
         document.getElementById("question_number").style.display = "none";
         document.getElementById("Statement").innerHTML = "Finished!";
-        m = Math.round((m / 24) * 100)
-        e = Math.round((e / 24) * 100)
-        t = Math.round((t / 24) * 100)
-        a = Math.round((a / 24) * 100)
+        m = Math.round((m / 18) * 100)
+        e = Math.round((e / 18) * 100)
+        t = Math.round((t / 18) * 100)
+        a = Math.round((a / 18) * 100)
         get_result();
     }
     
@@ -77,6 +77,10 @@ function get_result() {
     document.getElementById("result_t").innerHTML = "Your T factor is " + t + "%"
     document.getElementById("result_a").innerHTML = "Your A factor is " + a + "%"
     
+    document.getElementById("bar_m").style.width = m + "%"
+    document.getElementById("bar_e").style.width = e + "%"
+    document.getElementById("bar_t").style.width = t + "%"
+    document.getElementById("bar_a").style.width = a + "%"
 }
 
 

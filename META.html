@@ -23,15 +23,26 @@
         <div id="test" style="display:none">
             <input type="button" onclick=buttonclick(0) id="sd" value="Strongly Disagree"><br>
             <input type="button" onclick=buttonclick(1) id="d" value="Disagree"><br>
-            <input type="button" onclick=buttonclick(2) id="n" value="Neutral"><br>
-            <input type="button" onclick=buttonclick(3) id="a" value="Agree"><br>
-            <input type="button" onclick=buttonclick(4) id="sa" value="Strongly Agree"><br>
+            <input type="button" onclick=buttonclick(2) id="a" value="Agree"><br>
+            <input type="button" onclick=buttonclick(3) id="sa" value="Strongly Agree"><br>
         </div>
         <div id = "results" style = "display:none">
-            <h3 id = "result_m"></h3>
-            <h3 id = "result_e"></h3>
-            <h3 id = "result_t"></h3>
-            <h3 id = "result_a"></h3>
+            <h3 id = "result_m">m</h3>
+            <div class="results_bar_m">
+                <div class="bar_m" id="bar_m"></div>
+            </div>
+            <h3 id = "result_e">e</h3>
+            <div class="results_bar_e">
+                <div class="bar_e" id="bar_e"></div>
+            </div>
+            <h3 id = "result_t">t</h3>
+            <div class="results_bar_t">
+                <div class="bar_t" id="bar_t"></div>
+            </div>
+            <h3 id = "result_a">a</h3>
+            <div class="results_bar_a">
+                <div class="bar_a" id="bar_a"></div>
+            </div>
          </div>
          </div>
     </body>
