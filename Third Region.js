@@ -38,48 +38,48 @@ function buttonclick(score) {
         emotional_freedom += score;
     }
     else if (current_question < 5){
-        emotional_freedom += (4-score);
+        emotional_freedom += (3-score);
     }
     else if (current_question < 7){
         generalism += score;
     }
     else if (current_question < 9){
-        generalism += (4-score);
+        generalism += (3-score);
     }
     else if (current_question < 11){
         causal_attitude += score;
     }
     else if (current_question < 13){
-        causal_attitude += (4-score);
+        causal_attitude += (3-score);
     }
 
     if (current_question > (questions.length - 1)){
         document.getElementById("question_number").style.display = "none";
         document.getElementById("Statement").innerHTML = "Finished!";
-        if (emotional_freedom > 8) {
+        if (emotional_freedom > 6) {
             emo_f = "Controlled"
         }
-        else if (emotional_freedom < 8) {
+        else if (emotional_freedom < 6) {
             emo_f = "Expressive"
         }
         else {
             emo_f = "Balanced"
         }
 
-        if (generalism > 8) {
+        if (generalism > 6) {
             gen = "Specialist"
         }
-        else if (generalism < 8) {
+        else if (generalism < 6) {
             gen = "Generalist"
         }
         else {
             gen = "Balanced"
         }
 
-        if (causal_attitude > 8) {
+        if (causal_attitude > 6) {
             cas = "Serious"
         }
-        else if (causal_attitude < 8) {
+        else if (causal_attitude < 6) {
             cas = "Casual"
         }
         else {

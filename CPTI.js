@@ -82,6 +82,11 @@ function get_result() {
     document.getElementById("IJ").innerHTML = "Builder - IxxJ: " + IJ;
     document.getElementById("EP").innerHTML = "Explorer - ExxP: " + EP;
     document.getElementById("EJ").innerHTML = "Teamplayer - ExxJ: " + EJ;
+
+    document.getElementById("bar_IP").style.width = IP + "%"
+    document.getElementById("bar_IJ").style.width = IJ + "%"
+    document.getElementById("bar_EP").style.width = EP + "%"
+    document.getElementById("bar_EJ").style.width = EJ + "%"
 }
 
 
