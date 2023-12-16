@@ -762,6 +762,16 @@ First one is your dominant style.
 Second one is your flavor style.
 Last one is your blindspot.
 
+Content Creator Styles
+
+Controlled + Specialist + Serious = Beaver
+Controlled + Specialist + Casual = Snake
+Controlled + Generalist + Serious = Eagle
+Controlled + Generalist + Casual = Cat
+Expressive + Specialist + Serious = Polar Bear
+Expressive + Specialist + Casual = Panda
+Expressive + Generalist + Serious = Lion
+Expressive + Generalist + Casual = Dolphin
 
 
 
