@@ -107,10 +107,10 @@ function buttonclick(score) {
     if (current_question > (questions.length - 1)){
         document.getElementById("question_number").style.display = "none";
         document.getElementById("Statement").innerHTML = "Finished!";
-        chol = Math.round((chol / 64) * 100)
-        mel = Math.round((mel / 64) * 100)
-        san = Math.round((san / 64) * 100)
-        phleg = Math.round((phleg / 64) * 100)
+        chol = Math.round((chol / 48) * 100)
+        mel = Math.round((mel / 48) * 100)
+        san = Math.round((san / 48) * 100)
+        phleg = Math.round((phleg / 48) * 100)
         get_result();
     }
     
@@ -125,6 +125,10 @@ function get_result() {
     document.getElementById("result_san").innerHTML = "Sanguine: " + san + "%"
     document.getElementById("result_phleg").innerHTML = "Phlegmatic: " + phleg + "%"
     
+    document.getElementById("bar_chol").style.width = m + "%"
+    document.getElementById("bar_mel").style.width = e + "%"
+    document.getElementById("bar_san").style.width = t + "%"
+    document.getElementById("bar_phleg").style.width = a + "%"
 }
 
 

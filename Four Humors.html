@@ -23,16 +23,75 @@
         <div id="test" style="display:none">
             <input type="button" onclick=buttonclick(0) id="sd" value="Strongly Disagree"><br>
             <input type="button" onclick=buttonclick(1) id="d" value="Disagree"><br>
-            <input type="button" onclick=buttonclick(2) id="n" value="Neutral"><br>
-            <input type="button" onclick=buttonclick(3) id="a" value="Agree"><br>
-            <input type="button" onclick=buttonclick(4) id="sa" value="Strongly Agree"><br>
+            <input type="button" onclick=buttonclick(2) id="a" value="Agree"><br>
+            <input type="button" onclick=buttonclick(3) id="sa" value="Strongly Agree"><br>
         </div>
-        <div id = "results" style = "display:none">
-            <h3 id = "result_chol"></h3>
-            <h3 id = "result_mel"></h3>
-            <h3 id = "result_san"></h3>
-            <h3 id = "result_phleg"></h3>
+        <div id = "results" style = "display:non">
+            <h3 id = "result_chol">chol</h3>
+            <div class="results_bar_chol">
+                <div class="bar_chol" id="bar_chol"></div>
+            </div>
+            <h3 id = "result_mel">mel</h3>
+            <div class="results_bar_mel">
+                <div class="bar_mel" id="bar_mel"></div>
+            </div>
+            <h3 id = "result_san">san</h3>
+            <div class="results_bar_san">
+                <div class="bar_san" id="bar_san"></div>
+            </div>
+            <h3 id = "result_phleg">phleg</h3>
+            <div class="results_bar_phleg">
+                <div class="bar_phleg" id="bar_phleg"></div>
+            </div>
          </div>
+        </div>
+        <div class="main" id="chol-chol">
+            <h2>Choleric - Choleric</h2>
+        </div>
+        <div class="main" id="chol-mel">
+            <h2>Choleric - Melancholic</h2>
+        </div>
+        <div class="main" id="chol-san">
+            <h2>Choleric - Sanguine</h2>
+        </div>
+        <div class="main" id="chol-phleg">
+            <h2>Choleric - Phlegmatic</h2>
+        </div>
+        <div class="main" id="mel-mel">
+            <h2>Melancholic - Melancholic</h2>
+        </div>
+        <div class="main" id="mel-chol">
+            <h2>Melancholic - Choleric</h2>
+        </div>
+        <div class="main" id="mel-san">
+            <h2>Melancholic - Sanguine</h2>
+        </div>
+        <div class="main" id="mel-phleg">
+            <h2>Melancholic - Phlegmatic</h2>
+        </div>
+        <div class="main" id="san-san">
+            <h2>Sanguine - Sanguine</h2>
+        </div>
+        <div class="main" id="san-chol">
+            <h2>Sanguine - Choleric</h2>
+        </div>
+        <div class="main" id="san-mel">
+            <h2>Sanguine - Melancholic</h2>
+        </div>
+        <div class="main" id="san-phleg">
+            <h2>Sanguine - Phlegmatic</h2>
+        </div>
+        <div class="main" id="phleg-phleg">
+            <h2>Phlegmatic - Phlegmatic</h2>
+        </div>
+        <div class="main" id="phleg-chol">
+            <h2>Phlegmatic - Choleric</h2>
+        </div>
+        <div class="main" id="phleg-mel">
+            <h2>Phlegmatic - Melancholic</h2>
+        </div>
+        <div class="main" id="phleg-san">
+            <h2>Phlegmatic - Sanguine</h2>
         </div>
     </body>
 </html>

@@ -711,8 +711,7 @@ Medical
 * Complete Test
 
 META
-* 24 types will be created.
-* And type descriptions for each.
+* Pretty much done
 
 OSPI
 * Pretty much done
@@ -762,36 +761,6 @@ A style:
 First one is your dominant style.
 Second one is your flavor style.
 Last one is your blindspot.
-
-META: 
-MEAT:
-EMTA:
-EMAT:
-
-MTEA:
-MTAE:
-TMEA:
-TMAE:
-
-MAET:
-MATE:
-AMET:
-AMTE:
-
-ETMA:
-ETAM:
-TEMA:
-TEAM:
-
-EAMT:
-EATM:
-AEMT:
-AETM:
-
-TAME:
-TAEM:
-ATME:
-ATEM:
 
 
 
