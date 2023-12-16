@@ -125,10 +125,10 @@ function get_result() {
     document.getElementById("result_san").innerHTML = "Sanguine: " + san + "%"
     document.getElementById("result_phleg").innerHTML = "Phlegmatic: " + phleg + "%"
     
-    document.getElementById("bar_chol").style.width = m + "%"
-    document.getElementById("bar_mel").style.width = e + "%"
-    document.getElementById("bar_san").style.width = t + "%"
-    document.getElementById("bar_phleg").style.width = a + "%"
+    document.getElementById("bar_chol").style.width = chol + "%"
+    document.getElementById("bar_mel").style.width = mel + "%"
+    document.getElementById("bar_san").style.width = san + "%"
+    document.getElementById("bar_phleg").style.width = phleg + "%"
 }
 
 
