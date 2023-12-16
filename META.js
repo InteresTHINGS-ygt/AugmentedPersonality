@@ -73,15 +73,15 @@ function get_result() {
     document.getElementById("desc").style.display = "";
     document.getElementById("test").style.display = "none";
     document.getElementById("question_number").style.display = "none";
-    document.getElementById("result_m").innerHTML = "Your M factor is " + m + "%"
-    document.getElementById("result_e").innerHTML = "Your E factor is " + e + "%"
-    document.getElementById("result_t").innerHTML = "Your T factor is " + t + "%"
-    document.getElementById("result_a").innerHTML = "Your A factor is " + a + "%"
+    document.getElementById("result_m").innerHTML = "Your M factor is " + m + "%";
+    document.getElementById("result_e").innerHTML = "Your E factor is " + e + "%";
+    document.getElementById("result_t").innerHTML = "Your T factor is " + t + "%";
+    document.getElementById("result_a").innerHTML = "Your A factor is " + a + "%";
     
-    document.getElementById("bar_m").style.width = m + "%"
-    document.getElementById("bar_e").style.width = e + "%"
-    document.getElementById("bar_t").style.width = t + "%"
-    document.getElementById("bar_a").style.width = a + "%"
+    document.getElementById("bar_m").style.width = m + "%";
+    document.getElementById("bar_e").style.width = e + "%";
+    document.getElementById("bar_t").style.width = t + "%";
+    document.getElementById("bar_a").style.width = a + "%";
 }
 
 

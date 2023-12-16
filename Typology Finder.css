@@ -5,3 +5,155 @@ body {
 input[type="button"] {
     background-color: rgb(230, 111, 0)
 }
+
+.results_bar_OTEs {
+    background-color: rgb(187, 179, 179);
+    margin: 4vw;
+    border-radius: 1.5vw;
+    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
+    position: relative;
+}
+
+.bar_OTEs {
+    background-color: rgb(0, 160, 93);
+    border-radius: 1.5vw;
+    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
+    width: 50%;
+    height: 6vw;
+}
+
+.results_bar_CONs {
+    background-color: rgb(173, 173, 173);
+    margin: 4vw;
+    border-radius: 1.5vw;
+    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
+    position: relative;
+}
+
+.bar_CONs {
+    background-color: rgb(0, 100, 167);
+    border-radius: 1.5vw;
+    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
+    width: 50%;
+    height: 6vw;
+}
+
+.results_bar_EXTs {
+    background-color: rgb(173, 173, 173);
+    margin: 4vw;
+    border-radius: 1.5vw;
+    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
+    position: relative;
+}
+
+.bar_EXTs {
+    background-color: rgb(199, 146, 0);
+    border-radius: 1.5vw;
+    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
+    width: 50%;
+    height: 6vw;
+}
+
+.results_bar_AGRs {
+    background-color: rgb(173, 173, 173);
+    margin: 4vw;
+    border-radius: 1.5vw;
+    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
+    position: relative;
+}
+
+.bar_AGRs {
+    background-color: rgb(190, 0, 57);
+    border-radius: 1.5vw;
+    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
+    width: 50%;
+    height: 6vw;
+}
+
+.results_bar_NEUs {
+    background-color: rgb(173, 173, 173);
+    margin: 4vw;
+    border-radius: 1.5vw;
+    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
+    position: relative;
+}
+
+.bar_NEUs {
+    background-color: rgb(121, 0, 177);
+    border-radius: 1.5vw;
+    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
+    width: 50%;
+    height: 6vw;
+}
+
+@media only screen and (min-width: 600px){
+    .results_bar_OTEs {
+        margin: 30px;
+        border-radius: 10px;
+        box-shadow: 14px 14px 28px rgba(40, 37, 30, 0.2);
+        position: relative;
+    }
+    
+    .bar_OTEs {
+        border-radius: 10px;
+        box-shadow: 14px 14px 28px rgba(40, 37, 30, 0.2);
+        width: 50%;
+        height: 40px;
+    }
+
+    .results_bar_CONs {
+        margin: 30px;
+        border-radius: 10px;
+        box-shadow: 14px 14px 28px rgba(40, 37, 30, 0.2);
+        position: relative;
+    }
+    
+    .bar_CONs {
+        border-radius: 10px;
+        box-shadow: 14px 14px 28px rgba(40, 37, 30, 0.2);
+        width: 50%;
+        height: 40px;
+    }
+
+    .results_bar_EXTs {
+        margin: 30px;
+        border-radius: 10px;
+        box-shadow: 14px 14px 28px rgba(40, 37, 30, 0.2);
+        position: relative;
+    }
+    
+    .bar_EXTs {
+        border-radius: 10px;
+        box-shadow: 14px 14px 28px rgba(40, 37, 30, 0.2);
+        width: 50%;
+        height: 40px;
+    }
+
+    .results_bar_AGRs {
+        margin: 30px;
+        border-radius: 10px;
+        box-shadow: 14px 14px 28px rgba(40, 37, 30, 0.2);
+        position: relative;
+    }
+    
+    .bar_AGRs {
+        border-radius: 10px;
+        box-shadow: 14px 14px 28px rgba(40, 37, 30, 0.2);
+        width: 50%;
+        height: 40px;
+    }
+
+    .results_bar_NEUs {
+        margin: 30px;
+        border-radius: 10px;
+        box-shadow: 14px 14px 28px rgba(40, 37, 30, 0.2);
+        position: relative;
+    }
+    
+    .bar_NEUs {
+        border-radius: 10px;
+        box-shadow: 14px 14px 28px rgba(40, 37, 30, 0.2);
+        width: 50%;
+        height: 40px;
+    }
+}

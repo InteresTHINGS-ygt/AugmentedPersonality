@@ -1,7 +1,279 @@
 body {
-    background-color: rgb(0, 161, 22)
+    background-color: rgb(0, 161, 22);
 }
 
 input[type="button"] {
-    background-color: rgb(0, 182, 24)
+    background-color: rgb(0, 182, 24);
+}
+
+.results_bar_1 {
+    background-color: rgb(187, 179, 179);
+    margin: 4vw;
+    border-radius: 1.5vw;
+    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
+    position: relative;
+}
+
+.bar_1 {
+    background-color: rgb(50, 102, 150);
+    border-radius: 1.5vw;
+    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
+    width: 50%;
+    height: 6vw;
+}
+
+.results_bar_2 {
+    background-color: rgb(173, 173, 173);
+    margin: 4vw;
+    border-radius: 1.5vw;
+    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
+    position: relative;
+}
+
+.bar_2 {
+    background-color: rgb(177, 0, 97);
+    border-radius: 1.5vw;
+    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
+    width: 50%;
+    height: 6vw;
+}
+
+.results_bar_3 {
+    background-color: rgb(173, 173, 173);
+    margin: 4vw;
+    border-radius: 1.5vw;
+    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
+    position: relative;
+}
+
+.bar_3 {
+    background-color: rgb(168, 137, 0);
+    border-radius: 1.5vw;
+    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
+    width: 50%;
+    height: 6vw;
+}
+
+.results_bar_4 {
+    background-color: rgb(173, 173, 173);
+    margin: 4vw;
+    border-radius: 1.5vw;
+    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
+    position: relative;
+}
+
+.bar_4 {
+    background-color: rgb(71, 0, 165);
+    border-radius: 1.5vw;
+    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
+    width: 50%;
+    height: 6vw;
+}
+
+.results_bar_5 {
+    background-color: rgb(173, 173, 173);
+    margin: 4vw;
+    border-radius: 1.5vw;
+    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
+    position: relative;
+}
+
+.bar_5 {
+    background-color: rgb(0, 133, 82);
+    border-radius: 1.5vw;
+    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
+    width: 50%;
+    height: 6vw;
+}
+
+.results_bar_6 {
+    background-color: rgb(173, 173, 173);
+    margin: 4vw;
+    border-radius: 1.5vw;
+    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
+    position: relative;
+}
+
+.bar_6 {
+    background-color: rgb(107, 156, 43);
+    border-radius: 1.5vw;
+    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
+    width: 50%;
+    height: 6vw;
+}
+
+.results_bar_7 {
+    background-color: rgb(173, 173, 173);
+    margin: 4vw;
+    border-radius: 1.5vw;
+    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
+    position: relative;
+}
+
+.bar_7 {
+    background-color: rgb(201, 64, 0);
+    border-radius: 1.5vw;
+    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
+    width: 50%;
+    height: 6vw;
+}
+
+.results_bar_8 {
+    background-color: rgb(173, 173, 173);
+    margin: 4vw;
+    border-radius: 1.5vw;
+    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
+    position: relative;
+}
+
+.bar_8 {
+    background-color: rgb(139, 0, 0);
+    border-radius: 1.5vw;
+    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
+    width: 50%;
+    height: 6vw;
+}
+
+.results_bar_9 {
+    background-color: rgb(173, 173, 173);
+    margin: 4vw;
+    border-radius: 1.5vw;
+    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
+    position: relative;
+}
+
+.bar_9 {
+    background-color: rgb(102, 102, 102);
+    border-radius: 1.5vw;
+    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
+    width: 50%;
+    height: 6vw;
+}
+
+@media only screen and (min-width: 600px){
+    .results_bar_1 {
+        margin: 30px;
+        border-radius: 10px;
+        box-shadow: 14px 14px 28px rgba(40, 37, 30, 0.2);
+        position: relative;
+    }
+    
+    .bar_1 {
+        border-radius: 10px;
+        box-shadow: 14px 14px 28px rgba(40, 37, 30, 0.2);
+        width: 50%;
+        height: 40px;
+    }
+
+    .results_bar_2 {
+        margin: 30px;
+        border-radius: 10px;
+        box-shadow: 14px 14px 28px rgba(40, 37, 30, 0.2);
+        position: relative;
+    }
+    
+    .bar_2 {
+        border-radius: 10px;
+        box-shadow: 14px 14px 28px rgba(40, 37, 30, 0.2);
+        width: 50%;
+        height: 40px;
+    }
+
+    .results_bar_3 {
+        margin: 30px;
+        border-radius: 10px;
+        box-shadow: 14px 14px 28px rgba(40, 37, 30, 0.2);
+        position: relative;
+    }
+    
+    .bar_3 {
+        border-radius: 10px;
+        box-shadow: 14px 14px 28px rgba(40, 37, 30, 0.2);
+        width: 50%;
+        height: 40px;
+    }
+
+    .results_bar_4 {
+        margin: 30px;
+        border-radius: 10px;
+        box-shadow: 14px 14px 28px rgba(40, 37, 30, 0.2);
+        position: relative;
+    }
+    
+    .bar_4 {
+        border-radius: 10px;
+        box-shadow: 14px 14px 28px rgba(40, 37, 30, 0.2);
+        width: 50%;
+        height: 40px;
+    }
+
+    .results_bar_5 {
+        margin: 30px;
+        border-radius: 10px;
+        box-shadow: 14px 14px 28px rgba(40, 37, 30, 0.2);
+        position: relative;
+    }
+    
+    .bar_5 {
+        border-radius: 10px;
+        box-shadow: 14px 14px 28px rgba(40, 37, 30, 0.2);
+        width: 50%;
+        height: 40px;
+    }
+
+    .results_bar_6 {
+        margin: 30px;
+        border-radius: 10px;
+        box-shadow: 14px 14px 28px rgba(40, 37, 30, 0.2);
+        position: relative;
+    }
+    
+    .bar_6 {
+        border-radius: 10px;
+        box-shadow: 14px 14px 28px rgba(40, 37, 30, 0.2);
+        width: 50%;
+        height: 40px;
+    }
+
+    .results_bar_7 {
+        margin: 30px;
+        border-radius: 10px;
+        box-shadow: 14px 14px 28px rgba(40, 37, 30, 0.2);
+        position: relative;
+    }
+    
+    .bar_7 {
+        border-radius: 10px;
+        box-shadow: 14px 14px 28px rgba(40, 37, 30, 0.2);
+        width: 50%;
+        height: 40px;
+    }
+
+    .results_bar_8 {
+        margin: 30px;
+        border-radius: 10px;
+        box-shadow: 14px 14px 28px rgba(40, 37, 30, 0.2);
+        position: relative;
+    }
+    
+    .bar_8 {
+        border-radius: 10px;
+        box-shadow: 14px 14px 28px rgba(40, 37, 30, 0.2);
+        width: 50%;
+        height: 40px;
+    }
+
+    .results_bar_9 {
+        margin: 30px;
+        border-radius: 10px;
+        box-shadow: 14px 14px 28px rgba(40, 37, 30, 0.2);
+        position: relative;
+    }
+    
+    .bar_9 {
+        border-radius: 10px;
+        box-shadow: 14px 14px 28px rgba(40, 37, 30, 0.2);
+        width: 50%;
+        height: 40px;
+    }
 }

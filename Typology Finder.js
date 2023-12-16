@@ -180,22 +180,22 @@ function get_result() {
     document.getElementById("NEU").innerHTML = "Neuroticism: " + neuroticism + "%";
     document.getElementById("wtd").innerHTML = "Withdrawal: " + wtd + "%";
     document.getElementById("vol").innerHTML = "Volatility: " + vol + "%";
-
-    document.getElementById("OTEs").value = openness;
-    document.getElementById("ints").value = int;
-    document.getElementById("opns").value = opn;
-    document.getElementById("CONs").value = conscientiousness;
-    document.getElementById("inds").value = ind;
-    document.getElementById("ords").value = ord;
-    document.getElementById("EXTs").value = extraversion;
-    document.getElementById("ents").value = ent;
-    document.getElementById("asrs").value = asr;
-    document.getElementById("AGRs").value = agreeableness;
-    document.getElementById("coms").value = com;
-    document.getElementById("pols").value = pol;
-    document.getElementById("NEUs").value = neuroticism;
-    document.getElementById("wtds").value = wtd;
-    document.getElementById("vols").value = vol;
+    
+    document.getElementById("bar_OTEs").style.width = openness + "%";
+    document.getElementById("bar_ints").style.width = int + "%";
+    document.getElementById("bar_opns").style.width = opn + "%";
+    document.getElementById("bar_CONs").style.width = conscientiousness + "%";
+    document.getElementById("bar_inds").style.width = ind + "%";
+    document.getElementById("bar_ords").style.width = ord + "%";
+    document.getElementById("bar_EXTs").style.width = extraversion + "%";
+    document.getElementById("bar_ents").style.width = ent + "%";
+    document.getElementById("bar_asrs").style.width = asr + "%";
+    document.getElementById("bar_AGRs").style.width = agreeableness + "%";
+    document.getElementById("bar_coms").style.width = com + "%";
+    document.getElementById("bar_pols").style.width = pol + "%";
+    document.getElementById("bar_NEUs").style.width = neuroticism + "%";
+    document.getElementById("bar_wtds").style.width = wtd + "%";
+    document.getElementById("bar_vols").style.width = vol + "%";
 }
 
 

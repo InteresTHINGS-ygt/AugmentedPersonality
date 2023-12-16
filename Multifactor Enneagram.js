@@ -185,15 +185,15 @@ function buttonclick(score) {
     if (current_question > (questions.length - 1)){
         document.getElementById("question_number").style.display = "none";
         document.getElementById("Statement").innerHTML = "Finished!";
-        one = Math.round((one / 7) * 100)
-        two = Math.round((two / 7) * 100)
-        three = Math.round((three / 7) * 100)
-        four = Math.round((four / 7) * 100)
-        five = Math.round((five / 7) * 100)
-        six = Math.round((six / 7) * 100)
-        seven = Math.round((seven / 7) * 100)
-        eight = Math.round((eight / 7) * 100)
-        nine = Math.round((nine / 7) * 100)
+        one = Math.round((one / 21) * 100)
+        two = Math.round((two / 21) * 100)
+        three = Math.round((three / 21) * 100)
+        four = Math.round((four / 21) * 100)
+        five = Math.round((five / 21) * 100)
+        six = Math.round((six / 21) * 100)
+        seven = Math.round((seven / 21) * 100)
+        eight = Math.round((eight / 21) * 100)
+        nine = Math.round((nine / 21) * 100)
 
         get_result();
     }
@@ -213,6 +213,16 @@ function get_result() {
     document.getElementById("seven").innerHTML = "Seven: " + seven + "%"
     document.getElementById("eight").innerHTML = "Eight: " + eight + "%"
     document.getElementById("nine").innerHTML = "Nine: " + nine + "%"
+
+    document.getElementById("bar_1").style.width = one + "%"
+    document.getElementById("bar_2").style.width = two + "%"
+    document.getElementById("bar_3").style.width = three + "%"
+    document.getElementById("bar_4").style.width = four + "%"
+    document.getElementById("bar_5").style.width = five + "%"
+    document.getElementById("bar_6").style.width = six + "%"
+    document.getElementById("bar_7").style.width = seven + "%"
+    document.getElementById("bar_8").style.width = eight + "%"
+    document.getElementById("bar_9").style.width = nine + "%"
 }
 
 
