@@ -120,15 +120,15 @@ function get_result() {
     document.getElementById("results").style.display = "block";
     document.getElementById("test").style.display = "none";
     document.getElementById("question_number").style.display = "none";
-    document.getElementById("result_chol").innerHTML = "Choleric: " + chol + "%"
-    document.getElementById("result_mel").innerHTML = "Melancholic: " + mel + "%"
-    document.getElementById("result_san").innerHTML = "Sanguine: " + san + "%"
-    document.getElementById("result_phleg").innerHTML = "Phlegmatic: " + phleg + "%"
+    document.getElementById("result_chol").innerHTML = "Choleric: " + chol + "%";
+    document.getElementById("result_mel").innerHTML = "Melancholic: " + mel + "%";
+    document.getElementById("result_san").innerHTML = "Sanguine: " + san + "%";
+    document.getElementById("result_phleg").innerHTML = "Phlegmatic: " + phleg + "%";
     
-    document.getElementById("bar_chol").style.width = chol + "%"
-    document.getElementById("bar_mel").style.width = mel + "%"
-    document.getElementById("bar_san").style.width = san + "%"
-    document.getElementById("bar_phleg").style.width = phleg + "%"
+    document.getElementById("bar_chol").style.width = chol + "%";
+    document.getElementById("bar_mel").style.width = mel + "%";
+    document.getElementById("bar_san").style.width = san + "%";
+    document.getElementById("bar_phleg").style.width = phleg + "%";
 }
 
 
