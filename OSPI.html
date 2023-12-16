@@ -20,19 +20,52 @@
         <h2 id="question_number"></h2>
         <h2 id="Statement">Click to start!</h2>
         <input type="button" onclick=buttonclick(0) id="start" value="Start Test">
-        <div id="test" style="display:none">
-            <input type="button" onclick=buttonclick(0) id="sd" value="Strongly Disagree"><br>
-            <input type="button" onclick=buttonclick(1) id="d" value="Disagree"><br>
-            <input type="button" onclick=buttonclick(2) id="n" value="Neutral"><br>
-            <input type="button" onclick=buttonclick(3) id="a" value="Agree"><br>
-            <input type="button" onclick=buttonclick(4) id="sa" value="Strongly Agree"><br>
+            <div id="test" style="display:none">
+                <input type="button" onclick=buttonclick(0) id="sd" value="Strongly Disagree"><br>
+                <input type="button" onclick=buttonclick(1) id="d" value="Disagree"><br>
+                <input type="button" onclick=buttonclick(2) id="a" value="Agree"><br>
+                <input type="button" onclick=buttonclick(3) id="sa" value="Strongly Agree"><br>
+            </div>
+            <div id = "results" style = "display:none">
+                <h3 id = "result_ios"></h3>
+                <div class="results_bar_ios">
+                    <div class="bar_ios" id="bar_ios"></div>
+                </div>
+                <h3 id = "result_macos"></h3>
+                <div class="results_bar_macos">
+                    <div class="bar_macos" id="bar_macos"></div>
+                </div>
+                <h3 id = "result_windows"></h3>
+                <div class="results_bar_windows">
+                    <div class="bar_windows" id="bar_windows"></div>
+                </div>
+                <h3 id = "result_android"></h3>
+                <div class="results_bar_android">
+                    <div class="bar_android" id="bar_android"></div>
+                </div>
+            </div>
+         </div>
+        <div id="desc" style="display:none">
+        <div class="main">
+            <h2>iOS/iPadOS</h2>
+            <p>iOS/iPadOS is known for its enthusiasm and focus on social status. They are pleasant, socially competent, and cheerful. But they can also be perfectionistic and worried about social status.</p>
         </div>
-        <div id = "results" style = "display:none">
-            <h3 id = "result_ios"></h3>
-            <h3 id = "result_macos"></h3>
-            <h3 id = "result_windows"></h3>
-            <h3 id = "result_android"></h3>
-         </div>
-         </div>
+        <div class="main">
+            <h2>macOS</h2>
+            <p>macOS has an overall creative and relaxed attitude. They are stable, casual, and adaptable. But they can also be slow to start, overly relaxed, and not the best at video games.</p>
+        </div>
+        <div class="main">
+            <h2>Windows</h2>
+            <p>Windows is known for its efficiency, business orientation, and leadership. They are strategic problem solves who are often good at video games. But they can also be bossy and controlling.</p>
+        </div>
+        <div class="main">
+            <h2>Android</h2>
+            <p>Android, first and foremost, wants freedom and customizability. They prefer function over good looks, and they hate being limited. But they can also be emotionally unstable and overly eccentric.</p>
+        </div>
+        <div class="main">
+            <h2>Linux</h2>
+            <p>If your scores are very close to each other or you don't have any high score, then you may be Linux. Linux is adaptable and can basically become anything. But they can also struggle with finding out who they are.</p>
+        </div>
+    </div>
     </body>
 </html>

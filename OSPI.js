@@ -59,10 +59,10 @@ function buttonclick(score) {
     if (current_question > (questions.length - 1)){
         document.getElementById("question_number").style.display = "none";
         document.getElementById("Statement").innerHTML = "Finished!";
-        ios = Math.round((ios / 24) * 100)
-        macos = Math.round((macos / 24) * 100)
-        windows = Math.round((windows / 24) * 100)
-        android = Math.round((android / 24) * 100)
+        ios = Math.round((ios / 18) * 100)
+        macos = Math.round((macos / 18) * 100)
+        windows = Math.round((windows / 18) * 100)
+        android = Math.round((android / 18) * 100)
         get_result();
     }
     
@@ -70,12 +70,18 @@ function buttonclick(score) {
 
 function get_result() {
     document.getElementById("results").style.display = "block";
+    document.getElementById("desc").style.display = "";
     document.getElementById("test").style.display = "none";
     document.getElementById("question_number").style.display = "none";
     document.getElementById("result_ios").innerHTML = "Your similarity to iOS/iPadOS is " + ios + "%"
     document.getElementById("result_macos").innerHTML = "Your similarity to macOS is " + macos + "%"
     document.getElementById("result_windows").innerHTML = "Your similarity to Windows is " + windows + "%"
     document.getElementById("result_android").innerHTML = "Your similarity to Android is " + android + "%"
+
+    document.getElementById("bar_ios").style.width = ios + "%"
+    document.getElementById("bar_macos").style.width = macos + "%"
+    document.getElementById("bar_windows").style.width = windows + "%"
+    document.getElementById("bar_android").style.width = android + "%"
 }
 
 
