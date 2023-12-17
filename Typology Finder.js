@@ -69,7 +69,7 @@ function buttonclick(score) {
         "Often be viewed as having a soft and tender heart.",
         "Often feel stopped by your fears and negative attitude.",
         "Prefer a new place, route, or method over a known one.",
-        "Frequently be reminded of your organizational attitude.",
+        "Frequently be reminded of your highly orderly attitude.",
         "Often find yourself dominating the conversations.",
         "Rarely try to flaunt yourself and your abilities.",
         "Have somewhat extreme reactions to things in general.",
