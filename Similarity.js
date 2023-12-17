@@ -44,16 +44,16 @@ var you_name = "";
 var oth_name = "";
 
 function autofill_dev() {
-    document.getElementById("int_you").value = 88;
-    document.getElementById("opn_you").value = 70;
-    document.getElementById("ind_you").value = 33;
-    document.getElementById("ord_you").value = 38;
-    document.getElementById("ent_you").value = 48;
-    document.getElementById("asr_you").value = 43;
+    document.getElementById("int_you").value = 94;
+    document.getElementById("opn_you").value = 83;
+    document.getElementById("ind_you").value = 28;
+    document.getElementById("ord_you").value = 28;
+    document.getElementById("ent_you").value = 56;
+    document.getElementById("asr_you").value = 39;
     document.getElementById("com_you").value = 50;
-    document.getElementById("pol_you").value = 75;
-    document.getElementById("wtd_you").value = 88;
-    document.getElementById("vol_you").value = 65;
+    document.getElementById("pol_you").value = 78;
+    document.getElementById("wtd_you").value = 83;
+    document.getElementById("vol_you").value = 67;
 }
 
 
