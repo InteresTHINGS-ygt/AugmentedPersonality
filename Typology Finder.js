@@ -23,7 +23,7 @@ var test_status = 0;
 function buttonclick(score) {
     var questions = [
 
-        "Frequently consume educational content during free time.",
+        "Frequently consume educational content during free time.", 
         "Set specific goals and work hard to achieve them.",
         "Pursue making new friends and keeping a wide social sphere.",
         "Give emotional support to others rather than giving rational solutions.",

@@ -773,8 +773,47 @@ Expressive + Specialist + Casual = Panda
 Expressive + Generalist + Serious = Lion
 Expressive + Generalist + Casual = Dolphin
 
+---------------------------------------------------------------------------------------
 
+Typology Finder HUGE Update
 
+-- 10+ graphs which it highlights compound traits --
+
+- These will be:
+
+* OTE - Conscientiousness
+* OTE - Extraversion
+* OTE - Agreeableness
+* OTE - Neuroticism
+* Conscientiousness - Extraversion
+* Conscientiousness - Agreeableness
+* Conscientiousness - Neuroticism
+* Extraversion - Agreeableness
+* Extraversion - Neuroticism
+* Agreeableness - Neuroticism
+* Intellect - Openness
+* Industriousness - Orderliness
+* Assertiveness - Enthusiasm
+* Compassion - Politeness
+* Withdrawal - Volatility
+And many, MANY others...
+
+-- CPTI + Enneagram Typology Finder --
+
+- One of the headlining features
+
+-- Behavior Predictions (For Fun) --
+
+- These may be:
+
+* Are you iOS or Android user?
+* Do you like cheese?
+* Do you like taking selfies?
+* Are you likely to be interested in personality theories?
+* Would you make a good doctor?
+* Do you prefer console or PC games?
+* Do you prefer hot or iced coffee?
+And many, MANY more...
 
 
 
