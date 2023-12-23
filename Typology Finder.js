@@ -264,7 +264,7 @@ function get_result() {
         document.getElementById("ennea7").style.display = "none";
     }
 
-    if (asr < 60 && pol > 50) {
+    if (asr < 60 || pol > 50) {
         document.getElementById("ennea8").style.display = "none";
     }
 
