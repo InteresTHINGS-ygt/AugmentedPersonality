@@ -248,11 +248,11 @@ function get_result() {
         document.getElementById("ennea3").style.display = "none";
     }
 
-    if (opn < 60 && wtd < 25) {
+    if (opn < 60 || wtd < 25) {
         document.getElementById("ennea4").style.display = "none";
     }
 
-    if (int < 60 && ent > 75) {
+    if (int < 60 || ent > 75) {
         document.getElementById("ennea5").style.display = "none";
     }
 
@@ -260,7 +260,7 @@ function get_result() {
         document.getElementById("ennea6").style.display = "none";
     }
 
-    if (opn < 60 && ent < 60) {
+    if (opn < 60 || ent < 60) {
         document.getElementById("ennea7").style.display = "none";
     }
 
