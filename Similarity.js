@@ -43,6 +43,13 @@ var weight_sum;
 var you_name = "";
 var oth_name = "";
 
+var trait_score = 0;
+
+function update() {
+    trait_score = document.getElementById("value").valueAsNumber
+    document.getElementById("trait_score").innerHTML = "Trait Score: " + trait_score;
+}
+
 function autofill_dev() {
     document.getElementById("int_you").value = 94; 
     document.getElementById("opn_you").value = 83;

@@ -22,9 +22,15 @@
         <h3>The result you get is an approximation, not a precise value.</h3>
         </div>
         <div class="main">
-        <h2 id="question_number"></h2>
         <h2 id="Statement">Enter the trait scores down below:</h2>
-        <h3>Trait scores are between 0 and 100. Score of 0 means very low and 100 means very high.</h3>
+        <h3>Trait scores are between 0 and 100. Score of 0 means very low and 100 means very high. 
+        <h3>You can use the slider to get the trait score more accurately.</h3>
+        <h3 class="value" id="trait_score">Trait Score: 50</h3>
+        <span>Very Low</span>
+        <input type="range" min="0" max="100" value="50" id="value" class="slider" oninput=update()>
+        <span>Very High</span>
+        <br>
+        <br>
         <input type="button" class="auto_fill" onclick=autofill_dev() value="Use the developer's trait scores!"><br><br>
         <div id="tool">
             <table id="current" class="current">

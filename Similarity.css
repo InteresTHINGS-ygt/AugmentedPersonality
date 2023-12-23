@@ -31,19 +31,6 @@ input[type="button"] {
     border-radius: 1vw;
 }
 
-.scales {
-    grid-template-columns: 12vw 12vw 12vw 12vw 12vw;
-    justify-content: center;
-}
-
-.scale {
-    border-radius: 1vw;
-    font-weight: bold;
-    padding: 1vw;
-    margin: 1vw;
-    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.1);
-}
-
 @media only screen and (min-width: 600px) {
     .indicator_lights {
         display: flex;
@@ -61,59 +48,6 @@ input[type="button"] {
         background-color: rgb(60, 60, 60);
         height: 20px;
         border-radius: 6px;
-    }
-
-    .scales {
-        grid-template-columns: 80px 80px 80px 80px 80px;
-        justify-content: center;
-    }
-    
-    .scale1 {
-        border-radius: 7px;
-        font-weight: bold;
-        padding: 5px;
-        margin: 5px;
-        box-shadow: 7px 7px 14px rgba(40, 37, 30, 0.1);
-    }
-    
-    .scale2 {
-        border-radius: 7px;
-        font-weight: bold;
-        padding: 5px;
-        margin: 5px;
-        box-shadow: 7px 7px 14px rgba(40, 37, 30, 0.2);
-    }
-    
-    .scale3 {
-        border-radius: 7px;
-        font-weight: bold;
-        padding: 5px;
-        margin: 5px;
-        box-shadow: 7px 7px 14px rgba(40, 37, 30, 0.3);
-    }
-    
-    .scale4 {
-        border-radius: 7px;
-        font-weight: bold;
-        padding: 5px;
-        margin: 5px;
-        box-shadow: 7px 7px 14px rgba(40, 37, 30, 0.4);
-    }
-    
-    .scale5 {
-        border-radius: 7px;
-        font-weight: bold;
-        padding: 5px;
-        margin: 5px;
-        box-shadow: 7px 7px 14px rgba(40, 37, 30, 0.5);
-    }
-    
-    .scale6 {
-        border-radius: 7px;
-        font-weight: bold;
-        padding: 5px;
-        margin: 5px;
-        box-shadow: 7px 7px 14px rgba(40, 37, 30, 0.6);
     }
 }
 
