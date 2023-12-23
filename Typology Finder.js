@@ -28,50 +28,50 @@ function buttonclick(score) {
         "Frequently consume educational content during free time.", 
         "Set specific goals and work hard to achieve them.", 
         "Pursue making new friends and keeping a wide social sphere.", 
-        "Give emotional support to others rather than giving rational solutions.", 
+        "Give emotional support to others rather than giving rational solutions.", // Fe and Fi
         "Frequently imagine worst-case scenarios and threats.", // E6
         "Be viewed as a creative, artistic, and unconventional person.", 
-        "Make schedules or routines for your day as it stabilizes your life.", 
-        "Make quick decisions with your action-oriented attitude.", 
+        "Make schedules or routines for your day as it stabilizes your life.", // Si
+        "Make quick decisions with your action-oriented attitude.", // Se and Te
         "Steer clear of interpersonal conflict as much as possible.", 
         "Often get angry or upset over seemingly minor inconveniences.", 
         "Prefer mentally stimulating activities or jobs over simple ones.", 
-        "Be intentional with spending your time and don’t waste much of it.", 
+        "Be intentional with spending your time and don’t waste much of it.", // Te
         "Often be considered as the enthusiastic one in the group.", 
         "Often help or donate to others in order to take care of them.", 
         "Feel easily discouraged by bad events or performance.", 
         "Embrace alternative and eccentric lifestyles over traditional ones.",
-        "Use your detail-oriented attitude to prevent mistakes and omissions.",
+        "Use your detail-oriented attitude to prevent mistakes and omissions.", // Si
         "Prefer taking charge and leading over more passive roles.",
         "Focus on calming others down rather than shaking them up.",
         "Frequently be seen as having a temperamental attitude.",
         "Engage in solving puzzles such as Sudoku or Rubik’s Cube.",
-        "Focus on getting things done and checking things off from a to-do list.",
+        "Focus on getting things done and checking things off from a to-do list.", // Te
         "Seek exciting and fun experiences to not feel bored.",
         "Vicariously feel pain if someone else is also experiencing pain.",
         "Often feel insecure and doubtful about your own abilities.", // E6
         "Often daydream and view it as an essential part of life.",
-        "Consider details and contingencies to make careful decisions.",
+        "Consider details and contingencies to make careful decisions.", // Si
         "Be considered as having a strong personality.",
         "Prefer collaborating with others rather than competing with them.",
         "Often binge on food, social media, etc. to escape the moment.",
         "Often engage in philosophical or complex thought.",
         "Easily focus on finishing the task at hand.",
         "Usually prefer the company of others over alone time.",
-        "Frequently inquire if others are feeling good or not.",
+        "Frequently inquire if others are feeling good or not.", // Fe
         "Be considered as a person with frequent negative feelings.",
-        "Pursue understanding yourself and your feelings, values, and lifestyle.",
-        "Often utilize planners or agendas to keep your life in order.",
+        "Pursue understanding yourself and your feelings, values, and lifestyle.", // Fi
+        "Often utilize planners or agendas to keep your life in order.", // Si and Te
         "Be eager to share your thoughts and opinions.",
         "Make a point to act and play as fair as possible.",
         "Frequently experience volatile mood shifts throughout the day.",
         "Be viewed as having an inquisitive and cerebral attitude.",
-        "Prefer a productive lifestyle over a laid-back one.",
+        "Prefer a productive lifestyle over a laid-back one.", // Te
         "Frequently have a good laugh with others or yourself.",
         "Often be viewed as having a soft and tender heart.",
         "Often feel stopped by your fears and negative attitude.",
-        "Prefer a new place, route, or method over a known one.",
-        "Frequently be reminded of your highly orderly attitude.",
+        "Prefer a new place, route, or method over a known one.", // Ne and Se
+        "Frequently be reminded of your highly orderly attitude.", // Si
         "Often find yourself dominating the conversations.",
         "Rarely try to flaunt yourself and your abilities.",
         "Have somewhat extreme reactions to things in general.",
@@ -270,6 +270,34 @@ function get_result() {
 
     if (pol < 60) {
         document.getElementById("ennea9").style.display = "none";
+    }
+
+    if (ind > 80 || asr > 80) {
+        document.getElementById("infp").style.display = "none";
+        document.getElementById("intp").style.display = "none";
+        document.getElementById("isfp").style.display = "none";
+        document.getElementById("istp").style.display = "none";
+    }
+
+    if (ord < 40) {
+        document.getElementById("infj").style.display = "none";
+        document.getElementById("intj").style.display = "none";
+        document.getElementById("isfj").style.display = "none";
+        document.getElementById("istj").style.display = "none";
+    }
+
+    if (ord > 60) {
+        document.getElementById("enfp").style.display = "none";
+        document.getElementById("entp").style.display = "none";
+        document.getElementById("esfp").style.display = "none";
+        document.getElementById("estp").style.display = "none";
+    }
+
+    if (asr < 30 && ind < 40) {
+        document.getElementById("enfj").style.display = "none";
+        document.getElementById("entj").style.display = "none";
+        document.getElementById("esfj").style.display = "none";
+        document.getElementById("estj").style.display = "none";
     }
 }
 

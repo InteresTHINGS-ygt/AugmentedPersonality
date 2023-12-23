@@ -297,6 +297,10 @@ input[type="button"] {
     font-weight: bold;
 }
 
+.cpti {
+    font-weight: bold;
+}
+
 @media only screen and (min-width: 600px){
     .results_bar_OTEs {
         margin: 30px;

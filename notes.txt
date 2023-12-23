@@ -830,3 +830,19 @@ Enneagram types and Big Five Aspects
 9: High Politeness
 
 
+CPTI and Big Five Aspects
+
+IP: Low Industriousness, Low Assertiveness
+IJ: High Orderliness
+EP: Low Orderliness
+EJ: Impossible if low in Assertiveness AND Industriousness
+
+SP: Specific questions
+SJ: Low Openness, High Orderliness
+NP: High Intellect, High Openness
+NJ: High Intellect
+
+TP: 
+TJ: High Industriousness
+FP: High Compassion
+FJ: High Compassion
