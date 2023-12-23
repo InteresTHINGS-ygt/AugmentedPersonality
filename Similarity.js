@@ -44,7 +44,7 @@ var you_name = "";
 var oth_name = "";
 
 function autofill_dev() {
-    document.getElementById("int_you").value = 94;
+    document.getElementById("int_you").value = 94; 
     document.getElementById("opn_you").value = 83;
     document.getElementById("ind_you").value = 28;
     document.getElementById("ord_you").value = 28;
