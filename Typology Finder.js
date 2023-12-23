@@ -197,6 +197,8 @@ function get_result() {
     document.getElementById("bar_wtds").style.width = wtd + "%";
     document.getElementById("bar_vols").style.width = vol + "%";
 
+    document.getElementById("charts_space").style.display = "";
+
     document.getElementById("point_oc").style.left = conscientiousness + "%";
     document.getElementById("point_oc").style.bottom = openness + "%";
 
