@@ -196,6 +196,36 @@ function get_result() {
     document.getElementById("bar_NEUs").style.width = neuroticism + "%";
     document.getElementById("bar_wtds").style.width = wtd + "%";
     document.getElementById("bar_vols").style.width = vol + "%";
+
+    document.getElementById("point_oc").style.left = conscientiousness + "%";
+    document.getElementById("point_oc").style.bottom = openness + "%";
+
+    document.getElementById("point_oe").style.left = extraversion + "%";
+    document.getElementById("point_oe").style.bottom = openness + "%";
+
+    document.getElementById("point_oa").style.left = agreeableness + "%";
+    document.getElementById("point_oa").style.bottom = openness + "%";
+
+    document.getElementById("point_on").style.left = neuroticism + "%";
+    document.getElementById("point_on").style.bottom = openness + "%";
+
+    document.getElementById("point_ce").style.left = conscientiousness + "%";
+    document.getElementById("point_ce").style.bottom = extraversion + "%";
+
+    document.getElementById("point_ca").style.left = conscientiousness + "%";
+    document.getElementById("point_ca").style.bottom = agreeableness + "%";
+
+    document.getElementById("point_cn").style.left = conscientiousness + "%";
+    document.getElementById("point_cn").style.bottom = neuroticism + "%";
+
+    document.getElementById("point_ea").style.left = agreeableness + "%";
+    document.getElementById("point_ea").style.bottom = extraversion + "%";
+
+    document.getElementById("point_en").style.left = neuroticism + "%";
+    document.getElementById("point_en").style.bottom = extraversion + "%";
+
+    document.getElementById("point_an").style.left = neuroticism + "%";
+    document.getElementById("point_an").style.bottom = agreeableness + "%";
 }
 
 
