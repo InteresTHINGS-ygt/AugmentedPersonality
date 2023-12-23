@@ -20,24 +20,26 @@ var neuroticism = 0;
 
 var test_status = 0;
 
+var enn_6 = 0;
+
 function buttonclick(score) {
     var questions = [
 
-        "Frequently consume educational content during free time.",
-        "Set specific goals and work hard to achieve them.",
-        "Pursue making new friends and keeping a wide social sphere.",
-        "Give emotional support to others rather than giving rational solutions.",
-        "Frequently imagine worst-case scenarios and threats.",
-        "Be viewed as a creative, artistic, and unconventional person.",
-        "Make schedules or routines for your day as it stabilizes your life.",
-        "Make quick decisions with your action-oriented attitude.",
-        "Steer clear of interpersonal conflict as much as possible.",
-        "Often get angry or upset over seemingly minor inconveniences.",
-        "Prefer mentally stimulating activities or jobs over simple ones.",
-        "Be intentional with spending your time and don’t waste much of it.",
-        "Often be considered as the enthusiastic one in the group.",
-        "Often help or donate to others in order to take care of them.",
-        "Feel easily discouraged by bad events or performance.",
+        "Frequently consume educational content during free time.", 
+        "Set specific goals and work hard to achieve them.", 
+        "Pursue making new friends and keeping a wide social sphere.", 
+        "Give emotional support to others rather than giving rational solutions.", 
+        "Frequently imagine worst-case scenarios and threats.", // E6
+        "Be viewed as a creative, artistic, and unconventional person.", 
+        "Make schedules or routines for your day as it stabilizes your life.", 
+        "Make quick decisions with your action-oriented attitude.", 
+        "Steer clear of interpersonal conflict as much as possible.", 
+        "Often get angry or upset over seemingly minor inconveniences.", 
+        "Prefer mentally stimulating activities or jobs over simple ones.", 
+        "Be intentional with spending your time and don’t waste much of it.", 
+        "Often be considered as the enthusiastic one in the group.", 
+        "Often help or donate to others in order to take care of them.", 
+        "Feel easily discouraged by bad events or performance.", 
         "Embrace alternative and eccentric lifestyles over traditional ones.",
         "Use your detail-oriented attitude to prevent mistakes and omissions.",
         "Prefer taking charge and leading over more passive roles.",
@@ -47,7 +49,7 @@ function buttonclick(score) {
         "Focus on getting things done and checking things off from a to-do list.",
         "Seek exciting and fun experiences to not feel bored.",
         "Vicariously feel pain if someone else is also experiencing pain.",
-        "Often feel insecure and doubtful about your own abilities.",
+        "Often feel insecure and doubtful about your own abilities.", // E6
         "Often daydream and view it as an essential part of life.",
         "Consider details and contingencies to make careful decisions.",
         "Be considered as having a strong personality.",
@@ -76,7 +78,7 @@ function buttonclick(score) {
         "Feel satisfied by consuming complex, challenging material.",
         "Be seen as an ambitious and hardworking person.",
         "Often feel excited about social events such as parties.",
-        "Often put others’ needs and well-being over your own.",
+        "Often put others’ needs and well-being over your own.", 
         "Easily get caught up in negative or pessimistic patterns.",
         "Frequently engage in creative outlets such as music and art.",
         "Work to keep your spaces as clean and orderly as possible.",
@@ -97,43 +99,47 @@ function buttonclick(score) {
     document.getElementById("Statement").innerHTML = questions[current_question];
 
     if (current_question % 10 == 1){
-        int += score
+        int += score;
     }
 
     else if (current_question % 10 == 2){
-        ind += score
+        ind += score;
     }
    
     else if (current_question % 10 == 3){
-        ent += score
+        ent += score;
     }
     
     else if (current_question % 10 == 4){
-        com += score
+        com += score;
     }
     
     else if (current_question % 10 == 5){
-        wtd += score
+        wtd += score;
     }
     
     else if (current_question % 10 == 6){
-        opn += score
+        opn += score;
     }
     
     else if (current_question % 10 == 7){
-        ord += score
+        ord += score;
     }
     
     else if (current_question % 10 == 8){
-        asr += score
+        asr += score;
     }
     
     else if (current_question % 10 == 9){
-        pol += score
+        pol += score;
     }
     
     else if (current_question % 10 == 0){
-        vol += score
+        vol += score;
+    }
+
+    if (current_question == 4 || current_question == 24) {
+        enn_6 += score
     }
     
 
@@ -198,6 +204,7 @@ function get_result() {
     document.getElementById("bar_vols").style.width = vol + "%";
 
     document.getElementById("charts_space").style.display = "";
+    document.getElementById("typology_finder").style.display = "";
 
     document.getElementById("point_oc").style.left = conscientiousness + "%";
     document.getElementById("point_oc").style.bottom = openness + "%";
@@ -228,6 +235,42 @@ function get_result() {
 
     document.getElementById("point_an").style.left = neuroticism + "%";
     document.getElementById("point_an").style.bottom = agreeableness + "%";
+
+    if (ord < 60) {
+        document.getElementById("ennea1").style.display = "none";
+    }
+    
+    if (com < 60) {
+        document.getElementById("ennea2").style.display = "none";
+    }
+
+    if (ind < 60) {
+        document.getElementById("ennea3").style.display = "none";
+    }
+
+    if (opn < 60 && wtd < 25) {
+        document.getElementById("ennea4").style.display = "none";
+    }
+
+    if (int < 60 && ent > 75) {
+        document.getElementById("ennea5").style.display = "none";
+    }
+
+    if (enn_6 < 5) {
+        document.getElementById("ennea6").style.display = "none";
+    }
+
+    if (opn < 60 && ent < 60) {
+        document.getElementById("ennea7").style.display = "none";
+    }
+
+    if (asr < 60 && pol > 50) {
+        document.getElementById("ennea8").style.display = "none";
+    }
+
+    if (pol < 60) {
+        document.getElementById("ennea9").style.display = "none";
+    }
 }
 
 

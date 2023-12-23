@@ -817,6 +817,16 @@ This can make some of my tests REDUNDANT :D
 And many, MANY more...
 
 
+Enneagram types and Big Five Aspects
 
+1: High Orderliness
+2: High Compassion
+3: High Industriousness
+4: High Openness, High Withdrawal
+5: High Intellect, Low Enthusiasm
+6: Any
+7: High Openness, High Enthusiasm
+8: High Assertiveness, Low Politeness
+9: High Politeness
 
 
