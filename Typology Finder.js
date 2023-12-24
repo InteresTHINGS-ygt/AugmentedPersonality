@@ -21,6 +21,8 @@ var neuroticism = 0;
 var test_status = 0;
 
 var enn_6 = 0;
+var se = 0;
+
 
 function buttonclick(score) {
     var questions = [
@@ -140,6 +142,10 @@ function buttonclick(score) {
 
     if (current_question == 4 || current_question == 24) {
         enn_6 += score
+    }
+
+    if (current_question == 7) {
+        se += score
     }
     
 
@@ -298,6 +304,65 @@ function get_result() {
         document.getElementById("entj").style.display = "none";
         document.getElementById("esfj").style.display = "none";
         document.getElementById("estj").style.display = "none";
+    }
+
+    if (opn > 80 || ord < 40) {
+        document.getElementById("esfj").style.display = "none";
+        document.getElementById("estj").style.display = "none";
+        document.getElementById("isfj").style.display = "none";
+        document.getElementById("istj").style.display = "none";
+    }
+
+    if (int < 40 || opn < 60) {
+        document.getElementById("enfp").style.display = "none";
+        document.getElementById("entp").style.display = "none";
+        document.getElementById("infp").style.display = "none";
+        document.getElementById("intp").style.display = "none";
+    }
+
+    if (int < 40) {
+        document.getElementById("enfj").style.display = "none";
+        document.getElementById("entj").style.display = "none";
+        document.getElementById("infj").style.display = "none";
+        document.getElementById("intj").style.display = "none";
+    }
+
+    if (ind < 60 || com > 80) {
+        document.getElementById("entj").style.display = "none";
+        document.getElementById("estj").style.display = "none";
+        document.getElementById("intj").style.display = "none";
+        document.getElementById("istj").style.display = "none";
+    }
+
+    if (com < 60) {
+        document.getElementById("enfj").style.display = "none";
+        document.getElementById("esfj").style.display = "none";
+        document.getElementById("infj").style.display = "none";
+        document.getElementById("isfj").style.display = "none";
+    }
+
+    if (com < 40) {
+        document.getElementById("enfp").style.display = "none";
+        document.getElementById("esfp").style.display = "none";
+        document.getElementById("infp").style.display = "none";
+        document.getElementById("isfp").style.display = "none";
+    }
+
+    if (com > 75) {
+        document.getElementById("entp").style.display = "none";
+        document.getElementById("estp").style.display = "none";
+        document.getElementById("intp").style.display = "none";
+        document.getElementById("istp").style.display = "none";
+    }
+
+    if (se < 3) {
+        document.getElementById("esfp").style.display = "none";
+        document.getElementById("estp").style.display = "none";
+    }
+
+    if (se < 1) {
+        document.getElementById("isfp").style.display = "none";
+        document.getElementById("istp").style.display = "none";
     }
 }
 
