@@ -100,11 +100,11 @@ function buttonclick(score) {
     document.getElementById("question_number").innerHTML = "Question " + (current_question + 1);
     document.getElementById("Statement").innerHTML = questions[current_question];
 
-    if (current_question == 4 || current_question == 24) {
+    if (current_question == 5 || current_question == 25) {
         enn_6 += score
     }
 
-    if (current_question == 7) {
+    if (current_question == 8) {
         se += score
     }
 
