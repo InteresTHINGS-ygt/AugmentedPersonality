@@ -211,6 +211,7 @@ function get_result() {
 
     document.getElementById("charts_space").style.display = "";
     document.getElementById("typology_finder").style.display = "";
+    document.getElementById("prediction").style.display = "";
 
     document.getElementById("point_oc").style.left = conscientiousness + "%";
     document.getElementById("point_oc").style.bottom = openness + "%";
