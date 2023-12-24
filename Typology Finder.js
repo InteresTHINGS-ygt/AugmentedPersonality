@@ -100,6 +100,14 @@ function buttonclick(score) {
     document.getElementById("question_number").innerHTML = "Question " + (current_question + 1);
     document.getElementById("Statement").innerHTML = questions[current_question];
 
+    if (current_question == 4 || current_question == 24) {
+        enn_6 += score
+    }
+
+    if (current_question == 7) {
+        se += score
+    }
+
     if (current_question % 10 == 1){
         int += score;
     }
@@ -138,14 +146,6 @@ function buttonclick(score) {
     
     else if (current_question % 10 == 0){
         vol += score;
-    }
-
-    if (current_question == 4 || current_question == 24) {
-        enn_6 += score
-    }
-
-    if (current_question == 7) {
-        se += score
     }
     
 
@@ -254,7 +254,7 @@ function get_result() {
         document.getElementById("ennea3").style.display = "none";
     }
 
-    if (opn < 60 || wtd < 20) {
+    if (opn < 60 || wtd < 30) {
         document.getElementById("ennea4").style.display = "none";
     }
 
@@ -262,7 +262,7 @@ function get_result() {
         document.getElementById("ennea5").style.display = "none";
     }
 
-    if (enn_6 < 4) {
+    if (enn_6 < 4 || wtd < 30) {
         document.getElementById("ennea6").style.display = "none";
     }
 
