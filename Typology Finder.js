@@ -254,23 +254,23 @@ function get_result() {
         document.getElementById("ennea3").style.display = "none";
     }
 
-    if (opn < 60 || wtd < 25) {
+    if (opn < 60 || wtd < 20) {
         document.getElementById("ennea4").style.display = "none";
     }
 
-    if (int < 60 || ent > 75) {
+    if (int < 60 || ent > 70) {
         document.getElementById("ennea5").style.display = "none";
     }
 
-    if (enn_6 < 5) {
+    if (enn_6 < 4) {
         document.getElementById("ennea6").style.display = "none";
     }
 
-    if (opn < 60 || ent < 60) {
+    if (opn < 60 || ent < 60 || wtd > 80) {
         document.getElementById("ennea7").style.display = "none";
     }
 
-    if (asr < 60 || pol > 50) {
+    if (asr < 60 || pol > 50 || wtd > 50) {
         document.getElementById("ennea8").style.display = "none";
     }
 
@@ -306,7 +306,7 @@ function get_result() {
         document.getElementById("estj").style.display = "none";
     }
 
-    if (opn > 80 || ord < 40) {
+    if (opn > 80 || ord < 50) {
         document.getElementById("esfj").style.display = "none";
         document.getElementById("estj").style.display = "none";
         document.getElementById("isfj").style.display = "none";
@@ -327,7 +327,7 @@ function get_result() {
         document.getElementById("intj").style.display = "none";
     }
 
-    if (ind < 60 || com > 80) {
+    if (ind < 50 || com > 90) {
         document.getElementById("entj").style.display = "none";
         document.getElementById("estj").style.display = "none";
         document.getElementById("intj").style.display = "none";
@@ -348,7 +348,7 @@ function get_result() {
         document.getElementById("isfp").style.display = "none";
     }
 
-    if (com > 75) {
+    if (com > 80) {
         document.getElementById("entp").style.display = "none";
         document.getElementById("estp").style.display = "none";
         document.getElementById("intp").style.display = "none";
