@@ -6,6 +6,10 @@ input[type="button"] {
     background-color: rgb(230, 111, 0)
 }
 
+.pre {
+    font-weight: bold;
+}
+
 .results_bar_OTEs {
     background-color: rgb(187, 179, 179);
     margin: 4vw;
