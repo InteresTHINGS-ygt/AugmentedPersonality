@@ -364,6 +364,142 @@ function get_result() {
         document.getElementById("isfp").style.display = "none";
         document.getElementById("istp").style.display = "none";
     }
+
+    if (opn < 30 && ind > 40 && ent > 50) {
+        document.getElementById("pop").style.display = "";
+    }
+
+    if (opn > 70 && ord > 70 && ent < 40) {
+        document.getElementById("clas").style.display = "";
+    }
+
+    if (opn > 70 && ord < 30) {
+        document.getElementById("rock").style.display = "";
+    }
+
+    if (ent > 60) {
+        document.getElementById("dance").style.display = "";
+    }
+
+    if (ent > 60 && ord < 30) {
+        document.getElementById("rap").style.display = "";
+    }
+
+    if (wtd > 70) {
+        document.getElementById("repeat").style.display = "";
+    }
+
+    if (opn > 50 && wtd > 70) {
+        document.getElementById("dark").style.display = "";
+    }
+
+    if (ent > 70 && wtd < 40) {
+        document.getElementById("upbeat").style.display = "";
+    }
+
+    if (opn > 60 && ent > 50) {
+        document.getElementById("apple").style.display = "";
+    }
+
+    if (int > 80 && ent < 30 && wtd > 70) {
+        document.getElementById("anti").style.display = "";
+    }
+
+    if (int > 70 && ent < 50 && pol > 50 && wtd > 30) {
+        document.getElementById("android").style.display = "";
+    }
+
+    if (int > 80 && opn > 70 && ent < 40 && com < 70) {
+        document.getElementById("linux").style.display = "";
+    }
+
+    if (openness > 80) {
+        document.getElementById("ipad").style.display = "";
+    }
+
+    if (opn > 60 && ent < 50 && neuroticism > 60) {
+        document.getElementById("cat").style.display = "";
+    }
+
+    if (ind > 70 && ord > 30 && extraversion > 60 && agreeableness > 65) {
+        document.getElementById("dog").style.display = "";
+    }
+
+    if (opn > 80) {
+        document.getElementById("exo").style.display = "";
+    }
+
+    if (openness > 60 && conscientiousness < 40 && neuroticism > 50) {
+        document.getElementById("night").style.display = "";
+    }
+
+    if (conscientiousness > 70) {
+        document.getElementById("early").style.display = "";
+    }
+
+    if (int > 50 && extraversion < 40 && wtd > 50) {
+        document.getElementById("winter").style.display = "";
+    }
+
+    if (extraversion > 60 && ent > 70) {
+        document.getElementById("summer").style.display = "";
+    }
+
+    if (opn > 50 && ent > 50) {
+        document.getElementById("iced").style.display = "";
+    }
+
+    if (opn > 60 && asr < 50 && agreeableness > 50 && wtd > 50) {
+        document.getElementById("latte").style.display = "";
+    }
+
+    if (ind > 60 && asr > 60 && vol > 50 && pol < 50) {
+        document.getElementById("esp").style.display = "";
+    }
+
+    if (conscientiousness > 50 && agreeableness > 50) {
+        document.getElementById("che").style.display = "";
+    }
+
+    if (extraversion > 40 && neuroticism > 60) {
+        document.getElementById("over").style.display = "";
+    }
+
+    if (vol < 50 && asr < 40) {
+        document.getElementById("slow").style.display = "";
+    }
+
+    if (neuroticism > 60 && asr > 70) {
+        document.getElementById("fast").style.display = "";
+    }
+
+    if (int > 75) {
+        document.getElementById("rubik").style.display = "";
+    }
+
+    if (int > 70 && extraversion < 60) {
+        document.getElementById("gla").style.display = "";
+    }
+
+    if (openness > 70 && wtd > 70) {
+        document.getElementById("pers").style.display = "";
+    }
+
+    if (int > 65 && agreeableness < 80) {
+        document.getElementById("eng").style.display = "";
+    }
+
+    if (int > 65 && conscientiousness > 70 && com > 70) {
+        document.getElementById("med").style.display = "";
+    }
+
+    if (openness > 70 && asr > 70 && ind > 30) {
+        document.getElementById("entr").style.display = "";
+    }
+
+    if (openness > 70 && ord < 40) {
+        document.getElementById("create").style.display = "";
+    }
 }
 
 

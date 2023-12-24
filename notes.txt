@@ -846,3 +846,42 @@ TP:
 TJ: High Industriousness
 FP: High Compassion
 FJ: High Compassion
+
+
+Prediction zone
+
+<div id="">You are more likely to enjoy pop music.</div> - Low Openness, High Industriousness, High Enthusiasm
+<div id="">You are more likely to prefer classical or opera music.</div> - High Openness, High Orderliness, Low Enthusiasm
+<div id="">You are more likely to enjoy rock, metal, or indie music.</div> - High Openness, Low Orderliness
+<div id="">You are more likely to listen to dance or electronic music.</div> - High Enthusiasm
+<div id="">You are more likely to listen to rap and hip-hop.</div> - Low Orderliness, High Enthusiasm
+<div id="">You are more likely to repeat the same song over and over again.</div> - 
+<div id="">You are likely to listen to dark and emotional songs.</div>
+<div id="">You seem to prefer upbeat songs rather than dark ones.</div>
+<div id="">You seem to be more of an Apple user.</div>
+<div id="">You are more likely to be against owning Apple devices.</div>
+<div id="">You are likely to prefer Android over iOS.</div>
+<div id="">You are likely to use Windows instead of macOS.</div>
+<div id="">You are far more likely to be a Linux user than an average person.</div>
+<div id="">You seem to prefer laptops over desktops.</div>
+<div id="">You are more likely to own an iPad than an average person.</div>
+<div id="">You are more likely to own a cat than a dog.</div>
+<div id="">You are most likely a dog person.</div>
+<div id="">You are more likely to have an exotic pet than an average person.</div>
+<div id="">You are more likely to be a night owl.</div>
+<div id="">You are probably more of an early bird.</div>
+<div id="">You are likely to prefer iced coffee.</div>
+<div id="">You seem to prefer hot coffee over iced coffee.</div>
+<div id="">You are more likely to prefer latte.</div>
+<div id="">You may be more of an espresso person.</div>
+<div id="">You seem to prefer tea over coffee.</div>
+<div id="">You are more likely to be a cheese fan than an average person.</div>
+<div id="">You are more likely to be an overeater.</div>
+<div id="">You seem to eat more slowly than an average person.</div>
+<div id="">You are likely to be a fast eater.</div>
+<div id="">You are more likely to be able to solve a Rubik's Cube.</div>
+<div id="">You are more likely to be wearing glasses than an average person.</div>
+<div id="">You are more likely to be interested in personality theories than an average person.</div>
+<div id="">You are likely to pursue engineering as a career.</div>
+<div id="">You seem to be more of an entrepreneur than an average person.</div>
+<div id="">You seem to be interested in creating content more than average.</div>
