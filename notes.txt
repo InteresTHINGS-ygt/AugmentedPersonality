@@ -885,3 +885,92 @@ Prediction zone
 <div id="">You are likely to pursue engineering as a career.</div>
 <div id="">You seem to be more of an entrepreneur than an average person.</div>
 <div id="">You seem to be interested in creating content more than average.</div>
+
+Better Enneagram Test
+
+Main differences between types
+
+1-2: I help others because...
+1: It's the morally right thing to do
+2: I have to take care of their feelings
+
+1-3: I get things done...
+1: The right way
+3: The most efficient way
+
+1-4: I am self-critical because...
+1: I have made a critical mistake
+4: I feel inferior to others
+
+1-5: I gather information...
+1: To improve and perfect the world
+5: For the sake of it, for my own competence
+
+1-6: I follow the rules because...
+1: It's plain wrong to break them
+6: Bad things can happen if I break them
+
+1-7: My idealism is more like...
+1: Perfection, without mistakes
+7: Optimism, without negativity
+
+1-8: I express my anger when I...
+1: Should, repressing anything else
+8: Want to, without rules
+
+1-9: One of my faults are...
+1: Being too impatient and rigid
+9: Being too lax and indulgent
+
+2-3: I prefer getting my attention through...
+2: Giving to others so I feel loved
+3: Being the best so I feel valuable
+
+2-4: I am more aware of...
+2: Others' feelings, I need to take care of them
+4: My own feelings, I explore them in depth
+
+2-5: I am more likely to be...
+2: Too willing to give and express
+5: Too private and contained
+
+2-6: I am helpful because...
+2: I know what the other person needs
+6: I need to feel protected and safe
+
+2-7: I am more likely to...
+2: Feel obligated to help, others' needs over my own needs
+7: Feel limited by responsibility, I need my freedom and I help when I want to
+
+2-8: I tend to manipulate others through...
+2: Flattery and compliments
+8: Power and force
+
+2-9: I tend to...
+2: Know what others want, so I can help them
+9: Go along with what others want, so I can feel peaceful
+
+3-4: Others need to see my...
+3: Best self, I need to be impressive
+4: Real self, I need to show the real me
+
+3-5:
+3-6:
+3-7:
+3-8:
+3-9:
+4-5:
+4-6:
+4-7:
+4-8:
+4-9:
+5-6:
+5-7:
+5-8:
+5-9:
+6-7:
+6-8: 
+6-9:
+7-8:
+7-9:
+8-9:
