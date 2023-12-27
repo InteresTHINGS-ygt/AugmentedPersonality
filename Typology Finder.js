@@ -170,13 +170,35 @@ function buttonclick(score) {
         neuroticism = Math.round((wtd + vol) / 2)
         get_result();
     }
-    
+}
+
+function manualinsert() {
+    document.getElementById("manual").style.display = "";
+    document.getElementById("start").style.display = "none";
+    document.getElementById("manualb").style.display = "none";
+    document.getElementById("Statement").innerHTML = "Trait scores are between 0 and 100."
+}
+
+function manual() {
+    int = document.getElementById("int").valueAsNumber;
+    opn = document.getElementById("opn").valueAsNumber;
+    ind = document.getElementById("ind").valueAsNumber;
+    ord = document.getElementById("ord").valueAsNumber;
+    ent = document.getElementById("ent").valueAsNumber;
+    asr = document.getElementById("asr").valueAsNumber;
+    com = document.getElementById("com").valueAsNumber;
+    pol = document.getElementById("pol").valueAsNumber;
+    wtd = document.getElementById("wtd").valueAsNumber;
+    vol = document.getElementById("vol").valueAsNumber;
+    get_result()
 }
 
 function get_result() {
     document.getElementById("results").style.display = "block";
     document.getElementById("test").style.display = "none";
+    document.getElementById("manual").style.display = "none";
     document.getElementById("question_number").style.display = "none";
+    document.getElementById("Statement").style.display = "none";
     document.getElementById("OTE").innerHTML = "Openess to Experience: " + openness + "%";
     document.getElementById("int").innerHTML = "Intellect: " + int + "%";
     document.getElementById("opn").innerHTML = "Openness: " + opn + "%";

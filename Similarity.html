@@ -23,14 +23,7 @@
         </div>
         <div class="main">
         <h2 id="Statement">Enter the trait scores down below:</h2>
-        <h3>Trait scores are between 0 and 100. Score of 0 means very low and 100 means very high. 
-        <h3>You can use the slider to get the trait score more accurately.</h3>
-        <h3 class="value" id="trait_score">Trait Score: 50</h3>
-        <span>Very Low</span>
-        <input type="range" min="0" max="100" value="50" id="value" class="slider" oninput=update()>
-        <span>Very High</span>
-        <br>
-        <br>
+        <h3>Trait scores are between 0 and 100. Score of 0 means very low and 100 means very high.</h3> 
         <input type="button" class="auto_fill" onclick=autofill_dev() value="Use the developer's trait scores!"><br><br>
         <div id="tool">
             <table id="current" class="current">
@@ -41,58 +34,58 @@
                 </tr>
                 <tr>
                     <td>Intellect</td>
-                    <td><input type="number" id="int_you" min="0" max="100" value = ""></td>
-                    <td><input type="number" id="int_oth" min="0" max="100" value = ""></td>
+                    <td><input type="range" class="slider_a" step="10" id="int_you" min="0" max="100" value = "50" oninput=update_a() onchange=update_a()><p id="int_youa">50</p></td>
+                    <td><input type="range" class="slider_a" step="10" id="int_oth" min="0" max="100" value = "50" oninput=update_a() onchange=update_a()><p id="int_otha">50</p></td>
                 </tr>
                 <tr>
                     <td>Openness</td>
-                    <td><input type="number" id="opn_you" min="0" max="100" value = ""></td>
-                    <td><input type="number" id="opn_oth" min="0" max="100" value = ""></td>
+                    <td><input type="range" class="slider_a" step="10" id="opn_you" min="0" max="100" value = "50" oninput=update_a() onchange=update_a()><p id="opn_youa">50</p></td>
+                    <td><input type="range" class="slider_a" step="10" id="opn_oth" min="0" max="100" value = "50" oninput=update_a() onchange=update_a()><p id="opn_otha">50</p></td>
                 </tr>
                 <tr>
                     <td>Industriousness</td>
-                    <td><input type="number" id="ind_you" min="0" max="100" value = ""></td>
-                    <td><input type="number" id="ind_oth" min="0" max="100" value = ""></td>
+                    <td><input type="range" class="slider_a" step="10" id="ind_you" min="0" max="100" value = "50" oninput=update_a() onchange=update_a()><p id="ind_youa">50</p></td>
+                    <td><input type="range" class="slider_a" step="10" id="ind_oth" min="0" max="100" value = "50" oninput=update_a() onchange=update_a()><p id="ind_otha">50</p></td>
                 </tr>
                 <tr>
                     <td>Orderliness</td>
-                    <td><input type="number" id="ord_you" min="0" max="100" value = ""></td>
-                    <td><input type="number" id="ord_oth" min="0" max="100" value = ""></td>
+                    <td><input type="range" class="slider_a" step="10" id="ord_you" min="0" max="100" value = "50" oninput=update_a() onchange=update_a()><p id="ord_youa">50</p></td>
+                    <td><input type="range" class="slider_a" step="10" id="ord_oth" min="0" max="100" value = "50" oninput=update_a() onchange=update_a()><p id="ord_otha">50</p></td>
                 </tr>
                 <tr>
                     <td>Enthusiasm</td>
-                    <td><input type="number" id="ent_you" min="0" max="100" value = ""></td>
-                    <td><input type="number" id="ent_oth" min="0" max="100" value = ""></td>
+                    <td><input type="range" class="slider_a" step="10" id="ent_you" min="0" max="100" value = "50" oninput=update_a() onchange=update_a()><p id="ent_youa">50</p></td>
+                    <td><input type="range" class="slider_a" step="10" id="ent_oth" min="0" max="100" value = "50" oninput=update_a() onchange=update_a()><p id="ent_otha">50</p></td>
                 </tr>
                 <tr>
                     <td>Assertiveness</td>
-                    <td><input type="number" id="asr_you" min="0" max="100" value = ""></td>
-                    <td><input type="number" id="asr_oth" min="0" max="100" value = ""></td>
+                    <td><input type="range" class="slider_a" step="10" id="asr_you" min="0" max="100" value = "50" oninput=update_a() onchange=update_a()><p id="asr_youa">50</p></td>
+                    <td><input type="range" class="slider_a" step="10" id="asr_oth" min="0" max="100" value = "50" oninput=update_a() onchange=update_a()><p id="asr_otha">50</p></td>
                 </tr>
                 <tr>
                     <td>Compassion</td>
-                    <td><input type="number" id="com_you" min="0" max="100" value = ""></td>
-                    <td><input type="number" id="com_oth" min="0" max="100" value = ""></td>
+                    <td><input type="range" class="slider_a" step="10" id="com_you" min="0" max="100" value = "50" oninput=update_a() onchange=update_a()><p id="com_youa">50</p></td>
+                    <td><input type="range" class="slider_a" step="10" id="com_oth" min="0" max="100" value = "50" oninput=update_a() onchange=update_a()><p id="com_otha">50</p></td>
                 </tr>
                 <tr>
                     <td>Politeness</td>
-                    <td><input type="number" id="pol_you" min="0" max="100" value = ""></td>
-                    <td><input type="number" id="pol_oth" min="0" max="100" value = ""></td>
+                    <td><input type="range" class="slider_a" step="10" id="pol_you" min="0" max="100" value = "50" oninput=update_a() onchange=update_a()><p id="pol_youa">50</p></td>
+                    <td><input type="range" class="slider_a" step="10" id="pol_oth" min="0" max="100" value = "50" oninput=update_a() onchange=update_a()><p id="pol_otha">50</p></td>
                 </tr>
                 <tr>
                     <td>Withdrawal</td>
-                    <td><input type="number" id="wtd_you" min="0" max="100" value = ""></td>
-                    <td><input type="number" id="wtd_oth" min="0" max="100" value = ""></td>
+                    <td><input type="range" class="slider_a" step="10" id="wtd_you" min="0" max="100" value = "50" oninput=update_a() onchange=update_a()><p id="wtd_youa">50</p></td>
+                    <td><input type="range" class="slider_a" step="10" id="wtd_oth" min="0" max="100" value = "50" oninput=update_a() onchange=update_a()><p id="wtd_otha">50</p></td>
                 </tr>
                 <tr>
                     <td>Volatility</td>
-                    <td><input type="number" id="vol_you" min="0" max="100" value = ""></td>
-                    <td><input type="number" id="vol_oth" min="0" max="100" value = ""></td>
+                    <td><input type="range" class="slider_a" step="10" id="vol_you" min="0" max="100" value = "50" oninput=update_a() onchange=update_a()><p id="vol_youa">50</p></td>
+                    <td><input type="range" class="slider_a" step="10" id="vol_oth" min="0" max="100" value = "50" oninput=update_a() onchange=update_a()><p id="vol_otha">50</p></td>
                 </tr>
             </table>
             <p style="font-weight: bold;">How similar are your interests and preferences to this person? (Leave it at the middle if you want raw personality similarity)</p>
             <span>Very Dissimilar</span>
-            <input type="range" min="0" max="100" id="interest_sim" class="slider">
+            <input type="range" min="0" max="100" step="10" id="interest_sim" class="slider">
             <span>Very Similar</span>
             <br>
             <br>

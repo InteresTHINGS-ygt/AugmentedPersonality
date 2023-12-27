@@ -954,16 +954,46 @@ Main differences between types
 3: Best self, I need to be impressive
 4: Real self, I need to show the real me
 
-3-5:
-3-6:
-3-7:
-3-8:
-3-9:
-4-5:
-4-6:
-4-7:
-4-8:
-4-9:
+3-5: I tend to focus on the...
+3: Final goal, I need to succeed
+5: Process, I need to understand the world
+
+3-6: I'm more focused on...
+3: How I appear to others, am I impressive or not?
+6: Avoiding bad consequences, am I safe or not?
+
+3-7: I tend to...
+3: Play to win
+7: Play to have fun
+
+3-8: I am more like:
+3: A polished image of success
+8: A raw pillar of strength and power
+
+3-9: I am more focused on...
+3: Action and getting things done
+9: Relaxation and inner peace
+
+4-5: I tend to be...
+4: Involved with my own feelings to understand myself
+5: Detached from feelings in order to understand the world
+
+4-6: I tend to have a/an...
+4: Very strong sense of myself, based on inner experience
+6: Unsure sense of myself, I do a lot of "it depends"
+
+4-7: I feel disappointed, and...
+4: I feel like I will never get what I need
+7: I move on to the better thing
+
+4-8: I tend to...
+4: Be full of vulnerability
+8: Avoid vulnerability to be strong
+
+4-9: I prefer being...
+4: Emotionally intense, full of highs and lows 
+9: Emotionally calm, I need to feel peaceful and relaxed
+
 5-6:
 5-7:
 5-8:

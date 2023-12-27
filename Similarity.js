@@ -50,17 +50,105 @@ function update() {
     document.getElementById("trait_score").innerHTML = "Trait Score: " + trait_score;
 }
 
+function update_a() {
+    int_you = document.getElementById("int_you").valueAsNumber;
+    opn_you = document.getElementById("opn_you").valueAsNumber;
+    ind_you = document.getElementById("ind_you").valueAsNumber;
+    ord_you = document.getElementById("ord_you").valueAsNumber;
+    ent_you = document.getElementById("ent_you").valueAsNumber;
+    asr_you = document.getElementById("asr_you").valueAsNumber;
+    com_you = document.getElementById("com_you").valueAsNumber;
+    pol_you = document.getElementById("pol_you").valueAsNumber;
+    wtd_you = document.getElementById("wtd_you").valueAsNumber;
+    vol_you = document.getElementById("vol_you").valueAsNumber;
+    int_oth = document.getElementById("int_oth").valueAsNumber;
+    opn_oth = document.getElementById("opn_oth").valueAsNumber;
+    ind_oth = document.getElementById("ind_oth").valueAsNumber;
+    ord_oth = document.getElementById("ord_oth").valueAsNumber;
+    ent_oth = document.getElementById("ent_oth").valueAsNumber;
+    asr_oth = document.getElementById("asr_oth").valueAsNumber;
+    com_oth = document.getElementById("com_oth").valueAsNumber;
+    pol_oth = document.getElementById("pol_oth").valueAsNumber;
+    wtd_oth = document.getElementById("wtd_oth").valueAsNumber;
+    vol_oth = document.getElementById("vol_oth").valueAsNumber;
+
+    document.getElementById("int_youa").innerHTML = int_you; 
+    document.getElementById("opn_youa").innerHTML = opn_you;
+    document.getElementById("ind_youa").innerHTML = ind_you;
+    document.getElementById("ord_youa").innerHTML = ord_you;
+    document.getElementById("ent_youa").innerHTML = ent_you;
+    document.getElementById("asr_youa").innerHTML = asr_you;
+    document.getElementById("com_youa").innerHTML = com_you;
+    document.getElementById("pol_youa").innerHTML = pol_you;
+    document.getElementById("wtd_youa").innerHTML = wtd_you;
+    document.getElementById("vol_youa").innerHTML = vol_you;
+
+    document.getElementById("int_otha").innerHTML = int_oth; 
+    document.getElementById("opn_otha").innerHTML = opn_oth;
+    document.getElementById("ind_otha").innerHTML = ind_oth;
+    document.getElementById("ord_otha").innerHTML = ord_oth;
+    document.getElementById("ent_otha").innerHTML = ent_oth;
+    document.getElementById("asr_otha").innerHTML = asr_oth;
+    document.getElementById("com_otha").innerHTML = com_oth;
+    document.getElementById("pol_otha").innerHTML = pol_oth;
+    document.getElementById("wtd_otha").innerHTML = wtd_oth;
+    document.getElementById("vol_otha").innerHTML = vol_oth;
+}
+
 function autofill_dev() {
-    document.getElementById("int_you").value = 94; 
-    document.getElementById("opn_you").value = 83;
-    document.getElementById("ind_you").value = 28;
-    document.getElementById("ord_you").value = 28;
-    document.getElementById("ent_you").value = 56;
-    document.getElementById("asr_you").value = 39;
+    document.getElementById("int_you").value = 90; 
+    document.getElementById("opn_you").value = 80;
+    document.getElementById("ind_you").value = 30;
+    document.getElementById("ord_you").value = 30;
+    document.getElementById("ent_you").value = 60;
+    document.getElementById("asr_you").value = 40;
     document.getElementById("com_you").value = 50;
-    document.getElementById("pol_you").value = 78;
-    document.getElementById("wtd_you").value = 83;
-    document.getElementById("vol_you").value = 67;
+    document.getElementById("pol_you").value = 80;
+    document.getElementById("wtd_you").value = 80;
+    document.getElementById("vol_you").value = 70;
+
+    int_you = document.getElementById("int_you").valueAsNumber;
+    opn_you = document.getElementById("opn_you").valueAsNumber;
+    ind_you = document.getElementById("ind_you").valueAsNumber;
+    ord_you = document.getElementById("ord_you").valueAsNumber;
+    ent_you = document.getElementById("ent_you").valueAsNumber;
+    asr_you = document.getElementById("asr_you").valueAsNumber;
+    com_you = document.getElementById("com_you").valueAsNumber;
+    pol_you = document.getElementById("pol_you").valueAsNumber;
+    wtd_you = document.getElementById("wtd_you").valueAsNumber;
+    vol_you = document.getElementById("vol_you").valueAsNumber;
+    int_oth = document.getElementById("int_oth").valueAsNumber;
+    opn_oth = document.getElementById("opn_oth").valueAsNumber;
+    ind_oth = document.getElementById("ind_oth").valueAsNumber;
+    ord_oth = document.getElementById("ord_oth").valueAsNumber;
+    ent_oth = document.getElementById("ent_oth").valueAsNumber;
+    asr_oth = document.getElementById("asr_oth").valueAsNumber;
+    com_oth = document.getElementById("com_oth").valueAsNumber;
+    pol_oth = document.getElementById("pol_oth").valueAsNumber;
+    wtd_oth = document.getElementById("wtd_oth").valueAsNumber;
+    vol_oth = document.getElementById("vol_oth").valueAsNumber;
+
+    document.getElementById("int_youa").innerHTML = int_you; 
+    document.getElementById("opn_youa").innerHTML = opn_you;
+    document.getElementById("ind_youa").innerHTML = ind_you;
+    document.getElementById("ord_youa").innerHTML = ord_you;
+    document.getElementById("ent_youa").innerHTML = ent_you;
+    document.getElementById("asr_youa").innerHTML = asr_you;
+    document.getElementById("com_youa").innerHTML = com_you;
+    document.getElementById("pol_youa").innerHTML = pol_you;
+    document.getElementById("wtd_youa").innerHTML = wtd_you;
+    document.getElementById("vol_youa").innerHTML = vol_you;
+
+    document.getElementById("int_otha").innerHTML = int_oth; 
+    document.getElementById("opn_otha").innerHTML = opn_oth;
+    document.getElementById("ind_otha").innerHTML = ind_oth;
+    document.getElementById("ord_otha").innerHTML = ord_oth;
+    document.getElementById("ent_otha").innerHTML = ent_oth;
+    document.getElementById("asr_otha").innerHTML = asr_oth;
+    document.getElementById("com_otha").innerHTML = com_oth;
+    document.getElementById("pol_otha").innerHTML = pol_oth;
+    document.getElementById("wtd_otha").innerHTML = wtd_oth;
+    document.getElementById("vol_otha").innerHTML = vol_oth;
 }
 
 
