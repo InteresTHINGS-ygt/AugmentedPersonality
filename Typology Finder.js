@@ -179,6 +179,10 @@ function manualinsert() {
     document.getElementById("Statement").innerHTML = "Trait scores are between 0 and 100."
 }
 
+function reveal_patterns() {
+    document.getElementById("pattern_desc").style.display = "";
+}
+
 function manual() {
     int = document.getElementById("int").valueAsNumber;
     opn = document.getElementById("opn").valueAsNumber;
