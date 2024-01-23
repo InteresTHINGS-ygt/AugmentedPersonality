@@ -994,13 +994,44 @@ Main differences between types
 4: Emotionally intense, full of highs and lows 
 9: Emotionally calm, I need to feel peaceful and relaxed
 
-5-6:
-5-7:
-5-8:
-5-9:
-6-7:
-6-8: 
-6-9:
-7-8:
-7-9:
-8-9:
+5-6: I tend to...
+5: Trust only my mind, as others are less informed
+6: Struggle trusting my mind, as the world is uncertain
+
+5-7: I tend to be more naturally...
+5: Focused and intense, I need to feel competent
+7: Expansive and variety-seeking, I need to feel satisfied
+
+5-8: I am more...
+5: Cerebral, I need to think things through before acting
+8: Physical, I tend to act readily and immediately
+
+5-9: I am more about...
+5: Contrasts, fine details, detachment, focused mental activity
+9: Similarities, harmony, comfort, drifting mental activity
+
+6-7: I tend to...
+6: Vividly imagine worst-case scenarios
+7: Believe that things will work for their best
+
+6-8: When it comes to fear,  I...
+6: Recognize my fears, so I can defeat them
+8: Deny my fears, so I feel stronger
+
+6-9: When things go haywire, I am more likely to...
+6: Worry or overthink more than I should
+9: Downplay the importance of the problem
+
+7-8: I tend to seek...
+7: Variety, I need to feel satisfied
+8: Intensity, I need to feel powerful
+
+7-9: I tend to...
+7: Seek what I want, as I know what I need for my enjoyment
+9: Go along with what others want, as I need to feel inner comfort
+
+8-9: My stability is more like...
+8: Actively controlling my environment, as I need to feel strong
+9: Having inner peace and repressing anger, as I need to feel comfortable
+
+
