@@ -104,8 +104,8 @@ function autofill_dev() {
     document.getElementById("asr_you").value = 40;
     document.getElementById("com_you").value = 50;
     document.getElementById("pol_you").value = 80;
-    document.getElementById("wtd_you").value = 80;
-    document.getElementById("vol_you").value = 70;
+    document.getElementById("wtd_you").value = 90;
+    document.getElementById("vol_you").value = 80;
 
     int_you = document.getElementById("int_you").valueAsNumber;
     opn_you = document.getElementById("opn_you").valueAsNumber;
