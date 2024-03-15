@@ -100,8 +100,8 @@ function autofill_dev() {
     document.getElementById("opn_you").value = 70;
     document.getElementById("ind_you").value = 40;
     document.getElementById("ord_you").value = 40;
-    document.getElementById("ent_you").value = 60;
-    document.getElementById("asr_you").value = 40;
+    document.getElementById("ent_you").value = 50;
+    document.getElementById("asr_you").value = 50;
     document.getElementById("com_you").value = 70;
     document.getElementById("pol_you").value = 60;
     document.getElementById("wtd_you").value = 90;
