@@ -284,20 +284,57 @@ function log() {
         final_sim = 0;
     }
 
+    document.getElementById("similarity_percentage").style.display = "";
+
     document.getElementById("Similarity").innerHTML = "You are " + similarity + "% similar to each other! (Pearson)";
     document.getElementById("Similarity_b").innerHTML = "You are " + similarity_b + "% similar to each other! (Mean Distance)";
     document.getElementById("Similarity_c").innerHTML = "You are " + similarity_c + "% similar to each other! (Quadratic Distance)";
     if (oth_name == "" && you_name == "") {
-        document.getElementById("Similarity_d").innerHTML = "You are " + Math.round(final_sim) + "% similar to each other!";
+        document.getElementById("Similarity_d").innerHTML = "You are " + Math.round(final_sim) + "% similar to each other.";
     }
     else if (you_name == "") {
-        document.getElementById("Similarity_d").innerHTML = "You are " + Math.round(final_sim) + "% similar to " + oth_name + "!";
+        document.getElementById("Similarity_d").innerHTML = "You are " + Math.round(final_sim) + "% similar to " + oth_name + ".";
     }
     else if (oth_name == "") {
-        document.getElementById("Similarity_d").innerHTML = you_name + " is " + Math.round(final_sim) + "% similar to the other person/character!";
+        document.getElementById("Similarity_d").innerHTML = you_name + " is " + Math.round(final_sim) + "% similar to the other person/character.";
     }
     else {
-        document.getElementById("Similarity_d").innerHTML = you_name + " is " + Math.round(final_sim) + "% similar to " + oth_name + "!";
+        document.getElementById("Similarity_d").innerHTML = you_name + " is " + Math.round(final_sim) + "% similar to " + oth_name + ".";
+    }
+
+    document.getElementById("bar").style.width = Math.round(final_sim) + "%";
+
+    if (final_sim > 90) {
+        document.getElementById("sim_class").innerHTML = "That is a LUDICROUS amount of similarity!"
+        document.getElementById("bar").style.backgroundColor = "rgb(100, 0, 0)"
+    }
+    else if (final_sim > 80) {
+        document.getElementById("sim_class").innerHTML = "That is extremely high!"
+        document.getElementById("bar").style.backgroundColor = "rgb(194, 78, 16)"
+    }
+    else if (final_sim > 70) {
+        document.getElementById("sim_class").innerHTML = "That is pretty high."
+        document.getElementById("bar").style.backgroundColor = "rgb(2, 181, 2)"
+    }
+    else if (final_sim > 60) {
+        document.getElementById("sim_class").innerHTML = "That is an above average result."
+        document.getElementById("bar").style.backgroundColor = "rgb(16, 113, 120)"
+    }
+    else if (final_sim > 40) {
+        document.getElementById("sim_class").innerHTML = "That is an average result."
+        document.getElementById("bar").style.backgroundColor = "rgb(16, 113, 120)"
+    }
+    else if (final_sim > 30) {
+        document.getElementById("sim_class").innerHTML = "That result is at the lower end."
+        document.getElementById("bar").style.backgroundColor = "rgb(16, 113, 120)"
+    }
+    else if (final_sim > 20) {
+        document.getElementById("sim_class").innerHTML = "There are so many differences here."
+        document.getElementById("bar").style.backgroundColor = "rgb(61, 129, 143)"
+    }
+    else {
+        document.getElementById("sim_class").innerHTML = "That is ALL disparity and NO similarity."
+        document.getElementById("bar").style.backgroundColor = "rgb(136, 138, 252)"
     }
 
     document.getElementById("light_1").style = "background-color: rgb(60, 60, 60)"
