@@ -45,6 +45,9 @@ var oth_name = "";
 
 var trait_score = 0;
 
+var ludicrous = new Audio();
+ludicrous.src = "Ludicrous.mp3"
+
 function update() {
     trait_score = document.getElementById("value").valueAsNumber
     document.getElementById("trait_score").innerHTML = "Trait Score: " + trait_score;
@@ -307,6 +310,7 @@ function log() {
     if (final_sim > 90) {
         document.getElementById("sim_class").innerHTML = "That is a LUDICROUS amount of similarity!"
         document.getElementById("bar").style.backgroundColor = "rgb(100, 0, 0)"
+        ludicrous.play()
     }
     else if (final_sim > 80) {
         document.getElementById("sim_class").innerHTML = "That is extremely high!"
