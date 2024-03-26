@@ -3,23 +3,23 @@ body {
 }
 
 input[type="button"] {
-    background-color: rgb(32, 160, 160);
+    background-color: rgb(16, 113, 120);
 }
 
 .slider::-webkit-slider-thumb {
-    background-color: rgb(32, 160, 160);
+    background-color: rgb(16, 113, 120);
 }
   
 .slider::-moz-range-thumb {
-    background-color: rgb(32, 160, 160);
+    background-color: rgb(16, 113, 120);
 }
 
 .slider_a::-webkit-slider-thumb {
-    background-color: rgb(32, 160, 160);
+    background-color: rgb(16, 113, 120);
 }
   
 .slider_a::-moz-range-thumb {
-    background-color: rgb(32, 160, 160);
+    background-color: rgb(16, 113, 120);
 }
 
 .indicator_lights {
