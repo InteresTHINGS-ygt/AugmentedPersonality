@@ -309,16 +309,16 @@ function log() {
 
     if (final_sim > 90) {
         document.getElementById("sim_class").innerHTML = "That is a LUDICROUS amount of similarity!"
-        document.getElementById("bar").style.backgroundColor = "rgb(100, 0, 0)"
+        document.getElementById("bar").style.backgroundColor = "rgb(119, 0, 255)"
         ludicrous.play()
     }
     else if (final_sim > 80) {
         document.getElementById("sim_class").innerHTML = "That is extremely high!"
-        document.getElementById("bar").style.backgroundColor = "rgb(194, 78, 16)"
+        document.getElementById("bar").style.backgroundColor = "rgb(0, 50, 200)"
     }
     else if (final_sim > 70) {
         document.getElementById("sim_class").innerHTML = "That is pretty high."
-        document.getElementById("bar").style.backgroundColor = "rgb(2, 181, 2)"
+        document.getElementById("bar").style.backgroundColor = "rgb(0, 77, 128)"
     }
     else if (final_sim > 60) {
         document.getElementById("sim_class").innerHTML = "That is an above average result."
@@ -334,11 +334,11 @@ function log() {
     }
     else if (final_sim > 20) {
         document.getElementById("sim_class").innerHTML = "There are so many differences here."
-        document.getElementById("bar").style.backgroundColor = "rgb(61, 129, 143)"
+        document.getElementById("bar").style.backgroundColor = "rgb(59, 106, 110)"
     }
     else {
         document.getElementById("sim_class").innerHTML = "That is ALL disparity and NO similarity."
-        document.getElementById("bar").style.backgroundColor = "rgb(136, 138, 252)"
+        document.getElementById("bar").style.backgroundColor = "rgb(97, 102, 102)"
     }
 
     document.getElementById("light_1").style = "background-color: rgb(60, 60, 60)"
