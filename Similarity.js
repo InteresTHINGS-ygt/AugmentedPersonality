@@ -46,7 +46,7 @@ var oth_name = "";
 var trait_score = 0;
 
 var ludicrous = new Audio();
-ludicrous.src = "Ludicrous.mp3"
+ludicrous.src = "Ludicrous.wav"
 
 function update() {
     trait_score = document.getElementById("value").valueAsNumber
