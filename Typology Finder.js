@@ -304,7 +304,7 @@ function get_result() {
     document.getElementById("pol").innerHTML = "Politeness: " + pol + "%";
     document.getElementById("NEU").innerHTML = "Neuroticism: " + neuroticism + "%";
     document.getElementById("wtd").innerHTML = "Negative Affect: " + wtd + "%";
-    document.getElementById("vol").innerHTML = "Instability: " + vol + "%";
+    document.getElementById("vol").innerHTML = "Emotional Instability: " + vol + "%";
     
     document.getElementById("bar_OTEs").style.width = openness + "%";
     document.getElementById("bar_ints").style.width = int + "%";
