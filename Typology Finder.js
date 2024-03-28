@@ -195,47 +195,39 @@ function buttonclick(score) {
     document.getElementById("Statement_1").innerHTML = statement_1[current_question];
     document.getElementById("Statement_2").innerHTML = statement_2[current_question];
 
-    if (current_question == 5 || current_question == 25) {
-        enn_6 += score
-    }
-
-    if (current_question == 8) {
-        se += score
-    }
-
     if (current_question % 10 == 1){
         int += score;
     }
 
-    else if (current_question % 10 == 2){
+    else if (current_question % 10 == 3){
         ind += score;
     }
    
-    else if (current_question % 10 == 3){
+    else if (current_question % 10 == 5){
         ent += score;
     }
     
-    else if (current_question % 10 == 4){
+    else if (current_question % 10 == 7){
         com += score;
     }
     
-    else if (current_question % 10 == 5){
+    else if (current_question % 10 == 9){
         wtd += score;
     }
     
-    else if (current_question % 10 == 6){
+    else if (current_question % 10 == 2){
         opn += score;
     }
     
-    else if (current_question % 10 == 7){
+    else if (current_question % 10 == 4){
         ord += score;
     }
     
-    else if (current_question % 10 == 8){
+    else if (current_question % 10 == 6){
         asr += score;
     }
     
-    else if (current_question % 10 == 9){
+    else if (current_question % 10 == 8){
         pol += score;
     }
     
@@ -299,8 +291,8 @@ function get_result() {
     document.getElementById("question_number").style.display = "none";
     document.getElementById("Statement").style.display = "none";
     document.getElementById("OTE").innerHTML = "Openess to Experience: " + openness + "%";
-    document.getElementById("int").innerHTML = "Intellect: " + int + "%";
-    document.getElementById("opn").innerHTML = "Openness: " + opn + "%";
+    document.getElementById("int").innerHTML = "Intellectual Curiosity: " + int + "%";
+    document.getElementById("opn").innerHTML = "Unconventionality: " + opn + "%";
     document.getElementById("CON").innerHTML = "Conscientiousness: " + conscientiousness + "%";
     document.getElementById("ind").innerHTML = "Industriousness: " + ind + "%";
     document.getElementById("ord").innerHTML = "Orderliness: " + ord + "%";
@@ -311,8 +303,8 @@ function get_result() {
     document.getElementById("com").innerHTML = "Compassion: " + com + "%";
     document.getElementById("pol").innerHTML = "Politeness: " + pol + "%";
     document.getElementById("NEU").innerHTML = "Neuroticism: " + neuroticism + "%";
-    document.getElementById("wtd").innerHTML = "Withdrawal: " + wtd + "%";
-    document.getElementById("vol").innerHTML = "Volatility: " + vol + "%";
+    document.getElementById("wtd").innerHTML = "Negative Affect: " + wtd + "%";
+    document.getElementById("vol").innerHTML = "Instability: " + vol + "%";
     
     document.getElementById("bar_OTEs").style.width = openness + "%";
     document.getElementById("bar_ints").style.width = int + "%";
