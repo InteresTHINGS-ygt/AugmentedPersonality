@@ -26,69 +26,162 @@ var se = 0;
 
 function buttonclick(score) {
     var questions = [
-
-        "Frequently consume educational content during free time.", 
-        "Set specific goals and work hard to achieve them.", 
-        "Pursue making new friends and keeping a wide social sphere.", 
-        "Give emotional support to others rather than giving rational solutions.", // Fe and Fi
-        "Frequently imagine worst-case scenarios and threats.", // E6
-        "Be viewed as a creative, artistic, and unconventional person.", 
-        "Make schedules or routines for your day as it stabilizes your life.", // Si
-        "Make quick decisions with your action-oriented attitude.", // Se and Te
-        "Steer clear of interpersonal conflict as much as possible.", 
-        "Often get angry or upset over seemingly minor inconveniences.", 
-        "Prefer mentally stimulating activities or jobs over simple ones.", 
-        "Be intentional with spending your time and don’t waste much of it.", // Te
-        "Often be considered as the enthusiastic one in the group.", 
-        "Often help or donate to others in order to take care of them.", 
-        "Feel easily discouraged by bad events or performance.", 
-        "Embrace alternative and eccentric lifestyles over traditional ones.",
-        "Use your detail-oriented attitude to prevent mistakes and omissions.", // Si
-        "Prefer taking charge and leading over more passive roles.",
-        "Focus on calming others down rather than shaking them up.",
-        "Frequently be seen as having a temperamental attitude.",
-        "Engage in solving puzzles such as Sudoku or Rubik’s Cube.",
-        "Focus on getting things done and checking things off from a to-do list.", // Te
-        "Seek exciting and fun experiences to not feel bored.",
-        "Vicariously feel pain if someone else is also experiencing pain.",
-        "Often feel insecure and doubtful about your own abilities.", // E6
-        "Often daydream and view it as an essential part of life.",
-        "Consider details and contingencies to make careful decisions.", // Si
-        "Be considered as having a strong personality.",
-        "Prefer collaborating with others rather than competing with them.",
-        "Often binge on food, social media, etc. to escape the moment.",
-        "Often engage in philosophical or complex thought.",
-        "Easily focus on finishing the task at hand.",
-        "Usually prefer the company of others over alone time.",
-        "Frequently inquire if others are feeling good or not.", // Fe
-        "Be considered as a person with frequent negative feelings.",
-        "Pursue understanding yourself and your feelings, values, and lifestyle.", // Fi
-        "Often utilize planners or agendas to keep your life in order.", // Si and Te
-        "Be eager to share your thoughts and opinions.",
-        "Make a point to act and play as fair as possible.",
-        "Frequently experience volatile mood shifts throughout the day.",
-        "Be viewed as having an inquisitive and cerebral attitude.",
-        "Prefer a productive lifestyle over a laid-back one.", // Te
-        "Frequently have a good laugh with others or yourself.",
-        "Often be viewed as having a soft and tender heart.",
-        "Often feel stopped by your fears and negative attitude.",
-        "Prefer a new place, route, or method over a known one.", // Ne and Se
-        "Frequently be reminded of your highly orderly attitude.", // Si
-        "Often find yourself dominating the conversations.",
-        "Rarely try to flaunt yourself and your abilities.",
-        "Have somewhat extreme reactions to things in general.",
-        "Feel satisfied by consuming complex, challenging material.",
-        "Be seen as an ambitious and hardworking person.",
-        "Often feel excited about social events such as parties.",
-        "Often put others’ needs and well-being over your own.", 
-        "Easily get caught up in negative or pessimistic patterns.",
-        "Frequently engage in creative outlets such as music and art.",
-        "Work to keep your spaces as clean and orderly as possible.",
-        "Often feel bored if you have to work behind-the-scenes.",
-        "Be seen as a very humble and polite person.",
-        "Be easily made to lose control of my own feelings."
-
+        "I am perceived/known by others as...",
+        "I am perceived/known by others as...",
+        "I am perceived/known by others as...",
+        "I am perceived/known by others as...",
+        "I am perceived/known by others as...",
+        "I am perceived/known by others as...",
+        "I am perceived/known by others as...",
+        "I am perceived/known by others as...",
+        "I am perceived/known by others as...",
+        "I am perceived/known by others as...",
+        "What kind of career would you prefer?",
+        "What kind of vacation would you prefer?",
+        "What kind of games would you play?",
+        "What kind of environment would you prefer?",
+        "If I had to choose, I would",
+        "What kind of a role would you choose?",
+        "What would you rather be?",
+        "In a group, would you rather",
+        "You have seen someone who is very successful.",
+        "Something went wrong.",
+        "I tend to...",
+        "I tend to...",
+        "I tend to...",
+        "I tend to...",
+        "I tend to...",
+        "I tend to...",
+        "I tend to...",
+        "I tend to...",
+        "I tend to...",
+        "I tend to...",
+        "One of my weaknesses would be...",
+        "One of my weaknesses would be...",
+        "One of my weaknesses would be...",
+        "One of my weaknesses would be...",
+        "One of my weaknesses would be...",
+        "One of my weaknesses would be...",
+        "One of my weaknesses would be...",
+        "One of my weaknesses would be...",
+        "One of my weaknesses would be...",
+        "One of my weaknesses would be...",
+        "If I could choose, my strengths would be...",
+        "If I could choose, my strengths would be...",
+        "If I could choose, my strengths would be...",
+        "If I could choose, my strengths would be...",
+        "If I could choose, my strengths would be...",
+        "If I could choose, my strengths would be...",
+        "If I could choose, my strengths would be...",
+        "If I could choose, my strengths would be...",
+        "If I could choose, my strengths would be...",
+        "If I could choose, my strengths would be..."
         ];
+
+    var statement_1 = [
+        "practical and concrete thinker",
+        "grounded in reality",
+        "prioritizing relaxation over work",
+        "unstructured and spontaneous",
+        "serious and reserved",
+        "someone who prefers following",
+        "rather tough-minded and insensitive",
+        "willing to fight or compete",
+        "confident without much doubt",
+        "emotionally stable and controlled",
+        "Something more simple and concrete",
+        "Go back to familiar places",
+        "Involving relaxation without much need for goals",
+        "Flexible environment where things can be spontaneous",
+        "Focus and get alone time",
+        "Pick a passive or support role",
+        "Something less involved with other people’s feelings",
+        "Compete with others",
+        "Focus on my good qualities",
+        "Control my emotional reactions",
+        "Think in plain and simple terms",
+        "Do things the way I have always done them",
+        "Do whatever I feel like at the moment",
+        "Adapt and go with the flow",
+        "Keep things serious",
+        "Let others initiate things",
+        "Not be swayed by others’ feelings",
+        "Do things for my own gain",
+        "Feel confident about my abilities",
+        "Control my cravings easily",
+        "too simple-minded and incurious",
+        "too traditional and conventional",
+        "too much of a slacker",
+        "too messy and impulsive",
+        "too reserved and distant",
+        "too much of a follower",
+        "prone to selfishness and insensitivity",
+        "prone to insulting",
+        "prone to overconfidence",
+        "prone to apathy",
+        "I don’t overcomplicate things",
+        "I am practical with good common sense",
+        "I enjoy free time and relaxation",
+        "I am adaptable and spontaneous",
+        "I enjoy my alone time",
+        "I reflect before acting",
+        "I am good at making rational and impersonal decisions",
+        "I am not afraid of going against others",
+        "I am calm in high-pressure situations",
+        "I am patient and composed"
+    ]
+    var statement_2 = [
+        "curious and mentally engaged",
+        "imaginative and open-minded",
+        "ambitious and hardworking",
+        "planful and organized",
+        "sociable and enthusiastic",
+        "someone who takes charge",
+        "compassionate and helpful",
+        "a harmonious person who is cooperative",
+        "prone to worry and doubt",
+        "impatient and irritable",
+        "Something like a scientist, academician, philosopher, etc.",
+        "Pursue new adventures",
+        "Involving hard work and clear goals",
+        "Structured environment where I can stay organized",
+        "Socialize in large groups",
+        "Pick an active or leadership role",
+        "Something involved with helping others",
+        "Collaborate with others",
+        "Feel envious and discouraged",
+        "Feel very upset and annoyed",
+        "Exhibit curiosity towards new ideas",
+        "Try out new ways to do things",
+        "Squezze in as much work as possible",
+        "Make detailed plans in advance",
+        "Have fun and joke around",
+        "Be the first to act",
+        "Be sensitive towards others’ feelings",
+        "Keep things fair and honest",
+        "Frequently doubt my abilities",
+        "Overindulge in certain things",
+        "prone to overcomplicating things",
+        "too impractical and eccentric",
+        "too much of a workaholic",
+        "too stuffy and rigid",
+        "can’t handle alone time",
+        "too dominant and overwhelming",
+        "too affected by others’ struggles",
+        "too willing to get along with others",
+        "prone to negative thinking",
+        "too much of an emotional rollercoaster",
+        "I enjoy learning new things and concepts",
+        "I am creative and imaginative",
+        "I pursue my goals and achieve them",
+        "I am organized and great with details",
+        "I am sociable and enthusiastic",
+        "I would be a good leader",
+        "I am sympathetic and helpful",
+        "I am peaceful and respectful",
+        "I sense danger before anyone else",
+        "I am definitely not apathetic"
+    ]
 
     if (test_status == 0) {
         test_status = 1;
@@ -99,6 +192,8 @@ function buttonclick(score) {
     current_question += 1;
     document.getElementById("question_number").innerHTML = "Question " + (current_question + 1);
     document.getElementById("Statement").innerHTML = questions[current_question];
+    document.getElementById("Statement_1").innerHTML = statement_1[current_question];
+    document.getElementById("Statement_2").innerHTML = statement_2[current_question];
 
     if (current_question == 5 || current_question == 25) {
         enn_6 += score
@@ -152,16 +247,16 @@ function buttonclick(score) {
     if (current_question > (questions.length - 1)){
         document.getElementById("question_number").style.display = "none";
         document.getElementById("Statement").innerHTML = "Finished!";
-        int = Math.round((int / 18) * 100)
-        opn = Math.round((opn / 18) * 100)
-        ind = Math.round((ind / 18) * 100)
-        ord = Math.round((ord / 18) * 100)
-        ent = Math.round((ent / 18) * 100)
-        asr = Math.round((asr / 18) * 100)
-        com = Math.round((com / 18) * 100)
-        pol = Math.round((pol / 18) * 100)
-        wtd = Math.round((wtd / 18) * 100)
-        vol = Math.round((vol / 18) * 100)
+        int = Math.round((int / 15) * 100)
+        opn = Math.round((opn / 15) * 100)
+        ind = Math.round((ind / 15) * 100)
+        ord = Math.round((ord / 15) * 100)
+        ent = Math.round((ent / 15) * 100)
+        asr = Math.round((asr / 15) * 100)
+        com = Math.round((com / 15) * 100)
+        pol = Math.round((pol / 15) * 100)
+        wtd = Math.round((wtd / 15) * 100)
+        vol = Math.round((vol / 15) * 100)
 
         openness = Math.round((int + opn) / 2)
         conscientiousness = Math.round((ind + ord) / 2)
