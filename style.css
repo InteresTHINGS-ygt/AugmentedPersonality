@@ -142,9 +142,9 @@ input[type="text"] {
 }
 
 .slider {
-    width: 32vw;
+    width: 36vw;
     -webkit-appearance: none;
-    height: 5vw;
+    height: 6vw;
     background: rgb(210, 205, 195);
     outline: none;
     opacity: 1;
@@ -157,8 +157,8 @@ input[type="text"] {
 .slider::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
-    width: 5vw;
-    height: 5vw;
+    width: 6vw;
+    height: 6vw;
     border-radius: 1vw;
     background: #04AA6D;
     cursor: pointer;
@@ -166,8 +166,8 @@ input[type="text"] {
 }
   
 .slider::-moz-range-thumb {
-    width: 5vw;
-    height: 5vw;
+    width: 6vw;
+    height: 6vw;
     background: #04AA6D;
     cursor: pointer;
 }
@@ -175,7 +175,7 @@ input[type="text"] {
 .slider_a {
     width: 25vw;
     -webkit-appearance: none;
-    height: 5vw;
+    height: 6vw;
     background: rgb(224, 220, 211);
     outline: none;
     opacity: 1;
@@ -188,8 +188,8 @@ input[type="text"] {
 .slider_a::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
-    width: 5vw;
-    height: 5vw;
+    width: 6vw;
+    height: 6vw;
     border-radius: 1vw;
     background: #04AA6D;
     cursor: pointer;
@@ -197,8 +197,8 @@ input[type="text"] {
 }
   
 .slider_a::-moz-range-thumb {
-    width: 5vw;
-    height: 5vw;
+    width: 6vw;
+    height: 6vw;
     background: #04AA6D;
     cursor: pointer;
 }
@@ -216,7 +216,7 @@ table {
 
 td, th, tr {
     text-align: center;
-    padding: 1.2vw;
+    padding: 1vw;
     margin: 2vw;
 }
 
@@ -389,8 +389,8 @@ hr {
 
     .slider {
         -webkit-appearance: none;
-        width: 200px;
-        height: 15px;
+        width: 250px;
+        height: 20px;
         background: rgb(210, 205, 195);
         outline: none;
         opacity: 1;
@@ -404,8 +404,8 @@ hr {
     .slider::-webkit-slider-thumb {
         -webkit-appearance: none;
         appearance: none;
-        width: 15px;
-        height: 15px;
+        width: 20px;
+        height: 20px;
         border-radius: 5px;
         background: #04AA6D;
         cursor: pointer;
@@ -413,8 +413,8 @@ hr {
     }
       
     .slider::-moz-range-thumb {
-        width: 25px;
-        height: 25px;
+        width: 20px;
+        height: 20px;
         background: #04AA6D;
         cursor: pointer;
     }
@@ -422,7 +422,7 @@ hr {
     .slider_a {
         -webkit-appearance: none;
         width: 140px;
-        height: 15px;
+        height: 20px;
         background: rgb(224, 220, 211);
         outline: none;
         opacity: 1;
@@ -436,8 +436,8 @@ hr {
     .slider_a::-webkit-slider-thumb {
         -webkit-appearance: none;
         appearance: none;
-        width: 15px;
-        height: 15px;
+        width: 20px;
+        height: 20px;
         border-radius: 5px;
         background: #04AA6D;
         cursor: pointer;
@@ -445,8 +445,8 @@ hr {
     }
       
     .slider_a::-moz-range-thumb {
-        width: 25px;
-        height: 25px;
+        width: 20px;
+        height: 20px;
         background: #04AA6D;
         cursor: pointer;
     }
