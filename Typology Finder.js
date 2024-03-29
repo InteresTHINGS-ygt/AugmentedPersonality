@@ -31,6 +31,8 @@ var se = 0;
 
 
 function buttonclick(score) {
+    document.getElementById("manualb").style.display = "none"
+
     var questions = [
         "I am perceived/known by others as...",
         "I am perceived/known by others as...",
@@ -287,7 +289,7 @@ function manual() {
     opn = document.getElementById("opn_m").valueAsNumber;
     ind = document.getElementById("ind_m").valueAsNumber;
     ord = document.getElementById("ord_m").valueAsNumber;
-    ent = document.getElementById("ent_m").valueAsNumber;
+    ent = document.getElementById("ent_m").valueAsNumber;s
     asr = document.getElementById("asr_m").valueAsNumber;
     com = document.getElementById("com_m").valueAsNumber;
     pol = document.getElementById("pol_m").valueAsNumber;
