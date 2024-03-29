@@ -85,9 +85,7 @@
                 </tr>
             </table>
             <p style="font-weight: bold;">How similar are your interests and preferences to this person? (Leave it at the middle if you want raw personality similarity)</p>
-            <input type="range" min="0" max="100" step="10" id="interest_sim" class="slider">
-            <br>
-            <br>
+            <input type="range" min="0" max="100" step="10" id="interest_sim" class="slider" value="50" oninput=update_a() onchange=update_a()><p id="interest_sim_d" style="font-weight:bold">50</p>
             <input type="button" onclick=log() value="Submit" id="submit_sim">
         </div>
         <div id = "similarity_percentage" style="display:none">
@@ -102,7 +100,7 @@
         </div>
          </div>
         </div>
-        <div class="presets">
+        <div class="presets" style="display:none">
         <div class="main">
             <h2>Presets</h2>
             <!--<div class="Anime">
