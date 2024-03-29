@@ -90,6 +90,70 @@ input[type="button"] {
     height: 6vw;
 }
 
+.results_bar_vit {
+    background-color: rgb(173, 173, 173);
+    margin: 4vw;
+    border-radius: 1.5vw;
+    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
+    position: relative;
+}
+
+.bar_vit {
+    background-color: rgb(80, 177, 0);
+    border-radius: 1.5vw;
+    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
+    width: 50%;
+    height: 6vw;
+}
+
+.results_bar_mat {
+    background-color: rgb(173, 173, 173);
+    margin: 4vw;
+    border-radius: 1.5vw;
+    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
+    position: relative;
+}
+
+.bar_mat {
+    background-color: rgb(177, 130, 0);
+    border-radius: 1.5vw;
+    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
+    width: 50%;
+    height: 6vw;
+}
+
+.results_bar_gi {
+    background-color: rgb(173, 173, 173);
+    margin: 4vw;
+    border-radius: 1.5vw;
+    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
+    position: relative;
+}
+
+.bar_gi {
+    background-color: rgb(186, 0, 192);
+    border-radius: 1.5vw;
+    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
+    width: 50%;
+    height: 6vw;
+}
+
+.results_bar_ap {
+    background-color: rgb(173, 173, 173);
+    margin: 4vw;
+    border-radius: 1.5vw;
+    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
+    position: relative;
+}
+
+.bar_ap {
+    background-color: rgb(204, 0, 0);
+    border-radius: 1.5vw;
+    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
+    width: 50%;
+    height: 6vw;
+}
+
 .charts {
     grid-template-columns: 40vw 40vw;
     grid-template-rows: 40vw 40vw 40vw 40vw 40vw;
@@ -374,6 +438,62 @@ input[type="button"] {
     }
     
     .bar_NEUs {
+        border-radius: 10px;
+        box-shadow: 14px 14px 28px rgba(40, 37, 30, 0.2);
+        width: 50%;
+        height: 40px;
+    }
+
+    .results_bar_vit {
+        margin: 30px;
+        border-radius: 10px;
+        box-shadow: 14px 14px 28px rgba(40, 37, 30, 0.2);
+        position: relative;
+    }
+    
+    .bar_vit {
+        border-radius: 10px;
+        box-shadow: 14px 14px 28px rgba(40, 37, 30, 0.2);
+        width: 50%;
+        height: 40px;
+    }
+
+    .results_bar_mat {
+        margin: 30px;
+        border-radius: 10px;
+        box-shadow: 14px 14px 28px rgba(40, 37, 30, 0.2);
+        position: relative;
+    }
+    
+    .bar_mat {
+        border-radius: 10px;
+        box-shadow: 14px 14px 28px rgba(40, 37, 30, 0.2);
+        width: 50%;
+        height: 40px;
+    }
+
+    .results_bar_gi {
+        margin: 30px;
+        border-radius: 10px;
+        box-shadow: 14px 14px 28px rgba(40, 37, 30, 0.2);
+        position: relative;
+    }
+    
+    .bar_gi {
+        border-radius: 10px;
+        box-shadow: 14px 14px 28px rgba(40, 37, 30, 0.2);
+        width: 50%;
+        height: 40px;
+    }
+
+    .results_bar_ap {
+        margin: 30px;
+        border-radius: 10px;
+        box-shadow: 14px 14px 28px rgba(40, 37, 30, 0.2);
+        position: relative;
+    }
+    
+    .bar_ap {
         border-radius: 10px;
         box-shadow: 14px 14px 28px rgba(40, 37, 30, 0.2);
         width: 50%;

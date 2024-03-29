@@ -1035,3 +1035,56 @@ Main differences between types
 9: Having inner peace and repressing anger, as I need to feel comfortable
 
 
+COMPOUND traits
+
+- Vitality -
+
+int: None
+opn: +
+ind: +
+ord: None
+ent: ++
+asr: +
+com: None
+pol: None
+wtd: --
+vol: -
+
+- Materialism -
+
+int: -
+opn: -
+ind: +
+ord: None
+ent: +
+asr: ++
+com: -
+pol: --
+wtd: None
+vol: None
+
+- General Instability -
+
+int: None
+opn: ++
+ind: -
+ord: --
+ent: None
+asr: None
+com: -
+pol: --
+wtd: +
+vol: ++
+
+- Type A Personality -
+
+int: None
+opn: None
+ind: ++
+ord: ++
+ent: None
+asr: ++
+com: None
+pol: -
+wtd: +
+vol: ++

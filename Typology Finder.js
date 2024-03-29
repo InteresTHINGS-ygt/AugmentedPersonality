@@ -12,6 +12,11 @@ var pol = 0;
 var wtd = 0;
 var vol = 0;
 
+var vit = 0;
+var mat = 0;
+var gi = 0;
+var ap = 0;
+
 var openness = 0;
 var conscientiousness = 0;
 var extraversion = 0;
@@ -22,6 +27,7 @@ var test_status = 0;
 
 var enn_6 = 0;
 var se = 0;
+
 
 
 function buttonclick(score) {
@@ -255,6 +261,12 @@ function buttonclick(score) {
         extraversion = Math.round((ent + asr) / 2)
         agreeableness = Math.round((com + pol) / 2)
         neuroticism = Math.round((wtd + vol) / 2)
+
+        vit = Math.round(((3 * ent) + (3 * (100 - wtd)) + opn + ind + asr + (100 - vol)) / 10);
+        mat = Math.round((ind + (3 * asr) + (3 * (100 - pol)) + ent + (100 - com) + (100 - int) + (100 - opn)) / 11);
+        gi = Math.round(((3 * opn) + (3 * (100 - ord)) + (3 * (100 - pol)) + (3 * vol) + wtd + (100 - com) + (100 - ind)) / 15);
+        ap = Math.round(((3 * ind) + (3 * ord) + (3 * asr) + (3 * vol) + wtd + (100 - pol)) / 14);
+
         get_result();
     }
 }
@@ -271,25 +283,39 @@ function reveal_patterns() {
 }
 
 function manual() {
-    int = document.getElementById("int").valueAsNumber;
-    opn = document.getElementById("opn").valueAsNumber;
-    ind = document.getElementById("ind").valueAsNumber;
-    ord = document.getElementById("ord").valueAsNumber;
-    ent = document.getElementById("ent").valueAsNumber;
-    asr = document.getElementById("asr").valueAsNumber;
-    com = document.getElementById("com").valueAsNumber;
-    pol = document.getElementById("pol").valueAsNumber;
-    wtd = document.getElementById("wtd").valueAsNumber;
-    vol = document.getElementById("vol").valueAsNumber;
-    get_result()
+    int = document.getElementById("int_m").valueAsNumber;
+    opn = document.getElementById("opn_m").valueAsNumber;
+    ind = document.getElementById("ind_m").valueAsNumber;
+    ord = document.getElementById("ord_m").valueAsNumber;
+    ent = document.getElementById("ent_m").valueAsNumber;
+    asr = document.getElementById("asr_m").valueAsNumber;
+    com = document.getElementById("com_m").valueAsNumber;
+    pol = document.getElementById("pol_m").valueAsNumber;
+    wtd = document.getElementById("wtd_m").valueAsNumber;
+    vol = document.getElementById("vol_m").valueAsNumber;
+
+    openness = Math.round((int + opn) / 2)
+    conscientiousness = Math.round((ind + ord) / 2)
+    extraversion = Math.round((ent + asr) / 2)
+    agreeableness = Math.round((com + pol) / 2)
+    neuroticism = Math.round((wtd + vol) / 2)
+
+    vit = Math.round(((3 * ent) + (3 * (100 - wtd)) + opn + ind + asr + (100 - vol)) / 10);
+    mat = Math.round((ind + (3 * asr) + (3 * (100 - pol)) + ent + (100 - com) + (100 - int) + (100 - opn)) / 11);
+    gi = Math.round(((3 * opn) + (3 * (100 - ord)) + (3 * (100 - pol)) + (3 * vol) + wtd + (100 - com) + (100 - ind)) / 15);
+    ap = Math.round(((3 * ind) + (3 * ord) + (3 * asr) + (3 * vol) + wtd + (100 - pol)) / 14);
+
+    get_result();
 }
 
 function get_result() {
     document.getElementById("results").style.display = "block";
     document.getElementById("test").style.display = "none";
     document.getElementById("manual").style.display = "none";
-    document.getElementById("question_number").style.display = "none";
+    document.getElementById("question_number").innerHTML = "Five Traits, Ten Aspects";
     document.getElementById("Statement").style.display = "none";
+    document.getElementById("Statement_1").style.display = "none";
+    document.getElementById("Statement_2").style.display = "none";
     document.getElementById("OTE").innerHTML = "Openess to Experience: " + openness + "%";
     document.getElementById("int").innerHTML = "Intellectual Curiosity: " + int + "%";
     document.getElementById("opn").innerHTML = "Unconventionality: " + opn + "%";
@@ -305,6 +331,11 @@ function get_result() {
     document.getElementById("NEU").innerHTML = "Neuroticism: " + neuroticism + "%";
     document.getElementById("wtd").innerHTML = "Negative Affect: " + wtd + "%";
     document.getElementById("vol").innerHTML = "Emotional Instability: " + vol + "%";
+
+    document.getElementById("vit").innerHTML = "Vitality: " + vit + "%";
+    document.getElementById("mat").innerHTML = "Materialism: " + mat + "%";
+    document.getElementById("gi").innerHTML = "General Instability: " + gi + "%";
+    document.getElementById("ap").innerHTML = "Type A Personality: " + ap + "%";
     
     document.getElementById("bar_OTEs").style.width = openness + "%";
     document.getElementById("bar_ints").style.width = int + "%";
@@ -322,6 +353,12 @@ function get_result() {
     document.getElementById("bar_wtds").style.width = wtd + "%";
     document.getElementById("bar_vols").style.width = vol + "%";
 
+    document.getElementById("bar_vit").style.width = vit + "%";
+    document.getElementById("bar_mat").style.width = mat + "%";
+    document.getElementById("bar_gi").style.width = gi + "%";
+    document.getElementById("bar_ap").style.width = ap + "%";
+
+    document.getElementById("compound_traits").style.display = "";
     document.getElementById("charts_space").style.display = "";
     document.getElementById("typology_finder").style.display = "";
     document.getElementById("prediction").style.display = "";

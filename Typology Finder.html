@@ -22,7 +22,7 @@
         <h2 id="Statement">Click to start!</h2>
         <span class="big5" id="Statement_1"></span>
         <input type="button" onclick=buttonclick(0) id="start" value="Start Test">
-        <input type="button" onclick=manualinsert() id="manualb" style="display:none" value="Enter Traits">
+        <input type="button" onclick=manualinsert() id="manualb" value="I know my scores!">
         <div id="test" style="display:none">
             <input type="button" onclick=buttonclick(0) id="sd" value="Definitely Top"><br>
             <input type="button" onclick=buttonclick(1) id="d" value="Moderately Top"><br>
@@ -33,44 +33,44 @@
         <div id="manual" style="display:none">
             <table id="manual" class="current">
                 <tr>
-                    <td>Intellect</td>
-                    <td><input type="number" id="int_m"></td>
+                    <td>Intellectual Curiosity</td>
+                    <td><input type="number" id="int_m" value="90"></td>
                 </tr>
                 <tr>
-                    <td>Openness</td>
-                    <td><input type="number" id="opn_m"></td>
+                    <td>Unconventionality</td>
+                    <td><input type="number" id="opn_m" value="70"></td>
                 </tr>
                 <tr>
                     <td>Industriousness</td>
-                    <td><input type="number" id="ind_m"></td>
+                    <td><input type="number" id="ind_m" value="50"></td>
                 </tr>
                 <tr>
                     <td>Orderliness</td>
-                    <td><input type="number" id="ord_m"></td>
+                    <td><input type="number" id="ord_m" value="50"></td>
                 </tr>
                 <tr>
                     <td>Enthusiasm</td>
-                    <td><input type="number" id="ent_m"></td>
+                    <td><input type="number" id="ent_m" value="50"></td>
                 </tr>
                 <tr>
                     <td>Assertiveness</td>
-                    <td><input type="number" id="asr_m"></td>
+                    <td><input type="number" id="asr_m" value="30"></td>
                 </tr>
                 <tr>
                     <td>Compassion</td>
-                    <td><input type="number" id="com_m"></td>
+                    <td><input type="number" id="com_m" value="70"></td>
                 </tr>
                 <tr>
                     <td>Politeness</td>
-                    <td><input type="number" id="pol_m"></td>
+                    <td><input type="number" id="pol_m" value="90"></td>
                 </tr>
                 <tr>
-                    <td>Withdrawal</td>
-                    <td><input type="number" id="wtd_m"></td>
+                    <td>Negative Affect</td>
+                    <td><input type="number" id="wtd_m" value="80"></td>
                 </tr>
                 <tr>
-                    <td>Volatility</td>
-                    <td><input type="number" id="vol_m"></td>
+                    <td>Emotional Instability</td>
+                    <td><input type="number" id="vol_m" value="50"></td>
                 </tr>
             </table>
             <br>
@@ -134,11 +134,11 @@
             <div class="results_bar_NEUs">
                 <div class="bar_NEUs" id="bar_NEUs"></div>
             </div>
-            <h3 id = "wtd">Avoidance</h3>
+            <h3 id = "wtd">Negative Affect</h3>
             <div class="results_bar_wtds">
                 <div class="bar_wtds" id="bar_wtds"></div>
             </div>
-            <h3 id = "vol">Instability</h3>
+            <h3 id = "vol">Emotional Instability</h3>
             <div class="results_bar_vols">
                 <div class="bar_vols" id="bar_vols"></div>
             </div>
@@ -146,6 +146,25 @@
             </div>
             </div>
          </div>
+         </div>
+         <div class="main" id="compound_traits" style="display:none">
+            <h2>Compound Traits</h2>
+            <h3 id = "vit">Vitality</h3>
+            <div class="results_bar_vit">
+                <div class="bar_vit" id="bar_vit"></div>
+            </div>
+            <h3 id = "mat">Materialism</h3>
+            <div class="results_bar_mat">
+                <div class="bar_mat" id="bar_mat"></div>
+            </div>
+            <h3 id = "gi">General Instability</h3>
+            <div class="results_bar_gi">
+                <div class="bar_gi" id="bar_gi"></div>
+            </div>
+            <h3 id = "ap">Type A Personality</h3>
+            <div class="results_bar_ap">
+                <div class="bar_ap" id="bar_ap"></div>
+            </div>
          </div>
          <div class="main" id="charts_space" style="display:none">
             <h2>Predominant Patterns</h2>
