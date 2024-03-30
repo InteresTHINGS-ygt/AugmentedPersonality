@@ -272,7 +272,7 @@ function log() {
         sim_sum += similarity_d;
         weight_sum += sim_weight;
         lichnost_sim = sim_sum / weight_sum;
-        console.log(sim_weight)
+        console.log(sim_weight);
     }
 
     var final_sim = 0;

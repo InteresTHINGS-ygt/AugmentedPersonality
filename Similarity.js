@@ -266,13 +266,16 @@ function log() {
     var similarity_c = Math.round((Math.pow((similarity_b / 100),2))*100);
 
     for (let i = 0; i < you.length; i++) {
-        sim_weight = ((Math.abs(50-you[i]) + Math.abs(50-oth[i])) / 100) + 0.25
-        // similarity_d = (dis_similarity * dis_factor * cent_factor) * 1.1 * sim_weight;
-        similarity_d = (1 / (1 + Math.E ** (-(((100-Math.abs(you[i]-oth[i]))/12)-5)))) * 103 * sim_weight;
+        dis_from_center = Math.abs(50-((you[i]+oth[i])/2)); // Between 0 and 50
+        dis_similarity = 100-(Math.abs(you[i]-oth[i])); // Between 0 and 100
+        dis_factor = (0.00774 * dis_similarity) + 0.226; // Makes the curve steeper
+        cent_factor = ((0.0056 * dis_from_center) + 0.72);
+        sim_weight = (Math.max(Math.abs(50-you[i]), Math.abs(50-oth[i]))/25) + 0.5;
+        similarity_d = (dis_similarity * dis_factor * cent_factor) * 1.1 * sim_weight;
         sim_sum += similarity_d;
         weight_sum += sim_weight;
         lichnost_sim = sim_sum / weight_sum;
-        console.log(sim_weight)
+        console.log(sim_weight);
     }
 
     var final_sim = 0;
