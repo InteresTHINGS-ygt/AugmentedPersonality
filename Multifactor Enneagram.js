@@ -15,63 +15,116 @@ var nine = 16;
 var test_status = 0;
 
 function buttonclick(score) {
-    var statement_1 = ["I am group-oriented and pursue unity",
-                        "I am confident about others’ feelings and helping others",
-                        "In my decisions, I am highly focused on the emotional atmosphere",
-                        "I often actively help others and resolve conflicts",
-                        "I often try to cater to the community",
-                        "I prefer giving emotional support over practical solutions",
-                        "I may twist the truth in order to preserve harmony",
-                        "I prefer expressing my feeling in indirect ways such as art",
-                        "I live according to my deeply-felt values",
-                        "I often naturally stand out from others",
-                        "I am empathetic in a one-to-one manner",
-                        "I sometimes have a hard time with objective standards",
-                        "I don’t have a real need to logically justify my decisions if they fit my values",
-                        "I tend to have many interests which can be unrelated",
-                        "I enjoy new challenges involving mental stimulation",
-                        "I dislike structure as it limits possibilities",
-                        "I tend to be forgetful when it comes to practical details",
-                        "I sometimes remember random things out of nowhere",
-                        "I tend to struggle living in the moment because of my future focus",
-                        "I am all about the big picture and don’t really remember the details",
-                        "I can sometimes be like a fortune teller with my predictions",
-                        "I am drawn towards the unconscious world and gathering insights",
-                        "I have a carpe diem attitude towards life",
-                        "I tend to be opportunistic, realistic, and present-oriented",
-                        "My humor is mostly about practical jokes based on present details",
-                        "I am generally routinized and predictable",
-                        "I generally stick with what I know and what has worked",
-                        "I am result-oriented and focused on getting things done"];
+    var questions = ["I am more likely to help others because...",
+                        "I am more likely to get things done...",
+                        "I am am more likely to be self-critical because...",
+                        "I am more likely to gather information...",
+                        "I am more likely to follow the rules because...",
+                        "My idealism is more like...",
+                        "I am more likely to express my anger when I...",
+                        "I am more likely to be...",
+                        "I am more likely to get my attention through...",
+                        "I am more likely to be focused on...",
+                        "I am more likely to be...",
+                        "I am more likely to help others because...",
+                        "I am more likely to...",
+                        "I am more likely to manipulate others through...",
+                        "I am more likely to...",
+                        "Others more often need to see my...",
+                        "I am more likely to focus on the...",
+                        "I am more likely to be focused on...",
+                        "I am more likely to...",
+                        "I am more likely to be...",
+                        "I am more likely to be focused on...",
+                        "I am more likely to be...",
+                        "I am more likely to have a/an...",
+                        "When I feel disappointed, I am more likely to...",
+                        "I am more likely to...",
+                        "I am more likely to be...",
+                        "I am more likely to...",
+                        "I am more likely to be...",
+                        "I tend to be more...",
+                        "I am more about...",
+                        "I am more likely to...",
+                        "When it comes to fear,  I am more likely to...",
+                        "When things go haywire, I am more likely to...",
+                        "I am more likely to seek...",
+                        "I am more likely to...",
+                        "My sense of stability is more like..."];
 
-    var statement_2 = ["I put a lot of value on being myself and being authentic",
-                        "I am often bold when it comes to new, exotic ideas",
-                        "I trust my sixth sense and intuitive hunches",
-                        "I try to maximize the pleasure of the moment",
-                        "I am highly focused on self-care and sensory maintenance",
-                        "I find practical solutions wherever I go",
-                        "I can be accidentally rude and miss social cues",
-                        "I am generally talkative and referencing random things and connections",
-                        "I seek and harbor hidden symbolic meanings",
-                        "I readily adapt to the changing environment",
-                        "I can focus on one thing for a long time and master it",
-                        "I generally think emotions hinder the ability to make effective decisions",
-                        "Everything needs to make logical sense to me",
-                        "I have a laser focus vision about the future",
-                        "I tend to seek physical stimulation as it keeps me present",
-                        "I usually follow the rules in favor of physical safety and comfort",
-                        "I try to use my time as efficiently as possible",
-                        "I am generally confident about my own analysis",
-                        "I generally dislike planning for the future",
-                        "I focus on duties, details, and doing what is needed",
-                        "My decisions have to be true to objective facts and data",
-                        "I want to know how things and ideas work",
-                        "I tend to have a hard time with change and branching out of my comfort zone",
-                        "I am generally confident about my planning skills",
-                        "I tend to learn things in order to tinker around with the knowledge",
-                        "I define myself through my accomplishments and don’t overthink my identity",
-                        "I make decisions according to my inner sense of truth",
-                        "I tend to be focused more on the process than the result"];
+    var statement_1 = ["It's the morally right thing to do",
+                        "The right way, even if it is slower",
+                        "I have made a critical mistake",
+                        "To improve and perfect the world",
+                        "It's morally wrong to break them (focus on internal standards)",
+                        "Perfection, there cannot be any mistakes",
+                        "Should, repressing anything else",
+                        "Too impatient and rigid",
+                        "Giving to others so I feel loved",
+                        "Others' feelings, I need to take care of them",
+                        "Too willing to give to others and express",
+                        "I am confident about what the other person needs",
+                        "Feel obligated to help, I put others' needs over my own needs",
+                        "Flattery and compliments",
+                        "Know what others want, so I can directly help them",
+                        "Best self, I need to be impressive even if I put a mask",
+                        "Final goal, I need to achieve my goals",
+                        "How I appear to others, am I impressive or not?",
+                        "Play to win (focus on the result)",
+                        "A polished image of success and fame",
+                        "Hard work and getting things done",
+                        "Involved with my own feelings to understand myself and craft my identity",
+                        "Very strong sense of self, based on inner emotional experience",
+                        "Complain that I will never get what I need",
+                        "Feel like I am full of vulnerability",
+                        "Emotionally intense, full of highs and lows",
+                        "Trust only my mind, as others are less informed",
+                        "Focused and intense, I need to feel competent",
+                        "Cerebral, I need to think things through before acting",
+                        "Contrasts, fine details, detachment, focused mental activity",
+                        "Vividly imagine worst-case scenarios",
+                        "Recognize my fears, so I can defeat them",
+                        "Worry or overthink more than I should",
+                        "Variety, I need to feel satisfied",
+                        "Seek what I want, as I know what I need for my enjoyment",
+                        "Actively controlling my environment, as I need to feel strong"];
+
+    var statement_2 = ["I have to take care of others’ feelings",
+                        "The most efficient way, even if it cuts corners",
+                        "I feel inferior to others as I envy others",
+                        "For the sake of it, for my own competence",
+                        "Bad things can happen if I break them (focus on worst case scenario)",
+                        "Optimism, as negativity is too painful",
+                        "Want to, without rules or restrictions",
+                        "Too lax and unproductive",
+                        "Being the best so I feel valuable",
+                        "My own feelings, I explore them in depth",
+                        "Too private and emotionally detached",
+                        "I need to feel protected and safe, so I seek support",
+                        "Feel limited by responsibility, I need my freedom and I help when I want to",
+                        "Power and force",
+                        "Go along with what others want, so I can feel peaceful",
+                        "Real self, I need to show the real me even if it is negative",
+                        "Process, I need to understand the world",
+                        "Avoiding bad consequences, am I safe or not?",
+                        "Play to have fun (focus on the pleasure)",
+                        "A raw showcase of strength and power",
+                        "Relaxation and inner peace of mind",
+                        "Detached from feelings in order to understand the world and how things work",
+                        "Unsure sense of self, I do a lot of “it depends on the situation”",
+                        "Move on to the new, better things",
+                        "Avoid vulnerability to be strong",
+                        "Emotionally calm, I need to feel peaceful and relaxed",
+                        "Struggle trusting my mind, as the world is uncertain",
+                        "Expansive and variety-seeking, I need to feel satisfied",
+                        "Physical, I tend to act readily and immediately",
+                        "Similarities, harmony, comfort, drifting mental activity",
+                        "Believe that things will work for their best",
+                        "Deny my fears, so I feel stronger",
+                        "Downplay the importance of the problem",
+                        "Intensity, I need to feel powerful",
+                        "Go along with what others want, as I need to feel inner comfort",
+                        "Having inner peace and repressing anger, as I need to feel comfortable"];
 
     if (test_status == 0) {
         test_status = 1;
@@ -81,7 +134,7 @@ function buttonclick(score) {
     
     current_question += 1;
     document.getElementById("question_number").innerHTML = "Question " + (current_question + 1);
-    document.getElementById("Statement").style.display = "none";
+    document.getElementById("Statement").innerHTML = questions[current_question];
     document.getElementById("statement_1").innerHTML = statement_1[current_question];
     document.getElementById("statement_2").innerHTML = statement_2[current_question];
 
@@ -240,22 +293,29 @@ function buttonclick(score) {
     }
 }
 
-
-
-
 function get_result() {
     document.getElementById("results").style.display = "block";
     document.getElementById("test").style.display = "none";
     document.getElementById("question_number").style.display = "none";
-    document.getElementById("ENFJ").innerHTML = "ENFJ: " + Math.round(one / 196 * 10000) / 100;
-    document.getElementById("ENFP").innerHTML = "ENFP: " + Math.round(two / 196 * 10000) / 100;
-    document.getElementById("ENTJ").innerHTML = "ENTJ: " + Math.round(three / 196 * 10000) / 100;
-    document.getElementById("ENTP").innerHTML = "ENTP: " + Math.round(four / 196 * 10000) / 100;
-    document.getElementById("ESFJ").innerHTML = "ESFJ: " + Math.round(five / 196 * 10000) / 100;
-    document.getElementById("ESFP").innerHTML = "ESFP: " + Math.round(six / 196 * 10000) / 100;
-    document.getElementById("ESTJ").innerHTML = "ESTJ: " + Math.round(seven / 196 * 10000) / 100;
-    document.getElementById("ESTP").innerHTML = "ESTP: " + Math.round(eight / 196 * 10000) / 100;
-    document.getElementById("INFJ").innerHTML = "INFJ: " + Math.round(nine / 196 * 10000) / 100;
+    document.getElementById("one").innerHTML = "Type 1: " + Math.round(one / 32 * 10000) / 100;
+    document.getElementById("two").innerHTML = "Type 2: " + Math.round(two / 32 * 10000) / 100;
+    document.getElementById("three").innerHTML = "Type 3: " + Math.round(three / 32 * 10000) / 100;
+    document.getElementById("four").innerHTML = "Type 4: " + Math.round(four / 32 * 10000) / 100;
+    document.getElementById("five").innerHTML = "Type 5: " + Math.round(five / 32 * 10000) / 100;
+    document.getElementById("six").innerHTML = "Type 6: " + Math.round(six / 32 * 10000) / 100;
+    document.getElementById("seven").innerHTML = "Type 7: " + Math.round(seven / 32 * 10000) / 100;
+    document.getElementById("eight").innerHTML = "Type 8: " + Math.round(eight / 32 * 10000) / 100;
+    document.getElementById("nine").innerHTML = "Type 9: " + Math.round(nine / 32 * 10000) / 100;
+
+    document.getElementById("bar_1").style.width = Math.round(one / 32 * 10000) / 100 + "%";
+    document.getElementById("bar_2").style.width = Math.round(two / 32 * 10000) / 100 + "%";
+    document.getElementById("bar_3").style.width = Math.round(three / 32 * 10000) / 100 + "%";
+    document.getElementById("bar_4").style.width = Math.round(four / 32 * 10000) / 100 + "%";
+    document.getElementById("bar_5").style.width = Math.round(five / 32 * 10000) / 100 + "%";
+    document.getElementById("bar_6").style.width = Math.round(six / 32 * 10000) / 100 + "%";
+    document.getElementById("bar_7").style.width = Math.round(seven / 32 * 10000) / 100 + "%";
+    document.getElementById("bar_8").style.width = Math.round(eight / 32 * 10000) / 100 + "%";
+    document.getElementById("bar_9").style.width = Math.round(nine / 32 * 10000) / 100 + "%";
 }
 
 

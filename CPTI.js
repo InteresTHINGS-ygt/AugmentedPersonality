@@ -42,7 +42,7 @@ function buttonclick(score) {
                         "I often try to cater to the community",
                         "I prefer giving emotional support over practical solutions",
                         "I may twist the truth in order to preserve harmony",
-                        "I prefer expressing my feeling in indirect ways such as art",
+                        "I prefer expressing my feelings in indirect ways such as art",
                         "I live according to my deeply-felt values",
                         "I often naturally stand out from others",
                         "I am empathetic in a one-to-one manner",
