@@ -266,7 +266,7 @@ function log() {
     var similarity_c = Math.round((Math.pow((similarity_b / 100),2))*100);
 
     for (let i = 0; i < you.length; i++) {
-        sim_weight = (Math.max(Math.abs(50-you[i]), Math.abs(50-oth[i]))/25) + 0.5;
+        sim_weight = ((Math.abs(50-you[i]) + Math.abs(50-oth[i])) / 100) + 0.25
         // similarity_d = (dis_similarity * dis_factor * cent_factor) * 1.1 * sim_weight;
         similarity_d = (1 / (1 + Math.E ** (-(((100-Math.abs(you[i]-oth[i]))/12)-5)))) * 103 * sim_weight;
         sim_sum += similarity_d;
