@@ -268,10 +268,13 @@ function log() {
     for (let i = 0; i < you.length; i++) {
         dis_from_center = Math.abs(50-((you[i]+oth[i])/2)); // Between 0 and 50
         dis_similarity = 100-(Math.abs(you[i]-oth[i])); // Between 0 and 100
-        dis_factor = (0.00774 * dis_similarity) + 0.226; // Makes the curve steeper
-        cent_factor = ((0.0056 * dis_from_center) + 0.72);
+        dis_factor = (0.008 * dis_similarity) + 0.2; // Makes the curve steeper
+        cent_factor = ((0.006 * dis_from_center) + 0.8);
         sim_weight = (Math.max(Math.abs(50-you[i]), Math.abs(50-oth[i]))/25) + 0.5;
-        similarity_d = (dis_similarity * dis_factor * cent_factor) * 1.1 * sim_weight;
+        similarity_d = (dis_similarity * dis_factor * cent_factor) * 1.2 * sim_weight;
+        if (similarity_d > 100 * sim_weight) {
+            similarity_d = 100 * sim_weight;
+        }
         sim_sum += similarity_d;
         weight_sum += sim_weight;
         lichnost_sim = sim_sum / weight_sum;
@@ -281,13 +284,6 @@ function log() {
     var final_sim = 0;
     interest_sim = document.getElementById("interest_sim").valueAsNumber;
     final_sim = lichnost_sim * 0.7 + interest_sim * 0.3;
-
-    if (final_sim > 100) {
-        final_sim = 100;
-    }
-    else if (final_sim < 0) {
-        final_sim = 0;
-    }
 
     document.getElementById("similarity_percentage").style.display = "";
 
