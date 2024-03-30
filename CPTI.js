@@ -32,8 +32,6 @@ var ISTP = 56;
 var test_status = 0;
 
 
-
-
 function buttonclick(score) {
     var statement_1 = ["I am group-oriented and pursue unity",
                         "I am confident about others’ feelings and helping others",

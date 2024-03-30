@@ -12,6 +12,21 @@ var eight = 16;
 var nine = 16;
 // Type scores are between 0 and 32
 
+var body = 0;
+var heart = 0;
+var head = 0;
+var react = 0;
+var pos = 0;
+var comp = 0;
+var attach = 0;
+var fru = 0;
+var rej = 0;
+var sup = 0;
+var asr = 0;
+var wtd = 0;
+var light = 0;
+var dark = 0;
+
 var test_status = 0;
 
 function buttonclick(score) {
@@ -287,25 +302,41 @@ function buttonclick(score) {
 
     if (current_question > (statement_1.length - 1)) {
         document.getElementById("question_number").style.display = "none";
-        document.getElementById("Statement").innerHTML = "Finished!";
-        
+        document.getElementById("Statement").innerHTML = "Type Scores";
+
+        body = (eight + nine + one) / 3;
+        heart = (two + three + four) / 3;
+        head = (five + six + seven) / 3;
+        react = (four + six + eight) / 3;
+        pos = (two + seven + nine) / 3;
+        comp = (one + three + five) / 3;
+        attach = (three + six + nine) / 3;
+        fru = (one + four + seven) / 3;
+        rej = (two + five + eight) / 3;
+        sup = (one + two + six) / 3;
+        asr = (three + seven + eight) / 3;
+        wtd = (four + five + nine) / 3;
+        light = (one + two + seven) / 3;
+        dark = (four + five + eight) / 3;
+
         get_result();
     }
 }
 
 function get_result() {
     document.getElementById("results").style.display = "block";
+    document.getElementById("triads").style.display = "block";
     document.getElementById("test").style.display = "none";
     document.getElementById("question_number").style.display = "none";
-    document.getElementById("one").innerHTML = "Type 1: " + Math.round(one / 32 * 10000) / 100;
-    document.getElementById("two").innerHTML = "Type 2: " + Math.round(two / 32 * 10000) / 100;
-    document.getElementById("three").innerHTML = "Type 3: " + Math.round(three / 32 * 10000) / 100;
-    document.getElementById("four").innerHTML = "Type 4: " + Math.round(four / 32 * 10000) / 100;
-    document.getElementById("five").innerHTML = "Type 5: " + Math.round(five / 32 * 10000) / 100;
-    document.getElementById("six").innerHTML = "Type 6: " + Math.round(six / 32 * 10000) / 100;
-    document.getElementById("seven").innerHTML = "Type 7: " + Math.round(seven / 32 * 10000) / 100;
-    document.getElementById("eight").innerHTML = "Type 8: " + Math.round(eight / 32 * 10000) / 100;
-    document.getElementById("nine").innerHTML = "Type 9: " + Math.round(nine / 32 * 10000) / 100;
+    document.getElementById("one").innerHTML = "Type 1: " + Math.round(one / 32 * 10000) / 100 + "%";
+    document.getElementById("two").innerHTML = "Type 2: " + Math.round(two / 32 * 10000) / 100 + "%";
+    document.getElementById("three").innerHTML = "Type 3: " + Math.round(three / 32 * 10000) / 100 + "%";
+    document.getElementById("four").innerHTML = "Type 4: " + Math.round(four / 32 * 10000) / 100 + "%";
+    document.getElementById("five").innerHTML = "Type 5: " + Math.round(five / 32 * 10000) / 100 + "%";
+    document.getElementById("six").innerHTML = "Type 6: " + Math.round(six / 32 * 10000) / 100 + "%";
+    document.getElementById("seven").innerHTML = "Type 7: " + Math.round(seven / 32 * 10000) / 100 + "%";
+    document.getElementById("eight").innerHTML = "Type 8: " + Math.round(eight / 32 * 10000) / 100 + "%";
+    document.getElementById("nine").innerHTML = "Type 9: " + Math.round(nine / 32 * 10000) / 100 + "%";
 
     document.getElementById("bar_1").style.width = Math.round(one / 32 * 10000) / 100 + "%";
     document.getElementById("bar_2").style.width = Math.round(two / 32 * 10000) / 100 + "%";
@@ -316,6 +347,36 @@ function get_result() {
     document.getElementById("bar_7").style.width = Math.round(seven / 32 * 10000) / 100 + "%";
     document.getElementById("bar_8").style.width = Math.round(eight / 32 * 10000) / 100 + "%";
     document.getElementById("bar_9").style.width = Math.round(nine / 32 * 10000) / 100 + "%";
+
+    document.getElementById("body").innerHTML = "Body / Anger: " + Math.round(body / 32 * 10000) / 100 + "%";
+    document.getElementById("heart").innerHTML = "Heart / Shame: " + Math.round(heart / 32 * 10000) / 100 + "%";
+    document.getElementById("head").innerHTML = "Head / Anxiety: " + Math.round(head / 32 * 10000) / 100 + "%";
+    document.getElementById("reactive").innerHTML = "Reactive: " + Math.round(react / 32 * 10000) / 100 + "%";
+    document.getElementById("positive").innerHTML = "Positive Outlook: " + Math.round(pos / 32 * 10000) / 100 + "%";
+    document.getElementById("competency").innerHTML = "Competency: " + Math.round(comp / 32 * 10000) / 100 + "%";
+    document.getElementById("attachment").innerHTML = "Attachment: " + Math.round(attach / 32 * 10000) / 100 + "%";
+    document.getElementById("frustration").innerHTML = "Frustration: " + Math.round(fru / 32 * 10000) / 100 + "%";
+    document.getElementById("rejection").innerHTML = "Rejection: " + Math.round(rej / 32 * 10000) / 100 + "%";
+    document.getElementById("superego").innerHTML = "Superego: " + Math.round(sup / 32 * 10000) / 100 + "%";
+    document.getElementById("assertive").innerHTML = "Assertive: " + Math.round(asr / 32 * 10000) / 100 + "%";
+    document.getElementById("withdrawn").innerHTML = "Withdrawn: " + Math.round(wtd / 32 * 10000) / 100 + "%";
+    document.getElementById("light").innerHTML = "Light Hexad: " + Math.round(light / 32 * 10000) / 100 + "%";
+    document.getElementById("dark").innerHTML = "Dark Hexad: " + Math.round(dark / 32 * 10000) / 100 + "%";
+
+    document.getElementById("bar_body").style.width = Math.round(body / 32 * 10000) / 100 + "%";
+    document.getElementById("bar_heart").style.width = Math.round(heart / 32 * 10000) / 100 + "%";
+    document.getElementById("bar_head").style.width = Math.round(head / 32 * 10000) / 100 + "%";
+    document.getElementById("bar_reactive").style.width = Math.round(react / 32 * 10000) / 100 + "%";
+    document.getElementById("bar_positive").style.width = Math.round(pos / 32 * 10000) / 100 + "%";
+    document.getElementById("bar_competency").style.width = Math.round(comp / 32 * 10000) / 100 + "%";
+    document.getElementById("bar_attachment").style.width = Math.round(attach / 32 * 10000) / 100 + "%";
+    document.getElementById("bar_frustration").style.width = Math.round(fru / 32 * 10000) / 100 + "%";
+    document.getElementById("bar_rejection").style.width = Math.round(rej / 32 * 10000) / 100 + "%";
+    document.getElementById("bar_superego").style.width = Math.round(sup / 32 * 10000) / 100 + "%";
+    document.getElementById("bar_assertive").style.width = Math.round(asr / 32 * 10000) / 100 + "%";
+    document.getElementById("bar_withdrawn").style.width = Math.round(wtd / 32 * 10000) / 100 + "%";
+    document.getElementById("bar_light").style.width = Math.round(light / 32 * 10000) / 100 + "%";
+    document.getElementById("bar_dark").style.width = Math.round(dark / 32 * 10000) / 100 + "%";
 }
 
 
