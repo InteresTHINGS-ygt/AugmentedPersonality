@@ -14,42 +14,78 @@
             <a href="index.html" class="portal">Back to Portal</a>
             <h1>Cognitive Type Indicator</h1>
             <h3>Currently in alpha. This test determines your cognitive type.</h3>
-            <h3>There are 28 questions.</h3>
+            <h3>There are 56 questions.</h3>
             <h3>Indicate how much do you agree with each statement.</h3>
         </div>
         <div class="main">
             <h2 id="question_number"></h2>
             <h2 id="Statement">Click to start!</h2>
             <input type="button" onclick=buttonclick(0) id="start" value="Start Test">
-            <span id="statement_1"></span>
+            <h3 id="statement_1"></h3>
             <div id="test" style="display:none">
-                <input type="button" onclick=buttonclick(-2) id="sd" value="Definitely Top"><br>
-                <input type="button" onclick=buttonclick(-1) id="d" value="Moderately Top"><br>
-                <input type="button" onclick=buttonclick(1) id="a" value="Moderately Bottom"><br>
-                <input type="button" onclick=buttonclick(2) id="sa" value="Very Bottom"><br>
+                <input type="button" onclick=buttonclick(0) id="sd" value="Definitely Top"><br>
+                <input type="button" onclick=buttonclick(1) id="d" value="Moderately Top"><br>
+                <input type="button" onclick=buttonclick(2) id="a" value="Moderately Bottom"><br>
+                <input type="button" onclick=buttonclick(3) id="sa" value="Very Bottom"><br>
             </div>
-            <span id="statement_2"></span>
             <div id = "results" class="results" style="display:none">
+                <h2>Type Scores</h2>
                 <h3>Scores go from 0 to 100.</h3>
                 <div class="visual_container">
                     <div class = "visual_results" style = "display:grid">
-                        <div class="ENFJ"><div class="center_text" id="ENFJ">Technician</div></div>
-                        <div class="ENFP"><div class="center_text" id="ENFP">Scientist</div></div>
-                        <div class="ENTJ"><div class="center_text" id="ENTJ">Inventor</div></div>
-                        <div class="ENTP"><div class="center_text" id="ENTP">Fascinator</div></div>
-                        <div class="ESFJ"><div class="center_text" id="ESFJ">Architect</div></div>
-                        <div class="ESFP"><div class="center_text" id="ESFP">Professor</div></div>
-                        <div class="ESTJ"><div class="center_text" id="ESTJ">Entrepreneur</div></div>
-                        <div class="ESTP"><div class="center_text" id="ESTP">Adventurer</div></div>
-                        <div class="INFJ"><div class="center_text" id="INFJ">Inspector</div></div>
-                        <div class="INFP"><div class="center_text" id="INFP">Go-Getter</div></div>
-                        <div class="INTJ"><div class="center_text" id="INTJ">Coach</div></div>
-                        <div class="INTP"><div class="center_text" id="INTP">Influencer</div></div>
-                        <div class="ISFJ"><div class="center_text" id="ISFJ">Administrator</div></div>
-                        <div class="ISFP"><div class="center_text" id="ISFP">Guardian</div></div>
-                        <div class="ISTJ"><div class="center_text" id="ISTJ">Caregiver</div></div>
-                        <div class="ISTP"><div class="center_text" id="ISTP">Entertainer</div></div>
+                        <div class="INFP" id="infp"><div class="center_text" id="INFP">Go-Getter</div></div>
+                        <div class="INTP" id="intp"><div class="center_text" id="INTP">Influencer</div></div>
+                        <div class="INTJ" id="intj"><div class="center_text" id="INTJ">Coach</div></div>
+                        <div class="INFJ" id="infj"><div class="center_text" id="INFJ">Inspector</div></div>
+                        <div class="ISFP" id="isfp"><div class="center_text" id="ISFP">Guardian</div></div>
+                        <div class="ISTP" id="istp"><div class="center_text" id="ISTP">Entertainer</div></div>
+                        <div class="ISTJ" id="istj"><div class="center_text" id="ISTJ">Caregiver</div></div>
+                        <div class="ISFJ" id="isfj"><div class="center_text" id="ISFJ">Administrator</div></div>
+                        <div class="ESFP" id="esfp"><div class="center_text" id="ESFP">Professor</div></div>
+                        <div class="ESTP" id="estp"><div class="center_text" id="ESTP">Adventurer</div></div>
+                        <div class="ESTJ" id="estj"><div class="center_text" id="ESTJ">Entrepreneur</div></div>
+                        <div class="ESFJ" id="esfj"><div class="center_text" id="ESFJ">Architect</div></div>
+                        <div class="ENFP" id="enfp"><div class="center_text" id="ENFP">Scientist</div></div>
+                        <div class="ENTP" id="entp"><div class="center_text" id="ENTP">Fascinator</div></div>
+                        <div class="ENTJ" id="entj"><div class="center_text" id="ENTJ">Inventor</div></div>
+                        <div class="ENFJ" id="enfj"><div class="center_text" id="ENFJ">Technician</div></div>
                     </div>
+                </div>
+            </div>
+        </div>
+        <div class="main" id="func" style="display:none">
+            <h2>Function Scores</h2>
+                <h3 id = "Fe">Extraverted Feeling</h3>
+                <div class="results_bar">
+                    <div class="bar_Fe" id="bar_Fe"></div>
+                </div>
+                <h3 id = "Fi">Introverted Feeling</h3>
+                <div class="results_bar">
+                    <div class="bar_Fi" id="bar_Fi"></div>
+                </div>
+                <h3 id = "Ne">Extraverted Intuition</h3>
+                <div class="results_bar">
+                    <div class="bar_Ne" id="bar_Ne"></div>
+                </div>
+                <h3 id = "Ni">Introverted Intuition</h3>
+                <div class="results_bar">
+                    <div class="bar_Ni" id="bar_Ni"></div>
+                </div>
+                <h3 id = "Se">Extraverted Sensation</h3>
+                <div class="results_bar">
+                    <div class="bar_Se" id="bar_Se"></div>
+                </div>
+                <h3 id = "Si">Introverted Sensation</h3>
+                <div class="results_bar">
+                    <div class="bar_Si" id="bar_Si"></div>
+                </div>
+                <h3 id = "Te">Extraverted Thinking</h3>
+                <div class="results_bar">
+                    <div class="bar_Te" id="bar_Te"></div>
+                </div>
+                <h3 id = "Ti">Introverted Thinking</h3>
+                <div class="results_bar">
+                    <div class="bar_Ti" id="bar_ti"></div>
                 </div>
             </div>
         </div>

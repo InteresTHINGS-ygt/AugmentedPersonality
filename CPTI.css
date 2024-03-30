@@ -38,7 +38,7 @@ span {
     background: rgb(214, 193, 0);
 }
 
-.results_bar_IP {
+.results_bar {
     background-color: rgb(187, 179, 179);
     margin: 4vw;
     border-radius: 1.5vw;
@@ -46,56 +46,64 @@ span {
     position: relative;
 }
 
-.bar_IP {
-    background-color: rgb(0, 124, 37);
+.bar_Fe {
+    background-color: rgb(175, 0, 131);
     border-radius: 1.5vw;
     box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
     width: 50%;
     height: 6vw;
 }
 
-.results_bar_IJ {
-    background-color: rgb(173, 173, 173);
-    margin: 4vw;
-    border-radius: 1.5vw;
-    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
-    position: relative;
-}
-
-.bar_IJ {
-    background-color: rgb(60, 0, 172);
+.bar_Fi {
+    background-color: rgb(94, 0, 122);
     border-radius: 1.5vw;
     box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
     width: 50%;
     height: 6vw;
 }
 
-.results_bar_EP {
-    background-color: rgb(173, 173, 173);
-    margin: 4vw;
-    border-radius: 1.5vw;
-    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
-    position: relative;
-}
-
-.bar_EP {
-    background-color: rgb(196, 134, 0);
+.bar_Ne {
+    background-color: rgb(207, 142, 0);
     border-radius: 1.5vw;
     box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
     width: 50%;
     height: 6vw;
 }
 
-.results_bar_EJ {
-    background-color: rgb(173, 173, 173);
-    margin: 4vw;
+.bar_Ni {
+    background-color: rgb(129, 121, 0);
     border-radius: 1.5vw;
     box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
-    position: relative;
+    width: 50%;
+    height: 6vw;
 }
 
-.bar_EJ {
-    background-color: rgb(190, 0, 41);
+.bar_Se {
+    background-color: rgb(26, 153, 0);
+    border-radius: 1.5vw;
+    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
+    width: 50%;
+    height: 6vw;
+}
+
+.bar_Si {
+    background-color: rgb(0, 99, 44);
+    border-radius: 1.5vw;
+    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
+    width: 50%;
+    height: 6vw;
+}
+
+.bar_Te {
+    background-color: rgb(0, 109, 199);
+    border-radius: 1.5vw;
+    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
+    width: 50%;
+    height: 6vw;
+}
+
+.bar_Ti {
+    background-color: rgb(0, 22, 150);
     border-radius: 1.5vw;
     box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
     width: 50%;
@@ -124,71 +132,71 @@ span {
     text-align: center;
 }
 
-.ENFJ {
-    background-color: rgb(0, 102, 255);
+.INFP {
+    background-color: hsl(157, 100%, 29%);
     border-radius: 2vw 0 0 0;
 }
 
-.ENFP {
-    background-color: rgb(0, 155, 226);
-}
-
-.ENTJ {
-    background-color: rgb(226, 230, 0);
-}
-
-.ENTP {
-    background-color: rgb(255, 187, 0);
-    border-radius: 0 2vw 0 0;
-}
-
-.ESFJ {
-    background-color: rgb(0, 124, 133);
-}
-
-.ESFP {
-    background-color: rgb(106, 104, 223);
-}
-
-.ESTJ {
-    background-color: rgb(221, 223, 104);
-}
-
-.ESTP {
-    background-color: rgb(255, 153, 0);
-}
-
-.INFJ {
-    background-color: rgb(0, 145, 56);
-}
-
-.INFP {
-    background-color: rgb(104, 192, 78);
+.INTP {
+    background-color: hsl(162, 100%, 37%);
 }
 
 .INTJ {
-    background-color: rgb(223, 104, 130);
+    background-color: hsl(229, 74%, 53%);
 }
 
-.INTP {
-    background-color: rgb(255, 72, 0);
-}
-
-.ISFJ {
-    background-color: rgb(0, 182, 15);
-    border-radius: 0 0 0 2vw;
+.INFJ {
+    background-color: hsl(271, 83%, 45%);
+    border-radius: 0 2vw 0 0;
 }
 
 .ISFP {
-    background-color: rgb(72, 136, 0);
-}
-
-.ISTJ {
-    background-color: rgb(202, 0, 78);
+    background-color: hsl(88, 84%, 37%);
 }
 
 .ISTP {
-    background-color: rgb(255, 0, 0);
+    background-color: hsl(78, 92%, 39%);
+}
+
+.ISTJ {
+    background-color: hsl(207, 88%, 41%);
+}
+
+.ISFJ {
+    background-color: hsl(276, 86%, 52%);
+}
+
+.ESFP {
+    background-color: hsl(41, 100%, 43%);
+}
+
+.ESTP {
+    background-color: hsl(36, 100%, 37%);
+}
+
+.ESTJ {
+    background-color: hsl(12, 86%, 39%);
+}
+
+.ESFJ {
+    background-color: hsl(345, 84%, 47%);
+}
+
+.ENFP {
+    background-color: hsl(56, 86%, 45%);
+    border-radius: 0 0 0 2vw;
+}
+
+.ENTP {
+    background-color: hsl(49, 80%, 41%);
+}
+
+.ENTJ {
+    background-color: hsl(0, 84%, 49%);
+}
+
+.ENFJ {
+    background-color: hsl(340, 86%, 38%);
     border-radius: 0 0 2vw 0;
 }
 
