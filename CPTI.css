@@ -3,7 +3,7 @@ body {
 }
 
 input[type="button"] {
-    background-color: rgb(214, 193, 0);
+    background-color: rgb(196, 176, 0);
 }
 
 div.results {
@@ -102,6 +102,96 @@ span {
     height: 6vw;
 }
 
+.visual_container {
+    margin: 3.5vw;
+    position: relative;
+    border-radius: 2vw;
+    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.4);
+}
+
+.visual_results {
+    grid-template-columns: 20vw 20vw 20vw 20vw;
+    grid-template-rows: 20vw 20vw 20vw 20vw;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 3vw;
+}
+
+.center_text {
+    position: relative;
+    top: 38%;
+    width: 100%;
+    text-align: center;
+}
+
+.ENFJ {
+    background-color: rgb(0, 102, 255);
+    border-radius: 2vw 0 0 0;
+}
+
+.ENFP {
+    background-color: rgb(0, 155, 226);
+}
+
+.ENTJ {
+    background-color: rgb(226, 230, 0);
+}
+
+.ENTP {
+    background-color: rgb(255, 187, 0);
+    border-radius: 0 2vw 0 0;
+}
+
+.ESFJ {
+    background-color: rgb(0, 124, 133);
+}
+
+.ESFP {
+    background-color: rgb(106, 104, 223);
+}
+
+.ESTJ {
+    background-color: rgb(221, 223, 104);
+}
+
+.ESTP {
+    background-color: rgb(255, 153, 0);
+}
+
+.INFJ {
+    background-color: rgb(0, 145, 56);
+}
+
+.INFP {
+    background-color: rgb(104, 192, 78);
+}
+
+.INTJ {
+    background-color: rgb(223, 104, 130);
+}
+
+.INTP {
+    background-color: rgb(255, 72, 0);
+}
+
+.ISFJ {
+    background-color: rgb(0, 182, 15);
+    border-radius: 0 0 0 2vw;
+}
+
+.ISFP {
+    background-color: rgb(72, 136, 0);
+}
+
+.ISTJ {
+    background-color: rgb(202, 0, 78);
+}
+
+.ISTP {
+    background-color: rgb(255, 0, 0);
+    border-radius: 0 0 2vw 0;
+}
+
 @media only screen and (min-width: 600px){
     div.results {
         grid-template-columns: 150px 230px 150px;
@@ -172,5 +262,43 @@ span {
         box-shadow: 14px 14px 28px rgba(40, 37, 30, 0.2);
         width: 50%;
         height: 40px;
+    }
+
+    .visual_container {
+        margin: 26px;
+        position: relative;
+        border-radius: 10px;
+        box-shadow: 7px 7px 14px rgba(40, 37, 30, 0.4);
+    }
+
+    .visual_results {
+        grid-template-columns: 125px 125px 125px 125px;
+        grid-template-rows: 125px 125px 125px 125px;
+        justify-content: center;
+        font-weight: bold;
+        font-size: 14pt;
+    }
+    
+    .center_text {
+        position: relative;
+        top: 39%;
+        width: 100%;
+        text-align: center;
+    }
+
+    .ENFJ {
+        border-radius: 10px 0 0 0;
+    }
+
+    .ENTP {
+        border-radius: 0 10px 0 0;
+    }
+
+    .ISFJ {
+        border-radius: 0 0 0 10px;
+    }
+
+    .ISTP {
+        border-radius: 0 0 10px 0;
     }
 }

@@ -12,186 +12,22 @@
     <body>
         <div class="main">
             <a href="index.html" class="portal">Back to Portal</a>
-        <h1>Differential Enneagram Test</h1>
-        <h3>There are a total of 36 questions.</h3>
-        <h3>You are going to answer 9 of them.</h3>
-        <h3>Choose the option that resonates with you more.</h3>
-        <h3>Answer honestly, or the test results will be invalid.</h3>
+            <h1>Differential Enneagram Test</h1>
+            <h3>Currently in alpha. This test determines your cognitive type.</h3>
+            <h3>There are 36 questions.</h3>
+            <h3>Indicate how much do you agree with each statement.</h3>
         </div>
         <div class="main">
             <h2 id="question_number"></h2>
             <h2 id="Statement">Click to start!</h2>
-            <input type="button" onclick=start_test() id="start" value="Start Test">
-            <div id="test12" style="display:none">
-                <input type="button" onclick=set_type(1) value="1"><br>
-                <input type="button" onclick=set_type(2) value="2"><br>
-            </div>
-            <div id="test13" style="display:none">
-                <input type="button" onclick=set_type(1) value="1"><br>
-                <input type="button" onclick=set_type(3) value="3"><br>
-            </div>
-            <div id="test14" style="display:none">
-                <input type="button" onclick=set_type(1) value="1"><br>
-                <input type="button" onclick=set_type(4) value="4"><br>
-            </div>
-            <div id="test15" style="display:none">
-                <input type="button" onclick=set_type(1) value="1"><br>
-                <input type="button" onclick=set_type(5) value="5"><br>
-            </div>
-            <div id="test16" style="display:none">
-                <input type="button" onclick=set_type(1) value="1"><br>
-                <input type="button" onclick=set_type(6) value="6"><br>
-            </div>
-            <div id="test17" style="display:none">
-                <input type="button" onclick=set_type(1) value="1"><br>
-                <input type="button" onclick=set_type(7) value="7"><br>
-            </div>
-            <div id="test18" style="display:none">
-                <input type="button" onclick=set_type(1) value="1"><br>
-                <input type="button" onclick=set_type(8) value="8"><br>
-            </div>
-            <div id="test19" style="display:none">
-                <input type="button" onclick=set_type(1) value="1"><br>
-                <input type="button" onclick=set_type(9) value="9"><br>
-            </div>
-            <div id="test23" style="display:none">
-                <input type="button" onclick=set_type(2) value="2"><br>
-                <input type="button" onclick=set_type(3) value="3"><br>
-            </div>
-            <div id="test24" style="display:none">
-                <input type="button" onclick=set_type(2) value="2"><br>
-                <input type="button" onclick=set_type(4) value="4"><br>
-            </div>
-            <div id="test25" style="display:none">
-                <input type="button" onclick=set_type(2) value="2"><br>
-                <input type="button" onclick=set_type(5) value="5"><br>
-            </div>
-            <div id="test26" style="display:none">
-                <input type="button" onclick=set_type(2) value="2"><br>
-                <input type="button" onclick=set_type(6) value="6"><br>
-            </div>
-            <div id="test27" style="display:none">
-                <input type="button" onclick=set_type(2) value="2"><br>
-                <input type="button" onclick=set_type(7) value="7"><br>
-            </div>
-            <div id="test28" style="display:none">
-                <input type="button" onclick=set_type(2) value="2"><br>
-                <input type="button" onclick=set_type(8) value="8"><br>
-            </div>
-            <div id="test29" style="display:none">
-                <input type="button" onclick=set_type(2) value="2"><br>
-                <input type="button" onclick=set_type(9) value="9"><br>
-            </div>
-            <div id="test34" style="display:none">
-                <input type="button" onclick=set_type(3) value="3"><br>
-                <input type="button" onclick=set_type(4) value="4"><br>
-            </div>
-            <div id="test35" style="display:none">
-                <input type="button" onclick=set_type(3) value="3"><br>
-                <input type="button" onclick=set_type(5) value="5"><br>
-            </div>
-            <div id="test36" style="display:none">
-                <input type="button" onclick=set_type(3) value="3"><br>
-                <input type="button" onclick=set_type(6) value="6"><br>
-            </div>
-            <div id="test37" style="display:none">
-                <input type="button" onclick=set_type(3) value="3"><br>
-                <input type="button" onclick=set_type(7) value="7"><br>
-            </div>
-            <div id="test38" style="display:none">
-                <input type="button" onclick=set_type(3) value="3"><br>
-                <input type="button" onclick=set_type(8) value="8"><br>
-            </div>
-            <div id="test39" style="display:none">
-                <input type="button" onclick=set_type(3) value="3"><br>
-                <input type="button" onclick=set_type(9) value="9"><br>
-            </div>
-            <div id="test45" style="display:none">
-                <input type="button" onclick=set_type(4) value="4"><br>
-                <input type="button" onclick=set_type(5) value="5"><br>
-            </div>
-            <div id="test46" style="display:none">
-                <input type="button" onclick=set_type(4) value="4"><br>
-                <input type="button" onclick=set_type(6) value="6"><br>
-            </div>
-            <div id="test47" style="display:none">
-                <input type="button" onclick=set_type(4) value="4"><br>
-                <input type="button" onclick=set_type(7) value="7"><br>
-            </div>
-            <div id="test48" style="display:none">
-                <input type="button" onclick=set_type(4) value="4"><br>
-                <input type="button" onclick=set_type(8) value="8"><br>
-            </div>
-            <div id="test49" style="display:none">
-                <input type="button" onclick=set_type(4) value="4"><br>
-                <input type="button" onclick=set_type(9) value="9"><br>
-            </div>
-            <div id="test56" style="display:none">
-                <input type="button" onclick=set_type(5) value="5"><br>
-                <input type="button" onclick=set_type(6) value="6"><br>
-            </div>
-            <div id="test57" style="display:none">
-                <input type="button" onclick=set_type(5) value="5"><br>
-                <input type="button" onclick=set_type(7) value="7"><br>
-            </div>
-            <div id="test58" style="display:none">
-                <input type="button" onclick=set_type(5) value="5"><br>
-                <input type="button" onclick=set_type(8) value="8"><br>
-            </div>
-            <div id="test59" style="display:none">
-                <input type="button" onclick=set_type(5) value="5"><br>
-                <input type="button" onclick=set_type(9) value="9"><br>
-            </div>
-            <div id="test67" style="display:none">
-                <input type="button" onclick=set_type(6) value="6"><br>
-                <input type="button" onclick=set_type(7) value="7"><br>
-            </div>
-            <div id="test68" style="display:none">
-                <input type="button" onclick=set_type(6) value="6"><br>
-                <input type="button" onclick=set_type(8) value="8"><br>
-            </div>
-            <div id="test69" style="display:none">
-                <input type="button" onclick=set_type(6) value="6"><br>
-                <input type="button" onclick=set_type(9) value="9"><br>
-            </div>
-            <div id="test78" style="display:none">
-                <input type="button" onclick=set_type(7) value="7"><br>
-                <input type="button" onclick=set_type(8) value="8"><br>
-            </div>
-            <div id="test79" style="display:none">
-                <input type="button" onclick=set_type(7) value="7"><br>
-                <input type="button" onclick=set_type(9) value="9"><br>
-            </div>
-            <div id="test89" style="display:none">
-                <input type="button" onclick=set_type(8) value="8"><br>
-                <input type="button" onclick=set_type(9) value="9"><br>
-            </div>
-            <div id="type1" style="display:none">
-                <h3>You are type 1</h3>
-            </div>
-            <div id="type2" style="display:none">
-                <h3>You are type 2</h3>
-            </div>
-            <div id="type3" style="display:none">
-                <h3>You are type 3</h3>
-            </div>
-            <div id="type4" style="display:none">
-                <h3>You are type 4</h3>
-            </div>
-            <div id="type5" style="display:none">
-                <h3>You are type 5</h3>
-            </div>
-            <div id="type6" style="display:none">
-                <h3>You are type 6</h3>
-            </div>
-            <div id="type7" style="display:none">
-                <h3>You are type 7</h3>
-            </div>
-            <div id="type8" style="display:none">
-                <h3>You are type 8</h3>
-            </div>
-            <div id="type9" style="display:none">
-                <h3>You are type 9</h3>
+            <input type="button" onclick=buttonclick(0) id="start" value="Start Test">
+            <div id="test" style="display:none">
+                <span id="statement_1"></span>
+                <input type="button" onclick=buttonclick(-2) id="sd" value="Definitely Top"><br>
+                <input type="button" onclick=buttonclick(-1) id="d" value="Moderately Top"><br>
+                <input type="button" onclick=buttonclick(1) id="a" value="Moderately Bottom"><br>
+                <input type="button" onclick=buttonclick(2) id="sa" value="Very Bottom"><br>
+                <span id="statement_2"></span>
             </div>
         </div>
     </body>

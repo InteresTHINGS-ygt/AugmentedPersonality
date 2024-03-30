@@ -14,7 +14,7 @@
             <a href="index.html" class="portal">Back to Portal</a>
             <h1>Cognitive Type Indicator</h1>
             <h3>Currently in alpha. This test determines your cognitive type.</h3>
-            <h3>There are 72 questions.</h3>
+            <h3>There are 28 questions.</h3>
             <h3>Indicate how much do you agree with each statement.</h3>
         </div>
         <div class="main">
@@ -22,48 +22,35 @@
             <h2 id="Statement">Click to start!</h2>
             <input type="button" onclick=buttonclick(0) id="start" value="Start Test">
             <div id="test" style="display:none">
-                <input type="button" onclick=buttonclick(0) id="sd" value="Strongly Disagree"><br>
-                <input type="button" onclick=buttonclick(1) id="d" value="Disagree"><br>
-                <input type="button" onclick=buttonclick(2) id="a" value="Agree"><br>
-                <input type="button" onclick=buttonclick(3) id="sa" value="Strongly Agree"><br>
+                <span id="statement_1"></span>
+                <input type="button" onclick=buttonclick(-2) id="sd" value="Definitely Top"><br>
+                <input type="button" onclick=buttonclick(-1) id="d" value="Moderately Top"><br>
+                <input type="button" onclick=buttonclick(1) id="a" value="Moderately Bottom"><br>
+                <input type="button" onclick=buttonclick(2) id="sa" value="Very Bottom"><br>
+                <span id="statement_2"></span>
             </div>
-            <!--<div id = "tiebreaker_c" style = "display:none">
-                <h2>Tiebreaker</h2>
-                <h4>It looks like you have a tie on one or both scales!</h4>
-                <h2>Which word do you resonate with more?</h2>
-                <input type="button" onclick=tiebreakerclick_c(1) value="Contemplation"><br>
-                <input type="button" onclick=tiebreakerclick_c(-1) value="Action"><br>
-            </div>
-            <div id = "tiebreaker_r" style = "display:none">
-                <h2>Tiebreaker</h2>
-                <h4>It looks like you have a tie on one or both scales!</h4>
-                <h2>Which word do you resonate with more?</h2>
-                <input type="button" onclick=tiebreakerclick_r(1) value="Flow"><br>
-                <input type="button" onclick=tiebreakerclick_r(-1) value="Plan"><br>
-            </div>
-            <h4 id = "tiebreaker"></h4>-->
             <div id = "results" class="results" style="display:none">
-                <h3>Scores go from 0 to 27.</h3>
-                
-                <h3 id="ENFJ">a</h3>
-                <h3 id="ENFP">b</h3>
-                <h3 id="ENTJ">c</h3>
-                <h3 id="ENTP">d</h3>
-
-                <h3 id="ESFJ">a</h3>
-                <h3 id="ESFP">b</h3>
-                <h3 id="ESTJ">c</h3>
-                <h3 id="ESTP">d</h3>
-
-                <h3 id="INFJ">a</h3>
-                <h3 id="INFP">b</h3>
-                <h3 id="INTJ">c</h3>
-                <h3 id="INTP">d</h3>
-
-                <h3 id="ISFJ">a</h3>
-                <h3 id="ISFP">b</h3>
-                <h3 id="ISTJ">c</h3>
-                <h3 id="ISTP">d</h3>
+                <h3>Scores go from 0 to 100.</h3>
+                <div class="visual_container">
+                    <div class = "visual_results" style = "display:grid">
+                        <div class="ENFJ"><div class="center_text" id="ENFJ">Technician</div></div>
+                        <div class="ENFP"><div class="center_text" id="ENFP">Scientist</div></div>
+                        <div class="ENTJ"><div class="center_text" id="ENTJ">Inventor</div></div>
+                        <div class="ENTP"><div class="center_text" id="ENTP">Fascinator</div></div>
+                        <div class="ESFJ"><div class="center_text" id="ESFJ">Architect</div></div>
+                        <div class="ESFP"><div class="center_text" id="ESFP">Professor</div></div>
+                        <div class="ESTJ"><div class="center_text" id="ESTJ">Entrepreneur</div></div>
+                        <div class="ESTP"><div class="center_text" id="ESTP">Adventurer</div></div>
+                        <div class="INFJ"><div class="center_text" id="INFJ">Inspector</div></div>
+                        <div class="INFP"><div class="center_text" id="INFP">Go-Getter</div></div>
+                        <div class="INTJ"><div class="center_text" id="INTJ">Coach</div></div>
+                        <div class="INTP"><div class="center_text" id="INTP">Influencer</div></div>
+                        <div class="ISFJ"><div class="center_text" id="ISFJ">Administrator</div></div>
+                        <div class="ISFP"><div class="center_text" id="ISFP">Guardian</div></div>
+                        <div class="ISTJ"><div class="center_text" id="ISTJ">Caregiver</div></div>
+                        <div class="ISTP"><div class="center_text" id="ISTP">Entertainer</div></div>
+                    </div>
+                </div>
             </div>
         </div>
     </body>

@@ -1,149 +1,270 @@
 var current_question = -1;
 var score = 0;
 
-var Se_d = 0;
-var Si_d = 0;
-var Ne_d = 0;
-var Ni_d = 0;
-var Te_d = 0;
-var Ti_d = 0;
-var Fe_d = 0;
-var Fi_d = 0;
+var Se = 14;
+var Si = 14;
+var Ne = 14;
+var Ni = 14;
+var Te = 14;
+var Ti = 14;
+var Fe = 14;
+var Fi = 14;
+// Function scores are between 0 and 28
 
-var Se_a = 0;
-var Si_a = 0;
-var Ne_a = 0;
-var Ni_a = 0;
-var Te_a = 0;
-var Ti_a = 0;
-var Fe_a = 0;
-var Fi_a = 0;
-
-var ENFJ = 0;
-var ENFP = 0;
-var ENTJ = 0;
-var ENTP = 0;
-var ESFJ = 0;
-var ESFP = 0;
-var ESTJ = 0;
-var ESTP = 0;
-var INFJ = 0;
-var INFP = 0;
-var INTJ = 0;
-var INTP = 0;
-var ISFJ = 0;
-var ISFP = 0;
-var ISTJ = 0;
-var ISTP = 0;
+var ENFJ = 56;
+var ENFP = 56;
+var ENTJ = 56;
+var ENTP = 56;
+var ESFJ = 56;
+var ESFP = 56;
+var ESTJ = 56;
+var ESTP = 56;
+var INFJ = 56;
+var INFP = 56;
+var INTJ = 56;
+var INTP = 56;
+var ISFJ = 56;
+var ISFP = 56;
+var ISTJ = 56;
+var ISTP = 56;
+// Type scores are between 0 and 196
 
 var test_status = 0;
 
+
+
+
 function buttonclick(score) {
-    var questions = ["Tries to maximize the pleasure of the moment","Realistic, present, opportunistic","Humor often involves practical jokes, based on present details","Tends to be very pragmatic, adapting to the moment","Carpe diem approach to life, not much future planning","Often physically bold and stimulation-seeking","Focused on doing what's needed and their duties","Generally sticks with what they know, does not branch out too much","Appears level-headed and grounded even if actually stressed inside","Routine-oriented and predictable, usually follows the rules","Can focus on one thing for a long time and master it","Highly focused on sensory maintenance and self-care","Tends to have many interests, even if unrelated","Generally talkative and referencing, prone to changing topics","May be forgetful, yet remember random things","Gives off exotic vibes, usually bold with ideas","Enjoys new challenges with mental stimulation","Dislikes too much structure and limitations, explores possibilities","Trusts their sixth sense and intuition, flashes of insight","Mystical vibes from them, drawn to the mysterious and unconscious world","Seeks and harbors hidden meanings and impressions","Can be intense and predictive, like a fortune teller","Has a laser-focus vision for the far future, struggles living in the moment","Big-picture oriented, does not really remember the details","Busy and hardworking types, does not waste time","Very goal and result-oriented, a to-do list for every day","Life is soup, I am a spoon attitude, confidence about abilities","Can be reactive but they focus on goals instead","Generally more focused on efficiency than formality","Finds practical solutions wherever they go","Needs to logically justify their decisions","Lives according to their own logical principles and frameworks","Can be accidentally rude, may miss social cues, truth over tact","Learns things for the sake of it, wants to know how things work","May have outbursts due to emotional detachment","Everything needs to make logical sense for them","Highly community catering types","Focused on the emotional atmosphere","Group-oriented, tries to get along with others, pursues unity","Often actively helping others and resolving conflicts","Tends to give emotional support rather than practical solutions","Confident about other people's feelings and helping them","Puts a lot of value on being themselves and honesty","Expresses feelings in indirect ways","Often naturally stands out from others, lives according to their own values","May give melancholic vibes, emotionally intense","Empathetic in a one-to-one manner","No real need to logically justify their value-based decisions","Easygoing and takes in the moment as it is","Can have a subtle idealistic or intellectual side","Wants to do something physical even if reserved","More group-oriented than individualistic, actively responsible","Generally keen on organizing, directing, and being a part of something bigger","Can have a secret experimental side to them","Very individualistic and unique","Talkative in regards to areas of interest","Can be reminiscent or nostalgic, valuing comfort","Vigorously works towards achieving visions","Decisive with their goals and predictions","Generally active and working towards something","A sense of quiet confidence and steady drive","Not expressive or impressionable, tends to be stubborn","Strong personal values without overthinking it","Bold in general, physically or mentally","Can be purposefully provocative, debating or persuading","Appears highly charismatic and charming","Prefers groups despite being reserved","Very calm, sincere, and humble","May enjoy finding logical patterns in a non-offensive way","Often trying to stand out and expressing themselves in wild ways","Tends to be very emotionally expressive","Can be assertive and productive in bursts of energy"];
+    var statement_1 = ["I am group-oriented and pursue unity",
+                        "I am confident about others’ feelings and helping others",
+                        "In my decisions, I am highly focused on the emotional atmosphere",
+                        "I often actively help others and resolve conflicts",
+                        "I often try to cater to the community",
+                        "I prefer giving emotional support over practical solutions",
+                        "I may twist the truth in order to preserve harmony",
+                        "I prefer expressing my feeling in indirect ways such as art",
+                        "I live according to my deeply-felt values",
+                        "I often naturally stand out from others",
+                        "I am empathetic in a one-to-one manner",
+                        "I sometimes have a hard time with objective standards",
+                        "I don’t have a real need to logically justify my decisions if they fit my values",
+                        "I tend to have many interests which can be unrelated",
+                        "I enjoy new challenges involving mental stimulation",
+                        "I dislike structure as it limits possibilities",
+                        "I tend to be forgetful when it comes to practical details",
+                        "I sometimes remember random things out of nowhere",
+                        "I tend to struggle living in the moment because of my future focus",
+                        "I am all about the big picture and don’t really remember the details",
+                        "I can sometimes be like a fortune teller with my predictions",
+                        "I am drawn towards the unconscious world and gathering insights",
+                        "I have a carpe diem attitude towards life",
+                        "I tend to be opportunistic, realistic, and present-oriented",
+                        "My humor is mostly about practical jokes based on present details",
+                        "I am generally routinized and predictable",
+                        "I generally stick with what I know and what has worked",
+                        "I am result-oriented and focused on getting things done"];
+
+    var statement_2 = ["I put a lot of value on being myself and being authentic",
+                        "I am often bold when it comes to new, exotic ideas",
+                        "I trust my sixth sense and intuitive hunches",
+                        "I try to maximize the pleasure of the moment",
+                        "I am highly focused on self-care and sensory maintenance",
+                        "I find practical solutions wherever I go",
+                        "I can be accidentally rude and miss social cues",
+                        "I am generally talkative and referencing random things and connections",
+                        "I seek and harbor hidden symbolic meanings",
+                        "I readily adapt to the changing environment",
+                        "I can focus on one thing for a long time and master it",
+                        "I generally think emotions hinder the ability to make effective decisions",
+                        "Everything needs to make logical sense to me",
+                        "I have a laser focus vision about the future",
+                        "I tend to seek physical stimulation as it keeps me present",
+                        "I usually follow the rules in favor of physical safety and comfort",
+                        "I try to use my time as efficiently as possible",
+                        "I am generally confident about my own analysis",
+                        "I generally dislike planning for the future",
+                        "I focus on duties, details, and doing what is needed",
+                        "My decisions have to be true to objective facts and data",
+                        "I want to know how things and ideas work",
+                        "I tend to have a hard time with change and branching out of my comfort zone",
+                        "I am generally confident about my planning skills",
+                        "I tend to learn things in order to tinker around with the knowledge",
+                        "I define myself through my accomplishments and don’t overthink my identity",
+                        "I make decisions according to my inner sense of truth",
+                        "I tend to be focused more on the process than the result"];
 
     if (test_status == 0) {
         test_status = 1;
-        document.getElementById("test").style.display = "block"
-        document.getElementById("start").style.display = "none"
-    }
-d
-    current_question += 1;
-    document.getElementById("question_number").innerHTML = "Question " + (current_question + 1);
-    document.getElementById("Statement").innerHTML = questions[current_question];
-    if (current_question < 7){
-        Se_d += score;
-    }
-    else if (current_question < 13){
-        Si_d += score;
-    }
-    else if (current_question < 19){
-        Ne_d += score;
-    }
-    else if (current_question < 25){
-        Ni_d += score;
-    }
-    else if (current_question < 31){
-        Te_d += score;
-    }
-    else if (current_question < 37){
-        Ti_d += score;
-    }
-    else if (current_question < 43){
-        Fe_d += score;
-    }
-    else if (current_question < 49){
-        Fi_d += score;
-    }
-    else if (current_question < 52){
-        Se_a += score;
-    }
-    else if (current_question < 55){
-        Si_a += score;
-    }
-    else if (current_question < 58){
-        Ne_a += score;
-    }
-    else if (current_question < 61){
-        Ni_a += score;
-    }
-    else if (current_question < 64){
-        Te_a += score;
-    }
-    else if (current_question < 67){
-        Ti_a += score;
-    }
-    else if (current_question < 70){
-        Fe_a += score;
-    }
-    else if (current_question < 73){
-        Fi_a += score;
-    }
-
-    if (current_question > (questions.length - 1)){
-        document.getElementById("question_number").style.display = "none";
-        document.getElementById("Statement").innerHTML = "Finished!";
-        ENFJ = Fe_d + Ni_a;
-        ENFP = Ne_d + Fi_a;
-        ENTJ = Te_d + Ni_a;
-        ENTP = Ne_d + Ti_a;
-        ESFJ = Fe_d + Si_a;
-        ESFP = Se_d + Fi_a;
-        ESTJ = Te_d + Si_a;
-        ESTP = Se_d + Ti_a;
-        INFJ = Ni_d + Fe_a;
-        INFP = Fi_d + Ne_a;
-        INTJ = Ni_d + Te_a;
-        INTP = Ti_d + Ne_a;
-        ISFJ = Si_d + Fe_a;
-        ISFP = Fi_d + Se_a;
-        ISTJ = Si_d + Te_a;
-        ISTP = Ti_d + Se_a;
-        get_result();
+        document.getElementById("test").style.display = "block";
+        document.getElementById("start").style.display = "none";
     }
     
+    current_question += 1;
+    document.getElementById("question_number").innerHTML = "Question " + (current_question + 1);
+    document.getElementById("Statement").style.display = "none";
+    document.getElementById("statement_1").innerHTML = statement_1[current_question];
+    document.getElementById("statement_2").innerHTML = statement_2[current_question];
+
+    
+    if (current_question == 1) {
+        Fe -= score;
+        Fi += score;
+    }
+    else if (current_question == 2) {
+        Fe -= score;
+        Ne += score;
+    }
+    else if (current_question == 3) {
+        Fe -= score;
+        Ni += score;
+    }
+    else if (current_question == 4) {
+        Fe -= score;
+        Se += score;
+    }
+    else if (current_question == 5) {
+        Fe -= score;
+        Si += score;
+    }
+    else if (current_question == 6) {
+        Fe -= score;
+        Te += score;
+    }
+    else if (current_question == 7) {
+        Fe -= score;
+        Ti += score;
+    }
+    else if (current_question == 8) {
+        Fi -= score;
+        Ne += score;
+    }
+    else if (current_question == 9) {
+        Fi -= score;
+        Ni += score;
+    }
+    else if (current_question == 10) {
+        Fi -= score;
+        Se += score;
+    }
+    else if (current_question == 11) {
+        Fi -= score;
+        Si += score;
+    }
+    else if (current_question == 12) {
+        Fi -= score;
+        Te += score;
+    }
+    else if (current_question == 13) {
+        Fi -= score;
+        Ti += score;
+    }
+    else if (current_question == 14) {
+        Ne -= score;
+        Ni += score;
+    }
+    else if (current_question == 15) {
+        Ne -= score;
+        Se += score;
+    }
+    else if (current_question == 16) {
+        Ne -= score;
+        Si += score;
+    }
+    else if (current_question == 17) {
+        Ne -= score;
+        Te += score;
+    }
+    else if (current_question == 18) {
+        Ne -= score;
+        Ti += score;
+    }
+    else if (current_question == 19) {
+        Ni -= score;
+        Se += score;
+    }
+    else if (current_question == 20) {
+        Ni -= score;
+        Si += score;
+    }
+    else if (current_question == 21) {
+        Ni -= score;
+        Te += score;
+    }
+    else if (current_question == 22) {
+        Ni -= score;
+        Ti += score;
+    }
+    else if (current_question == 23) {
+        Se -= score;
+        Si += score;
+    }
+    else if (current_question == 24) {
+        Se -= score;
+        Te += score;
+    }
+    else if (current_question == 25) {
+        Se -= score;
+        Ti += score;
+    }
+    else if (current_question == 26) {
+        Si -= score;
+        Te += score;
+    }
+    else if (current_question == 27) {
+        Si -= score;
+        Ti += score;
+    }
+    else if (current_question == 28) {
+        Te -= score;
+        Ti += score;
+    }
+
+    if (current_question > (statement_1.length - 1)) {
+        document.getElementById("question_number").style.display = "none";
+        document.getElementById("Statement").innerHTML = "Finished!";
+        ENFJ = (3 * Fe + Ni + Se - Ti - Si) + 56;
+        ENFP = (3 * Ne + Fi + Te - Si - Ti) + 56;
+        ENTJ = (3 * Te + Ni + Se - Fi - Si) + 56;
+        ENTP = (3 * Ne + Ti + Fe - Si - Fi) + 56;
+        ESFJ = (3 * Fe + Si + Ne - Ti - Ni) + 56;
+        ESFP = (3 * Se + Fi + Te - Ni - Ti) + 56;
+        ESTJ = (3 * Te + Si + Ne - Fi - Ni) + 56;
+        ESTP = (3 * Se + Ti + Fe - Ni - Fi) + 56;
+        INFJ = (3 * Ni + Fe + Ti - Se - Te) + 56;
+        INFP = (3 * Fi + Ne + Si - Te - Se) + 56;
+        INTJ = (3 * Ni + Te + Fi - Se - Fe) + 56;
+        INTP = (3 * Ti + Ne + Si - Fe - Se) + 56;
+        ISFJ = (3 * Si + Fe + Ti - Ne - Te) + 56;
+        ISFP = (3 * Fi + Se + Ni - Te - Ne) + 56;
+        ISTJ = (3 * Si + Te + Fi - Ne - Fe) + 56;
+        ISTP = (3 * Ti + Se + Ni - Fe - Ne) + 56;
+        get_result();
+    }
 }
+
+
+
 
 function get_result() {
     document.getElementById("results").style.display = "block";
     document.getElementById("test").style.display = "none";
     document.getElementById("question_number").style.display = "none";
-    document.getElementById("ENFJ").innerHTML = "ENFJ: " + ENFJ;
-    document.getElementById("ENFP").innerHTML = "ENFP: " + ENFP;
-    document.getElementById("ENTJ").innerHTML = "ENTJ: " + ENTJ;
-    document.getElementById("ENTP").innerHTML = "ENTP: " + ENTP;
-    document.getElementById("ESFJ").innerHTML = "ESFJ: " + ESFJ;
-    document.getElementById("ESFP").innerHTML = "ESFP: " + ESFP;
-    document.getElementById("ESTJ").innerHTML = "ESTJ: " + ESTJ;
-    document.getElementById("ESTP").innerHTML = "ESTP: " + ESTP;
-    document.getElementById("INFJ").innerHTML = "INFJ: " + INFJ;
-    document.getElementById("INFP").innerHTML = "INFP: " + INFP;
-    document.getElementById("INTJ").innerHTML = "INTJ: " + INTJ;
-    document.getElementById("INTP").innerHTML = "INTP: " + INTP;
-    document.getElementById("ISFJ").innerHTML = "ISFJ: " + ISFJ;
-    document.getElementById("ISFP").innerHTML = "ISFP: " + ISFP;
-    document.getElementById("ISTJ").innerHTML = "ISTJ: " + ISTJ;
-    document.getElementById("ISTP").innerHTML = "ISTP: " + ISTP;
-
+    document.getElementById("ENFJ").innerHTML = "ENFJ: " + Math.round(ENFJ / 196 * 10000) / 100;
+    document.getElementById("ENFP").innerHTML = "ENFP: " + Math.round(ENFP / 196 * 10000) / 100;
+    document.getElementById("ENTJ").innerHTML = "ENTJ: " + Math.round(ENTJ / 196 * 10000) / 100;
+    document.getElementById("ENTP").innerHTML = "ENTP: " + Math.round(ENTP / 196 * 10000) / 100;
+    document.getElementById("ESFJ").innerHTML = "ESFJ: " + Math.round(ESFJ / 196 * 10000) / 100;
+    document.getElementById("ESFP").innerHTML = "ESFP: " + Math.round(ESFP / 196 * 10000) / 100;
+    document.getElementById("ESTJ").innerHTML = "ESTJ: " + Math.round(ESTJ / 196 * 10000) / 100;
+    document.getElementById("ESTP").innerHTML = "ESTP: " + Math.round(ESTP / 196 * 10000) / 100;
+    document.getElementById("INFJ").innerHTML = "INFJ: " + Math.round(INFJ / 196 * 10000) / 100;
+    document.getElementById("INFP").innerHTML = "INFP: " + Math.round(INFP / 196 * 10000) / 100;
+    document.getElementById("INTJ").innerHTML = "INTJ: " + Math.round(INTJ / 196 * 10000) / 100;
+    document.getElementById("INTP").innerHTML = "INTP: " + Math.round(INTP / 196 * 10000) / 100;
+    document.getElementById("ISFJ").innerHTML = "ISFJ: " + Math.round(ISFJ / 196 * 10000) / 100;
+    document.getElementById("ISFP").innerHTML = "ISFP: " + Math.round(ISFP / 196 * 10000) / 100;
+    document.getElementById("ISTJ").innerHTML = "ISTJ: " + Math.round(ISTJ / 196 * 10000) / 100;
+    document.getElementById("ISTP").innerHTML = "ISTP: " + Math.round(ISTP / 196 * 10000) / 100;
 }
 
 
