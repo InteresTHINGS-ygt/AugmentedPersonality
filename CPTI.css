@@ -216,56 +216,64 @@ span {
         margin-top: 15px;
         margin-bottom: 15px;
     }
-    .results_bar_IP {
+    
+    .results_bar {
         margin: 30px;
         border-radius: 10px;
         box-shadow: 14px 14px 28px rgba(40, 37, 30, 0.2);
         position: relative;
     }
     
-    .bar_IP {
+    .bar_Se {
+        border-radius: 10px;
+        box-shadow: 14px 14px 28px rgba(40, 37, 30, 0.2);
+        width: 50%;
+        height: 40px;
+    }
+    
+    .bar_Si {
+        border-radius: 10px;
+        box-shadow: 14px 14px 28px rgba(40, 37, 30, 0.2);
+        width: 50%;
+        height: 40px;
+    }
+    
+    .bar_Ne {
+        border-radius: 10px;
+        box-shadow: 14px 14px 28px rgba(40, 37, 30, 0.2);
+        width: 50%;
+        height: 40px;
+    }
+    
+    .bar_Ni {
         border-radius: 10px;
         box-shadow: 14px 14px 28px rgba(40, 37, 30, 0.2);
         width: 50%;
         height: 40px;
     }
 
-    .results_bar_IJ {
-        margin: 30px;
-        border-radius: 10px;
-        box-shadow: 14px 14px 28px rgba(40, 37, 30, 0.2);
-        position: relative;
-    }
-    
-    .bar_IJ {
+    .bar_Te {
         border-radius: 10px;
         box-shadow: 14px 14px 28px rgba(40, 37, 30, 0.2);
         width: 50%;
         height: 40px;
     }
-
-    .results_bar_EP {
-        margin: 30px;
-        border-radius: 10px;
-        box-shadow: 14px 14px 28px rgba(40, 37, 30, 0.2);
-        position: relative;
-    }
     
-    .bar_EP {
+    .bar_Ti {
         border-radius: 10px;
         box-shadow: 14px 14px 28px rgba(40, 37, 30, 0.2);
         width: 50%;
         height: 40px;
     }
-
-    .results_bar_EJ {
-        margin: 30px;
+    
+    .bar_Fe {
         border-radius: 10px;
         box-shadow: 14px 14px 28px rgba(40, 37, 30, 0.2);
-        position: relative;
+        width: 50%;
+        height: 40px;
     }
     
-    .bar_EJ {
+    .bar_Fi {
         border-radius: 10px;
         box-shadow: 14px 14px 28px rgba(40, 37, 30, 0.2);
         width: 50%;
@@ -294,19 +302,19 @@ span {
         text-align: center;
     }
 
-    .ENFJ {
+    .INFP {
         border-radius: 10px 0 0 0;
     }
 
-    .ENTP {
+    .INFJ {
         border-radius: 0 10px 0 0;
     }
 
-    .ISFJ {
+    .ENFP {
         border-radius: 0 0 0 10px;
     }
 
-    .ISTP {
+    .ENFJ {
         border-radius: 0 0 10px 0;
     }
 }
