@@ -1088,3 +1088,26 @@ com: None
 pol: -
 wtd: +
 vol: ++
+
+Better Temperament Questionnaire (16 questions!)
+
+Choleric
+I would be good leader due to my dominant attitude.
+I tend to be impatient and irritable when things go wrong.
+I focus on goals and getting things done efficiently.
+I tend to have a hard time slowing down and relaxing.
+Melancholic
+I am generally serious and reserved in social situations.
+I often feel moody and think of what can go wrong.
+I am analytical and highly aware of what needs to be corrected.
+I am often considered as creative and gifted.
+Sanguine
+I enjoy being with others more than alone time.
+I am generally seen as enthusiastic and optimistic.
+I heavily favor variety over routine and boring tasks.
+I have an easy time laughing and joking around.
+Phlegmatic
+I try to keep a collaborative and peaceful atmosphere.
+My moods tend to be stable and calm.
+I tend to be indecisive and I generally go with what others want.
+I want my life to be as comfortable as possible.
