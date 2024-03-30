@@ -247,16 +247,16 @@ function buttonclick(score) {
     if (current_question > (questions.length - 1)){
         document.getElementById("question_number").style.display = "none";
         document.getElementById("Statement").innerHTML = "Finished!";
-        int = Math.round((int / 15) * 100)
-        opn = Math.round((opn / 15) * 100)
-        ind = Math.round((ind / 15) * 100)
-        ord = Math.round((ord / 15) * 100)
-        ent = Math.round((ent / 15) * 100)
-        asr = Math.round((asr / 15) * 100)
-        com = Math.round((com / 15) * 100)
-        pol = Math.round((pol / 15) * 100)
-        wtd = Math.round((wtd / 15) * 100)
-        vol = Math.round((vol / 15) * 100)
+        int = Math.round((int / 15) * 10000) / 100
+        opn = Math.round((opn / 15) * 10000) / 100
+        ind = Math.round((ind / 15) * 10000) / 100
+        ord = Math.round((ord / 15) * 10000) / 100
+        ent = Math.round((ent / 15) * 10000) / 100
+        asr = Math.round((asr / 15) * 10000) / 100
+        com = Math.round((com / 15) * 10000) / 100
+        pol = Math.round((pol / 15) * 10000) / 100
+        wtd = Math.round((wtd / 15) * 10000) / 100
+        vol = Math.round((vol / 15) * 10000) / 100
 
         openness = Math.round((int + opn) / 2)
         conscientiousness = Math.round((ind + ord) / 2)
@@ -296,11 +296,11 @@ function manual() {
     wtd = document.getElementById("wtd_m").valueAsNumber;
     vol = document.getElementById("vol_m").valueAsNumber;
 
-    openness = Math.round((int + opn) / 2)
-    conscientiousness = Math.round((ind + ord) / 2)
-    extraversion = Math.round((ent + asr) / 2)
-    agreeableness = Math.round((com + pol) / 2)
-    neuroticism = Math.round((wtd + vol) / 2)
+    openness = ((int + opn) / 2)
+    conscientiousness = ((ind + ord) / 2)
+    extraversion = ((ent + asr) / 2)
+    agreeableness = ((com + pol) / 2)
+    neuroticism = ((wtd + vol) / 2)
 
     vit = Math.round(((3 * ent) + (3 * (100 - wtd)) + opn + ind + asr + (100 - vol)) / 10);
     mat = Math.round((ind + (3 * asr) + (3 * (100 - pol)) + ent + (100 - com) + (100 - int) + (100 - opn)) / 11);

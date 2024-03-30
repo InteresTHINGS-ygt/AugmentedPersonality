@@ -292,19 +292,20 @@ function log() {
     document.getElementById("Similarity_b").innerHTML = "You are " + similarity_b + "% similar to each other! (Mean Distance)";
     document.getElementById("Similarity_c").innerHTML = "You are " + similarity_c + "% similar to each other! (Quadratic Distance)";
     if (oth_name == "" && you_name == "") {
-        document.getElementById("Similarity_d").innerHTML = "You are " + Math.round(final_sim) + "% similar to each other.";
+        document.getElementById("Similarity_d").innerHTML = "You are " + Math.round(100 * final_sim) / 100 + "% similar to each other.";
     }
     else if (you_name == "") {
-        document.getElementById("Similarity_d").innerHTML = "You are " + Math.round(final_sim) + "% similar to " + oth_name + ".";
+        document.getElementById("Similarity_d").innerHTML = "You are " + Math.round(100 * final_sim) / 100 + "% similar to " + oth_name + ".";
     }
     else if (oth_name == "") {
-        document.getElementById("Similarity_d").innerHTML = you_name + " is " + Math.round(final_sim) + "% similar to the other person/character.";
+        document.getElementById("Similarity_d").innerHTML = you_name + " is " + Math.round(100 * final_sim) / 100 + "% similar to the other person/character.";
     }
     else {
-        document.getElementById("Similarity_d").innerHTML = you_name + " is " + Math.round(final_sim) + "% similar to " + oth_name + ".";
+        document.getElementById("Similarity_d").innerHTML = you_name + " is " + Math.round(100 * final_sim) / 100 + "% similar to " + oth_name + ".";
     }
 
     document.getElementById("bar").style.width = Math.round(final_sim) + "%";
+    document.getElementById("personality_sim").innerHTML = "Raw personality similarity: " + Math.round(100 * lichnost_sim) / 100 + "%";
 
     if (final_sim > 90) {
         document.getElementById("sim_class").innerHTML = "That is an OBNOXIOUS level of similarity!"
