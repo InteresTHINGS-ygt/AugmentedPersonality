@@ -1,16 +1,16 @@
 var current_question = -1;
 var score = 0;
 
-var one = 16;
-var two = 16;
-var three = 16;
-var four = 16;
-var five = 16;
-var six = 16;
-var seven = 16;
-var eight = 16;
-var nine = 16;
-// Type scores are between 0 and 32
+var one = 24;
+var two = 24;
+var three = 24;
+var four = 24;
+var five = 24;
+var six = 24;
+var seven = 24;
+var eight = 24;
+var nine = 24;
+// Type scores are between 0 and 48
 
 var body = 0;
 var heart = 0;
@@ -67,79 +67,79 @@ function buttonclick(score) {
                         "I am more likely to...",
                         "My sense of stability is more like..."];
 
-    var statement_1 = ["It's the morally right thing to do",
+    var statement_1 = ["It's the morally right thing to do (focus on right/wrong)",
                         "The right way, even if it is slower",
-                        "I have made a critical mistake",
-                        "To improve and perfect the world",
+                        "I have done something morally wrong",
+                        "To improve and perfect the world, for practical purpose",
                         "It's morally wrong to break them (focus on internal standards)",
                         "Perfection, there cannot be any mistakes",
                         "Should, repressing anything else",
-                        "Too impatient and rigid",
+                        "Too perfectionistic and rigid",
                         "Giving to others so I feel loved",
-                        "Others' feelings, I need to take care of them",
+                        "Others' feelings, as I need to take care of them",
                         "Too willing to give to others and express",
-                        "I am confident about what the other person needs",
-                        "Feel obligated to help, I put others' needs over my own needs",
+                        "I am confident about what the other person needs, and to feel needed",
+                        "Feel obligated to help, I tend to put others' needs over my own needs",
                         "Flattery and compliments",
                         "Know what others want, so I can directly help them",
-                        "Best self, I need to be impressive even if I put a mask",
-                        "Final goal, I need to achieve my goals",
+                        "Image of success, I need to be impressive even if I hide the real me",
+                        "Final result, I need to achieve my goals",
                         "How I appear to others, am I impressive or not?",
                         "Play to win (focus on the result)",
                         "A polished image of success and fame",
-                        "Hard work and getting things done",
+                        "Ambition and getting things done",
                         "Involved with my own feelings to understand myself and craft my identity",
                         "Very strong sense of self, based on inner emotional experience",
                         "Complain that I will never get what I need",
                         "Feel like I am full of vulnerability",
-                        "Emotionally intense, full of highs and lows",
+                        "Emotionally intense, I need to fully experience the highs and lows",
                         "Trust only my mind, as others are less informed",
-                        "Focused and intense, I need to feel competent",
+                        "Focused and detached, I need to feel competent",
                         "Cerebral, I need to think things through before acting",
                         "Contrasts, fine details, detachment, focused mental activity",
                         "Vividly imagine worst-case scenarios",
                         "Recognize my fears, so I can defeat them",
                         "Worry or overthink more than I should",
-                        "Variety, I need to feel satisfied",
+                        "Variety, I don't want to miss out on pleasure",
                         "Seek what I want, as I know what I need for my enjoyment",
                         "Actively controlling my environment, as I need to feel strong"];
 
-    var statement_2 = ["I have to take care of others’ feelings",
+    var statement_2 = ["I have to take care of others’ feelings (focus on others' feelings)",
                         "The most efficient way, even if it cuts corners",
-                        "I feel inferior to others as I envy others",
+                        "I feel inferior to others as I tend to envy others",
                         "For the sake of it, for my own competence",
                         "Bad things can happen if I break them (focus on worst case scenario)",
                         "Optimism, as negativity is too painful",
                         "Want to, without rules or restrictions",
                         "Too lax and unproductive",
                         "Being the best so I feel valuable",
-                        "My own feelings, I explore them in depth",
+                        "My own feelings, as I explore them in depth",
                         "Too private and emotionally detached",
-                        "I need to feel protected and safe, so I seek support",
+                        "I need to feel protected and safe, so I want to be supported",
                         "Feel limited by responsibility, I need my freedom and I help when I want to",
                         "Power and force",
-                        "Go along with what others want, so I can feel peaceful",
-                        "Real self, I need to show the real me even if it is negative",
+                        "Go along with other people's desires in order to keep harmony",
+                        "Real self, I need to show the real me even if I feel broken",
                         "Process, I need to understand the world",
                         "Avoiding bad consequences, am I safe or not?",
                         "Play to have fun (focus on the pleasure)",
                         "A raw showcase of strength and power",
                         "Relaxation and inner peace of mind",
                         "Detached from feelings in order to understand the world and how things work",
-                        "Unsure sense of self, I do a lot of “it depends on the situation”",
+                        "Wavering sense of self, I do a lot of “it depends on the situation”",
                         "Move on to the new, better things",
-                        "Avoid vulnerability to be strong",
+                        "Avoid vulnerability in order to feel stronger",
                         "Emotionally calm, I need to feel peaceful and relaxed",
                         "Struggle trusting my mind, as the world is uncertain",
                         "Expansive and variety-seeking, I need to feel satisfied",
-                        "Physical, I tend to act readily and immediately",
+                        "Physical, I tend to act readily and instinctively",
                         "Similarities, harmony, comfort, drifting mental activity",
-                        "Believe that things will work for their best",
+                        "Believe that things will work for the best",
                         "Deny my fears, so I feel stronger",
                         "Downplay the importance of the problem",
                         "Intensity, I need to feel powerful",
-                        "Go along with what others want, as I need to feel inner comfort",
-                        "Having inner peace and repressing anger, as I need to feel comfortable"];
+                        "Go along with what others want, as I need to keep the peace",
+                        "Having inner peace and even-keeled attitude, as I need to feel comfortable"];
 
     if (test_status == 0) {
         test_status = 1;
@@ -328,55 +328,57 @@ function get_result() {
     document.getElementById("triads").style.display = "block";
     document.getElementById("test").style.display = "none";
     document.getElementById("question_number").style.display = "none";
-    document.getElementById("one").innerHTML = "Type 1: " + Math.round(one / 32 * 10000) / 100 + "%";
-    document.getElementById("two").innerHTML = "Type 2: " + Math.round(two / 32 * 10000) / 100 + "%";
-    document.getElementById("three").innerHTML = "Type 3: " + Math.round(three / 32 * 10000) / 100 + "%";
-    document.getElementById("four").innerHTML = "Type 4: " + Math.round(four / 32 * 10000) / 100 + "%";
-    document.getElementById("five").innerHTML = "Type 5: " + Math.round(five / 32 * 10000) / 100 + "%";
-    document.getElementById("six").innerHTML = "Type 6: " + Math.round(six / 32 * 10000) / 100 + "%";
-    document.getElementById("seven").innerHTML = "Type 7: " + Math.round(seven / 32 * 10000) / 100 + "%";
-    document.getElementById("eight").innerHTML = "Type 8: " + Math.round(eight / 32 * 10000) / 100 + "%";
-    document.getElementById("nine").innerHTML = "Type 9: " + Math.round(nine / 32 * 10000) / 100 + "%";
+    document.getElementById("statement_1").style.display = "none";
+    document.getElementById("statement_2").style.display = "none";
+    document.getElementById("one").innerHTML = "Type 1: " + Math.round(one / 48 * 10000) / 100 + "%";
+    document.getElementById("two").innerHTML = "Type 2: " + Math.round(two / 48 * 10000) / 100 + "%";
+    document.getElementById("three").innerHTML = "Type 3: " + Math.round(three / 48 * 10000) / 100 + "%";
+    document.getElementById("four").innerHTML = "Type 4: " + Math.round(four / 48 * 10000) / 100 + "%";
+    document.getElementById("five").innerHTML = "Type 5: " + Math.round(five / 48 * 10000) / 100 + "%";
+    document.getElementById("six").innerHTML = "Type 6: " + Math.round(six / 48 * 10000) / 100 + "%";
+    document.getElementById("seven").innerHTML = "Type 7: " + Math.round(seven / 48 * 10000) / 100 + "%";
+    document.getElementById("eight").innerHTML = "Type 8: " + Math.round(eight / 48 * 10000) / 100 + "%";
+    document.getElementById("nine").innerHTML = "Type 9: " + Math.round(nine / 48 * 10000) / 100 + "%";
 
-    document.getElementById("bar_1").style.width = Math.round(one / 32 * 10000) / 100 + "%";
-    document.getElementById("bar_2").style.width = Math.round(two / 32 * 10000) / 100 + "%";
-    document.getElementById("bar_3").style.width = Math.round(three / 32 * 10000) / 100 + "%";
-    document.getElementById("bar_4").style.width = Math.round(four / 32 * 10000) / 100 + "%";
-    document.getElementById("bar_5").style.width = Math.round(five / 32 * 10000) / 100 + "%";
-    document.getElementById("bar_6").style.width = Math.round(six / 32 * 10000) / 100 + "%";
-    document.getElementById("bar_7").style.width = Math.round(seven / 32 * 10000) / 100 + "%";
-    document.getElementById("bar_8").style.width = Math.round(eight / 32 * 10000) / 100 + "%";
-    document.getElementById("bar_9").style.width = Math.round(nine / 32 * 10000) / 100 + "%";
+    document.getElementById("bar_1").style.width = Math.round(one / 48 * 10000) / 100 + "%";
+    document.getElementById("bar_2").style.width = Math.round(two / 48 * 10000) / 100 + "%";
+    document.getElementById("bar_3").style.width = Math.round(three / 48 * 10000) / 100 + "%";
+    document.getElementById("bar_4").style.width = Math.round(four / 48 * 10000) / 100 + "%";
+    document.getElementById("bar_5").style.width = Math.round(five / 48 * 10000) / 100 + "%";
+    document.getElementById("bar_6").style.width = Math.round(six / 48 * 10000) / 100 + "%";
+    document.getElementById("bar_7").style.width = Math.round(seven / 48 * 10000) / 100 + "%";
+    document.getElementById("bar_8").style.width = Math.round(eight / 48 * 10000) / 100 + "%";
+    document.getElementById("bar_9").style.width = Math.round(nine / 48 * 10000) / 100 + "%";
 
-    document.getElementById("body").innerHTML = "Body / Anger: " + Math.round(body / 32 * 10000) / 100 + "%";
-    document.getElementById("heart").innerHTML = "Heart / Shame: " + Math.round(heart / 32 * 10000) / 100 + "%";
-    document.getElementById("head").innerHTML = "Head / Anxiety: " + Math.round(head / 32 * 10000) / 100 + "%";
-    document.getElementById("reactive").innerHTML = "Reactive: " + Math.round(react / 32 * 10000) / 100 + "%";
-    document.getElementById("positive").innerHTML = "Positive Outlook: " + Math.round(pos / 32 * 10000) / 100 + "%";
-    document.getElementById("competency").innerHTML = "Competency: " + Math.round(comp / 32 * 10000) / 100 + "%";
-    document.getElementById("attachment").innerHTML = "Attachment: " + Math.round(attach / 32 * 10000) / 100 + "%";
-    document.getElementById("frustration").innerHTML = "Frustration: " + Math.round(fru / 32 * 10000) / 100 + "%";
-    document.getElementById("rejection").innerHTML = "Rejection: " + Math.round(rej / 32 * 10000) / 100 + "%";
-    document.getElementById("superego").innerHTML = "Superego: " + Math.round(sup / 32 * 10000) / 100 + "%";
-    document.getElementById("assertive").innerHTML = "Assertive: " + Math.round(asr / 32 * 10000) / 100 + "%";
-    document.getElementById("withdrawn").innerHTML = "Withdrawn: " + Math.round(wtd / 32 * 10000) / 100 + "%";
-    document.getElementById("light").innerHTML = "Light Hexad: " + Math.round(light / 32 * 10000) / 100 + "%";
-    document.getElementById("dark").innerHTML = "Dark Hexad: " + Math.round(dark / 32 * 10000) / 100 + "%";
+    document.getElementById("body").innerHTML = "Body / Anger: " + Math.round(body / 48 * 10000) / 100 + "%";
+    document.getElementById("heart").innerHTML = "Heart / Shame: " + Math.round(heart / 48 * 10000) / 100 + "%";
+    document.getElementById("head").innerHTML = "Head / Anxiety: " + Math.round(head / 48 * 10000) / 100 + "%";
+    document.getElementById("reactive").innerHTML = "Reactive: " + Math.round(react / 48 * 10000) / 100 + "%";
+    document.getElementById("positive").innerHTML = "Positive Outlook: " + Math.round(pos / 48 * 10000) / 100 + "%";
+    document.getElementById("competency").innerHTML = "Competency: " + Math.round(comp / 48 * 10000) / 100 + "%";
+    document.getElementById("attachment").innerHTML = "Attachment: " + Math.round(attach / 48 * 10000) / 100 + "%";
+    document.getElementById("frustration").innerHTML = "Frustration: " + Math.round(fru / 48 * 10000) / 100 + "%";
+    document.getElementById("rejection").innerHTML = "Rejection: " + Math.round(rej / 48 * 10000) / 100 + "%";
+    document.getElementById("superego").innerHTML = "Superego: " + Math.round(sup / 48 * 10000) / 100 + "%";
+    document.getElementById("assertive").innerHTML = "Assertive: " + Math.round(asr / 48 * 10000) / 100 + "%";
+    document.getElementById("withdrawn").innerHTML = "Withdrawn: " + Math.round(wtd / 48 * 10000) / 100 + "%";
+    document.getElementById("light").innerHTML = "Light Hexad: " + Math.round(light / 48 * 10000) / 100 + "%";
+    document.getElementById("dark").innerHTML = "Dark Hexad: " + Math.round(dark / 48 * 10000) / 100 + "%";
 
-    document.getElementById("bar_body").style.width = Math.round(body / 32 * 10000) / 100 + "%";
-    document.getElementById("bar_heart").style.width = Math.round(heart / 32 * 10000) / 100 + "%";
-    document.getElementById("bar_head").style.width = Math.round(head / 32 * 10000) / 100 + "%";
-    document.getElementById("bar_reactive").style.width = Math.round(react / 32 * 10000) / 100 + "%";
-    document.getElementById("bar_positive").style.width = Math.round(pos / 32 * 10000) / 100 + "%";
-    document.getElementById("bar_competency").style.width = Math.round(comp / 32 * 10000) / 100 + "%";
-    document.getElementById("bar_attachment").style.width = Math.round(attach / 32 * 10000) / 100 + "%";
-    document.getElementById("bar_frustration").style.width = Math.round(fru / 32 * 10000) / 100 + "%";
-    document.getElementById("bar_rejection").style.width = Math.round(rej / 32 * 10000) / 100 + "%";
-    document.getElementById("bar_superego").style.width = Math.round(sup / 32 * 10000) / 100 + "%";
-    document.getElementById("bar_assertive").style.width = Math.round(asr / 32 * 10000) / 100 + "%";
-    document.getElementById("bar_withdrawn").style.width = Math.round(wtd / 32 * 10000) / 100 + "%";
-    document.getElementById("bar_light").style.width = Math.round(light / 32 * 10000) / 100 + "%";
-    document.getElementById("bar_dark").style.width = Math.round(dark / 32 * 10000) / 100 + "%";
+    document.getElementById("bar_body").style.width = Math.round(body / 48 * 10000) / 100 + "%";
+    document.getElementById("bar_heart").style.width = Math.round(heart / 48 * 10000) / 100 + "%";
+    document.getElementById("bar_head").style.width = Math.round(head / 48 * 10000) / 100 + "%";
+    document.getElementById("bar_reactive").style.width = Math.round(react / 48 * 10000) / 100 + "%";
+    document.getElementById("bar_positive").style.width = Math.round(pos / 48 * 10000) / 100 + "%";
+    document.getElementById("bar_competency").style.width = Math.round(comp / 48 * 10000) / 100 + "%";
+    document.getElementById("bar_attachment").style.width = Math.round(attach / 48 * 10000) / 100 + "%";
+    document.getElementById("bar_frustration").style.width = Math.round(fru / 48 * 10000) / 100 + "%";
+    document.getElementById("bar_rejection").style.width = Math.round(rej / 48 * 10000) / 100 + "%";
+    document.getElementById("bar_superego").style.width = Math.round(sup / 48 * 10000) / 100 + "%";
+    document.getElementById("bar_assertive").style.width = Math.round(asr / 48 * 10000) / 100 + "%";
+    document.getElementById("bar_withdrawn").style.width = Math.round(wtd / 48 * 10000) / 100 + "%";
+    document.getElementById("bar_light").style.width = Math.round(light / 48 * 10000) / 100 + "%";
+    document.getElementById("bar_dark").style.width = Math.round(dark / 48 * 10000) / 100 + "%";
 }
 
 

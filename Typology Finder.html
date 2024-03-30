@@ -20,16 +20,18 @@
     <div class="main">
         <h2 id="question_number"></h2>
         <h2 id="Statement">Click to start!</h2>
-        <span class="big5" id="Statement_1"></span>
         <input type="button" onclick=buttonclick(0) id="start" value="Start Test">
         <input type="button" onclick=manualinsert() id="manualb" value="I know my scores!">
+        <h4 id="Statement_1"></h4>
         <div id="test" style="display:none">
             <input type="button" onclick=buttonclick(0) id="sd" value="Definitely Top"><br>
             <input type="button" onclick=buttonclick(1) id="d" value="Moderately Top"><br>
-            <input type="button" onclick=buttonclick(2) id="a" value="Moderately Bottom"><br>
-            <input type="button" onclick=buttonclick(3) id="sa" value="Definitely Bottom"><br>
+            <input type="button" onclick=buttonclick(2) id="a" value="Slightly Top"><br>
+            <input type="button" onclick=buttonclick(3) id="sa" value="Slightly Bottom"><br>
+            <input type="button" onclick=buttonclick(4) id="a" value="Moderately Bottom"><br>
+            <input type="button" onclick=buttonclick(5) id="sa" value="Definitely Bottom"><br>
         </div>
-        <span class="big5" id="Statement_2"></span>
+        <h4 id="Statement_2"></h4>
         <div id="manual" style="display:none">
             <table id="manual" class="current">
                 <tr>

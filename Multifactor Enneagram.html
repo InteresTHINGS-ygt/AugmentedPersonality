@@ -21,14 +21,16 @@
             <h2 id="question_number"></h2>
             <h2 id="Statement">Click to start!</h2>
             <input type="button" onclick=buttonclick(0) id="start" value="Start Test">
-            <span id="statement_1"></span>
+            <h4 id="statement_1"></h4>
             <div id="test" style="display:none">
-                <input type="button" onclick=buttonclick(-2) id="sd" value="Definitely Top"><br>
-                <input type="button" onclick=buttonclick(-1) id="d" value="Moderately Top"><br>
-                <input type="button" onclick=buttonclick(1) id="a" value="Moderately Bottom"><br>
-                <input type="button" onclick=buttonclick(2) id="sa" value="Very Bottom"><br>
+                <input type="button" onclick=buttonclick(-3) id="sd" value="Definitely Top"><br>
+                <input type="button" onclick=buttonclick(-2) id="d" value="Moderately Top"><br>
+                <input type="button" onclick=buttonclick(-1) id="d" value="Slightly Top"><br>
+                <input type="button" onclick=buttonclick(1) id="a" value="Slightly Bottom"><br>
+                <input type="button" onclick=buttonclick(2) id="a" value="Moderately Bottom"><br>
+                <input type="button" onclick=buttonclick(3) id="sa" value="Very Bottom"><br>
             </div>
-            <span id="statement_2"></span>
+            <h4 id="statement_2"></h4>
             <div id = "results" class="results" style="display:none">
                 <h3>Scores go from 0 to 100.</h3>
                 <h3 id = "one">Type 1</h3>

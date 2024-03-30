@@ -247,16 +247,16 @@ function buttonclick(score) {
     if (current_question > (questions.length - 1)){
         document.getElementById("question_number").style.display = "none";
         document.getElementById("Statement").innerHTML = "Finished!";
-        int = Math.round((int / 15) * 10000) / 100
-        opn = Math.round((opn / 15) * 10000) / 100
-        ind = Math.round((ind / 15) * 10000) / 100
-        ord = Math.round((ord / 15) * 10000) / 100
-        ent = Math.round((ent / 15) * 10000) / 100
-        asr = Math.round((asr / 15) * 10000) / 100
-        com = Math.round((com / 15) * 10000) / 100
-        pol = Math.round((pol / 15) * 10000) / 100
-        wtd = Math.round((wtd / 15) * 10000) / 100
-        vol = Math.round((vol / 15) * 10000) / 100
+        int = Math.round((int / 25) * 10000) / 100
+        opn = Math.round((opn / 25) * 10000) / 100
+        ind = Math.round((ind / 25) * 10000) / 100
+        ord = Math.round((ord / 25) * 10000) / 100
+        ent = Math.round((ent / 25) * 10000) / 100
+        asr = Math.round((asr / 25) * 10000) / 100
+        com = Math.round((com / 25) * 10000) / 100
+        pol = Math.round((pol / 25) * 10000) / 100
+        wtd = Math.round((wtd / 25) * 10000) / 100
+        vol = Math.round((vol / 25) * 10000) / 100
 
         openness = Math.round((int + opn) / 2)
         conscientiousness = Math.round((ind + ord) / 2)
