@@ -14,20 +14,23 @@
             <a href="index.html" class="portal">Back to Portal</a>
             <h1>Cognitive Type Indicator</h1>
             <h3>Currently in alpha. This test determines your cognitive type.</h3>
-            <h3>There are 56 questions.</h3>
-            <h3>Indicate how much do you agree with each statement.</h3>
+            <h3>There are 40 questions.</h3>
+            <h3>Indicate which statement resonates more with you. Make sure to answer honestly.</h3>
         </div>
         <div class="main">
             <h2 id="question_number"></h2>
             <h2 id="Statement">Click to start!</h2>
             <input type="button" onclick=buttonclick(0) id="start" value="Start Test">
-            <h3 id="statement_1"></h3>
+            <h4 id="statement_1"></h4>
             <div id="test" style="display:none">
-                <input type="button" onclick=buttonclick(0) id="sd" value="Strongly Disagree"><br>
-                <input type="button" onclick=buttonclick(1) id="d" value="Moderately Disagree"><br>
-                <input type="button" onclick=buttonclick(2) id="a" value="Moderately Agree"><br>
-                <input type="button" onclick=buttonclick(3) id="sa" value="Strongly Agree"><br>
+                <input type="button" onclick=buttonclick(-3) id="sd" value="Definitely Top"><br>
+                <input type="button" onclick=buttonclick(-2) id="d" value="Moderately Top"><br>
+                <input type="button" onclick=buttonclick(-1) id="a" value="Slightly Top"><br>
+                <input type="button" onclick=buttonclick(1) id="sa" value="Slightly Bottom"><br>
+                <input type="button" onclick=buttonclick(2) id="sa" value="Moderately Bottom"><br>
+                <input type="button" onclick=buttonclick(3) id="sa" value="Definitely Bottom"><br>
             </div>
+            <h4 id="statement_2"></h4>
             <div id = "results" class="results" style="display:none">
                 <h2>Type Scores</h2>
                 <h3>Scores go from 0 to 100.</h3>
@@ -88,6 +91,9 @@
                     <div class="bar_Ti" id="bar_Ti"></div>
                 </div>
             </div>
+        </div>
+        <div class="main" id="quadras" style="display:none">
+
         </div>
     </body>
 </html>
