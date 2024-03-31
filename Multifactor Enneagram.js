@@ -12,6 +12,10 @@ var eight = 24;
 var nine = 24;
 // Type scores are between 0 and 48
 
+var sp = 6;
+var sx = 6;
+var so = 6;
+
 var body = 0;
 var heart = 0;
 var head = 0;
@@ -65,7 +69,10 @@ function buttonclick(score) {
                         "When things go haywire, I am more likely to...",
                         "I am more likely to seek...",
                         "I am more likely to...",
-                        "My sense of stability is more like..."];
+                        "My sense of stability is more like...",
+                        "I automatically focus on...",
+                        "I automatically focus on...",
+                        "I automatically focus on..."];
 
     var statement_1 = ["It's the morally right thing to do (focus on right/wrong)",
                         "The right way, even if it is slower",
@@ -102,7 +109,10 @@ function buttonclick(score) {
                         "Worry or overthink more than I should",
                         "Variety, I don't want to miss out on pleasure",
                         "Seek what I want, as I know what I need for my enjoyment",
-                        "Actively controlling my environment, as I need to feel strong"];
+                        "Actively controlling my environment, as I need to feel strong",
+                        "My physical security and comfort - Is my body comfortable?",
+                        "Ensuring my own resources - Do I have enough?",
+                        "One-to-one connections - Is there a good chemistry between us?"];
 
     var statement_2 = ["I have to take care of others’ feelings (focus on others' feelings)",
                         "The most efficient way, even if it cuts corners",
@@ -139,7 +149,10 @@ function buttonclick(score) {
                         "Downplay the importance of the problem",
                         "Intensity, I need to feel powerful",
                         "Go along with what others want, as I need to keep the peace",
-                        "Having inner peace and even-keeled attitude, as I need to feel comfortable"];
+                        "Having inner peace and even-keeled attitude, as I need to feel comfortable",
+                        "Immersion of experience - Am I absorbed in the experience?",
+                        "Contributing to the group - Am I important enough?",
+                        "Group relations - Am I popular and desirable enough?"];
 
     if (test_status == 0) {
         test_status = 1;
@@ -298,6 +311,18 @@ function buttonclick(score) {
         eight -= score;
         nine += score;
     }
+    else if (current_question == 37) {
+        sp -= score;
+        sx += score;
+    }
+    else if (current_question == 38) {
+        sp -= score;
+        so += score;
+    }
+    else if (current_question == 39) {
+        sx -= score;
+        so += score;
+    }
     
 
     if (current_question > (statement_1.length - 1)) {
@@ -326,6 +351,7 @@ function buttonclick(score) {
 function get_result() {
     document.getElementById("results").style.display = "block";
     document.getElementById("triads").style.display = "block";
+    document.getElementById("instincts").style.display = "block";
     document.getElementById("test").style.display = "none";
     document.getElementById("question_number").style.display = "none";
     document.getElementById("statement_1").style.display = "none";
@@ -379,6 +405,14 @@ function get_result() {
     document.getElementById("bar_withdrawn").style.width = Math.round(wtd / 48 * 10000) / 100 + "%";
     document.getElementById("bar_light").style.width = Math.round(light / 48 * 10000) / 100 + "%";
     document.getElementById("bar_dark").style.width = Math.round(dark / 48 * 10000) / 100 + "%";
+
+    document.getElementById("sp").innerHTML = "Self-preservation: " + Math.round(sp / 12 * 10000) / 100 + "%";
+    document.getElementById("sx").innerHTML = "One-to-one: " + Math.round(sx / 12 * 10000) / 100 + "%";
+    document.getElementById("so").innerHTML = "Social: " + Math.round(so / 12 * 10000) / 100 + "%";
+
+    document.getElementById("bar_sp").style.width = Math.round(sp / 12 * 10000) / 100 + "%";
+    document.getElementById("bar_sx").style.width = Math.round(sx / 12 * 10000) / 100 + "%";
+    document.getElementById("bar_so").style.width = Math.round(so / 12 * 10000) / 100 + "%";
 }
 
 

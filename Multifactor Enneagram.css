@@ -87,6 +87,30 @@ input[type="button"] {
     height: 6vw;
 }
 
+.bar_sp {
+    background-color: rgb(70, 126, 59);
+    border-radius: 1.5vw;
+    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
+    width: 50%;
+    height: 6vw;
+}
+
+.bar_sx {
+    background-color: rgb(155, 55, 55);
+    border-radius: 1.5vw;
+    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
+    width: 50%;
+    height: 6vw;
+}
+
+.bar_so {
+    background-color: rgb(150, 139, 47);
+    border-radius: 1.5vw;
+    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
+    width: 50%;
+    height: 6vw;
+}
+
 .bar_body {
     background-color: rgb(136, 11, 11);
     border-radius: 1.5vw;

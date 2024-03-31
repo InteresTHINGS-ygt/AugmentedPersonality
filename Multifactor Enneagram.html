@@ -14,7 +14,7 @@
             <a href="index.html" class="portal">Back to Portal</a>
             <h1>Differential Enneagram Test</h1>
             <h3>Currently in alpha. This test determines your Enneagram type.</h3>
-            <h3>There are 36 questions.</h3>
+            <h3>There are 39 questions.</h3>
             <h3>Indicate how much do you agree with each statement.</h3>
         </div>
         <div class="main">
@@ -71,68 +71,82 @@
                 </div>
             </div>
         </div>
+        <div class="main" id="instincts" style="display:none">
+            <h2>Instincts</h2>
+            <h3 id = "sp">Self-preservation</h3>
+            <div class="results_bar">
+                <div class="bar_sp" id="bar_sp"></div>
+            </div>
+            <h3 id = "sx">One-to-one</h3>
+            <div class="results_bar">
+                <div class="bar_sx" id="bar_sx"></div>
+            </div>
+            <h3 id = "so">Social</h3>
+            <div class="results_bar">
+                <div class="bar_so" id="bar_so"></div>
+            </div>
+        </div>
         <div class="main" id="triads" style="display:none">
-            <h3>Scores go from 0 to 100.</h3>
-                <h2>Centers of Nature</h2>
-                <h3 id = "body">Body / Anger</h3>
-                <div class="results_bar">
-                    <div class="bar_body" id="bar_body"></div>
-                </div>
-                <h3 id = "heart">Heart / Shame</h3>
-                <div class="results_bar">
-                    <div class="bar_heart" id="bar_heart"></div>
-                </div>
-                <h3 id = "head">Head / Anxiety</h3>
-                <div class="results_bar">
-                    <div class="bar_head" id="bar_head"></div>
-                </div>
-                <h2>Harmonic Triads</h2>
-                <h3 id = "reactive">Reactive</h3>
-                <div class="results_bar">
-                    <div class="bar_reactive" id="bar_reactive"></div>
-                </div>
-                <h3 id = "positive">Positive Outlook</h3>
-                <div class="results_bar">
-                    <div class="bar_positive" id="bar_positive"></div>
-                </div>
-                <h3 id = "competency">Competency</h3>
-                <div class="results_bar">
-                    <div class="bar_competency" id="bar_competency"></div>
-                </div>
-                <h2>Objective Relations</h2>
-                <h3 id = "attachment">Attachment</h3>
-                <div class="results_bar">
-                    <div class="bar_attachment" id="bar_attachment"></div>
-                </div>
-                <h3 id = "frustration">Frustration</h3>
-                <div class="results_bar">
-                    <div class="bar_frustration" id="bar_frustration"></div>
-                </div>
-                <h3 id = "rejection">Rejection</h3>
-                <div class="results_bar">
-                    <div class="bar_rejection" id="bar_rejection"></div>
-                </div>
-                <h3 id = "light">Light Hexad</h3>
-                <div class="results_bar">
-                    <div class="bar_light" id="bar_light"></div>
-                </div>
-                <h3 id = "dark">Dark Hexad</h3>
-                <div class="results_bar">
-                    <div class="bar_dark" id="bar_dark"></div>
-                </div>
-                <h2>Hornevian Triads</h2>
-                <h3 id = "superego">Superego</h3>
-                <div class="results_bar">
-                    <div class="bar_superego" id="bar_superego"></div>
-                </div>
-                <h3 id = "assertive">Assertive</h3>
-                <div class="results_bar">
-                    <div class="bar_assertive" id="bar_assertive"></div>
-                </div>
-                <h3 id = "withdrawn">Withdrawn</h3>
-                <div class="results_bar">
-                    <div class="bar_withdrawn" id="bar_withdrawn"></div>
-                </div>
+            <h2>Centers of Nature</h2>
+            <h3 id = "body">Body / Anger</h3>
+            <div class="results_bar">
+                <div class="bar_body" id="bar_body"></div>
+            </div>
+            <h3 id = "heart">Heart / Shame</h3>
+            <div class="results_bar">
+                <div class="bar_heart" id="bar_heart"></div>
+            </div>
+            <h3 id = "head">Head / Anxiety</h3>
+            <div class="results_bar">
+                <div class="bar_head" id="bar_head"></div>
+            </div>
+            <h2>Harmonic Triads</h2>
+            <h3 id = "reactive">Reactive</h3>
+            <div class="results_bar">
+                <div class="bar_reactive" id="bar_reactive"></div>
+            </div>
+            <h3 id = "positive">Positive Outlook</h3>
+            <div class="results_bar">
+                <div class="bar_positive" id="bar_positive"></div>
+            </div>
+            <h3 id = "competency">Competency</h3>
+            <div class="results_bar">
+                <div class="bar_competency" id="bar_competency"></div>
+            </div>
+            <h2>Objective Relations</h2>
+            <h3 id = "attachment">Attachment</h3>
+            <div class="results_bar">
+                <div class="bar_attachment" id="bar_attachment"></div>
+            </div>
+            <h3 id = "frustration">Frustration</h3>
+            <div class="results_bar">
+                <div class="bar_frustration" id="bar_frustration"></div>
+            </div>
+            <h3 id = "rejection">Rejection</h3>
+            <div class="results_bar">
+                <div class="bar_rejection" id="bar_rejection"></div>
+            </div>
+            <h3 id = "light">Light Hexad</h3>
+            <div class="results_bar">
+                <div class="bar_light" id="bar_light"></div>
+            </div>
+            <h3 id = "dark">Dark Hexad</h3>
+            <div class="results_bar">
+                <div class="bar_dark" id="bar_dark"></div>
+            </div>
+            <h2>Hornevian Triads</h2>
+            <h3 id = "superego">Superego</h3>
+            <div class="results_bar">
+                <div class="bar_superego" id="bar_superego"></div>
+            </div>
+            <h3 id = "assertive">Assertive</h3>
+            <div class="results_bar">
+                <div class="bar_assertive" id="bar_assertive"></div>
+            </div>
+            <h3 id = "withdrawn">Withdrawn</h3>
+            <div class="results_bar">
+                <div class="bar_withdrawn" id="bar_withdrawn"></div>
+            </div>
         </div>
     </body>
 </html>
