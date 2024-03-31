@@ -1,9 +1,9 @@
 body {
-    background-color: rgb(107, 107, 107)
+    background-color: rgb(107, 107, 107);
 }
 
 input[type="button"] {
-    background-color: rgb(129, 129, 129)
+    background-color: rgb(107, 107, 107);
 }
 
 .results_bar_ios {

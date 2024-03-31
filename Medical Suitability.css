@@ -3,7 +3,7 @@ body {
 }
 
 input[type="button"] {
-    background-color: rgb(200, 75, 45);
+    background-color: rgb(180, 34, 20);
 }
 
 .results_bar {
@@ -15,7 +15,7 @@ input[type="button"] {
 }
 
 .bar {
-    background-color: rgb(200, 75, 45);
+    background-color: rgb(180, 34, 20);
     border-radius: 1.5vw;
     box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
     width: 50%;
