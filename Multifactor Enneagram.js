@@ -36,7 +36,7 @@ var test_status = 0;
 function buttonclick(score) {
     var questions = ["I am more likely to help others because...",
                         "I am more likely to get things done...",
-                        "I am am more likely to be self-critical because...",
+                        "I am more likely to criticize myself because...",
                         "I am more likely to gather information...",
                         "I am more likely to follow the rules because...",
                         "My idealism is more like...",
@@ -110,7 +110,7 @@ function buttonclick(score) {
                         "Variety, I don't want to miss out on pleasure",
                         "Seek what I want, as I know what I need for my enjoyment",
                         "Actively controlling my environment, as I need to feel strong",
-                        "My physical security and comfort - Is my body comfortable?",
+                        "My physical security and comfort - Am I comfortable?",
                         "Ensuring my own resources - Do I have enough?",
                         "One-to-one connections - Is there a good chemistry between us?"];
 
