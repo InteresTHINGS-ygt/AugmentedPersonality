@@ -31,6 +31,7 @@ var similarity;
 var similarity_b;
 var similarity_c;
 var similarity_d;
+var similarity_new;
 var lichnost_sim;
 var dis_from_center;
 var dis_similarity;
@@ -185,6 +186,7 @@ function log() {
     similarity_b = 0;
     similarity_c = 0;
     similarity_d = 0;
+    similarity_new = 0;
     lichnost_sim = 0;
     dis_from_center = 0;
     dis_similarity = 0;
@@ -264,21 +266,33 @@ function log() {
     var avg_dis = dis.reduce((sum, value) => sum + value, 0) / dis.length;
     var similarity_b = Math.round(100 - avg_dis);
     var similarity_c = Math.round((Math.pow((similarity_b / 100),2))*100);
+    var max_s;
+    var min_s;
+    var max_as;
+    var min_as;
+    var score_per;
+    var ascore_per;
 
     for (let i = 0; i < you.length; i++) {
-        dis_from_center = Math.abs(50-((you[i]+oth[i])/2)); // Between 0 and 50
-        dis_similarity = 100-(Math.abs(you[i]-oth[i])); // Between 0 and 100
-        dis_factor = (0.008 * dis_similarity) + 0.2; // Makes the curve steeper
-        cent_factor = ((0.006 * dis_from_center) + 0.8);
-        sim_weight = (Math.max(Math.abs(50-you[i]), Math.abs(50-oth[i]))/25) + 0.5;
-        similarity_d = (dis_similarity * dis_factor * cent_factor) * 1.2 * sim_weight;
-        if (similarity_d > 100 * sim_weight) {
-            similarity_d = 100 * sim_weight;
+        max_s = Math.max(you[i], oth[i]);
+        min_s = Math.min(you[i], oth[i]);
+        if (max_s == 0 && min_s == 0) {
+            similarity_new = 100;
         }
-        sim_sum += similarity_d;
-        weight_sum += sim_weight;
-        lichnost_sim = sim_sum / weight_sum;
-        console.log(sim_weight);
+        else if (max_s == 100 && min_s == 100) {
+            similarity_new = 100;
+        }
+        else {
+            max_as = Math.max(100-you[i], 100-oth[i]);
+            min_as = Math.min(100-you[i], 100-oth[i]);
+            score_per = (min_s / max_s) * 100;
+            ascore_per = (min_as / max_as) * 100;
+            sim_weight = Math.max(you[i], oth[i]) / 10;
+            similarity_new = (((score_per * (you[i] + oth[i])) + (ascore_per * (100-you[i] + 100-oth[i]))) / 200) * sim_weight;
+            sim_sum += similarity_new;
+            weight_sum += sim_weight;
+            lichnost_sim = sim_sum / weight_sum;
+        }
     }
 
     var final_sim = 0;
