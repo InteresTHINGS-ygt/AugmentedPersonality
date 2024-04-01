@@ -287,11 +287,11 @@ function log() {
             min_as = Math.min(100-you[i], 100-oth[i]);
             score_per = (min_s / max_s) * 100;
             ascore_per = (min_as / max_as) * 100;
-            sim_weight = Math.max(you[i], oth[i]) / 10;
+            sim_weight = Math.max(Math.abs(50-you[i]), Math.abs(50-oth[i])) / 200 + 0.75;
             similarity_new = (((score_per * (you[i] + oth[i])) + (ascore_per * (100-you[i] + 100-oth[i]))) / 200) * sim_weight;
             sim_sum += similarity_new;
-            weight_sum += sim_weight;
-            lichnost_sim = sim_sum / weight_sum;
+            // weight_sum += sim_weight;
+            lichnost_sim = sim_sum / 10;
         }
     }
 
