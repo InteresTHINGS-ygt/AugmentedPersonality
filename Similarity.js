@@ -276,23 +276,27 @@ function log() {
     for (let i = 0; i < you.length; i++) {
         max_s = Math.max(you[i], oth[i]);
         min_s = Math.min(you[i], oth[i]);
+        sim_weight = Math.pow((Math.max(Math.abs(50-you[i]), Math.abs(50-oth[i])) / 50), 2) + 0.25;
         if (max_s == 0 && min_s == 0) {
-            similarity_new = 100;
+            similarity_new = 100 * sim_weight;
+            sim_sum += similarity_new;
+            weight_sum += sim_weight;
         }
         else if (max_s == 100 && min_s == 100) {
-            similarity_new = 100;
+            similarity_new = 100 * sim_weight;
+            sim_sum += similarity_new;
+            weight_sum += sim_weight;
         }
         else {
             max_as = Math.max(100-you[i], 100-oth[i]);
             min_as = Math.min(100-you[i], 100-oth[i]);
             score_per = (min_s / max_s) * 100;
             ascore_per = (min_as / max_as) * 100;
-            sim_weight = Math.max(Math.abs(50-you[i]), Math.abs(50-oth[i])) / 50 + 0.25;
             similarity_new = (((score_per * (you[i] + oth[i])) + (ascore_per * (100-you[i] + 100-oth[i]))) / 200) * (Math.max(Math.abs(50-you[i]), Math.abs(50-oth[i])) / 200 + 0.75) * sim_weight;
             sim_sum += similarity_new;
             weight_sum += sim_weight;
-            lichnost_sim = sim_sum / weight_sum;
         }
+        lichnost_sim = sim_sum / weight_sum;
     }
 
     var final_sim = 0;
