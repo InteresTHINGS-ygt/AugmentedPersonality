@@ -276,7 +276,7 @@ function log() {
     for (let i = 0; i < you.length; i++) {
         max_s = Math.max(you[i], oth[i]);
         min_s = Math.min(you[i], oth[i]);
-        sim_weight = Math.pow((Math.max(Math.abs(50-you[i]), Math.abs(50-oth[i])) / 50), 2) + 0.25;
+        sim_weight = Math.pow((Math.max(Math.abs(50-you[i]), Math.abs(50-oth[i])) / 50), 3) + 0.25;
         if (max_s == 0 && min_s == 0) {
             similarity_new = 100 * sim_weight;
             sim_sum += similarity_new;
