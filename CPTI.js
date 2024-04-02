@@ -31,23 +31,23 @@ var Fi_total = 60;
 // Auxiliary score is up to 18
 // Total score is up to 60
 
-var ENFJ = 39;
-var ENFP = 39;
-var ENTJ = 39;
-var ENTP = 39;
-var ESFJ = 39;
-var ESFP = 39;
-var ESTJ = 39;
-var ESTP = 39;
-var INFJ = 39;
-var INFP = 39;
-var INTJ = 39;
-var INTP = 39;
-var ISFJ = 39;
-var ISFP = 39;
-var ISTJ = 39;
-var ISTP = 39;
-// Type score is up to 78
+var ENFJ = 30;
+var ENFP = 30;
+var ENTJ = 30;
+var ENTP = 30;
+var ESFJ = 30;
+var ESFP = 30;
+var ESTJ = 30;
+var ESTP = 30;
+var INFJ = 30;
+var INFP = 30;
+var INTJ = 30;
+var INTP = 30;
+var ISFJ = 30;
+var ISFP = 30;
+var ISTJ = 30;
+var ISTP = 30;
+// Type score is up to 60
 
 var test_status = 0;
 
@@ -314,22 +314,22 @@ function buttonclick(score) {
     if (current_question > (statement_1.length - 1)) {
         document.getElementById("question_number").style.display = "none";
         document.getElementById("statement_1").innerHTML = "";
-        ENFJ = Fe + 2*Ni_a;
-        ENFP = Ne + 2*Fi_a;
-        ENTJ = Te + 2*Ni_a;
-        ENTP = Ne + 2*Ti_a;
-        ESFJ = Fe + 2*Si_a;
-        ESFP = Se + 2*Fi_a;
-        ESTJ = Te + 2*Si_a;
-        ESTP = Se + 2*Ti_a;
-        INFJ = Ni + 2*Fe_a;
-        INFP = Fi + 2*Ne_a;
-        INTJ = Ni + 2*Te_a;
-        INTP = Ti + 2*Ne_a;
-        ISFJ = Si + 2*Fe_a;
-        ISFP = Fi + 2*Se_a;
-        ISTJ = Si + 2*Te_a;
-        ISTP = Ti + 2*Se_a;
+        ENFJ = Fe + Ni_a;
+        ENFP = Ne + Fi_a;
+        ENTJ = Te + Ni_a;
+        ENTP = Ne + Ti_a;
+        ESFJ = Fe + Si_a;
+        ESFP = Se + Fi_a;
+        ESTJ = Te + Si_a;
+        ESTP = Se + Ti_a;
+        INFJ = Ni + Fe_a;
+        INFP = Fi + Ne_a;
+        INTJ = Ni + Te_a;
+        INTP = Ti + Ne_a;
+        ISFJ = Si + Fe_a;
+        ISFP = Fi + Se_a;
+        ISTJ = Si + Te_a;
+        ISTP = Ti + Se_a;
 
         Fe_total = Fe + Fe_a;
         Fi_total = Fi + Fi_a;
@@ -351,22 +351,22 @@ function get_result() {
     document.getElementById("statement_1").style.display = "none";
     document.getElementById("statement_2").style.display = "none";
     document.getElementById("func").style.display = "";
-    document.getElementById("ENFJ").innerHTML = "ENFJ: " + Math.round(ENFJ / 78 * 10000) / 100;
-    document.getElementById("ENFP").innerHTML = "ENFP: " + Math.round(ENFP / 78 * 10000) / 100;
-    document.getElementById("ENTJ").innerHTML = "ENTJ: " + Math.round(ENTJ / 78 * 10000) / 100;
-    document.getElementById("ENTP").innerHTML = "ENTP: " + Math.round(ENTP / 78 * 10000) / 100;
-    document.getElementById("ESFJ").innerHTML = "ESFJ: " + Math.round(ESFJ / 78 * 10000) / 100;
-    document.getElementById("ESFP").innerHTML = "ESFP: " + Math.round(ESFP / 78 * 10000) / 100;
-    document.getElementById("ESTJ").innerHTML = "ESTJ: " + Math.round(ESTJ / 78 * 10000) / 100;
-    document.getElementById("ESTP").innerHTML = "ESTP: " + Math.round(ESTP / 78 * 10000) / 100;
-    document.getElementById("INFJ").innerHTML = "INFJ: " + Math.round(INFJ / 78 * 10000) / 100;
-    document.getElementById("INFP").innerHTML = "INFP: " + Math.round(INFP / 78 * 10000) / 100;
-    document.getElementById("INTJ").innerHTML = "INTJ: " + Math.round(INTJ / 78 * 10000) / 100;
-    document.getElementById("INTP").innerHTML = "INTP: " + Math.round(INTP / 78 * 10000) / 100;
-    document.getElementById("ISFJ").innerHTML = "ISFJ: " + Math.round(ISFJ / 78 * 10000) / 100;
-    document.getElementById("ISFP").innerHTML = "ISFP: " + Math.round(ISFP / 78 * 10000) / 100;
-    document.getElementById("ISTJ").innerHTML = "ISTJ: " + Math.round(ISTJ / 78 * 10000) / 100;
-    document.getElementById("ISTP").innerHTML = "ISTP: " + Math.round(ISTP / 78 * 10000) / 100;
+    document.getElementById("ENFJ").innerHTML = "ENFJ: " + Math.round(ENFJ / 60 * 10000) / 100;
+    document.getElementById("ENFP").innerHTML = "ENFP: " + Math.round(ENFP / 60 * 10000) / 100;
+    document.getElementById("ENTJ").innerHTML = "ENTJ: " + Math.round(ENTJ / 60 * 10000) / 100;
+    document.getElementById("ENTP").innerHTML = "ENTP: " + Math.round(ENTP / 60 * 10000) / 100;
+    document.getElementById("ESFJ").innerHTML = "ESFJ: " + Math.round(ESFJ / 60 * 10000) / 100;
+    document.getElementById("ESFP").innerHTML = "ESFP: " + Math.round(ESFP / 60 * 10000) / 100;
+    document.getElementById("ESTJ").innerHTML = "ESTJ: " + Math.round(ESTJ / 60 * 10000) / 100;
+    document.getElementById("ESTP").innerHTML = "ESTP: " + Math.round(ESTP / 60 * 10000) / 100;
+    document.getElementById("INFJ").innerHTML = "INFJ: " + Math.round(INFJ / 60 * 10000) / 100;
+    document.getElementById("INFP").innerHTML = "INFP: " + Math.round(INFP / 60 * 10000) / 100;
+    document.getElementById("INTJ").innerHTML = "INTJ: " + Math.round(INTJ / 60 * 10000) / 100;
+    document.getElementById("INTP").innerHTML = "INTP: " + Math.round(INTP / 60 * 10000) / 100;
+    document.getElementById("ISFJ").innerHTML = "ISFJ: " + Math.round(ISFJ / 60 * 10000) / 100;
+    document.getElementById("ISFP").innerHTML = "ISFP: " + Math.round(ISFP / 60 * 10000) / 100;
+    document.getElementById("ISTJ").innerHTML = "ISTJ: " + Math.round(ISTJ / 60 * 10000) / 100;
+    document.getElementById("ISTP").innerHTML = "ISTP: " + Math.round(ISTP / 60 * 10000) / 100;
 
     document.getElementById("Se").innerHTML = "Extraverted Sensation: " + Math.round(Se_total / 60 * 10000) / 100;
     document.getElementById("Si").innerHTML = "Introverted Sensation: " + Math.round(Si_total / 60 * 10000) / 100;
