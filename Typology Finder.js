@@ -311,13 +311,15 @@ function manual() {
 }
 
 function get_result() {
-    document.getElementById("results").style.display = "block";
+    document.getElementById("all_results").style.display = "";
     document.getElementById("test").style.display = "none";
     document.getElementById("manual").style.display = "none";
     document.getElementById("question_number").innerHTML = "Five Traits, Ten Aspects";
     document.getElementById("Statement").style.display = "none";
     document.getElementById("Statement_1").style.display = "none";
     document.getElementById("Statement_2").style.display = "none";
+
+    // Trait scores
     document.getElementById("OTE").innerHTML = "Openess to Experience: " + openness + "%";
     document.getElementById("int").innerHTML = "Intellectual Curiosity: " + int + "%";
     document.getElementById("opn").innerHTML = "Unconventionality: " + opn + "%";
@@ -334,11 +336,6 @@ function get_result() {
     document.getElementById("wtd").innerHTML = "Negative Affect: " + wtd + "%";
     document.getElementById("vol").innerHTML = "Emotional Instability: " + vol + "%";
 
-    document.getElementById("vit").innerHTML = "Vitality: " + vit + "%";
-    document.getElementById("mat").innerHTML = "Materialism: " + mat + "%";
-    document.getElementById("gi").innerHTML = "General Instability: " + gi + "%";
-    document.getElementById("ap").innerHTML = "Type A Personality: " + ap + "%";
-    
     document.getElementById("bar_OTEs").style.width = openness + "%";
     document.getElementById("bar_ints").style.width = int + "%";
     document.getElementById("bar_opns").style.width = opn + "%";
@@ -355,16 +352,119 @@ function get_result() {
     document.getElementById("bar_wtds").style.width = wtd + "%";
     document.getElementById("bar_vols").style.width = vol + "%";
 
+    // General profile
+    if (int > 70) {
+        document.getElementById("int_desc").innerHTML = "You deeply appreciate philosophical thought. You enjoy learning and playing with ideas and concepts. You are likely to enjoy mentally stimulating careers involving research and complex knowledge."
+    }
+    else if (int > 30) {
+        document.getElementById("int_desc").innerHTML = "You have a moderate level of interest in intellectual, mental activities. You may occassionally enjoy ideas and concepts, but you don't like to go too far into these pursuits."
+    }
+    else {
+        document.getElementById("int_desc").innerHTML = "You tend to prefer thinking in plain and simple terms. You highly favor the practical applications of ideas rather than actively learning about how they work. You would rather do something less mentally stimulating."
+    }
+
+    if (opn > 70) {
+        document.getElementById("opn_desc").innerHTML = "You are highly creative with a vivid imagination. You enjoy change and new experiences. You would be considered as adventurous, experimental, and unconventional. You may even enjoy artistic pursuits."
+    }
+    else if (opn > 30) {
+        document.getElementById("opn_desc").innerHTML = "You are moderately open to new experiences. While you mostly prefer the tried-and-true, you may also enjoy an occassional change. You may have big dreams but you also try to keep things realistic."
+    }
+    else {
+        document.getElementById("opn_desc").innerHTML = "You are generally a person of tradition and routines. You vastly prefer the facts over the fantasy. You tend to be disinterested in artistic experiences, prefering something more grounded."
+    }
+
+    if (ind > 70) {
+        document.getElementById("ind_desc").innerHTML = "You are driven to achieve your lofty goals. When you are focused, nothing can distract you. You may have some tendency towards being a workaholic. You are generally an hardworking and efficient person."
+    }
+    else if (ind > 30) {
+        document.getElementById("ind_desc").innerHTML = "While you may not be the hardest worker, you still like to get things done. "
+    }
+    else {
+        document.getElementById("ind_desc").innerHTML = "You tend to prefer thinking in plain and simple terms. You highly favor the practical applications of ideas rather than actively learning about how they work. You would rather do something less mentally stimulating."
+    }
+
+    if (ord > 70) {
+        document.getElementById("ord_desc").innerHTML = "You deeply appreciate philosophical thought. You enjoy learning and playing with ideas and concepts. You are likely to enjoy mentally stimulating careers involving research and complex knowledge."
+    }
+    else if (ord > 30) {
+        document.getElementById("ord_desc").innerHTML = "You have a moderate level of interest in intellectual, mental activities. You may occassionally enjoy ideas and concepts, but you don't like to go too far into these pursuits."
+    }
+    else {
+        document.getElementById("ord_desc").innerHTML = "You tend to prefer thinking in plain and simple terms. You highly favor the practical applications of ideas rather than actively learning about how they work. You would rather do something less mentally stimulating."
+    }
+
+    if (ent > 70) {
+        document.getElementById("ent_desc").innerHTML = "You deeply appreciate philosophical thought. You enjoy learning and playing with ideas and concepts. You are likely to enjoy mentally stimulating careers involving research and complex knowledge."
+    }
+    else if (ent > 30) {
+        document.getElementById("ent_desc").innerHTML = "You have a moderate level of interest in intellectual, mental activities. You may occassionally enjoy ideas and concepts, but you don't like to go too far into these pursuits."
+    }
+    else {
+        document.getElementById("ent_desc").innerHTML = "You tend to prefer thinking in plain and simple terms. You highly favor the practical applications of ideas rather than actively learning about how they work. You would rather do something less mentally stimulating."
+    }
+
+    if (asr > 70) {
+        document.getElementById("asr_desc").innerHTML = "You deeply appreciate philosophical thought. You enjoy learning and playing with ideas and concepts. You are likely to enjoy mentally stimulating careers involving research and complex knowledge."
+    }
+    else if (asr > 30) {
+        document.getElementById("asr_desc").innerHTML = "You have a moderate level of interest in intellectual, mental activities. You may occassionally enjoy ideas and concepts, but you don't like to go too far into these pursuits."
+    }
+    else {
+        document.getElementById("asr_desc").innerHTML = "You tend to prefer thinking in plain and simple terms. You highly favor the practical applications of ideas rather than actively learning about how they work. You would rather do something less mentally stimulating."
+    }
+
+    if (com > 70) {
+        document.getElementById("com_desc").innerHTML = "You deeply appreciate philosophical thought. You enjoy learning and playing with ideas and concepts. You are likely to enjoy mentally stimulating careers involving research and complex knowledge."
+    }
+    else if (com > 30) {
+        document.getElementById("com_desc").innerHTML = "You have a moderate level of interest in intellectual, mental activities. You may occassionally enjoy ideas and concepts, but you don't like to go too far into these pursuits."
+    }
+    else {
+        document.getElementById("com_desc").innerHTML = "You tend to prefer thinking in plain and simple terms. You highly favor the practical applications of ideas rather than actively learning about how they work. You would rather do something less mentally stimulating."
+    }
+
+    if (pol > 70) {
+        document.getElementById("pol_desc").innerHTML = "You deeply appreciate philosophical thought. You enjoy learning and playing with ideas and concepts. You are likely to enjoy mentally stimulating careers involving research and complex knowledge."
+    }
+    else if (pol > 30) {
+        document.getElementById("pol_desc").innerHTML = "You have a moderate level of interest in intellectual, mental activities. You may occassionally enjoy ideas and concepts, but you don't like to go too far into these pursuits."
+    }
+    else {
+        document.getElementById("pol_desc").innerHTML = "You tend to prefer thinking in plain and simple terms. You highly favor the practical applications of ideas rather than actively learning about how they work. You would rather do something less mentally stimulating."
+    }
+
+    if (wtd > 70) {
+        document.getElementById("wtd_desc").innerHTML = "You deeply appreciate philosophical thought. You enjoy learning and playing with ideas and concepts. You are likely to enjoy mentally stimulating careers involving research and complex knowledge."
+    }
+    else if (wtd > 30) {
+        document.getElementById("wtd_desc").innerHTML = "You have a moderate level of interest in intellectual, mental activities. You may occassionally enjoy ideas and concepts, but you don't like to go too far into these pursuits."
+    }
+    else {
+        document.getElementById("wtd_desc").innerHTML = "You tend to prefer thinking in plain and simple terms. You highly favor the practical applications of ideas rather than actively learning about how they work. You would rather do something less mentally stimulating."
+    }
+
+    if (vol > 70) {
+        document.getElementById("vol_desc").innerHTML = "You deeply appreciate philosophical thought. You enjoy learning and playing with ideas and concepts. You are likely to enjoy mentally stimulating careers involving research and complex knowledge."
+    }
+    else if (vol > 30) {
+        document.getElementById("vol_desc").innerHTML = "You have a moderate level of interest in intellectual, mental activities. You may occassionally enjoy ideas and concepts, but you don't like to go too far into these pursuits."
+    }
+    else {
+        document.getElementById("vol_desc").innerHTML = "You tend to prefer thinking in plain and simple terms. You highly favor the practical applications of ideas rather than actively learning about how they work. You would rather do something less mentally stimulating."
+    }
+
+    // Compound traits
+    document.getElementById("vit").innerHTML = "Vitality: " + vit + "%";
+    document.getElementById("mat").innerHTML = "Materialism: " + mat + "%";
+    document.getElementById("gi").innerHTML = "General Instability: " + gi + "%";
+    document.getElementById("ap").innerHTML = "Type A Personality: " + ap + "%";
+
     document.getElementById("bar_vit").style.width = vit + "%";
     document.getElementById("bar_mat").style.width = mat + "%";
     document.getElementById("bar_gi").style.width = gi + "%";
     document.getElementById("bar_ap").style.width = ap + "%";
 
-    document.getElementById("compound_traits").style.display = "";
-    document.getElementById("charts_space").style.display = "";
-    document.getElementById("typology_finder").style.display = "";
-    document.getElementById("prediction").style.display = "";
-
+    // Predominant patterns
     document.getElementById("point_oc").style.left = conscientiousness + "%";
     document.getElementById("point_oc").style.bottom = openness + "%";
 
@@ -395,129 +495,7 @@ function get_result() {
     document.getElementById("point_an").style.left = neuroticism + "%";
     document.getElementById("point_an").style.bottom = agreeableness + "%";
 
-    if (ord < 60) {
-        document.getElementById("ennea1").style.display = "none";
-    }
-    
-    if (com < 60) {
-        document.getElementById("ennea2").style.display = "none";
-    }
-
-    if (ind < 60) {
-        document.getElementById("ennea3").style.display = "none";
-    }
-
-    if (opn < 60 || wtd < 30) {
-        document.getElementById("ennea4").style.display = "none";
-    }
-
-    if (int < 60 || ent > 70) {
-        document.getElementById("ennea5").style.display = "none";
-    }
-
-    if (enn_6 < 4 || wtd < 30) {
-        document.getElementById("ennea6").style.display = "none";
-    }
-
-    if (opn < 60 || ent < 60 || wtd > 80) {
-        document.getElementById("ennea7").style.display = "none";
-    }
-
-    if (asr < 60 || pol > 50 || wtd > 50) {
-        document.getElementById("ennea8").style.display = "none";
-    }
-
-    if (pol < 60) {
-        document.getElementById("ennea9").style.display = "none";
-    }
-
-    if (ind > 80 || asr > 80) {
-        document.getElementById("infp").style.display = "none";
-        document.getElementById("intp").style.display = "none";
-        document.getElementById("isfp").style.display = "none";
-        document.getElementById("istp").style.display = "none";
-    }
-
-    if (ord < 40) {
-        document.getElementById("infj").style.display = "none";
-        document.getElementById("intj").style.display = "none";
-        document.getElementById("isfj").style.display = "none";
-        document.getElementById("istj").style.display = "none";
-    }
-
-    if (ord > 60) {
-        document.getElementById("enfp").style.display = "none";
-        document.getElementById("entp").style.display = "none";
-        document.getElementById("esfp").style.display = "none";
-        document.getElementById("estp").style.display = "none";
-    }
-
-    if (asr < 30 && ind < 40) {
-        document.getElementById("enfj").style.display = "none";
-        document.getElementById("entj").style.display = "none";
-        document.getElementById("esfj").style.display = "none";
-        document.getElementById("estj").style.display = "none";
-    }
-
-    if (opn > 80 || ord < 50) {
-        document.getElementById("esfj").style.display = "none";
-        document.getElementById("estj").style.display = "none";
-        document.getElementById("isfj").style.display = "none";
-        document.getElementById("istj").style.display = "none";
-    }
-
-    if (int < 40 || opn < 60) {
-        document.getElementById("enfp").style.display = "none";
-        document.getElementById("entp").style.display = "none";
-        document.getElementById("infp").style.display = "none";
-        document.getElementById("intp").style.display = "none";
-    }
-
-    if (int < 40) {
-        document.getElementById("enfj").style.display = "none";
-        document.getElementById("entj").style.display = "none";
-        document.getElementById("infj").style.display = "none";
-        document.getElementById("intj").style.display = "none";
-    }
-
-    if (ind < 50 || com > 90) {
-        document.getElementById("entj").style.display = "none";
-        document.getElementById("estj").style.display = "none";
-        document.getElementById("intj").style.display = "none";
-        document.getElementById("istj").style.display = "none";
-    }
-
-    if (com < 60) {
-        document.getElementById("enfj").style.display = "none";
-        document.getElementById("esfj").style.display = "none";
-        document.getElementById("infj").style.display = "none";
-        document.getElementById("isfj").style.display = "none";
-    }
-
-    if (com < 40) {
-        document.getElementById("enfp").style.display = "none";
-        document.getElementById("esfp").style.display = "none";
-        document.getElementById("infp").style.display = "none";
-        document.getElementById("isfp").style.display = "none";
-    }
-
-    if (com > 80) {
-        document.getElementById("entp").style.display = "none";
-        document.getElementById("estp").style.display = "none";
-        document.getElementById("intp").style.display = "none";
-        document.getElementById("istp").style.display = "none";
-    }
-
-    if (se < 3) {
-        document.getElementById("esfp").style.display = "none";
-        document.getElementById("estp").style.display = "none";
-    }
-
-    if (se < 1) {
-        document.getElementById("isfp").style.display = "none";
-        document.getElementById("istp").style.display = "none";
-    }
-
+    // Prediction Zone
     if (opn < 30 && ind > 40 && ent > 50) {
         document.getElementById("pop").style.display = "";
     }
