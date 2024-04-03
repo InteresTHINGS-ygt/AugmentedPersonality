@@ -17,7 +17,7 @@
         <h3>Indicate which statement fits you better in each question. ANSWER HONESTLY. Otherwise, your results won't accurately reflect you.</h3>
         <!--<h3>If you already know your traits, you can insert them manually.</h3>-->
     </div>
-    <div class="main">
+    <div class="main" id="entiretest">
         <h2 id="question_number"></h2>
         <h2 id="Statement">Click to start!</h2>
         <input type="button" onclick=buttonclick(0) id="start" value="Start Test">
@@ -82,9 +82,10 @@
         <div class="all_results" id="all_results" style="display: non">
             <div class="main">
                 <div id = "results" class="results">
+                    <h2>Five Traits, Ten Aspects</h2>
                     <div class = "bigfive">
                     <h2 id = "OTE">Openness To Experience</h2>
-                    <div class="results_bar_OTEs">
+                    <div class="results_bar">
                         <div class="bar_OTEs" id="bar_OTEs"></div>
                     </div>
                     <h3 id = "int">Intellectual Curiosity</h3>
@@ -97,7 +98,7 @@
                     </div>
                     <br>
                     <h2 id = "CON">Conscientiousness</h2>
-                    <div class="results_bar_CONs">
+                    <div class="results_bar">
                         <div class="bar_CONs" id="bar_CONs"></div>
                     </div>
                     <h3 id = "ind">Industriousness</h3>
@@ -110,7 +111,7 @@
                     </div>
                     <br>
                     <h2 id = "EXT">Extraversion</h2>
-                    <div class="results_bar_EXTs">
+                    <div class="results_bar">
                         <div class="bar_EXTs" id="bar_EXTs"></div>
                     </div>
                     <h3 id = "ent">Enthusiasm</h3>
@@ -123,7 +124,7 @@
                     </div>
                     <br>
                     <h2 id = "AGR">Agreeableness</h2>
-                    <div class="results_bar_AGRs">
+                    <div class="results_bar">
                         <div class="bar_AGRs" id="bar_AGRs"></div>
                     </div>
                     <h3 id = "com">Compassion</h3>
@@ -136,15 +137,15 @@
                     </div>
                     <br>
                     <h2 id = "NEU">Neuroticism</h2>
-                    <div class="results_bar_NEUs">
+                    <div class="results_bar">
                         <div class="bar_NEUs" id="bar_NEUs"></div>
                     </div>
                     <h3 id = "wtd">Negative Affect</h3>
-                    <div class="results_bar_wtds">
+                    <div class="results_bar">
                         <div class="bar_wtds" id="bar_wtds"></div>
                     </div>
                     <h3 id = "vol">Emotional Instability</h3>
-                    <div class="results_bar_vols">
+                    <div class="results_bar">
                         <div class="bar_vols" id="bar_vols"></div>
                     </div>
                 </div>
@@ -165,23 +166,49 @@
             </div>
             <div class="main" id="sandw">
                 <h2>Strengths and Weaknesses</h2>
+                <div class="sw_container" style="display:grid">
+                    <div class="strength" style="background-color: rgb(31, 160, 59);">
+                        <h3 style="color: rgb(240,240,240)" id="int_st"></h3>
+                        <h3 style="color: rgb(240,240,240)" id="opn_st"></h3>
+                        <h3 style="color: rgb(240,240,240)" id="ind_st"></h3>
+                        <h3 style="color: rgb(240,240,240)" id="ord_st"></h3>
+                        <h3 style="color: rgb(240,240,240)" id="ent_st"></h3>
+                        <h3 style="color: rgb(240,240,240)" id="asr_st"></h3>
+                        <h3 style="color: rgb(240,240,240)" id="com_st"></h3>
+                        <h3 style="color: rgb(240,240,240)" id="pol_st"></h3>
+                        <h3 style="color: rgb(240,240,240)" id="wtd_st"></h3>
+                        <h3 style="color: rgb(240,240,240)" id="vol_st"></h3>
+                    </div>
+                    <div class="weakness" style="background-color: rgb(180, 56, 56);">
+                        <h3 style="color: rgb(240,240,240)" id="int_we"></h3>
+                        <h3 style="color: rgb(240,240,240)" id="opn_we"></h3>
+                        <h3 style="color: rgb(240,240,240)" id="ind_we"></h3>
+                        <h3 style="color: rgb(240,240,240)" id="ord_we"></h3>
+                        <h3 style="color: rgb(240,240,240)" id="ent_we"></h3>
+                        <h3 style="color: rgb(240,240,240)" id="asr_we"></h3>
+                        <h3 style="color: rgb(240,240,240)" id="com_we"></h3>
+                        <h3 style="color: rgb(240,240,240)" id="pol_we"></h3>
+                        <h3 style="color: rgb(240,240,240)" id="wtd_we"></h3>
+                        <h3 style="color: rgb(240,240,240)" id="vol_we"></h3>
+                    </div>
+                </div>
             </div>
             <div class="main" id="compound_traits">
                 <h2>Compound Traits</h2>
                 <h3 id = "vit">Vitality</h3>
-                <div class="results_bar_vit">
+                <div class="results_bar">
                     <div class="bar_vit" id="bar_vit"></div>
                 </div>
                 <h3 id = "mat">Materialism</h3>
-                <div class="results_bar_mat">
+                <div class="results_bar">
                     <div class="bar_mat" id="bar_mat"></div>
                 </div>
                 <h3 id = "gi">General Instability</h3>
-                <div class="results_bar_gi">
+                <div class="results_bar">
                     <div class="bar_gi" id="bar_gi"></div>
                 </div>
                 <h3 id = "ap">Type A Personality</h3>
-                <div class="results_bar_ap">
+                <div class="results_bar">
                     <div class="bar_ap" id="bar_ap"></div>
                 </div>
             </div>
@@ -345,21 +372,98 @@
                 </div>
             </div>
             <div class="main" id="jung">
-                <h2>Jung Functions</h2>
+                <h2>Jung Functions / Types</h2>
+                <h3 id = "Fe">Extraverted Feeling</h3>
+                <div class="results_bar">
+                    <div class="bar_Fe" id="bar_Fe"></div>
+                </div>
+                <h3 id = "Fi">Introverted Feeling</h3>
+                <div class="results_bar">
+                    <div class="bar_Fi" id="bar_Fi"></div>
+                </div>
+                <h3 id = "Ne">Extraverted Intuition</h3>
+                <div class="results_bar">
+                    <div class="bar_Ne" id="bar_Ne"></div>
+                </div>
+                <h3 id = "Ni">Introverted Intuition</h3>
+                <div class="results_bar">
+                    <div class="bar_Ni" id="bar_Ni"></div>
+                </div>
+                <h3 id = "Se">Extraverted Sensation</h3>
+                <div class="results_bar">
+                    <div class="bar_Se" id="bar_Se"></div>
+                </div>
+                <h3 id = "Si">Introverted Sensation</h3>
+                <div class="results_bar">
+                    <div class="bar_Si" id="bar_Si"></div>
+                </div>
+                <h3 id = "Te">Extraverted Thinking</h3>
+                <div class="results_bar">
+                    <div class="bar_Te" id="bar_Te"></div>
+                </div>
+                <h3 id = "Ti">Introverted Thinking</h3>
+                <div class="results_bar">
+                    <div class="bar_Ti" id="bar_Ti"></div>
+                </div>
             </div>
-            <div class="main" id="jung">
+            <div class="main" id="ennea">
                 <h2>Enneagram Types</h2>
+                <h3 id = "one">Type 1</h3>
+                <div class="results_bar">
+                    <div class="bar_1" id="bar_1"></div>
+                </div>
+                <h3 id = "two">Type 2</h3>
+                <div class="results_bar">
+                    <div class="bar_2" id="bar_2"></div>
+                </div>
+                <h3 id = "three">Type 3</h3>
+                <div class="results_bar">
+                    <div class="bar_3" id="bar_3"></div>
+                </div>
+                <h3 id = "four">Type 4</h3>
+                <div class="results_bar">
+                    <div class="bar_4" id="bar_4"></div>
+                </div>
+                <h3 id = "five">Type 5</h3>
+                <div class="results_bar">
+                    <div class="bar_5" id="bar_5"></div>
+                </div>
+                <h3 id = "six">Type 6</h3>
+                <div class="results_bar">
+                    <div class="bar_6" id="bar_6"></div>
+                </div>
+                <h3 id = "seven">Type 7</h3>
+                <div class="results_bar">
+                    <div class="bar_7" id="bar_7"></div>
+                </div>
+                <h3 id = "eight">Type 8</h3>
+                <div class="results_bar">
+                    <div class="bar_8" id="bar_8"></div>
+                </div>
+                <h3 id = "nine">Type 9</h3>
+                <div class="results_bar">
+                    <div class="bar_9" id="bar_9"></div>
+                </div>
             </div>
-            <div class="main" id="jung">
+            <div class="main" id="alignment">
                 <h2>Moral Alignment</h2>
+                <div class="visual_container_align">
+                    <div class = "alignment_results" style = "display:grid">
+                        <div class="LG"><div class="center_text">Lawful Good</div></div>
+                        <div class="NG"><div class="center_text">Neutral Good</div></div>
+                        <div class="CG"><div class="center_text">Chaotic Good</div></div>
+                        <div class="LN"><div class="center_text">Lawful Neutral</div></div>
+                        <div class="TN"><div class="center_text">True Neutral</div></div>
+                        <div class="CN"><div class="center_text">Chaotic Neutral</div></div>
+                        <div class="LE"><div class="center_text">Lawful Evil</div></div>
+                        <div class="NE"><div class="center_text">Neutral Evil</div></div>
+                        <div class="CE"><div class="center_text">Chaotic Evil</div></div>
+                    </div>
+                    <div class="point_align" id="point_align">
+                    </div>
+                </div>
             </div>
-            <div class="main" id="jung">
-                <h2>Neurotype</h2>
-            </div>
-            <div class="main" id="jung">
-                <h2>Temperament</h2>
-            </div>
-            <div class="main" id="jung">
+            <div class="main" id="growth" style="display:none">
                 <h2>Growth Tips For You</h2>
             </div>
             <div class="main" id="prediction">
@@ -402,7 +506,7 @@
                     <br>
                 </div>
             </div>
-            <div class="main" id="jung">
+            <div class="main" id="sim" style="display:none">
                 <h2>You would be...</h2>
             </div>
         </div>

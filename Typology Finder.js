@@ -314,7 +314,8 @@ function get_result() {
     document.getElementById("all_results").style.display = "";
     document.getElementById("test").style.display = "none";
     document.getElementById("manual").style.display = "none";
-    document.getElementById("question_number").innerHTML = "Five Traits, Ten Aspects";
+    document.getElementById("entiretest").style.display = "none";
+    document.getElementById("question_number").innerHTML = "";
     document.getElementById("Statement").style.display = "none";
     document.getElementById("Statement_1").style.display = "none";
     document.getElementById("Statement_2").style.display = "none";
@@ -454,7 +455,96 @@ function get_result() {
     }
 
     // Strengths and weaknesses
-    
+    if (int > 70) {
+        document.getElementById("int_st").innerHTML = "Curiosity and learning"
+        document.getElementById("int_we").innerHTML = "Overcomplicates things"
+    }
+    else if (int < 30) {
+        document.getElementById("int_st").innerHTML = "Concrete and practical"
+        document.getElementById("int_we").innerHTML = "Simple-mindedness"
+    }
+
+    if (opn > 70) {
+        document.getElementById("opn_st").innerHTML = "Creative and adventurous"
+        document.getElementById("opn_we").innerHTML = "Impractical and eccentric"
+    }
+    else if (opn < 30) {
+        document.getElementById("opn_st").innerHTML = "Grounded and realistic"
+        document.getElementById("opn_we").innerHTML = "Closed to novelty"
+    }
+
+    if (ind > 70) {
+        document.getElementById("ind_st").innerHTML = "Ambition and drive"
+        document.getElementById("ind_we").innerHTML = "Prone to workaholism"
+    }
+    else if (ind < 30) {
+        document.getElementById("ind_st").innerHTML = "Easygoing and takes easy"
+        document.getElementById("ind_we").innerHTML = "Master procrastinator"
+    }
+
+    if (ord > 70) {
+        document.getElementById("ord_st").innerHTML = "Structured and planful"
+        document.getElementById("ord_we").innerHTML = "Uptight and rigid"
+    }
+    else if (ord < 30) {
+        document.getElementById("ord_st").innerHTML = "Adaptable and spontaneous"
+        document.getElementById("ord_we").innerHTML = "Disorganized and careless"
+    }
+
+    if (ent > 70) {
+        document.getElementById("ent_st").innerHTML = "Sociable and joyful"
+        document.getElementById("ent_we").innerHTML = "Can't handle alone time"
+    }
+    else if (ent < 30) {
+        document.getElementById("ent_st").innerHTML = "Quietly focused"
+        document.getElementById("ent_we").innerHTML = "Distant and reserved"
+    }
+
+    if (asr > 70) {
+        document.getElementById("asr_st").innerHTML = "Good leader and influential"
+        document.getElementById("asr_we").innerHTML = "Overwhelming for some people"
+    }
+    else if (asr < 30) {
+        document.getElementById("asr_st").innerHTML = "Behind-the-scenes worker"
+        document.getElementById("asr_we").innerHTML = "Submissive and meek"
+    }
+
+    if (com > 70) {
+        document.getElementById("com_st").innerHTML = "Sympathetic and helpful"
+        document.getElementById("com_we").innerHTML = "Overly sensitive to others"
+    }
+    else if (com < 30) {
+        document.getElementById("com_st").innerHTML = "Tough-minded and rational"
+        document.getElementById("com_we").innerHTML = "Selfish and insensitive"
+    }
+
+    if (pol > 70) {
+        document.getElementById("pol_st").innerHTML = "Cooperative and humble"
+        document.getElementById("pol_we").innerHTML = "Can be a doormat"
+    }
+    else if (pol < 30) {
+        document.getElementById("pol_st").innerHTML = "Strong willpower"
+        document.getElementById("pol_we").innerHTML = "Prone to fighting"
+    }
+
+    if (wtd > 70) {
+        document.getElementById("wtd_st").innerHTML = "Senses danger before anyone else"
+        document.getElementById("wtd_we").innerHTML = "Prone to doubt and worry"
+    }
+    else if (wtd < 30) {
+        document.getElementById("wtd_st").innerHTML = "Confident without much doubt"
+        document.getElementById("wtd_we").innerHTML = "Prone to overconfidence"
+    }
+
+    if (vol > 70) {
+        document.getElementById("vol_st").innerHTML = "Emotionally dynamic and passionate"
+        document.getElementById("vol_we").innerHTML = "Impatient and volatile"
+    }
+    else if (vol < 30) {
+        document.getElementById("vol_st").innerHTML = "Stable and controlled"
+        document.getElementById("vol_we").innerHTML = "Prone to apathy"
+    }
+
 
     // Compound traits
     document.getElementById("vit").innerHTML = "Vitality: " + vit + "%";
@@ -497,6 +587,76 @@ function get_result() {
 
     document.getElementById("point_an").style.left = neuroticism + "%";
     document.getElementById("point_an").style.bottom = agreeableness + "%";
+
+    // MBTI and Enneagram
+
+    var Se = Math.round((ent + asr + (100-int) + (100-ord)) / 4 * 100) / 100;
+    var Si = Math.round((ind + 2*ord + (100-int) + 2*(100-opn) + (100-ent) + (100-asr)) / 8 * 100) / 100;
+    var Ne = Math.round((2*int + 2*opn + 2*(100-ord) + 2*ent + asr + (100-ind)) / 10 * 100) / 100;
+    var Ni = Math.round((2*int + ind + ord + (100-ent) + (100-asr)) / 6 * 100) / 100;
+    var Te = Math.round((2*ind + 2*ord + 2*asr + int + (100-opn) + (100-com) + (100-pol)) / 10 * 100) / 100;
+    var Ti = Math.round((2*int + 2*(100-ent) + ord + (100-ind) + (100-asr) + (100-com) + (100-pol)) / 9 * 100) / 100;
+    var Fe = Math.round((2*com + 2*ent + ind + ord + asr + pol + (100-int)) / 9 * 100) / 100;
+    var Fi = Math.round((2*(100-ord) + 2*(100-ent) + 2*(100-asr) + (100-ind) + opn + com + pol) / 10 * 100) / 100;
+
+    document.getElementById("Se").innerHTML = "Extraverted Sensation: " + Se ;
+    document.getElementById("Si").innerHTML = "Introverted Sensation: " + Si ;
+    document.getElementById("Ne").innerHTML = "Extraverted Intuition: " + Ne ;
+    document.getElementById("Ni").innerHTML = "Introverted Intuition: " + Ni ;
+    document.getElementById("Te").innerHTML = "Extraverted Thinking: " + Te ;
+    document.getElementById("Ti").innerHTML = "Introverted Thinking: " + Ti ;
+    document.getElementById("Fe").innerHTML = "Extraverted Feeling: " + Fe ;
+    document.getElementById("Fi").innerHTML = "Introverted Feeling: " + Fi ;
+
+    document.getElementById("bar_Se").style.width = Se  + "%";
+    document.getElementById("bar_Si").style.width = Si  + "%";
+    document.getElementById("bar_Ne").style.width = Ne  + "%";
+    document.getElementById("bar_Ni").style.width = Ni  + "%";
+    document.getElementById("bar_Te").style.width = Te  + "%";
+    document.getElementById("bar_Ti").style.width = Ti  + "%";
+    document.getElementById("bar_Fe").style.width = Fe  + "%";
+    document.getElementById("bar_Fi").style.width = Fi  + "%";
+
+    var one = Math.round((2*(100-opn) + 2*ind + 2*ord + asr + pol + vol) / 9 * 100) / 100;
+    var two = Math.round((2*(100-int) + ind + 2*ent + asr + 2*com + (100-vol)) / 9 * 100) / 100;
+    var three = Math.round((2*ind + 2*asr + ord + ent + (100-int) + (100-com) + (100-wtd) + 2*(100-pol)) / 11 * 100) / 100;
+    var four = Math.round((int + 2*opn + 2*(100-ind) + 2*(100-ord) + (100-ent) + (100-asr) + com + (100-pol) + 2*wtd + vol) / 14 * 100) / 100;
+    var five = Math.round((2*int + opn + (100-ind) + 2*(100-ent) + 2*(100-asr) + 2*(100-com) + (100-pol) + wtd + (100-vol)) / 13 * 100) / 100;
+    var six = Math.round((2*wtd + int + ind + ord + pol + vol) / 7 * 100) / 100;
+    var seven = Math.round((int + 2*opn + 2*ent + asr + 2*(100-ind) + 2*(100-ord) + (100-pol) + (100-wtd)) / 12 * 100) / 100;
+    var eight = Math.round(((100-int) + 2*ind + 2*asr + vol + 2*(100-wtd) + 2*(100-pol) + (100-com)) / 11 * 100) / 100;
+    var nine = Math.round((2*com + 2*pol + (100-int) + 2*(100-ind) + (100-ord) + 2*(100-asr) + (100-vol)) / 11 * 100) / 100;
+
+    document.getElementById("one").innerHTML = "Type 1: " + one  + "%";
+    document.getElementById("two").innerHTML = "Type 2: " + two  + "%";
+    document.getElementById("three").innerHTML = "Type 3: " + three  + "%";
+    document.getElementById("four").innerHTML = "Type 4: " + four  + "%";
+    document.getElementById("five").innerHTML = "Type 5: " + five  + "%";
+    document.getElementById("six").innerHTML = "Type 6: " + six  + "%";
+    document.getElementById("seven").innerHTML = "Type 7: " + seven  + "%";
+    document.getElementById("eight").innerHTML = "Type 8: " + eight  + "%";
+    document.getElementById("nine").innerHTML = "Type 9: " + nine  + "%";
+
+    document.getElementById("bar_1").style.width = one  + "%";
+    document.getElementById("bar_2").style.width = two  + "%";
+    document.getElementById("bar_3").style.width = three  + "%";
+    document.getElementById("bar_4").style.width = four  + "%";
+    document.getElementById("bar_5").style.width = five  + "%";
+    document.getElementById("bar_6").style.width = six  + "%";
+    document.getElementById("bar_7").style.width = seven  + "%";
+    document.getElementById("bar_8").style.width = eight  + "%";
+    document.getElementById("bar_9").style.width = nine  + "%";
+
+    // Alignment
+
+    var chaotic = (2*opn + 2*(100-ord) + (100-pol) + (100-ind)) / 6;
+    var good = agreeableness;
+
+    var c = chaotic + "%";
+    var g = good + "%";
+
+    document.getElementById("point_align").style.bottom = g;
+    document.getElementById("point_align").style.left = c;
 
     // Prediction Zone
     if (opn < 30 && ind > 40 && ent > 50) {

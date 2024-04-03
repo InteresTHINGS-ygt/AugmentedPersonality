@@ -1111,3 +1111,239 @@ I try to keep a collaborative and peaceful atmosphere.
 My moods tend to be stable and calm.
 I tend to be indecisive and I generally go with what others want.
 I want my life to be as comfortable as possible.
+
+
+Jung Functions
+
+- Se -
+
+int: --
+opn: none
+ind: none
+ord: --
+ent: ++
+asr: ++
+com: none
+pol: none
+
+- Si -
+
+int: -
+opn: --
+ind: +
+ord: ++
+ent: -
+asr: -
+com: none
+pol: none
+
+- Ne -
+
+int: ++
+opn: ++
+ind: -
+ord: --
+ent: ++
+asr: +
+com: none
+pol: none
+
+- Ni -
+
+int: ++
+opn: none
+ind: +
+ord: +
+ent: -
+asr: -
+com: none
+pol: none
+
+- Te -
+
+int: +
+opn: -
+ind: ++
+ord: ++
+ent: none
+asr: ++
+com: -
+pol: -
+
+- Ti -
+
+int: ++
+opn: none
+ind: -
+ord: +
+ent: --
+asr: -
+com: -
+pol: -
+
+- Fe -
+
+int: -
+opn: none
+ind: +
+ord: +
+ent: ++
+asr: +
+com: ++
+pol: +
+
+- Fi -
+
+int: none
+opn: +
+ind: -
+ord: --
+ent: --
+asr: --
+com: +
+pol: +
+
+ENNEAGRAM TYPES 
+
+- Type 1 -
+
+int: none
+opn: --
+ind: ++
+ord: ++
+ent: none
+asr: +
+com: none
+pol: +
+wtd: none
+vol: +
+
+- Type 2 -
+
+int: --
+opn: none
+ind: +
+ord: none
+ent: ++
+asr: +
+com: ++
+pol: none
+wtd: none
+vol: -
+
+- Type 3 -
+
+int: -
+opn: none
+ind: ++
+ord: +
+ent: +
+asr: ++
+com: -
+pol: --
+wtd: -
+vol: none
+
+- Type 4 -
+
+int: +
+opn: ++
+ind: --
+ord: --
+ent: -
+asr: -
+com: +
+pol: -
+wtd: ++
+vol: +
+
+- Type 5 -
+
+int: ++
+opn: +
+ind: -
+ord: none
+ent: --
+asr: --
+com: --
+pol: -
+wtd: +
+vol: -
+
+- Type 6 -
+
+int: +
+opn: none
+ind: +
+ord: +
+ent: none
+asr: none
+com: none
+pol: +
+wtd: ++
+vol: +
+
+- Type 7 -
+
+int: +
+opn: ++
+ind: --
+ord: --
+ent: ++
+asr: +
+com: none
+pol: -
+wtd: -
+vol: none
+
+- Type 8 -
+
+int: -
+opn: none
+ind: ++
+ord: none
+ent: none
+asr: ++
+com: -
+pol: --
+wtd: --
+vol: +
+
+- Type 9 -
+
+int: -
+opn: none
+ind: --
+ord: -
+ent: none
+asr: --
+com: ++
+pol: ++
+wtd: none
+vol: -
+
+- Chaotic Alignment -
+
+int: none
+opn: ++
+ind: -
+ord: --
+ent: none
+asr: none
+com: none
+pol: -
+wtd: none
+vol: none
+
+- Good Alignment -
+
+int: none
+opn: none
+ind: none
+ord: none
+ent: none
+asr: none
+com: ++
+pol: ++
+wtd: none
+vol: none
