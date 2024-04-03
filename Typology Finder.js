@@ -377,81 +377,84 @@ function get_result() {
         document.getElementById("ind_desc").innerHTML = "You are driven to achieve your lofty goals. When you are focused, nothing can distract you. You may have some tendency towards being a workaholic. You are generally an hardworking and efficient person."
     }
     else if (ind > 30) {
-        document.getElementById("ind_desc").innerHTML = "While you may not be the hardest worker, you still like to get things done. "
+        document.getElementById("ind_desc").innerHTML = "While you may not be the hardest worker, you still like to get things done. You think being productive is important, but it is not the number one focus for you."
     }
     else {
-        document.getElementById("ind_desc").innerHTML = "You tend to prefer thinking in plain and simple terms. You highly favor the practical applications of ideas rather than actively learning about how they work. You would rather do something less mentally stimulating."
+        document.getElementById("ind_desc").innerHTML = "You are more of an easygoing person, and you may procrastinate pretty often. You tend to prefer play and relaxation over work and you may be prone to wasting time with unproductive pursuits."
     }
 
     if (ord > 70) {
-        document.getElementById("ord_desc").innerHTML = "You deeply appreciate philosophical thought. You enjoy learning and playing with ideas and concepts. You are likely to enjoy mentally stimulating careers involving research and complex knowledge."
+        document.getElementById("ord_desc").innerHTML = "You highly appreciate structure and organization. You make decisions very carefully and you care a lot about even the tiniest details. You prefer planning in advance, and you may be a perfectionist as well."
     }
     else if (ord > 30) {
-        document.getElementById("ord_desc").innerHTML = "You have a moderate level of interest in intellectual, mental activities. You may occassionally enjoy ideas and concepts, but you don't like to go too far into these pursuits."
+        document.getElementById("ord_desc").innerHTML = "You may very well be organized, but you have your messy moments too. You are not the most spontaneous person, but you are not uptight or rigid either."
     }
     else {
-        document.getElementById("ord_desc").innerHTML = "You tend to prefer thinking in plain and simple terms. You highly favor the practical applications of ideas rather than actively learning about how they work. You would rather do something less mentally stimulating."
+        document.getElementById("ord_desc").innerHTML = "You have a tendency to be quite disorderly. You may have a hard time planning and considering the details. You tend to dislike overly structured environments. You may also be adaptable and spontaneous."
     }
 
     if (ent > 70) {
-        document.getElementById("ent_desc").innerHTML = "You deeply appreciate philosophical thought. You enjoy learning and playing with ideas and concepts. You are likely to enjoy mentally stimulating careers involving research and complex knowledge."
+        document.getElementById("ent_desc").innerHTML = "You are a person full of enthusiasm and joy. You feel energized by social interactions, and you may be considered as the life of the party. You are also highly playful and enjoy making new friends. You tend to express your emotions easily, especially the positive emotions."
     }
     else if (ent > 30) {
-        document.getElementById("ent_desc").innerHTML = "You have a moderate level of interest in intellectual, mental activities. You may occassionally enjoy ideas and concepts, but you don't like to go too far into these pursuits."
+        document.getElementById("ent_desc").innerHTML = "You can be interested in social gatherings, but you also have a good desire for alone time. You easily balance moments of enthusiasm with moments of quiet focus."
     }
     else {
-        document.getElementById("ent_desc").innerHTML = "You tend to prefer thinking in plain and simple terms. You highly favor the practical applications of ideas rather than actively learning about how they work. You would rather do something less mentally stimulating."
+        document.getElementById("ent_desc").innerHTML = "You generally prefer alone time over being with people, and you may be seen as a reserved and serious person. You are generally quiet and you don't really pursue making new friends. You also tend to avoid loud social events."
     }
 
     if (asr > 70) {
-        document.getElementById("asr_desc").innerHTML = "You deeply appreciate philosophical thought. You enjoy learning and playing with ideas and concepts. You are likely to enjoy mentally stimulating careers involving research and complex knowledge."
+        document.getElementById("asr_desc").innerHTML = "You are the type of person who takes charge and directs other people. You take control things quickly, and you tend to enjoy multitasking. You may be considered as dominant and persuasive, but also overwhelming for some people."
     }
     else if (asr > 30) {
-        document.getElementById("asr_desc").innerHTML = "You have a moderate level of interest in intellectual, mental activities. You may occassionally enjoy ideas and concepts, but you don't like to go too far into these pursuits."
+        document.getElementById("asr_desc").innerHTML = "You have a moderate level of assertiveness in social situations. While you are not the most dominant, you are not that meek either. Generally, you take charge when the situation needs you to take charge."
     }
     else {
-        document.getElementById("asr_desc").innerHTML = "You tend to prefer thinking in plain and simple terms. You highly favor the practical applications of ideas rather than actively learning about how they work. You would rather do something less mentally stimulating."
+        document.getElementById("asr_desc").innerHTML = "You generally prefer letting others take charge. You tend to dislike most leadership roles, and you would be happy with a passive or supportive role. You may be better off working behind-the-scenes."
     }
 
     if (com > 70) {
-        document.getElementById("com_desc").innerHTML = "You deeply appreciate philosophical thought. You enjoy learning and playing with ideas and concepts. You are likely to enjoy mentally stimulating careers involving research and complex knowledge."
+        document.getElementById("com_desc").innerHTML = "You have a deep compasion and soft heart for other people. You frequently consider others' feelings while making decisions. You are sensitive and easily affected by others' tragedies. You tend to put other people's needs above your needs because you are sensitive to other people's needs."
     }
     else if (com > 30) {
-        document.getElementById("com_desc").innerHTML = "You have a moderate level of interest in intellectual, mental activities. You may occassionally enjoy ideas and concepts, but you don't like to go too far into these pursuits."
+        document.getElementById("com_desc").innerHTML = "While you generally care about other people, you also favor more rational and justice-oriented approaches in certain situations. While you may be a helpful person, you tend to consider your own needs before helping other people."
     }
     else {
-        document.getElementById("com_desc").innerHTML = "You tend to prefer thinking in plain and simple terms. You highly favor the practical applications of ideas rather than actively learning about how they work. You would rather do something less mentally stimulating."
+        document.getElementById("com_desc").innerHTML = "You tend to be on the tough-minded side of the spectrum. You tend to be far more conderned about your own needs rather than other people's. You may not be as affected by other people's negative feelings. You may also think that emotions are for the weak."
     }
 
     if (pol > 70) {
-        document.getElementById("pol_desc").innerHTML = "You deeply appreciate philosophical thought. You enjoy learning and playing with ideas and concepts. You are likely to enjoy mentally stimulating careers involving research and complex knowledge."
+        document.getElementById("pol_desc").innerHTML = "You care a lot about peace and cooperation, and you do whatever it takes to preserve a harmonious atmosphere. You heavily favor collaboration over competition, and you dislike fighting with others. You may be considered as conflict-avoidant. You are generally humble and dislike showing off."
     }
     else if (pol > 30) {
-        document.getElementById("pol_desc").innerHTML = "You have a moderate level of interest in intellectual, mental activities. You may occassionally enjoy ideas and concepts, but you don't like to go too far into these pursuits."
+        document.getElementById("pol_desc").innerHTML = "While you may occassionally enjoy a good fight or competition, you don't want things to go too far. You are not a very arrogant or manipulative person, but you are not a pushover either. You find a balance between keeping social harmony and going for what you really want."
     }
     else {
-        document.getElementById("pol_desc").innerHTML = "You tend to prefer thinking in plain and simple terms. You highly favor the practical applications of ideas rather than actively learning about how they work. You would rather do something less mentally stimulating."
+        document.getElementById("pol_desc").innerHTML = "You may be prone to do things for your own personal gain. You are not afraid to show off or admit that you are a superior person. You are willing to fight or compete in order to get what you want. You prefer challenging others rather than smoothing the things out."
     }
 
     if (wtd > 70) {
-        document.getElementById("wtd_desc").innerHTML = "You deeply appreciate philosophical thought. You enjoy learning and playing with ideas and concepts. You are likely to enjoy mentally stimulating careers involving research and complex knowledge."
+        document.getElementById("wtd_desc").innerHTML = "You may easily feel anxious or doubtful in a wide range of situations. You tend to perceive danger before anyone else does. When something bad happens, you may easily feel discouraged. You are generally in touch with your negative feelings."
     }
     else if (wtd > 30) {
-        document.getElementById("wtd_desc").innerHTML = "You have a moderate level of interest in intellectual, mental activities. You may occassionally enjoy ideas and concepts, but you don't like to go too far into these pursuits."
+        document.getElementById("wtd_desc").innerHTML = "You may have occassional moments of worry but they don't really overwhelm you. You look at things from a balanced perspective, neither too positive nor too negative. While you may have negative moments, you are not a very pessimistic person."
     }
     else {
-        document.getElementById("wtd_desc").innerHTML = "You tend to prefer thinking in plain and simple terms. You highly favor the practical applications of ideas rather than actively learning about how they work. You would rather do something less mentally stimulating."
+        document.getElementById("wtd_desc").innerHTML = "You are likely to be extraordinarily confident and calm in crisis situations. You don't feel anxious or discouraged in situations where others feel more overwhelmed. You may be somewhat prone to overconfidence and being unwilling to consider dangers."
     }
 
     if (vol > 70) {
-        document.getElementById("vol_desc").innerHTML = "You deeply appreciate philosophical thought. You enjoy learning and playing with ideas and concepts. You are likely to enjoy mentally stimulating careers involving research and complex knowledge."
+        document.getElementById("vol_desc").innerHTML = "You may be somewhat of an emotional rollercoaster. You have highly changeable feelings, sometimes explosive even. You are somewhat prone to impatience and irritability when things go haywire. You generally prefer letting emotions run wild and free rather than controlling your reactions."
     }
     else if (vol > 30) {
-        document.getElementById("vol_desc").innerHTML = "You have a moderate level of interest in intellectual, mental activities. You may occassionally enjoy ideas and concepts, but you don't like to go too far into these pursuits."
+        document.getElementById("vol_desc").innerHTML = "While you wouldn't be the most emotionally stable person, you do not have explosive feelings either. Setbacks can be somewhat annoying, but you don't get very upset or enraged. You have some level of control over your feelings."
     }
     else {
-        document.getElementById("vol_desc").innerHTML = "You tend to prefer thinking in plain and simple terms. You highly favor the practical applications of ideas rather than actively learning about how they work. You would rather do something less mentally stimulating."
+        document.getElementById("vol_desc").innerHTML = "You are generally an emotionally stable person, controlled in reactions. Setbacks do not annoy or irritate you that much. You are generally patient and can take a lot of beating before getting angry. You may also be somewhat prone to apathy."
     }
+
+    // Strengths and weaknesses
+    
 
     // Compound traits
     document.getElementById("vit").innerHTML = "Vitality: " + vit + "%";
