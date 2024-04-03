@@ -762,6 +762,17 @@ input[type="button"] {
         left: 0%;
     }
 
+    .point_align {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        border-radius: 5px;
+        outline: rgb(0, 0, 0) solid 10px;
+        background-color: black;
+        bottom: 0%;
+        left: 0%;
+    }
+
     .charts {
         grid-template-columns: 250px 250px;
         grid-template-rows: 250px 250px 250px 250px 250px;
@@ -961,5 +972,42 @@ input[type="button"] {
         margin: auto;
         margin-top: 20px;
         margin-bottom: 20px;
+    }
+
+    .visual_container_align {
+        position: relative;
+        border-radius: 10px;
+        box-shadow: 14px 14px 28px rgba(40, 37, 30, 0.2);
+        margin: 9px;
+    }
+
+    .alignment_results {
+        grid-template-columns: 178px 178px 178px;
+        grid-template-rows: 178px 178px 178px;
+        justify-content: center;
+        font-weight: bold;
+        font-size: 16pt;
+    }
+    
+    .center_text {
+        position: relative;
+        top: 40%;
+        width: 100%;
+        text-align: center;
+    }
+    .LG {
+        border-radius: 10px 0 0 0;
+    }
+    
+    .CG {
+        border-radius: 0 10px 0 0;
+    }
+    
+    .LE {
+        border-radius: 0 0 0 10px;
+    }
+    
+    .CE {
+        border-radius: 0 0 10px 0;
     }
 }
