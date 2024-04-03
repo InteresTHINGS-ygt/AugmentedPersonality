@@ -79,6 +79,18 @@ a.gd {
 a.portal {
     background-color: rgb(136, 136, 136);
 }
+a.hero {
+    background-color: rgb(1, 0, 88);
+}
+a.onion {
+    background-color: rgb(185, 121, 0);
+}
+a.hex {
+    background-color: rgb(0, 97, 68);
+}
+a.digi {
+    background-color: rgb(117, 0, 92);
+}
 
 a:hover {
     background-color: rgb(94, 94, 94);
@@ -108,7 +120,7 @@ div.main {
 div.grid_menu {
     display: grid;
     grid-template-columns: 41vw 41vw;
-    grid-template-rows: 30vw 30vw 30vw 30vw 30vw 30vw 30vw;
+    grid-template-rows: 30vw 30vw 30vw 30vw 30vw 30vw 30vw 30vw 30vw;
     gap: 1vw;
     justify-content: space-evenly;
 }
@@ -301,7 +313,7 @@ hr {
     div.grid_menu {
         display: grid;
         grid-template-columns: 270px 270px;
-        grid-template-rows: 135px 135px 135px 135px 135px 135px 135px;
+        grid-template-rows: 135px 135px 135px 135px 135px 135px 135px 135px 135px;
         gap: 10px;
         justify-content: space-evenly;
     }

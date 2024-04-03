@@ -78,343 +78,337 @@
             <br>
             <input type="button" onclick=manual() value="Submit">
         </div>
-        <div id = "results" class="results" style="display: none">
-            <div class = "bigfive">
-            <h2 id = "OTE">Openness To Experience</h2>
-            <div class="results_bar_OTEs">
-                <div class="bar_OTEs" id="bar_OTEs"></div>
-            </div>
-            <h3 id = "int">Intellectual Curiosity</h3>
-            <div class="results_bar_ints">
-                <div class="bar_ints" id="bar_ints"></div>
-            </div>
-            <h3 id = "opn">Unconventionality</h3>
-            <div class="results_bar_opns">
-                <div class="bar_opns" id="bar_opns"></div>
-            </div>
-            <br>
-            <h2 id = "CON">Conscientiousness</h2>
-            <div class="results_bar_CONs">
-                <div class="bar_CONs" id="bar_CONs"></div>
-            </div>
-            <h3 id = "ind">Industriousness</h3>
-            <div class="results_bar_inds">
-                <div class="bar_inds" id="bar_inds"></div>
-            </div>
-            <h3 id = "ord">Orderliness</h3>
-            <div class="results_bar_ords">
-                <div class="bar_ords" id="bar_ords"></div>
-            </div>
-            <br>
-            <h2 id = "EXT">Extraversion</h2>
-            <div class="results_bar_EXTs">
-                <div class="bar_EXTs" id="bar_EXTs"></div>
-            </div>
-            <h3 id = "ent">Enthusiasm</h3>
-            <div class="results_bar_ents">
-                <div class="bar_ents" id="bar_ents"></div>
-            </div>
-            <h3 id = "asr">Assertiveness</h3>
-            <div class="results_bar_asrs">
-                <div class="bar_asrs" id="bar_asrs"></div>
-            </div>
-            <br>
-            <h2 id = "AGR">Agreeableness</h2>
-            <div class="results_bar_AGRs">
-                <div class="bar_AGRs" id="bar_AGRs"></div>
-            </div>
-            <h3 id = "com">Compassion</h3>
-            <div class="results_bar_coms">
-                <div class="bar_coms" id="bar_coms"></div>
-            </div>
-            <h3 id = "pol">Politeness</h3>
-            <div class="results_bar_pols">
-                <div class="bar_pols" id="bar_pols"></div>
-            </div>
-            <br>
-            <h2 id = "NEU">Neuroticism</h2>
-            <div class="results_bar_NEUs">
-                <div class="bar_NEUs" id="bar_NEUs"></div>
-            </div>
-            <h3 id = "wtd">Negative Affect</h3>
-            <div class="results_bar_wtds">
-                <div class="bar_wtds" id="bar_wtds"></div>
-            </div>
-            <h3 id = "vol">Emotional Instability</h3>
-            <div class="results_bar_vols">
-                <div class="bar_vols" id="bar_vols"></div>
-            </div>
-            <br>
-            </div>
-            </div>
-         </div>
-         </div>
-         <div class="main" id="compound_traits" style="display:none">
-            <h2>Compound Traits</h2>
-            <h3 id = "vit">Vitality</h3>
-            <div class="results_bar_vit">
-                <div class="bar_vit" id="bar_vit"></div>
-            </div>
-            <h3 id = "mat">Materialism</h3>
-            <div class="results_bar_mat">
-                <div class="bar_mat" id="bar_mat"></div>
-            </div>
-            <h3 id = "gi">General Instability</h3>
-            <div class="results_bar_gi">
-                <div class="bar_gi" id="bar_gi"></div>
-            </div>
-            <h3 id = "ap">Type A Personality</h3>
-            <div class="results_bar_ap">
-                <div class="bar_ap" id="bar_ap"></div>
-            </div>
-         </div>
-         <div class="main" id="charts_space" style="display:none">
-            <h2>Predominant Patterns</h2>
-            <div class="charts" id="charts" style="display:grid">
-                <div class="visual_container">
-                    <div class = "visual_results_oc" style = "display:grid">
-                        <div class="Pioneer"><div class="center_text">Fanciful</div></div>
-                        <div class="Driver"><div class="center_text">Visionary</div></div>
-                        <div class="Integrator"><div class="center_text">Immediate</div></div>
-                        <div class="Guardian"><div class="center_text">Routinized</div></div>
-                    </div>
-                    <div class="point" id="point_oc">
-                    </div>
-                </div>
-                <div class="visual_container">
-                    <div class = "visual_results_oe" style = "display:grid">
-                        <div class="Pioneer"><div class="center_text">Introspective</div></div>
-                        <div class="Driver"><div class="center_text">Adventurous</div></div>
-                        <div class="Integrator"><div class="center_text">Predictable</div></div>
-                        <div class="Guardian"><div class="center_text">Mainstream</div></div>
-                    </div>
-                    <div class="point" id="point_oe">
-                    </div>
-                </div>
-                <div class="visual_container">
-                    <div class = "visual_results_oa" style = "display:grid">
-                        <div class="Pioneer"><div class="center_text">Rebellious</div></div>
-                        <div class="Driver"><div class="center_text">Tolerant</div></div>
-                        <div class="Integrator"><div class="center_text">Resolute</div></div>
-                        <div class="Guardian"><div class="center_text">Traditional</div></div>
-                    </div>
-                    <div class="point" id="point_oa">
-                    </div>
-                </div>
-                <div class="visual_container">
-                    <div class = "visual_results_on" style = "display:grid">
-                        <div class="Pioneer"><div class="center_text">Resolving</div></div>
-                        <div class="Driver"><div class="center_text">Eccentric</div></div>
-                        <div class="Integrator"><div class="center_text">Grounded</div></div>
-                        <div class="Guardian"><div class="center_text">Avoidant</div></div>
-                    </div>
-                    <div class="point" id="point_on">
-                    </div>
-                </div>
-                <div class="visual_container">
-                    <div class = "visual_results_ce" style = "display:grid">
-                        <div class="Pioneer"><div class="center_text">Impulsive</div></div>
-                        <div class="Driver"><div class="center_text">Ambitious</div></div>
-                        <div class="Integrator"><div class="center_text">Laid-back</div></div>
-                        <div class="Guardian"><div class="center_text">Steady</div></div>
-                    </div>
-                    <div class="point" id="point_ce">
-                    </div>
-                </div>
-                <div class="visual_container">
-                    <div class = "visual_results_ca" style = "display:grid">
-                        <div class="Pioneer"><div class="center_text">Drifting</div></div>
-                        <div class="Driver"><div class="center_text">Altruistic</div></div>
-                        <div class="Integrator"><div class="center_text">Egocentric</div></div>
-                        <div class="Guardian"><div class="center_text">Systematic</div></div>
-                    </div>
-                    <div class="point" id="point_ca">
-                    </div>
-                </div>
-                <div class="visual_container">
-                    <div class = "visual_results_cn" style = "display:grid">
-                        <div class="Pioneer"><div class="center_text">Scattered</div></div>
-                        <div class="Driver"><div class="center_text">Perfectionistic</div></div>
-                        <div class="Integrator"><div class="center_text">Relaxed</div></div>
-                        <div class="Guardian"><div class="center_text">Confident</div></div>
-                    </div>
-                    <div class="point" id="point_cn">
-                    </div>
-                </div>
-                <div class="visual_container">
-                    <div class = "visual_results_ea" style = "display:grid">
-                        <div class="Pioneer"><div class="center_text">Dominant</div></div>
-                        <div class="Driver"><div class="center_text">Friendly</div></div>
-                        <div class="Integrator"><div class="center_text">Aloof</div></div>
-                        <div class="Guardian"><div class="center_text">Humble</div></div>
-                    </div>
-                    <div class="point" id="point_ea">
-                    </div>
-                </div>
-                <div class="visual_container">
-                    <div class = "visual_results_en" style = "display:grid">
-                        <div class="Pioneer"><div class="center_text">Upbeat</div></div>
-                        <div class="Driver"><div class="center_text">Excitable</div></div>
-                        <div class="Integrator"><div class="center_text">Tranquil</div></div>
-                        <div class="Guardian"><div class="center_text">Somber</div></div>
-                    </div>
-                    <div class="point" id="point_en">
-                    </div>
-                </div>
-                <div class="visual_container">
-                    <div class = "visual_results_an" style = "display:grid">
-                        <div class="Pioneer"><div class="center_text">Stable</div></div>
-                        <div class="Driver"><div class="center_text">Sensitive</div></div>
-                        <div class="Integrator"><div class="center_text">Unemotional</div></div>
-                        <div class="Guardian"><div class="center_text">Moody</div></div>
-                    </div>
-                    <div class="point" id="point_an">
-                    </div>
-                </div>
-            </div>
-            <br>
-            <input type="button" onclick=reveal_patterns() value="What are those?">
-            <div class="pattern_desc" id="pattern_desc" style="display:none">
-                <h3>Perception - Openness/Intellect and Conscientiousness</h3>
-                <p>Fanciful: They tend to be imaginative, creative, innovative, and somewhat impractical.</p>
-                <p>Visionary: Future-focused. They have big ideas and will drive towards achieving them. May struggle living in the moment.</p>
-                <p>Routinized: They tend to be methodical, consistent, and organized. May struggle with change.</p>
-                <p>Immediate: They are considered as the ultimate realists. Living in the moment but having a hard time with future plans.</p>
-                <h3>Lifestyle - Openness/Intellect and Extraversion</h3>
-                <p>Introspective: Reflective and enjoying alone time. They deeply gather knowledge about the world.</p>
-                <p>Adventurous: They enjoy trying out new things and experiences.</p>
-                <p>Mainstream: They easily adapt to groups and mainstream stuff. May disregard individuality.</p>
-                <p>Predictable: They tend to live a predictable and stable lifestyle. Often staying with the familiar.</p>
-                <h3>Worldview - Openness/Intellect and Agreeableness</h3>
-                <p>Rebellious: Independent and unique, they are considered as the rebels.</p>
-                <p>Tolerant: Open-minded and accepting of other people's differences.</p>
-                <p>Traditional: They tend to have an easy time following social norms.</p>
-                <p>Resolute: They have strong, unchanging beliefs about the world. Decisive yet narrow-minded.</p>
-                <h3>Coping - Openness/Intellect and Neuroticism</h3>
-                <p>Resolving: They find rational solutions to problems. Having a positive attitude towards new things.</p>
-                <p>Eccentric: Perceptive and sensitive to the world around them. May vividly imagine good or bad things happening to them.</p>
-                <p>Avoidant: They avoid risks nd new things in order to stay safe. </p>
-                <p>Grounded: They tend to have an easy time controlling emotions and letting their mind shut.</p>
-                <h3>Work Style - Conscientiousness and Extraversion</h3>
-                <p>Impulsive: Taking advantage of present opportunities. Considered as spontaneous.</p>
-                <p>Ambitious: They work hard with vigor to get things done as quickly as possible.</p>
-                <p>Steady: Can withstand boring tasks with ease. Preference for planning in advance.</p>
-                <p>Laid-back: They tend to live life at their own pace. Can be somewhat sluggish.</p>
-                <h3>Interpersonal Style - Conscientiousness and Agreeableness</h3>
-                <p>Drifting: They lack strong opinions. Willing to adapt to others.</p>
-                <p>Altruistic: Actively helping others in order to preserve harmony.</p>
-                <p>Systematic: Focused on achievement and can be somewhat competitive.</p>
-                <p>Egocentric: Willing to do their own thing without worrying about others.</p>
-                <h3>Challenge Approach - Conscientiousness and Neuroticism</h3>
-                <p>Scattered: They tend to have trouble focusing due to unstable moods.</p>
-                <p>Perfectionistic: Needs to have everything just right to be content.</p>
-                <p>Confident: They are hard-working and confident about their own abilities.</p>
-                <p>Relaxed: They take things as they come, and go with the flow without much concern.</p>
-                <h3>Social Style - Extraversion and Agreeableness</h3>
-                <p>Dominant: They prefer taking charge of situations.</p>
-                <p>Friendly: Often considered as social butterflies who enjoy interacting with people and helping them.</p>
-                <p>Humble: They tend to be modest and polite. Can put other people above themselves.</p>
-                <p>Aloof: They tend to be distant loners who have little interest in people.</p>
-                <h3>Temperament - Extraversion and Neuroticism</h3>
-                <p>Upbeat: Optimistic and they generally enjoy life. Can be too content with things. Corresponds to Sanguine temperament.</p>
-                <p>Excitable: They have excitable and changeable moods. Corresponds to Choleric temeprament.</p>
-                <p>Somber: They tend to be somewhat gloomy and sees tragedies as they are. Corresponds to Melancholic temperament.</p>
-                <p>Tranquil: Stable emotions with an even-keeled attitude. Corresponds to Phlegmatic temeprament.</p>
-                <h3>Emotional Management - Agreeableness and Neuroticism</h3>
-                <p>Stable: They trust people easily and tend to be emotionally stable.</p>
-                <p>Sensitive: Empathetic and sensitive to others' suffering.</p>
-                <p>Moody: They tend to be skeptical of others. Can be somewhat negative.</p>
-                <p>Unemotional: They see emotions as a sign of weakness. They take pride in being strong.</p>
-            </div>
-         </div>
-         <div class="main" id="typology_finder" style="display:none">
-            <h2>Typology Finder</h2>
-            <span>These are likely results rather than absolute predictions. It may be inaccurate if you are in a psychologically unhealthy state.</span>
-            <h3>Likely Enneagram Core Types</h3>
-            <div class="ennea" id="ennea">
-                <div class="ennea" id="ennea1">Type 1: Be a good person</div>
-                <div class="ennea" id="ennea2">Type 2: Be selfless</div>
-                <div class="ennea" id="ennea3">Type 3: Be the best</div>
-                <div class="ennea" id="ennea4">Type 4: Be fully yourself</div>
-                <div class="ennea" id="ennea5">Type 5: Be knowledgeable</div>
-                <div class="ennea" id="ennea6">Type 6: Be safe and sound</div>
-                <div class="ennea" id="ennea7">Type 7: Be positive</div>
-                <div class="ennea" id="ennea8">Type 8: Be strong</div>
-                <div class="ennea" id="ennea9">Type 9: Be harmonious</div>
-            </div>
-            <h3>Likely Cognitive Types</h3>
-            <div class="cpti" id="cpti">
-                <div class="cpti" id="enfj">ENFJ: Overview of emotional atmosphere</div>
-                <div class="cpti" id="enfp">ENFP: Endless possibilities for expression</div>
-                <div class="cpti" id="entj">ENTJ: Quick efficiency with a vision</div>
-                <div class="cpti" id="entp">ENTP: Exploration of connected ideas</div>
-                <div class="cpti" id="esfj">ESFJ: Together with strong connections</div>
-                <div class="cpti" id="esfp">ESFP: Sample everything for enjoyment</div>
-                <div class="cpti" id="estj">ESTJ: Things done according to standards</div>
-                <div class="cpti" id="estp">ESTP: Stimulation through real action</div>
-                <div class="cpti" id="infj">INFJ: Spot-on prediction of the whole world</div>
-                <div class="cpti" id="infp">INFP: Internal landscape of values and feelings</div>
-                <div class="cpti" id="intj">INTJ: Laser-focused insight made professional</div>
-                <div class="cpti" id="intp">INTP: Logical clarity with hunger for knowledge</div>
-                <div class="cpti" id="isfj">ISFJ: Detailed memories for the world</div>
-                <div class="cpti" id="isfp">ISFP: Impressionistic with a strong sense of self</div>
-                <div class="cpti" id="istj">ISTJ: Reliability for your foundation</div>
-                <div class="cpti" id="istp">ISTP: Problem solving with a spark</div>
-            </div>
-            <br>
-         </div>
-         <div class="main" id="prediction" style="display:none">
-            <h2>Prediction Zone</h2>
-            <div class="pre" id="pre">
-                <div id="pop" style="display:none">You are more likely to enjoy pop music.</div>
-                <div id="clas" style="display:none">You are more likely to prefer classical or opera music.</div>
-                <div id="rock" style="display:none">You are more likely to enjoy rock, metal, or indie music.</div>
-                <div id="dance" style="display:none">You are more likely to listen to dance or electronic music.</div>
-                <div id="rap" style="display:none">You are more likely to listen to rap and hip-hop.</div>
-                <div id="repeat" style="display:none">You are more likely to repeat the same song over and over again.</div>
-                <div id="dark" style="display:none">You are likely to listen to dark and emotional songs.</div>
-                <div id="upbeat" style="display:none">You seem to prefer upbeat songs rather than dark ones.</div>
-                <div id="apple" style="display:none">You seem to be more of an Apple user.</div>
-                <div id="anti" style="display:none">You are more likely to be against owning Apple devices.</div>
-                <div id="android" style="display:none">You are likely to prefer Android over iOS.</div>
-                <div id="linux" style="display:none">You are far more likely to be a Linux user than an average person.</div>
-                <div id="ipad" style="display:none">You are more likely to own an iPad than an average person.</div>
-                <div id="cat" style="display:none">You are more likely to own a cat than a dog.</div>
-                <div id="dog" style="display:none">You are most likely a dog person.</div>
-                <div id="exo" style="display:none">You are more likely to have an exotic pet than an average person.</div>
-                <div id="night" style="display:none">You are more likely to be a night owl.</div>
-                <div id="early" style="display:none">You are probably more of an early bird.</div>
-                <div id="winter" style="display:none">You are probably more of a winter person.</div>
-                <div id="summer" style="display:none">You are probably more of a summer person.</div>
-                <div id="iced" style="display:none">You are likely to prefer iced coffee over hot coffee.</div>
-                <div id="latte" style="display:none">You are more likely to prefer latte.</div>
-                <div id="esp" style="display:none">You may be more of an espresso person.</div>
-                <div id="che" style="display:none">You are more likely to be a cheese fan than an average person.</div>
-                <div id="over" style="display:none">You are more likely to be an overeater.</div>
-                <div id="slow" style="display:none">You seem to eat more slowly than an average person.</div>
-                <div id="fast" style="display:none">You are likely to be a fast eater.</div>
-                <div id="rubik" style="display:none">You are more likely to be able to solve a Rubik's Cube.</div>
-                <div id="gla" style="display:none">You are more likely to be wearing glasses than an average person.</div>
-                <div id="pers" style="display:none">You are more likely to be interested in personality theories than an average person.</div>
-                <div id="eng" style="display:none">You are likely to pursue engineering as a career.</div>
-                <div id="med" style="display:none">You are very likely to attend medical school.</div>
-                <div id="entr" style="display:none">You seem to be more of an entrepreneur than an average person.</div>
-                <div id="create" style="display:none">You seem to be interested in creating content more than average.</div>
-                <br>
-            </div>
-         </div>
-         <div class="main">
-            <h2>Aspect Descriptions</h2>
-            <h3>Intellectual Curiosity</h3><p>High scorers have an hunger for knowledge, enjoy mentally stimulating activities, and feel at home with abstract ideas. Low scorers are typically more physical than intellectual and prefer simple interests or tasks over complex ones.</p>
-            <h3>Unconventionality</h3><p>High unconventionality means you prioritize imagination, introspection, new experiences, and you are open-minded to alternative and unconventional approaches. A low score means you are more conventional, conservative, and down-to-earth.</p>
-            <h3>Industriousness</h3><p>People high in this trait are ambitious, goal-oriented, and they will work hard and smart to get things done as efficiently as possible. Low scorers tend to procrastinate and waste time more, and they may prioritize play over work.</p>
-            <h3>Orderliness</h3><p>Highly orderly people make plans and organize their environment. They are careful about making decisions, and they may be perfectionistic. Low scorers tend to be more messy and spontaneous. They may have a harder time planning but they can be more adaptable.</p>
-            <h3>Enthusiasm</h3><p>High scorers are enthusiastic, and can be considered the life of the party. They enjoy socializing and have a more cheerful disposition. Low enthusiasm means you are more serious and reserved, and maybe not as interested in socializing.</p>
-            <h3>Assertiveness</h3><p>People who are highly assertive take charge and lead other people. They can be considered as dominant and persuasive. Low scorers are more likely to take passive roles or work behind-the-scenes. They prefer responding rather than initiating.</p>
-            <h3>Compassion</h3><p>High compassion means you favor mercy and have a soft heart in general. They are easily affected by others' feelings, and want to help others in many ways. Low score means you are not as sensitive and you tend to prefer justice and rational approaches over mercy.</p>
-            <h3>Politeness</h3><p>High scorers dislike conflict and they prefer cooperation over competition. They are humble and dislike bragging too much. Low scorers are not as polite and they may be more competitive, manipulative, arrogant, or willing to fight for what they want.</p>
-            <h3>Negative Affect</h3><p>High scorers are familiar with feelings of doubt, worry, and sadness. They can get caught up in problems or feel embarrased or discouraged easily. Low scorers are not as prone to feeling anxious, depressed, or insecure. They tend to feel more confident.</p>
-            <h3>Emotional Instability</h3><p>Being high in instability means your emotions are easily affected and volatile. You may feel angry when things are going wrong, have explosive moods, or overindulge in things. Low instability means emotionally stable, calm, and controlled in reaction.</p>
         </div>
+        <div class="all_results" id="all_results" style="display: non">
+            <div class="main">
+                <div id = "results" class="results">
+                    <div class = "bigfive">
+                    <h2 id = "OTE">Openness To Experience</h2>
+                    <div class="results_bar_OTEs">
+                        <div class="bar_OTEs" id="bar_OTEs"></div>
+                    </div>
+                    <h3 id = "int">Intellectual Curiosity</h3>
+                    <div class="results_bar_ints">
+                        <div class="bar_ints" id="bar_ints"></div>
+                    </div>
+                    <h3 id = "opn">Unconventionality</h3>
+                    <div class="results_bar_opns">
+                        <div class="bar_opns" id="bar_opns"></div>
+                    </div>
+                    <br>
+                    <h2 id = "CON">Conscientiousness</h2>
+                    <div class="results_bar_CONs">
+                        <div class="bar_CONs" id="bar_CONs"></div>
+                    </div>
+                    <h3 id = "ind">Industriousness</h3>
+                    <div class="results_bar_inds">
+                        <div class="bar_inds" id="bar_inds"></div>
+                    </div>
+                    <h3 id = "ord">Orderliness</h3>
+                    <div class="results_bar_ords">
+                        <div class="bar_ords" id="bar_ords"></div>
+                    </div>
+                    <br>
+                    <h2 id = "EXT">Extraversion</h2>
+                    <div class="results_bar_EXTs">
+                        <div class="bar_EXTs" id="bar_EXTs"></div>
+                    </div>
+                    <h3 id = "ent">Enthusiasm</h3>
+                    <div class="results_bar_ents">
+                        <div class="bar_ents" id="bar_ents"></div>
+                    </div>
+                    <h3 id = "asr">Assertiveness</h3>
+                    <div class="results_bar_asrs">
+                        <div class="bar_asrs" id="bar_asrs"></div>
+                    </div>
+                    <br>
+                    <h2 id = "AGR">Agreeableness</h2>
+                    <div class="results_bar_AGRs">
+                        <div class="bar_AGRs" id="bar_AGRs"></div>
+                    </div>
+                    <h3 id = "com">Compassion</h3>
+                    <div class="results_bar_coms">
+                        <div class="bar_coms" id="bar_coms"></div>
+                    </div>
+                    <h3 id = "pol">Politeness</h3>
+                    <div class="results_bar_pols">
+                        <div class="bar_pols" id="bar_pols"></div>
+                    </div>
+                    <br>
+                    <h2 id = "NEU">Neuroticism</h2>
+                    <div class="results_bar_NEUs">
+                        <div class="bar_NEUs" id="bar_NEUs"></div>
+                    </div>
+                    <h3 id = "wtd">Negative Affect</h3>
+                    <div class="results_bar_wtds">
+                        <div class="bar_wtds" id="bar_wtds"></div>
+                    </div>
+                    <h3 id = "vol">Emotional Instability</h3>
+                    <div class="results_bar_vols">
+                        <div class="bar_vols" id="bar_vols"></div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="main" id="general_profile">
+                <h2>General Profile</h2>
+            </div>
+            <div class="main" id="sandw">
+                <h2>Strengths and Weaknesses</h2>
+            </div>
+            <div class="main" id="compound_traits">
+                <h2>Compound Traits</h2>
+                <h3 id = "vit">Vitality</h3>
+                <div class="results_bar_vit">
+                    <div class="bar_vit" id="bar_vit"></div>
+                </div>
+                <h3 id = "mat">Materialism</h3>
+                <div class="results_bar_mat">
+                    <div class="bar_mat" id="bar_mat"></div>
+                </div>
+                <h3 id = "gi">General Instability</h3>
+                <div class="results_bar_gi">
+                    <div class="bar_gi" id="bar_gi"></div>
+                </div>
+                <h3 id = "ap">Type A Personality</h3>
+                <div class="results_bar_ap">
+                    <div class="bar_ap" id="bar_ap"></div>
+                </div>
+            </div>
+            <div class="main" id="charts_space">
+                <h2>Predominant Patterns</h2>
+                <div class="charts" id="charts" style="display:grid">
+                    <div class="visual_container">
+                        <div class = "visual_results_oc" style = "display:grid">
+                            <div class="Pioneer"><div class="center_text">Fanciful</div></div>
+                            <div class="Driver"><div class="center_text">Visionary</div></div>
+                            <div class="Integrator"><div class="center_text">Immediate</div></div>
+                            <div class="Guardian"><div class="center_text">Routinized</div></div>
+                        </div>
+                        <div class="point" id="point_oc">
+                        </div>
+                    </div>
+                    <div class="visual_container">
+                        <div class = "visual_results_oe" style = "display:grid">
+                            <div class="Pioneer"><div class="center_text">Introspective</div></div>
+                            <div class="Driver"><div class="center_text">Adventurous</div></div>
+                            <div class="Integrator"><div class="center_text">Predictable</div></div>
+                            <div class="Guardian"><div class="center_text">Mainstream</div></div>
+                        </div>
+                        <div class="point" id="point_oe">
+                        </div>
+                    </div>
+                    <div class="visual_container">
+                        <div class = "visual_results_oa" style = "display:grid">
+                            <div class="Pioneer"><div class="center_text">Rebellious</div></div>
+                            <div class="Driver"><div class="center_text">Tolerant</div></div>
+                            <div class="Integrator"><div class="center_text">Resolute</div></div>
+                            <div class="Guardian"><div class="center_text">Traditional</div></div>
+                        </div>
+                        <div class="point" id="point_oa">
+                        </div>
+                    </div>
+                    <div class="visual_container">
+                        <div class = "visual_results_on" style = "display:grid">
+                            <div class="Pioneer"><div class="center_text">Resolving</div></div>
+                            <div class="Driver"><div class="center_text">Eccentric</div></div>
+                            <div class="Integrator"><div class="center_text">Grounded</div></div>
+                            <div class="Guardian"><div class="center_text">Avoidant</div></div>
+                        </div>
+                        <div class="point" id="point_on">
+                        </div>
+                    </div>
+                    <div class="visual_container">
+                        <div class = "visual_results_ce" style = "display:grid">
+                            <div class="Pioneer"><div class="center_text">Impulsive</div></div>
+                            <div class="Driver"><div class="center_text">Ambitious</div></div>
+                            <div class="Integrator"><div class="center_text">Laid-back</div></div>
+                            <div class="Guardian"><div class="center_text">Steady</div></div>
+                        </div>
+                        <div class="point" id="point_ce">
+                        </div>
+                    </div>
+                    <div class="visual_container">
+                        <div class = "visual_results_ca" style = "display:grid">
+                            <div class="Pioneer"><div class="center_text">Drifting</div></div>
+                            <div class="Driver"><div class="center_text">Altruistic</div></div>
+                            <div class="Integrator"><div class="center_text">Egocentric</div></div>
+                            <div class="Guardian"><div class="center_text">Systematic</div></div>
+                        </div>
+                        <div class="point" id="point_ca">
+                        </div>
+                    </div>
+                    <div class="visual_container">
+                        <div class = "visual_results_cn" style = "display:grid">
+                            <div class="Pioneer"><div class="center_text">Scattered</div></div>
+                            <div class="Driver"><div class="center_text">Perfectionistic</div></div>
+                            <div class="Integrator"><div class="center_text">Relaxed</div></div>
+                            <div class="Guardian"><div class="center_text">Confident</div></div>
+                        </div>
+                        <div class="point" id="point_cn">
+                        </div>
+                    </div>
+                    <div class="visual_container">
+                        <div class = "visual_results_ea" style = "display:grid">
+                            <div class="Pioneer"><div class="center_text">Dominant</div></div>
+                            <div class="Driver"><div class="center_text">Friendly</div></div>
+                            <div class="Integrator"><div class="center_text">Aloof</div></div>
+                            <div class="Guardian"><div class="center_text">Humble</div></div>
+                        </div>
+                        <div class="point" id="point_ea">
+                        </div>
+                    </div>
+                    <div class="visual_container">
+                        <div class = "visual_results_en" style = "display:grid">
+                            <div class="Pioneer"><div class="center_text">Upbeat</div></div>
+                            <div class="Driver"><div class="center_text">Excitable</div></div>
+                            <div class="Integrator"><div class="center_text">Tranquil</div></div>
+                            <div class="Guardian"><div class="center_text">Somber</div></div>
+                        </div>
+                        <div class="point" id="point_en">
+                        </div>
+                    </div>
+                    <div class="visual_container">
+                        <div class = "visual_results_an" style = "display:grid">
+                            <div class="Pioneer"><div class="center_text">Stable</div></div>
+                            <div class="Driver"><div class="center_text">Sensitive</div></div>
+                            <div class="Integrator"><div class="center_text">Unemotional</div></div>
+                            <div class="Guardian"><div class="center_text">Moody</div></div>
+                        </div>
+                        <div class="point" id="point_an">
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <input type="button" onclick=reveal_patterns() value="What are those?">
+                <div class="pattern_desc" id="pattern_desc" style="display:none">
+                    <h3>Perception - Openness/Intellect and Conscientiousness</h3>
+                    <p>Fanciful: They tend to be imaginative, creative, innovative, and somewhat impractical.</p>
+                    <p>Visionary: Future-focused. They have big ideas and will drive towards achieving them. May struggle living in the moment.</p>
+                    <p>Routinized: They tend to be methodical, consistent, and organized. May struggle with change.</p>
+                    <p>Immediate: They are considered as the ultimate realists. Living in the moment but having a hard time with future plans.</p>
+                    <h3>Lifestyle - Openness/Intellect and Extraversion</h3>
+                    <p>Introspective: Reflective and enjoying alone time. They deeply gather knowledge about the world.</p>
+                    <p>Adventurous: They enjoy trying out new things and experiences.</p>
+                    <p>Mainstream: They easily adapt to groups and mainstream stuff. May disregard individuality.</p>
+                    <p>Predictable: They tend to live a predictable and stable lifestyle. Often staying with the familiar.</p>
+                    <h3>Worldview - Openness/Intellect and Agreeableness</h3>
+                    <p>Rebellious: Independent and unique, they are considered as the rebels.</p>
+                    <p>Tolerant: Open-minded and accepting of other people's differences.</p>
+                    <p>Traditional: They tend to have an easy time following social norms.</p>
+                    <p>Resolute: They have strong, unchanging beliefs about the world. Decisive yet narrow-minded.</p>
+                    <h3>Coping - Openness/Intellect and Neuroticism</h3>
+                    <p>Resolving: They find rational solutions to problems. Having a positive attitude towards new things.</p>
+                    <p>Eccentric: Perceptive and sensitive to the world around them. May vividly imagine good or bad things happening to them.</p>
+                    <p>Avoidant: They avoid risks nd new things in order to stay safe. </p>
+                    <p>Grounded: They tend to have an easy time controlling emotions and letting their mind shut.</p>
+                    <h3>Work Style - Conscientiousness and Extraversion</h3>
+                    <p>Impulsive: Taking advantage of present opportunities. Considered as spontaneous.</p>
+                    <p>Ambitious: They work hard with vigor to get things done as quickly as possible.</p>
+                    <p>Steady: Can withstand boring tasks with ease. Preference for planning in advance.</p>
+                    <p>Laid-back: They tend to live life at their own pace. Can be somewhat sluggish.</p>
+                    <h3>Interpersonal Style - Conscientiousness and Agreeableness</h3>
+                    <p>Drifting: They lack strong opinions. Willing to adapt to others.</p>
+                    <p>Altruistic: Actively helping others in order to preserve harmony.</p>
+                    <p>Systematic: Focused on achievement and can be somewhat competitive.</p>
+                    <p>Egocentric: Willing to do their own thing without worrying about others.</p>
+                    <h3>Challenge Approach - Conscientiousness and Neuroticism</h3>
+                    <p>Scattered: They tend to have trouble focusing due to unstable moods.</p>
+                    <p>Perfectionistic: Needs to have everything just right to be content.</p>
+                    <p>Confident: They are hard-working and confident about their own abilities.</p>
+                    <p>Relaxed: They take things as they come, and go with the flow without much concern.</p>
+                    <h3>Social Style - Extraversion and Agreeableness</h3>
+                    <p>Dominant: They prefer taking charge of situations.</p>
+                    <p>Friendly: Often considered as social butterflies who enjoy interacting with people and helping them.</p>
+                    <p>Humble: They tend to be modest and polite. Can put other people above themselves.</p>
+                    <p>Aloof: They tend to be distant loners who have little interest in people.</p>
+                    <h3>Temperament - Extraversion and Neuroticism</h3>
+                    <p>Upbeat: Optimistic and they generally enjoy life. Can be too content with things. Corresponds to Sanguine temperament.</p>
+                    <p>Excitable: They have excitable and changeable moods. Corresponds to Choleric temeprament.</p>
+                    <p>Somber: They tend to be somewhat gloomy and sees tragedies as they are. Corresponds to Melancholic temperament.</p>
+                    <p>Tranquil: Stable emotions with an even-keeled attitude. Corresponds to Phlegmatic temeprament.</p>
+                    <h3>Emotional Management - Agreeableness and Neuroticism</h3>
+                    <p>Stable: They trust people easily and tend to be emotionally stable.</p>
+                    <p>Sensitive: Empathetic and sensitive to others' suffering.</p>
+                    <p>Moody: They tend to be skeptical of others. Can be somewhat negative.</p>
+                    <p>Unemotional: They see emotions as a sign of weakness. They take pride in being strong.</p>
+                </div>
+            </div>
+            <div class="main" id="jung">
+                <h2>Jung Functions</h2>
+            </div>
+            <div class="main" id="jung">
+                <h2>Enneagram Types</h2>
+            </div>
+            <div class="main" id="jung">
+                <h2>Moral Alignment</h2>
+            </div>
+            <div class="main" id="jung">
+                <h2>Neurotype</h2>
+            </div>
+            <div class="main" id="jung">
+                <h2>Temperament</h2>
+            </div>
+            <div class="main" id="jung">
+                <h2>Growth Tips For You</h2>
+            </div>
+            <div class="main" id="prediction">
+                <h2>Prediction Zone</h2>
+                <div class="pre" id="pre">
+                    <div id="pop" style="display:none">You are more likely to enjoy pop music.</div>
+                    <div id="clas" style="display:none">You are more likely to prefer classical or opera music.</div>
+                    <div id="rock" style="display:none">You are more likely to enjoy rock, metal, or indie music.</div>
+                    <div id="dance" style="display:none">You are more likely to listen to dance or electronic music.</div>
+                    <div id="rap" style="display:none">You are more likely to listen to rap and hip-hop.</div>
+                    <div id="repeat" style="display:none">You are more likely to repeat the same song over and over again.</div>
+                    <div id="dark" style="display:none">You are likely to listen to dark and emotional songs.</div>
+                    <div id="upbeat" style="display:none">You seem to prefer upbeat songs rather than dark ones.</div>
+                    <div id="apple" style="display:none">You seem to be more of an Apple user.</div>
+                    <div id="anti" style="display:none">You are more likely to be against owning Apple devices.</div>
+                    <div id="android" style="display:none">You are likely to prefer Android over iOS.</div>
+                    <div id="linux" style="display:none">You are far more likely to be a Linux user than an average person.</div>
+                    <div id="ipad" style="display:none">You are more likely to own an iPad than an average person.</div>
+                    <div id="cat" style="display:none">You are more likely to own a cat than a dog.</div>
+                    <div id="dog" style="display:none">You are most likely a dog person.</div>
+                    <div id="exo" style="display:none">You are more likely to have an exotic pet than an average person.</div>
+                    <div id="night" style="display:none">You are more likely to be a night owl.</div>
+                    <div id="early" style="display:none">You are probably more of an early bird.</div>
+                    <div id="winter" style="display:none">You are probably more of a winter person.</div>
+                    <div id="summer" style="display:none">You are probably more of a summer person.</div>
+                    <div id="iced" style="display:none">You are likely to prefer iced coffee over hot coffee.</div>
+                    <div id="latte" style="display:none">You are more likely to prefer latte.</div>
+                    <div id="esp" style="display:none">You may be more of an espresso person.</div>
+                    <div id="che" style="display:none">You are more likely to be a cheese fan than an average person.</div>
+                    <div id="over" style="display:none">You are more likely to be an overeater.</div>
+                    <div id="slow" style="display:none">You seem to eat more slowly than an average person.</div>
+                    <div id="fast" style="display:none">You are likely to be a fast eater.</div>
+                    <div id="rubik" style="display:none">You are more likely to be able to solve a Rubik's Cube.</div>
+                    <div id="gla" style="display:none">You are more likely to be wearing glasses than an average person.</div>
+                    <div id="pers" style="display:none">You are more likely to be interested in personality theories than an average person.</div>
+                    <div id="eng" style="display:none">You are likely to pursue engineering as a career.</div>
+                    <div id="med" style="display:none">You are very likely to attend medical school.</div>
+                    <div id="entr" style="display:none">You seem to be more of an entrepreneur than an average person.</div>
+                    <div id="create" style="display:none">You seem to be interested in creating content more than average.</div>
+                    <br>
+                </div>
+            </div>
+            <div class="main" id="jung">
+                <h2>You would be...</h2>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <h2>Aspect Descriptions</h2>
+        <h3>Intellectual Curiosity</h3><p>High scorers have an hunger for knowledge, enjoy mentally stimulating activities, and feel at home with abstract ideas. Low scorers are typically more physical than intellectual and prefer simple interests or tasks over complex ones.</p>
+        <h3>Unconventionality</h3><p>High unconventionality means you prioritize imagination, introspection, new experiences, and you are open-minded to alternative and unconventional approaches. A low score means you are more conventional, conservative, and down-to-earth.</p>
+        <h3>Industriousness</h3><p>People high in this trait are ambitious, goal-oriented, and they will work hard and smart to get things done as efficiently as possible. Low scorers tend to procrastinate and waste time more, and they may prioritize play over work.</p>
+        <h3>Orderliness</h3><p>Highly orderly people make plans and organize their environment. They are careful about making decisions, and they may be perfectionistic. Low scorers tend to be more messy and spontaneous. They may have a harder time planning but they can be more adaptable.</p>
+        <h3>Enthusiasm</h3><p>High scorers are enthusiastic, and can be considered the life of the party. They enjoy socializing and have a more cheerful disposition. Low enthusiasm means you are more serious and reserved, and maybe not as interested in socializing.</p>
+        <h3>Assertiveness</h3><p>People who are highly assertive take charge and lead other people. They can be considered as dominant and persuasive. Low scorers are more likely to take passive roles or work behind-the-scenes. They prefer responding rather than initiating.</p>
+        <h3>Compassion</h3><p>High compassion means you favor mercy and have a soft heart in general. They are easily affected by others' feelings, and want to help others in many ways. Low score means you are not as sensitive and you tend to prefer justice and rational approaches over mercy.</p>
+        <h3>Politeness</h3><p>High scorers dislike conflict and they prefer cooperation over competition. They are humble and dislike bragging too much. Low scorers are not as polite and they may be more competitive, manipulative, arrogant, or willing to fight for what they want.</p>
+        <h3>Negative Affect</h3><p>High scorers are familiar with feelings of doubt, worry, and sadness. They can get caught up in problems or feel embarrased or discouraged easily. Low scorers are not as prone to feeling anxious, depressed, or insecure. They tend to feel more confident.</p>
+        <h3>Emotional Instability</h3><p>Being high in instability means your emotions are easily affected and volatile. You may feel angry when things are going wrong, have explosive moods, or overindulge in things. Low instability means emotionally stable, calm, and controlled in reaction.</p>
+    </div>
     </body>
 </html>
