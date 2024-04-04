@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel = "stylesheet" href = "style.css">
+        <link rel = "stylesheet" href = "Digi.css">
+        <script src="Digi.js"></script>
+        <title>
+            Digi Neurotype Test
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="main">
+            <a href="index.html" class="portal">Back to Portal</a>
+            <h1>Digi Neurotype Test</h1>
+            <h3>There are 16 questions.</h3>
+            <h3>Indicate how much do you agree with each statement.</h3>
+        </div>
+        <div class="main">
+            <h2 id="question_number"></h2>
+            <h2 id="Statement">Click to start!</h2>
+            <input type="button" onclick=buttonclick(0) id="start" value="Start Test">
+            <div id="test" style="display:none">
+                <input type="button" onclick=buttonclick(0) id="sd" value="Strongly Disagree"><br>
+                <input type="button" onclick=buttonclick(1) id="d" value="Disagree"><br>
+                <input type="button" onclick=buttonclick(2) id="a" value="Agree"><br>
+                <input type="button" onclick=buttonclick(3) id="sa" value="Strongly Agree"><br>
+            </div>
+            <div id = "tiebreaker_c" style = "display:none">
+                <h2>Tiebreaker</h2>
+                <h4>It looks like you have a tie on one or both scales!</h4>
+                <h2>Which word do you resonate with more?</h2>
+                <input type="button" onclick=tiebreakerclick_c(1) value="Patterns"><br>
+                <input type="button" onclick=tiebreakerclick_c(-1) value="Tangibility"><br>
+            </div>
+            <div id = "tiebreaker_r" style = "display:none">
+                <h2>Tiebreaker</h2>
+                <h4>It looks like you have a tie on one or both scales!</h4>
+                <h2>Which word do you resonate with more?</h2>
+                <input type="button" onclick=tiebreakerclick_r(1) value="Fluidity"><br>
+                <input type="button" onclick=tiebreakerclick_r(-1) value="Categories"><br>
+            </div>
+            <h4 id = "tiebreaker"></h4>
+            <div id = "results" class="result" style="display:none">
+                <h3 id = "result1"></h3>
+                <h3 id = "result2"></h3>
+                <h3 id = "result3"></h3>
+                <div class="visual_container">
+                    <div class = "visual_results" style = "display:grid">
+                        <div class="Technician"><div class="center_text">Calculator</div></div>
+                        <div class="Scientist"><div class="center_text">Analyst</div></div>
+                        <div class="Inventor"><div class="center_text">Fascinator</div></div>
+                        <div class="Fascinator"><div class="center_text">Newtype</div></div>
+                        <div class="Architect"><div class="center_text">Technician</div></div>
+                        <div class="Professor"><div class="center_text">Strategist</div></div>
+                        <div class="Entrepreneur"><div class="center_text">Overseer</div></div>
+                        <div class="Adventurer"><div class="center_text">Aesthetician</div></div>
+                        <div class="Inspector"><div class="center_text">Contemplator</div></div>
+                        <div class="Go-Getter"><div class="center_text">Caregiver</div></div>
+                        <div class="Coach"><div class="center_text">Externalist</div></div>
+                        <div class="Influencer"><div class="center_text">Sensate</div></div>
+                        <div class="Administrator"><div class="center_text">Bookkeeper</div></div>
+                        <div class="Guardian"><div class="center_text">Protector</div></div>
+                        <div class="Caregiver"><div class="center_text">Realist</div></div>
+                        <div class="Entertainer"><div class="center_text">Survivalist</div></div>
+                    </div>
+                    <div class="point" id="point">
+                    </div>
+                </div>
+                <div class="show_all" style="display:none">
+                    <input type="button" onclick=show_all() value="Show All Descriptions"><br>
+                </div>
+            </div>
+        </div>
+        <div class="main" id="Technician" style="display:none">
+            <h2>Technician</h2>
+            <p>This is the most analytical and logical neurotype. This type is all about technical and logical analysis, with little room for action or feelings. They almost always make decisions based on cold, hard facts. They may struggle with expressing their feelings.</p>
+        </div>
+        <div class="main" id="Scientist" style="display:none">
+            <h2>Scientist</h2>
+            <p>This neurotype enjoys learning and analyzing scientific concepts. They put a great deal of focus on mental and intellectual pursuits. This is the type most focused on culvitating their minds. They may struggle with irrational or needy people.</p>
+        </div>
+        <div class="main" id="Inventor" style="display:none">
+            <h2>Inventor</h2>
+            <p>This neurotype is all about new ideas and inventions. They love brainstorming and finding novel solutions to problems. They tend to feel bored with routine and prefer changing things up instead. They may struggle with doing things by-the-book.</p>
+        </div>
+        <div class="main" id="Fascinator" style="display:none">
+            <h2>Fascinator</h2>
+            <p>This is the most imaginative and synthesizing neurotype. This type is all about imaginative exploration and experimentation. They are the most creative out of all 16 neurotypes. They may struggle with rigid routines and administrative tasks.</p>
+        </div>
+        <div class="main" id="Architect" style="display:none">
+            <h2>Architect</h2>
+            <p>This type is analytical, precise, and cautious. This neurotype is most concerned with accurate information and logical consistency. They can be somewhat perfectionistic. They may struggle with being overly reserved and not enthusiastic enough.</p>
+        </div>
+        <div class="main" id="Professor" style="display:none">
+            <h2>Professor</h2>
+            <p>This neurotype is the true professor or teacher. This is one of the more balanced neurotypes: Mostly logical and analytical, yet also people-oriented. They are about relaying the most accurate information to people. They may struggle with emotionally unstable people and environments.</p>
+        </div>
+        <div class="main" id="Entrepreneur" style="display:none">
+            <h2>Entrepreneur</h2>
+            <p>This neurotype is great at generating ideas and then executing them. They are visionary and future-oriented. This neurotype is quite ambitious. They may struggle with lazy and overly complacent people. </p>
+        </div>
+        <div class="main" id="Adventurer" style="display:none">
+            <h2>Adventurer</h2>
+            <p>This is the most adventurous and thrill-seeking neurotype. There's a big emphasis on action and experimentation with this type. They are flexible and adaptable. They may struggle with being too impulsive and not careful enough with decisions.</p>
+        </div>
+        <div class="main" id="Inspector" style="display:none">
+            <h2>Inspector</h2>
+            <p>This type is all about organization and details. This is the most detail-oriented out of all neurotypes. They are highly focused and don't get distracted easily. They may struggle with adapting and trying new things.</p>
+        </div>
+        <div class="main" id="Go-Getter" style="display:none">
+            <h2>Go-Getter</h2>
+            <p>This neurotype is highly action-oriented and decisive. They have a great desire to work hard and achieve a lot. They primarily focus on the use of information. They may struggle with overly relaxed and laid-back environments and they feel compelled to take charge of these situations.</p>
+        </div>
+        <div class="main" id="Coach" style="display:none">
+            <h2>Coach</h2>
+            <p>This neurotype is the true coach or mentor. They understand other people's desires, and then find the right way to help them. This is a neurotype of emotional intelligence. They may struggle with overly technical and one-size-fits-all approaches.</p>
+        </div>
+        <div class="main" id="Influencer" style="display:none">
+            <h2>Influencer</h2>
+            <p>This is one of the most people-oriented neurotypes. This neurotype is great at interacting with and persuading people. They are enthusiastic and flexible, with a dramatic bent. They may struggle with overly formal and crtical anvironments.</p>
+        </div>
+        <div class="main" id="Administrator" style="display:none">
+            <h2>Administrator</h2>
+            <p>This is the most organizational and administrative neurotype. They are all about planning, order, and getting things done in a steady fashion. They tend to have conservative approaches. They may struggle with creativity and they can be overly conventional.</p>
+        </div>
+        <div class="main" id="Guardian" style="display:none">
+            <h2>Guardian</h2>
+            <p>This neurotype is safekeeping and protective. This type puts a great deal of focus on practical tasks. They are routine-oriented and patient. They don't just protect themselves, but also others. They may struggle with new and novel approaches to problem-solving.</p>
+        </div>
+        <div class="main" id="Caregiver" style="display:none">
+            <h2>Caregiver</h2>
+            <p>This is a highly altruistic and sacrifical neurotype. This type is all about helping others and taking care of them. They tend to put others' needs over their own. They may struggle with logical analysis and mental pursuits, prefering to attend to others' feelings instead.</p>
+        </div>
+        <div class="main" id="Entertainer" style="display:none">
+            <h2>Entertainer</h2>
+            <p>This is the most interpersonal, emotional, and kinesthetic neurotype. They put a lot of focus on physical activity and entertaining others and themselves. This type is all about being fully immersed in the moment. They may struggle with analytical approaches, prefering immediate experience.</p>
+        </div>
+    </body>
+</html>
