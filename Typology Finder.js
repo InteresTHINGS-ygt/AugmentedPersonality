@@ -353,6 +353,50 @@ function get_result() {
     document.getElementById("bar_wtds").style.width = wtd + "%";
     document.getElementById("bar_vols").style.width = vol + "%";
 
+    // SLOAN
+    var s;
+    var l;
+    var o;
+    var a;
+    var n;
+
+    if (extraversion > 50) {
+        s = "S";
+    }
+    else if (extraversion < 50) {
+        s = "R";
+    }
+
+    if (neuroticism > 50) {
+        l = "L";
+    }
+    else if (neuroticism < 50) {
+        l = "C";
+    }
+
+    if (conscientiousness > 50) {
+        o = "O";
+    }
+    else if (conscientiousness < 50) {
+        o = "U";
+    }
+
+    if (agreeableness > 50) {
+        a = "A";
+    }
+    else if (agreeableness < 50) {
+        a = "E";
+    }
+
+    if (openness > 50) {
+        n = "I";
+    }
+    else if (openness < 50) {
+        n = "N";
+    }
+
+    document.getElementById("sloan").innerHTML = "SLOAN notation: " + s + l + o + a + n;
+
     // General profile
     if (int > 70) {
         document.getElementById("int_desc").innerHTML = "You deeply appreciate philosophical thought. You enjoy learning and playing with ideas and concepts. You are likely to enjoy mentally stimulating careers involving research and complex knowledge."
