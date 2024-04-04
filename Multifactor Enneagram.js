@@ -327,7 +327,7 @@ function buttonclick(score) {
 
     if (current_question > (statement_1.length - 1)) {
         document.getElementById("question_number").style.display = "none";
-        document.getElementById("Statement").innerHTML = "Type Scores";
+        document.getElementById("Statement").innerHTML = "";
 
         body = (eight + nine + one) / 3;
         heart = (two + three + four) / 3;
@@ -349,10 +349,8 @@ function buttonclick(score) {
 }
 
 function get_result() {
-    document.getElementById("results").style.display = "block";
-    document.getElementById("triads").style.display = "block";
-    document.getElementById("instincts").style.display = "block";
-    document.getElementById("test").style.display = "none";
+    document.getElementById("all_results").style.display = "";
+    document.getElementById("entire_test").style.display = "none";
     document.getElementById("question_number").style.display = "none";
     document.getElementById("statement_1").style.display = "none";
     document.getElementById("statement_2").style.display = "none";
@@ -413,6 +411,249 @@ function get_result() {
     document.getElementById("bar_sp").style.width = Math.round(sp / 12 * 10000) / 100 + "%";
     document.getElementById("bar_sx").style.width = Math.round(sx / 12 * 10000) / 100 + "%";
     document.getElementById("bar_so").style.width = Math.round(so / 12 * 10000) / 100 + "%";
+
+    var types = [];
+    types.push(one);
+    types.push(two);
+    types.push(three);
+    types.push(four);
+    types.push(five);
+    types.push(six);
+    types.push(seven);
+    types.push(eight);
+    types.push(nine);
+
+    var core_type;
+    var tritype;
+    var instinct_st;
+
+    if (types.indexOf(Math.max(...types)) == 0) {
+        if (nine > two) {
+            core_type = "1w9";
+        }
+        else {
+            core_type = "1w2";
+        }
+    }
+    else if (types.indexOf(Math.max(...types)) == 1) {
+        if (one > three) {
+            core_type = "2w1";
+        }
+        else {
+            core_type = "2w3";
+        }
+    }
+    else if (types.indexOf(Math.max(...types)) == 2) {
+        if (two > four) {
+            core_type = "3w2";
+        }
+        else {
+            core_type = "3w4";
+        }
+    }
+    else if (types.indexOf(Math.max(...types)) == 3) {
+        if (three > five) {
+            core_type = "4w3";
+        }
+        else {
+            core_type = "4w5";
+        }
+    }
+    else if (types.indexOf(Math.max(...types)) == 4) {
+        if (four > six) {
+            core_type = "5w4";
+        }
+        else {
+            core_type = "5w6";
+        }
+    }
+    else if (types.indexOf(Math.max(...types)) == 5) {
+        if (five > seven) {
+            core_type = "6w5";
+        }
+        else {
+            core_type = "6w7";
+        }
+    }
+    else if (types.indexOf(Math.max(...types)) == 6) {
+        if (six > eight) {
+            core_type = "7w6";
+        }
+        else {
+            core_type = "7w8";
+        }
+    }
+    else if (types.indexOf(Math.max(...types)) == 7) {
+        if (seven > nine) {
+            core_type = "8w7";
+        }
+        else {
+            core_type = "8w9";
+        }
+    }
+    else if (types.indexOf(Math.max(...types)) == 8) {
+        if (eight > one) {
+            core_type = "9w8";
+        }
+        else {
+            core_type = "9w1";
+        }
+    }
+
+    var body_types = [];
+    var heart_types = [];
+    var head_types = [];
+
+    body_types.push(one);
+    body_types.push(eight);
+    body_types.push(nine);
+
+    heart_types.push(two);
+    heart_types.push(three);
+    heart_types.push(four);
+
+    head_types.push(five);
+    head_types.push(six);
+    head_types.push(seven);
+
+    if (body_types.indexOf(Math.max(...body_types)) == 0) { // One Fix
+        if (heart_types.indexOf(Math.max(...heart_types)) == 0) { // Two Fix
+            if (head_types.indexOf(Math.max(...head_types)) == 0) { // Five Fix
+                tritype = "125";
+            }
+            else if (head_types.indexOf(Math.max(...head_types)) == 1) { // Six Fix
+                tritype = "126";
+            }
+            else if (head_types.indexOf(Math.max(...head_types)) == 2) { // Seven Fix
+                tritype = "127";
+            }
+        }
+        else if (heart_types.indexOf(Math.max(...heart_types)) == 1) { // Three Fix
+            if (head_types.indexOf(Math.max(...head_types)) == 0) { // Five Fix
+                tritype = "135";
+            }
+            else if (head_types.indexOf(Math.max(...head_types)) == 1) { // Six Fix
+                tritype = "136";
+            }
+            else if (head_types.indexOf(Math.max(...head_types)) == 2) { // Seven Fix
+                tritype = "137";
+            }
+        }
+        else if (heart_types.indexOf(Math.max(...heart_types)) == 2) { // Four Fix
+            if (head_types.indexOf(Math.max(...head_types)) == 0) { // Five Fix
+                tritype = "145";
+            }
+            else if (head_types.indexOf(Math.max(...head_types)) == 1) { // Six Fix
+                tritype = "146";
+            }
+            else if (head_types.indexOf(Math.max(...head_types)) == 2) { // Seven Fix
+                tritype = "147";
+            }
+        }
+    }
+    else if (body_types.indexOf(Math.max(...body_types)) == 1) { // Eight Fix
+        if (heart_types.indexOf(Math.max(...heart_types)) == 0) { // Two Fix
+            if (head_types.indexOf(Math.max(...head_types)) == 0) { // Five Fix
+                tritype = "258";
+            }
+            else if (head_types.indexOf(Math.max(...head_types)) == 1) { // Six Fix
+                tritype = "268";
+            }
+            else if (head_types.indexOf(Math.max(...head_types)) == 2) { // Seven Fix
+                tritype = "278";
+            }
+        }
+        else if (heart_types.indexOf(Math.max(...heart_types)) == 1) { // Three Fix
+            if (head_types.indexOf(Math.max(...head_types)) == 0) { // Five Fix
+                tritype = "358";
+            }
+            else if (head_types.indexOf(Math.max(...head_types)) == 1) { // Six Fix
+                tritype = "368";
+            }
+            else if (head_types.indexOf(Math.max(...head_types)) == 2) { // Seven Fix
+                tritype = "378";
+            }
+        }
+        else if (heart_types.indexOf(Math.max(...heart_types)) == 2) { // Four Fix
+            if (head_types.indexOf(Math.max(...head_types)) == 0) { // Five Fix
+                tritype = "458";
+            }
+            else if (head_types.indexOf(Math.max(...head_types)) == 1) { // Six Fix
+                tritype = "468";
+            }
+            else if (head_types.indexOf(Math.max(...head_types)) == 2) { // Seven Fix
+                tritype = "478";
+            }
+        }
+    }
+    else if (body_types.indexOf(Math.max(...body_types)) == 2) { // Nine Fix
+        if (heart_types.indexOf(Math.max(...heart_types)) == 0) { // Two Fix
+            if (head_types.indexOf(Math.max(...head_types)) == 0) { // Five Fix
+                tritype = "259";
+            }
+            else if (head_types.indexOf(Math.max(...head_types)) == 1) { // Six Fix
+                tritype = "269";
+            }
+            else if (head_types.indexOf(Math.max(...head_types)) == 2) { // Seven Fix
+                tritype = "279";
+            }
+        }
+        else if (heart_types.indexOf(Math.max(...heart_types)) == 1) { // Three Fix
+            if (head_types.indexOf(Math.max(...head_types)) == 0) { // Five Fix
+                tritype = "359";
+            }
+            else if (head_types.indexOf(Math.max(...head_types)) == 1) { // Six Fix
+                tritype = "369";
+            }
+            else if (head_types.indexOf(Math.max(...head_types)) == 2) { // Seven Fix
+                tritype = "379";
+            }
+        }
+        else if (heart_types.indexOf(Math.max(...heart_types)) == 2) { // Four Fix
+            if (head_types.indexOf(Math.max(...head_types)) == 0) { // Five Fix
+                tritype = "459";
+            }
+            else if (head_types.indexOf(Math.max(...head_types)) == 1) { // Six Fix
+                tritype = "469";
+            }
+            else if (head_types.indexOf(Math.max(...head_types)) == 2) { // Seven Fix
+                tritype = "479";
+            }
+        }
+    }
+
+    ins = [];
+
+    ins.push(sp);
+    ins.push(sx);
+    ins.push(so);
+
+    if (ins.indexOf(Math.max(...ins)) == 0) { // sp
+        if (sx > so) {
+            instinct_st = "sp/sx";
+        }
+        else {
+            instinct_st = "sp/so";
+        }
+    }
+    else if (ins.indexOf(Math.max(...ins)) == 1) { // sx
+        if (sp > so) {
+            instinct_st = "sx/sp";
+        }
+        else {
+            instinct_st = "sx/so";
+        }
+    }
+    else if (ins.indexOf(Math.max(...ins)) == 2) { // so
+        if (sp > sx) {
+            instinct_st = "so/sp";
+        }
+        else {
+            instinct_st = "so/sx";
+        }
+    }
+
+    document.getElementById("whole_type").innerHTML = core_type + " " + tritype + " " + instinct_st;
 }
 
 

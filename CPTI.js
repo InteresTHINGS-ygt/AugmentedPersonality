@@ -345,8 +345,9 @@ function buttonclick(score) {
 }
 
 function get_result() {
-    document.getElementById("results").style.display = "block";
-    document.getElementById("test").style.display = "none";
+    document.getElementById("all_results").style.display = "";
+    document.getElementById("types").style.display = "";
+    document.getElementById("entiretest").style.display = "none";
     document.getElementById("question_number").style.display = "none";
     document.getElementById("statement_1").style.display = "none";
     document.getElementById("statement_2").style.display = "none";
@@ -385,6 +386,73 @@ function get_result() {
     document.getElementById("bar_Ti").style.width = Math.round(Ti_total / 60 * 10000) / 100 + "%";
     document.getElementById("bar_Fe").style.width = Math.round(Fe_total / 60 * 10000) / 100 + "%";
     document.getElementById("bar_Fi").style.width = Math.round(Fi_total / 60 * 10000) / 100 + "%";
+
+    var types = [];
+    types.push(ENFJ);
+    types.push(ENFP);
+    types.push(ENTJ);
+    types.push(ENTP);
+    types.push(ESFJ);
+    types.push(ESFP);
+    types.push(ESTJ);
+    types.push(ESTP);
+    types.push(INFJ);
+    types.push(INFP);
+    types.push(INTJ);
+    types.push(INTP);
+    types.push(ISFJ);
+    types.push(ISFP);
+    types.push(ISTJ);
+    types.push(ISTP);
+
+    if (types.indexOf(Math.max(...types)) == 0) {
+        document.getElementById("type").innerHTML = "ENFJ";
+    }
+    else if (types.indexOf(Math.max(...types)) == 1) {
+        document.getElementById("type").innerHTML = "ENFP";
+    }
+    else if (types.indexOf(Math.max(...types)) == 2) {
+        document.getElementById("type").innerHTML = "ENTJ";
+    }
+    else if (types.indexOf(Math.max(...types)) == 3) {
+        document.getElementById("type").innerHTML = "ENTP";
+    }
+    else if (types.indexOf(Math.max(...types)) == 4) {
+        document.getElementById("type").innerHTML = "ESFJ";
+    }
+    else if (types.indexOf(Math.max(...types)) == 5) {
+        document.getElementById("type").innerHTML = "ESFP";
+    }
+    else if (types.indexOf(Math.max(...types)) == 6) {
+        document.getElementById("type").innerHTML = "ESTJ";
+    }
+    else if (types.indexOf(Math.max(...types)) == 7) {
+        document.getElementById("type").innerHTML = "ESTP";
+    }
+    else if (types.indexOf(Math.max(...types)) == 8) {
+        document.getElementById("type").innerHTML = "INFJ";
+    }
+    else if (types.indexOf(Math.max(...types)) == 9) {
+        document.getElementById("type").innerHTML = "INFP";
+    }
+    else if (types.indexOf(Math.max(...types)) == 10) {
+        document.getElementById("type").innerHTML = "INTJ";
+    }
+    else if (types.indexOf(Math.max(...types)) == 11) {
+        document.getElementById("type").innerHTML = "INTP";
+    }
+    else if (types.indexOf(Math.max(...types)) == 12) {
+        document.getElementById("type").innerHTML = "ISFJ";
+    }
+    else if (types.indexOf(Math.max(...types)) == 13) {
+        document.getElementById("type").innerHTML = "ISFP";
+    }
+    else if (types.indexOf(Math.max(...types)) == 14) {
+        document.getElementById("type").innerHTML = "ISTJ";
+    }
+    else if (types.indexOf(Math.max(...types)) == 15) {
+        document.getElementById("type").innerHTML = "ISTP";
+    }
 }
 
 
