@@ -1347,3 +1347,138 @@ com: ++
 pol: ++
 wtd: none
 vol: none
+
+Coffee metrics and 16 types of coffee
+
+Latte - MSFP
+Cappuccino - MSVP
+Flat White - MSFQ
+Cortado - MSVQ
+
+Mocha - MAFP
+Frappuccino - MAVP
+Caramel Macchiato - MAFQ
+Affogatto - MAVQ
+
+Cold Brew - BSFP
+Nitro Cold Brew - BSVP
+Americano - BSFQ
+Instant Coffee - BSVQ
+
+Filter Coffee - BAFP
+Turkish Coffee - BAVP
+Espresso - BAFQ
+Ristretto - BAVQ
+
+Metric 1 - Milky vs Black
+Metric 2 - Smooth vs Aromatic
+Metric 3 - Fluid vs Viscous
+Metric 4 - Quick vs Patient
+
+16 question time
+
+I always try to maintain a harmonious atmosphere.
+I consider others' feelings before I speak.
+I readily express myself in bold ways.
+I tend to say whatever I am thinking about.
+
+I am generally considered as methodical and cautious.
+I make peace by creating routines and habits.
+I am the first to get into new, exotic experiences or ideas.
+I am a passionate person who is full of enthusiasm.
+
+I am generally flexible and adapt to my environment.
+I have an easy time going with the flow.
+I tend to have strong and resolute values.
+I am considered as a perfectionist with high standards.
+
+I work to get things done as quickly as possible.
+I tend to live a fast-paced lifestyle.
+I am willing to wait for a long time if it is worth it.
+I prefer playing the long game.
+
+---------------------------------------------------------------
+
+Spotify Onionzzz
+
+Interest axis: E vs F
+Time axis: N vs T
+Task axis: V vs L
+Popularity axis: U vs C
+
+This test will be about your approach to life as a whole, rather than just your listening habits.
+
+I readily explore new interests and hobbies.
+I have a wide array of things that I am interested in.
+I focus on one area of expertise in order to master it.
+I prefer focusing on what I am already good at.
+
+I move on to new things as soon as they are released.
+I can't stand thinking about the past for a long time.
+I highly appreciate the classics and timeless masterpieces.
+I enjoy reliving my own past memories.
+
+I enjoy a wide variety of tasks and things to do.
+I am considered as a person who is a good multitasker.
+I prefer focusing on a single task without interruption.
+I stay loyal to my work and the people important to me.
+
+I have interests or habits which can seem weird to others.
+I enjoy exploring obscure topics which no one else explores.
+I prefer fitting in rather than standing out.
+I have a lifestyle which is pretty similar to most people.
+
+-------------------------------------------------------------------------------
+
+16PF
+
+Reserved vs Warm
+Concrete vs Intellectual
+Reactive vs Stable
+Meek vs Dominant
+Serious vs Lively
+Rule Breaker vs Rule Follower
+Shy vs Socially Bold
+Unemotional vs Sensitive
+Grounded vs Imaginative
+Forthright vs Private
+Unconcerned vs Anxious
+Conservative vs Open-minded
+Cooperative vs Independent
+Unstructured vs Organized
+Relaxed vs Tense
+
+---------------------------------------------------------------------------------
+
+Spotify Dozen Factors (Heroes)
+
+1. Atmosphere (Vampire)
+2. Evaluation (Alchemist)
+3. Timelessness (Time Traveller)
+4. Loyalty (Cyclops)
+5. Optimism (Luminary)
+6. Curiosity (Mastermind)
+7. Algorithms (Roboticist)
+8. Variety (Shapeshifter)
+9. Comfort (Collector)
+10. Adventure (Hunter)
+11. Devotion (Fanatic)
+12. Concentration (Hypnotist)
+
+----------------------------------------------------------------------------------
+
+Objective Personality
+
+Observer vs Decider
+Oe vs Oi
+De vs Di
+N vs S
+T vs F
+Second Animal
+Energy vs Info
+mS vs fS
+mDe vs fDe
+Specialist vs Responsible
+Friends vs Superiority
+
+
