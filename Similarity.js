@@ -276,7 +276,7 @@ function log() {
     for (let i = 0; i < you.length; i++) {
         max_s = Math.max(you[i], oth[i]);
         min_s = Math.min(you[i], oth[i]);
-        sim_weight = Math.pow((Math.max(Math.abs(50-you[i]), Math.abs(50-oth[i])) / 50), 3) + 0.25;
+        sim_weight = Math.pow((Math.max(Math.abs(50-you[i]), Math.abs(50-oth[i])) / 50), 1) + 0.25;
         if (max_s == 0 && min_s == 0) {
             similarity_new = 100 * sim_weight;
             sim_sum += similarity_new;
@@ -292,7 +292,7 @@ function log() {
             min_as = Math.min(100-you[i], 100-oth[i]);
             score_per = (min_s / max_s) * 100;
             ascore_per = (min_as / max_as) * 100;
-            similarity_new = (((score_per * (you[i] + oth[i])) + (ascore_per * (100-you[i] + 100-oth[i]))) / 200) * (Math.max(Math.abs(50-you[i]), Math.abs(50-oth[i])) / 200 + 0.75) * sim_weight;
+            similarity_new = (((score_per * (you[i] + oth[i])) + (ascore_per * (100-you[i] + 100-oth[i]))) / 200) /*(Math.max(Math.abs(50-you[i]), Math.abs(50-oth[i])) / 200 + 0.75)*/ * sim_weight;
             sim_sum += similarity_new;
             weight_sum += sim_weight;
         }
