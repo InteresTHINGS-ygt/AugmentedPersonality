@@ -5,3 +5,27 @@ body {
 input[type="button"] {
     background-color: rgb(105, 86, 56)
 }
+
+.results_bar {
+    background-color: rgb(173, 173, 173);
+    margin: 4vw;
+    border-radius: 1.5vw;
+    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
+    position: relative;
+}
+
+.bar_M {
+    background-color: rgb(175, 142, 100);
+    border-radius: 1.5vw 0 0 1.5vw;
+    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
+    width: 50%;
+    height: 6vw;
+}
+
+.bar_B {
+    background-color: rgb(48, 25, 0);
+    border-radius: 0 1.5vw 1.5vw 0;
+    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
+    width: 50%;
+    height: 6vw;
+}

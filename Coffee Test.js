@@ -12,22 +12,22 @@ var rightness = 0;
 var test_status = 0;
 
 function buttonclick(score) {
-    var questions = ["I am intellectually curious and have a love for learning.",
-    "I am a rational thinker who tends to contain emotions.",
-    "I am realistic and prefer concrete interests.",
-    "I am flexible and like to go with the flow.",
-    "I enjoy engaging in complex thought.",
-    "I make my decisions primarily based on facts and logic.",
-    "I am generally an instinctive and action-oriented person.",
-    "I listen to emotions and intuition while making decisions.",
-    "I feel at home with abstract concepts and ideas.",
-    "I am more of a planner than someone who acts spontaneously.",
-    "I learn best with a practical, hands-on style.",
-    "I am more people-oriented than task-oriented.",
-    "I prefer a job with high intellectual stimulation.",
-    "I highly favor efficiency and accuracy in my lifestyle.",
-    "I am better at executing ideas than generating them.",
-    "I am enthusiastic and express my feelings easily."];
+    var questions = ["I always try to maintain a harmonious atmosphere.",
+    "I consider others' feelings before I speak.",
+    "I readily express myself in bold ways.",
+    "I tend to say whatever I am thinking about.",
+    "I am generally considered as methodical and cautious.",
+    "I make peace by creating routines and habits.",
+    "I am the first to get into new, exotic experiences or ideas.",
+    "I am a passionate person who is full of enthusiasm.",
+    "I am generally flexible and adapt to my environment.",
+    "I have an easy time going with the flow.",
+    "I tend to have strong and resolute values.",
+    "I am considered as a perfectionist with high standards.",
+    "I work to get things done as quickly as possible.",
+    "I tend to live a fast-paced lifestyle.",
+    "I am willing to wait for a long time if it is worth it.",
+    "I prefer playing the long game."];
 
     if (test_status == 0) {
         test_status = 1;

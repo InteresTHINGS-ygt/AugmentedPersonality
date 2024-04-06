@@ -1377,25 +1377,22 @@ Metric 4 - Quick vs Patient
 
 16 question time
 
-I always try to maintain a harmonious atmosphere.
-I consider others' feelings before I speak.
-I readily express myself in bold ways.
-I tend to say whatever I am thinking about.
-
-I am generally considered as methodical and cautious.
-I make peace by creating routines and habits.
-I am the first to get into new, exotic experiences or ideas.
-I am a passionate person who is full of enthusiasm.
-
-I am generally flexible and adapt to my environment.
-I have an easy time going with the flow.
-I tend to have strong and resolute values.
-I am considered as a perfectionist with high standards.
-
-I work to get things done as quickly as possible.
-I tend to live a fast-paced lifestyle.
-I am willing to wait for a long time if it is worth it.
-I prefer playing the long game.
+"I always try to maintain a harmonious atmosphere.",
+"I consider others' feelings before I speak.",
+"I readily express myself in bold ways.",
+"I tend to say whatever I am thinking about.",
+"I am generally considered as methodical and cautious.",
+"I make peace by creating routines and habits.",
+"I am the first to get into new, exotic experiences or ideas.",
+"I am a passionate person who is full of enthusiasm.",
+"I am generally flexible and adapt to my environment.",
+"I have an easy time going with the flow.",
+"I tend to have strong and resolute values.",
+"I am considered as a perfectionist with high standards.",
+"I work to get things done as quickly as possible.",
+"I tend to live a fast-paced lifestyle.",
+"I am willing to wait for a long time if it is worth it.",
+"I prefer playing the long game."
 
 ---------------------------------------------------------------
 
@@ -1432,21 +1429,84 @@ I have a lifestyle which is pretty similar to most people.
 
 16PF
 
-Reserved vs Warm
-Concrete vs Intellectual
-Reactive vs Stable
-Meek vs Dominant
-Serious vs Lively
-Rule Breaker vs Rule Follower
-Shy vs Socially Bold
-Unemotional vs Sensitive
-Grounded vs Imaginative
-Forthright vs Private
-Unconcerned vs Anxious
-Conservative vs Open-minded
-Cooperative vs Independent
-Unstructured vs Organized
-Relaxed vs Tense
+Reserved vs Warm // 2
+Concrete vs Intellectual // 10
+Reactive vs Stable // 2
+Meek vs Dominant // 2
+Serious vs Lively // 2
+Rule Breaker vs Rule Follower // 2
+Shy vs Socially Bold // 2
+Unemotional vs Sensitive // 2
+Grounded vs Imaginative // 2
+Forthright vs Private // 2
+Unconcerned vs Anxious // 2
+Conservative vs Open-minded // 2
+Cooperative vs Independent // 2
+Unstructured vs Organized // 2
+Relaxed vs Tense // 2
+
+= 40 questions
+
+I prefer alone time / I prefer being with others
+I stick with close friends / I am keen on meeting new people
+
+-- Intellectual Questions --
+-- 10 of them --
+
+My moods change easily / My moods tend to stay level
+I tend to overreact to things / I control my emotional reactions
+
+I keep a peaceful atomsphere / I fight for what I want
+I prefer having others take charge / I am the person to take charge
+
+I tend to take things seriously / I approach life in a playful manner
+I keep a formal appearance / I am generally enthusiastic
+
+Some rules need to be broken / I generally follow the rules
+I tend to do whatever I want / I tend to do what is right
+
+It's difficult for me to approach others / I am the first to interact with new people
+I feel shy in social situations / I am a socially confident person
+
+I am generally detached from feelings / I feel things deeply
+I prefer impersonal appraoches / I am sensitive to others' feelings
+
+I readily trust other people / I am wary of people I don't know
+I always believe that things will go well / I sense danger before anyone else
+
+I have my feet on the ground / I have my head in the clouds
+I find practical solutions using common sense / I find creative solutions using imagination
+
+I readily share personal information with others / I keep my personal information private
+I say whatever I think or feel / I keep my thoughts and feelings to myself
+
+I am confident about my abilities / I frequently doubt my abilities
+I am not a worrier / I frequently fear for the worst
+
+I stick to what is best for me / I branch out into new experiences
+I prefer familiar routines / I prefer variety over routine
+
+I am a teams and groups person / I prefer doing things independently
+I prefer fitting in / I prefer standing out
+
+I tend to tolerate disorder / Everything has its place
+I am fine with approximations / I need precision in my life
+
+I am fine waiting for a long time / I am essentially time driven
+I tend to take it easy / I am prone to frustration when things go wrong
+
+Intellect/Reasoning
+
+What is the next number in the series? 27, 6, 15, 24, 12, 20, 21, 18, ?
+Frank is 24 years old. If he was born 6 years later, what would be his age?
+What is the 32% of 600?
+Brush is to Painter, Stethoscope is to...
+24 is to T, 47 is to...
+Atom is to Matter, Cell is to...
+All physicians are curious. Julia is curious. Which one is true?
+2 and 19 are similar to each others. Which pair is similar to each other?
+Which of the following is the odd one out?
+In a population of 160 people, 50 of them use iPhones. Which of the following cannot be the number of Android users?
 
 ---------------------------------------------------------------------------------
 
@@ -1539,4 +1599,32 @@ Test order
 6. Find the second animal
 7. Find energy vs info
 8. Find the rest :)
+
+
+Oe vs Oi
+I need to check out every new information / I need to make sense of what I know
+I feel compelled to change things up / I have a need to keep things the same
+I fear being controlled and limited by routines / I fear chaos destroying what I have already built
+
+De vs Di
+I feel responsible for aligning with others / I feel responsible for building my own sense of self
+I prioritize what others value or need / I prioritize my own values or reasons
+I have a need for confirmation by others / I have a need to be independent from others
+
+Observer vs Decider
+I focus on finding the missing information / I focus on comparing myself to others
+I am more likely to rant about things / I am more likely to rant about people
+I feel worried about bad things happening / I feel worried about being judged
+
+Sensing vs Intuition
+I tend to start with the facts and realities / I tend to start with patterns and guesses
+I talk in a factual and realistic manner / I talk in an abstract and conceptual manner
+I ignore wild guesses in favor of factual proof / I ignore the facts in favor of the patterns
+
+Thinking vs Feeling
+I tend to consider if it works or not / I tend to consider values, likes, and dislikes
+I decide based on what makes sense / I decide based on what is valued
+I ignore values in favor of what is actually working / I ignore reasons in favor of what is liked
+
+
 

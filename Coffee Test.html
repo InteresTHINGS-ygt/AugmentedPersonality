@@ -3,7 +3,7 @@
     <head>
         <link rel = "stylesheet" href = "style.css">
         <link rel = "stylesheet" href = "Coffee Test.css">
-        <script src="HBNT.js"></script>
+        <script src="Coffee Test.js"></script>
         <title>
             Coffee Personality Indicator
         </title>
@@ -27,25 +27,11 @@
                 <input type="button" onclick=buttonclick(3) id="a" value="Agree"><br>
                 <input type="button" onclick=buttonclick(4) id="sa" value="Strongly Agree"><br>
             </div>
-            <div id = "tiebreaker_c" style = "display:none">
-                <h2>Tiebreaker</h2>
-                <h4>It looks like you have a tie on one or both scales!</h4>
-                <h2>Which word do you resonate with more?</h2>
-                <input type="button" onclick=tiebreakerclick_c(1) value="Contemplation"><br>
-                <input type="button" onclick=tiebreakerclick_c(-1) value="Action"><br>
-            </div>
-            <div id = "tiebreaker_r" style = "display:none">
-                <h2>Tiebreaker</h2>
-                <h4>It looks like you have a tie on one or both scales!</h4>
-                <h2>Which word do you resonate with more?</h2>
-                <input type="button" onclick=tiebreakerclick_r(1) value="Flow"><br>
-                <input type="button" onclick=tiebreakerclick_r(-1) value="Plan"><br>
-            </div>
-            <h4 id = "tiebreaker"></h4>
-            <div id = "results" style = "display:none">
-                <h3 id = "result1"></h3>
-                <h3 id = "result2"></h3>
-                <h3 id = "result3"></h3>
+            <div id = "results" style = "display:non">
+                <div class="results_bar" style="display: flex">
+                    <div class="bar_M" id="bar_M"></div>
+                    <div class="bar_B" id="bar_B"></div>
+                </div>
             </div>
         </div>
     </body>
