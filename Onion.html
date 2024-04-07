@@ -2,17 +2,17 @@
 <html>
     <head>
         <link rel = "stylesheet" href = "style.css">
-        <link rel = "stylesheet" href = "Coffee Test.css">
-        <script src="Coffee Test.js"></script>
+        <link rel = "stylesheet" href = "Onion.css">
+        <script src="Onion.js"></script>
         <title>
-            Coffee Personality Indicator
+            Onion Personality Test
         </title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
         <div class="main">
             <a href="index.html" class="portal">Back to Portal</a>
-            <h1>Coffee Personality Indicator</h1>
+            <h1>Onion Personality Test</h1>
             <h3>There are 16 questions.</h3>
             <h3>Indicate how much do you agree with each statement.</h3>
         </div>
@@ -23,28 +23,27 @@
             <div id="test" style="display:none">
                 <input type="button" onclick=buttonclick(0) id="sd" value="Strongly Disagree"><br>
                 <input type="button" onclick=buttonclick(1) id="d" value="Disagree"><br>
-                <input type="button" onclick=buttonclick(2) id="n" value="Neutral"><br>
-                <input type="button" onclick=buttonclick(3) id="a" value="Agree"><br>
-                <input type="button" onclick=buttonclick(4) id="sa" value="Strongly Agree"><br>
+                <input type="button" onclick=buttonclick(2) id="a" value="Agree"><br>
+                <input type="button" onclick=buttonclick(3) id="sa" value="Strongly Agree"><br>
             </div>
             <div id = "results" style = "display:none">
                 <h2 id="type">Your type is</h2>
-                <h3>Milky vs Black</h3>
+                <h3>Exploration vs Familiarity</h3>
                 <div class="results_bar" style="display: flex">
                     <div class="bar_M" id="bar_M"></div>
                     <div class="bar_B" id="bar_B"></div>
                 </div>
-                <h3>Smooth vs Aromatic</h3>
+                <h3>Newness vs Timelessness</h3>
                 <div class="results_bar" style="display: flex">
                     <div class="bar_S" id="bar_S"></div>
                     <div class="bar_A" id="bar_A"></div>
                 </div>
-                <h3>Fluid vs Viscous</h3>
+                <h3>Variety vs Loyalty</h3>
                 <div class="results_bar" style="display: flex">
                     <div class="bar_F" id="bar_F"></div>
                     <div class="bar_V" id="bar_V"></div>
                 </div>
-                <h3>Patient vs Quick</h3>
+                <h3>Uniqueness vs Commonality</h3>
                 <div class="results_bar" style="display: flex">
                     <div class="bar_P" id="bar_P"></div>
                     <div class="bar_Q" id="bar_Q"></div>

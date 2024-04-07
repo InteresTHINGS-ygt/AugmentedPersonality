@@ -13,22 +13,25 @@ var Q = 12;
 var test_status = 0;
 
 function buttonclick(score) {
-    var questions = ["I always try to maintain a harmonious atmosphere.",
-    "I consider others' feelings before I speak.",
-    "I readily express myself in bold ways.",
-    "I tend to say whatever I am thinking about.",
-    "I am generally considered as methodical and cautious.",
-    "I make peace by creating routines and habits.",
-    "I am the first to get into new, exotic experiences or ideas.",
-    "I am a passionate person who is full of enthusiasm.",
-    "I am generally flexible and adapt to my environment.",
-    "I have an easy time going with the flow.",
-    "I tend to have strong and resolute values.",
-    "I am considered as a perfectionist with high standards.",
-    "I work to get things done as quickly as possible.",
-    "I tend to live a fast-paced lifestyle.",
-    "I am willing to wait for a long time if it is worth it.",
-    "I prefer playing the long game."];
+    var questions = ["I readily explore new interests and hobbies.",
+    "I have a wide array of things that I am interested in.",
+    "I focus on one area of expertise in order to master it.",
+    "I prefer focusing on what I am already good at.",
+    
+    "I move on to new things as soon as they are released.",
+    "I can't stand thinking about the past for a long time.",
+    "I highly appreciate the classics and timeless masterpieces.",
+    "I enjoy reliving my own past memories.",
+    
+    "I enjoy a wide variety of tasks and things to do.",
+    "I am considered as a person who is a good multitasker.",
+    "I prefer focusing on a single task without interruption.",
+    "I stay loyal to my work and the people important to me.",
+    
+    "I have interests or habits which can seem weird to others.",
+    "I enjoy exploring obscure topics which no one else explores.",
+    "I prefer fitting in rather than standing out.",
+    "I have a lifestyle which is pretty similar to most people."];
 
     if (test_status == 0) {
         test_status = 1;
@@ -100,83 +103,83 @@ function get_result() {
     var p;
 
     if (M > B) {
-        m = "M";
+        m = "E";
     }
     else {
-        m = "B";
+        m = "F";
     }
 
     if (S > A) {
-        s = "S";
+        s = "N";
     }
     else {
-        s = "A";
+        s = "T";
     }
 
     if (F > V) {
-        f = "F";
+        f = "V";
     }
     else {
-        f = "V";
+        f = "L";
     }
 
     if (P > Q) {
-        p = "P";
+        p = "U";
     }
     else {
-        p = "Q";
+        p = "C";
     }
 
     var type = m + s + f + p;
     var coffee;
 
-    if (type == "MSFP") {
-        coffee = "Latte";
+    if (type == "ENVU") {
+        coffee = "The Adventurer";
     }
-    else if (type == "MSFQ") {
-        coffee = "Flat White";
+    else if (type == "ENVC") {
+        coffee = "The Early Adopter";
     }
-    else if (type == "MSVP") {
-        coffee = "Cappuccino";
+    else if (type == "ENLU") {
+        coffee = "The Nomad";
     }
-    else if (type == "MSVQ") {
-        coffee = "Cortado";
+    else if (type == "ENLC") {
+        coffee = "The Voyager";
     }
-    else if (type == "MAFP") {
-        coffee = "Mocha";
+    else if (type == "ETVU") {
+        coffee = "The Time Traveler";
     }
-    else if (type == "MAFQ") {
-        coffee = "Caramel Machiatto";
+    else if (type == "ETVC") {
+        coffee = "The Musicologist";
     }
-    else if (type == "MAVP") {
-        coffee = "Frappuccino";
+    else if (type == "ETLU") {
+        coffee = "The Maverick";
     }
-    else if (type == "MAVQ") {
-        coffee = "Affogatto";
+    else if (type == "ETLC") {
+        coffee = "The Top Charter";
     }
-    else if (type == "BSFP") {
-        coffee = "Cold Brew";
+    else if (type == "FNVU") {
+        coffee = "The Specialist";
     }
-    else if (type == "BSFQ") {
-        coffee = "Americano";
+    else if (type == "FNVC") {
+        coffee = "The Fanclubber";
     }
-    else if (type == "BSVP") {
-        coffee = "Nitro Cold Brew";
+    else if (type == "FNLU") {
+        coffee = "The Devotee";
     }
-    else if (type == "BSVQ") {
-        coffee = "Instant Coffee";
+    else if (type == "FNLC") {
+        coffee = "The Enthusiast";
     }
-    else if (type == "BAFP") {
-        coffee = "Filter Coffee";
+    else if (type == "FTVU") {
+        coffee = "The Deep Diver";
     }
-    else if (type == "BAFQ") {
-        coffee = "Espresso";
+    else if (type == "FTVC") {
+        coffee = "The Jukeboxer";
     }
-    else if (type == "BAVP") {
-        coffee = "Turkish Coffee";
+    else if (type == "FTLU") {
+        coffee = "The Replayer";
     }
-    else if (type == "BAVQ") {
-        coffee = "Ristretto";
+    else if (type == "FTLC") {
+        coffee = "The Connoisseur";
     }
 
     document.getElementById("type").innerHTML = "Your type is " + type + " - " + coffee;

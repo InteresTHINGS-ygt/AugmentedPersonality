@@ -1405,25 +1405,25 @@ Popularity axis: U vs C
 
 This test will be about your approach to life as a whole, rather than just your listening habits.
 
-I readily explore new interests and hobbies.
-I have a wide array of things that I am interested in.
-I focus on one area of expertise in order to master it.
-I prefer focusing on what I am already good at.
+"I readily explore new interests and hobbies.",
+"I have a wide array of things that I am interested in.",
+"I focus on one area of expertise in order to master it.",
+"I prefer focusing on what I am already good at.",
 
-I move on to new things as soon as they are released.
-I can't stand thinking about the past for a long time.
-I highly appreciate the classics and timeless masterpieces.
-I enjoy reliving my own past memories.
+"I move on to new things as soon as they are released.",
+"I can't stand thinking about the past for a long time.",
+"I highly appreciate the classics and timeless masterpieces.",
+"I enjoy reliving my own past memories.",
 
-I enjoy a wide variety of tasks and things to do.
-I am considered as a person who is a good multitasker.
-I prefer focusing on a single task without interruption.
-I stay loyal to my work and the people important to me.
+"I enjoy a wide variety of tasks and things to do.",
+"I am considered as a person who is a good multitasker.",
+"I prefer focusing on a single task without interruption.",
+"I stay loyal to my work and the people important to me.",
 
-I have interests or habits which can seem weird to others.
-I enjoy exploring obscure topics which no one else explores.
-I prefer fitting in rather than standing out.
-I have a lifestyle which is pretty similar to most people.
+"I have interests or habits which can seem weird to others.",
+"I enjoy exploring obscure topics which no one else explores.",
+"I prefer fitting in rather than standing out.",
+"I have a lifestyle which is pretty similar to most people."
 
 -------------------------------------------------------------------------------
 
@@ -1525,53 +1525,53 @@ Spotify Dozen Strengths (Heroes)
 11. Devotion (Fanatic)
 12. Ambition (Hypnotist)
 
-I have a need for emotional intensity and authenticity.
-I am not afraid to dive deep into my darkest feelings and sides.
-I think that sadness connects us all together.
+"I have a need for emotional intensity and authenticity.",
+"I am not afraid to dive deep into my darkest feelings and sides.",
+"I think that sadness connects us all together.",
 
-I evaluate things according to my own values.
-I create a sense of identity through my inner experience.
-I have a need to create my own style.
+"I evaluate things according to my own values.",
+"I create a sense of identity through my inner experience.",
+"I have a need to create my own style.",
 
-I enjoy reliving my past memories in vivid detail.
-I have a need for timelessness and durability in my things.
-I create routines that make me more relaxed and productive.
+"I enjoy reliving my past memories in vivid detail.",
+"I have a need for timelessness and durability in my things.",
+"I create routines that make me more relaxed and productive.",
 
-I am loyal to my tasks and my interests.
-I tend to focus on one thing in order to master it.
-I am definitely more of a specialist.
+"I am loyal to my tasks and my interests.",
+"I tend to focus on one thing in order to master it.",
+"I am definitely more of a specialist.",
 
-I frequently look at the bright side of life.
-I am often considered as enthusiastic and playful.
-I see the opportunity in every obstacle.
+"I frequently look at the bright side of life.",
+"I am often considered as enthusiastic and playful.",
+"I see the opportunity in every obstacle.",
 
-I enjoy learning about a wide variety of topics.
-I have a need for new knowledge and research.
-I believe that knowledge is power.
+"I enjoy learning about a wide variety of topics.",
+"I have a need for new knowledge and research.",
+"I believe that knowledge is power.",
 
-I am keen on automating my lifestyle.
-I create algorithms in order to make things easier.
-I am highly interested in artifical intelligence and robotics.
+"I am keen on automating my lifestyle.",
+"I create algorithms in order to make things easier.",
+"I am highly interested in artifical intelligence and robotics.",
 
-I am able to adapt into any environment.
-I have a flexible approach to life that I can change at any moment.
-I am considered as a multi-faceted generalist.
+"I am able to adapt into any environment.",
+"I have a flexible approach to life that I can change at any moment.",
+"I am considered as a multi-faceted generalist.",
 
-I am generally satisfied with whatever I have.
-I stick with whatever it is best for me rather than the newest fads.
-I try to keep things as peaceful as possible.
+"I am generally satisfied with whatever I have.",
+"I stick with whatever it is best for me rather than the newest fads.",
+"I try to keep things as peaceful as possible.",
 
-I am the first to jump into new experiences.
-I enjoy taking risks in order to find the next rush.
-I instinctively act in order to take advantage of opportunities.
+"I am the first to jump into new experiences.",
+"I enjoy taking risks in order to find the next rush.",
+"I instinctively act in order to take advantage of opportunities.",
 
-I build strong emotional connections with the people around me.
-I readily help and support other people.
-I am devoted to my favorite values and causes.
+"I build strong emotional connections with the people around me.",
+"I readily help and support other people.",
+"I am devoted to my favorite values and causes.",
 
-I have a laser focus on how the future will be.
-I am ambitious and focused on achieving the final result.
-I believe that with enough discipline, you can achieve anything.
+"I have a laser focus on how the future will be.",
+"I am ambitious and focused on achieving the final result.",
+"I believe that with enough discipline, you can achieve anything."
 
 ----------------------------------------------------------------------------------
 
@@ -1601,30 +1601,61 @@ Test order
 8. Find the rest :)
 
 
-Oe vs Oi
+
 I need to check out every new information / I need to make sense of what I know
-I feel compelled to change things up / I have a need to keep things the same
+I feel compelled to change things up / I have a need to keep things constant
 I fear being controlled and limited by routines / I fear chaos destroying what I have already built
 
-De vs Di
+
 I feel responsible for aligning with others / I feel responsible for building my own sense of self
 I prioritize what others value or need / I prioritize my own values or reasons
 I have a need for confirmation by others / I have a need to be independent from others
 
-Observer vs Decider
+
 I focus on finding the missing information / I focus on comparing myself to others
 I am more likely to rant about things / I am more likely to rant about people
 I feel worried about bad things happening / I feel worried about being judged
 
-Sensing vs Intuition
+
 I tend to start with the facts and realities / I tend to start with patterns and guesses
 I talk in a factual and realistic manner / I talk in an abstract and conceptual manner
 I ignore wild guesses in favor of factual proof / I ignore the facts in favor of the patterns
 
-Thinking vs Feeling
+
 I tend to consider if it works or not / I tend to consider values, likes, and dislikes
 I decide based on what makes sense / I decide based on what is valued
 I ignore values in favor of what is actually working / I ignore reasons in favor of what is liked
 
+Set 1
 
+"I need to check out every new information",
+"I feel compelled to change things up",
+"I fear being controlled and limited by routines",
+"I feel responsible for aligning with others",
+"I prioritize what others value or need",
+"I have a need for confirmation by others",
+"I focus on finding the missing information",
+"I am more likely to rant about things",
+"I feel worried about bad things happening",
+"I tend to start with the facts and realities",
+"I talk in a factual and realistic manner",
+"I ignore wild guesses in favor of factual proof",
+"I tend to consider if it works or not",
+"I decide based on what makes sense",
+"I ignore values in favor of what is actually working"
 
+"I need to make sense of what I know",
+"I have a need to keep things constant",
+"I fear chaos destroying what I have already built",
+"I feel responsible for building my own sense of self",
+"I prioritize my own values or reasons",
+"I have a need to be independent from others",
+"I focus on comparing myself to others",
+"I am more likely to rant about people",
+"I feel worried about being judged",
+"I tend to start with patterns and guesses",
+"I talk in an abstract and conceptual manner",
+"I ignore the facts in favor of the patterns",
+"I tend to consider values, likes, and dislikes",
+"I decide based on what is valued",
+"I ignore reasons in favor of what is liked"

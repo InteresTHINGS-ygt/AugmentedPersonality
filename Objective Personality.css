@@ -1,9 +1,9 @@
 body {
-    background-color: rgb(90, 74, 49)
+    background-color: rgb(22, 95, 190)
 }
 
 input[type="button"] {
-    background-color: rgb(105, 86, 56)
+    background-color: rgb(22, 95, 190)
 }
 
 .results_bar {
@@ -16,7 +16,7 @@ input[type="button"] {
 }
 
 .bar_M {
-    background-color: rgb(175, 142, 100);
+    background-color: rgb(64, 167, 81);
     border-radius: 1.5vw 0 0 1.5vw;
     box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
     width: 50%;
@@ -25,7 +25,7 @@ input[type="button"] {
 }
 
 .bar_B {
-    background-color: rgb(48, 25, 0);
+    background-color: rgb(89, 106, 204);
     border-radius: 0 1.5vw 1.5vw 0;
     box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
     width: 50%;
@@ -34,7 +34,7 @@ input[type="button"] {
 }
 
 .bar_S {
-    background-color: rgb(112, 92, 67);
+    background-color: rgb(145, 145, 145);
     border-radius: 1.5vw 0 0 1.5vw;
     box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
     width: 50%;
@@ -43,7 +43,7 @@ input[type="button"] {
 }
 
 .bar_A {
-    background-color: rgb(192, 113, 28);
+    background-color: rgb(180, 87, 87);
     border-radius: 0 1.5vw 1.5vw 0;
     box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
     width: 50%;
@@ -52,7 +52,7 @@ input[type="button"] {
 }
 
 .bar_F {
-    background-color: rgb(218, 160, 84);
+    background-color: rgb(0, 120, 124);
     border-radius: 1.5vw 0 0 1.5vw;
     box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
     width: 50%;
@@ -61,7 +61,7 @@ input[type="button"] {
 }
 
 .bar_V {
-    background-color: rgb(131, 68, 0);
+    background-color: rgb(180, 120, 80);
     border-radius: 0 1.5vw 1.5vw 0;
     box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
     width: 50%;
@@ -70,7 +70,7 @@ input[type="button"] {
 }
 
 .bar_P {
-    background-color: rgb(119, 81, 31);
+    background-color: rgb(0, 167, 8);
     border-radius: 1.5vw 0 0 1.5vw;
     box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
     width: 50%;
@@ -79,7 +79,25 @@ input[type="button"] {
 }
 
 .bar_Q {
-    background-color: rgb(161, 116, 56);
+    background-color: rgb(202, 155, 0);
+    border-radius: 0 1.5vw 1.5vw 0;
+    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
+    width: 50%;
+    height: 6vw;
+    overflow: hidden;
+}
+
+.bar_1 {
+    background-color: rgb(0, 110, 201);
+    border-radius: 1.5vw 0 0 1.5vw;
+    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
+    width: 50%;
+    height: 6vw;
+    overflow: hidden;
+}
+
+.bar_2 {
+    background-color: rgb(199, 0, 76);
     border-radius: 0 1.5vw 1.5vw 0;
     box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
     width: 50%;
@@ -145,6 +163,20 @@ input[type="button"] {
     }
     
     .bar_Q {
+        border-radius: 0 10px 10px 0;
+        box-shadow: 14px 14px 28px rgba(40, 37, 30, 0.2);
+        width: 50%;
+        height: 40px;
+    }
+
+    .bar_1 {
+        border-radius: 10px 0 0 10px;
+        box-shadow: 14px 14px 28px rgba(40, 37, 30, 0.2);
+        width: 50%;
+        height: 40px;
+    }
+    
+    .bar_2 {
         border-radius: 0 10px 10px 0;
         box-shadow: 14px 14px 28px rgba(40, 37, 30, 0.2);
         width: 50%;
