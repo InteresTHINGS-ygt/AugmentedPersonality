@@ -1429,29 +1429,27 @@ This test will be about your approach to life as a whole, rather than just your 
 
 16PF
 
-Reserved vs Warm // 2
-Concrete vs Intellectual // 10
-Reactive vs Stable // 2
-Meek vs Dominant // 2
-Serious vs Lively // 2
-Rule Breaker vs Rule Follower // 2
-Shy vs Socially Bold // 2
-Unemotional vs Sensitive // 2
-Grounded vs Imaginative // 2
-Forthright vs Private // 2
-Unconcerned vs Anxious // 2
-Conservative vs Open-minded // 2
-Cooperative vs Independent // 2
-Unstructured vs Organized // 2
-Relaxed vs Tense // 2
+Reserved vs Warm // 2 (war)
+Concrete vs Intellectual // 10 (rea)
+Reactive vs Stable // 2 (sta)
+Meek vs Dominant // 2 (dom)
+Serious vs Lively // 2 (liv)
+Rule Breaker vs Rule Follower // 2 (rul)
+Shy vs Socially Bold // 2 (bol)
+Unemotional vs Sensitive // 2 (sen)
+Trusting vs Vigilant // 2 (vig)
+Grounded vs Imaginative // 2 (abs)
+Forthright vs Private // 2 (pri)
+Unconcerned vs Anxious // 2 (anx)
+Conservative vs Open-minded // 2 (opn)
+Cooperative vs Independent // 2 (ind)
+Unstructured vs Organized // 2 (org)
+Relaxed vs Tense // 2 (ten)
 
 = 40 questions
 
 I prefer alone time / I prefer being with others
 I stick with close friends / I am keen on meeting new people
-
--- Intellectual Questions --
--- 10 of them --
 
 My moods change easily / My moods tend to stay level
 I tend to overreact to things / I control my emotional reactions
@@ -1494,6 +1492,70 @@ I am fine with approximations / I need precision in my life
 
 I am fine waiting for a long time / I am essentially time driven
 I tend to take it easy / I am prone to frustration when things go wrong
+
+Sets
+
+"I prefer alone time",
+"I stick with close friends",
+"My moods change easily",
+"I tend to overreact to things",
+"I keep a peaceful atomsphere",
+"I prefer having others take charge",
+"I tend to take things seriously",
+"I keep a formal appearance",
+"Some rules need to be broken",
+"I tend to do whatever I want",
+"It's difficult for me to approach others",
+"I feel shy in social situations",
+"I am generally detached from feelings",
+"I prefer impersonal appraoches",
+"I readily trust other people",
+"I always believe that things will go well",
+"I have my feet on the ground",
+"I find practical solutions using common sense",
+"I readily share personal information with others",
+"I say whatever I think or feel",
+"I am confident about my abilities",
+"I am not a worrier",
+"I stick to what is best for me",
+"I prefer familiar routines",
+"I am a teams and groups person",
+"I prefer fitting in",
+"I tend to tolerate disorder",
+"I am fine with approximations",
+"I am fine waiting for a long time",
+"I tend to take it easy"
+
+"I prefer being with others",
+"I am keen on meeting new people",
+"My moods tend to stay level",
+"I control my emotional reactions",
+"I fight for what I want",
+"I am the person to take charge",
+"I approach life in a playful manner",
+"I am generally enthusiastic",
+"I generally follow the rules",
+"I tend to do what is right",
+"I am the first to interact with new people",
+"I am a socially confident person",
+"I feel things deeply",
+"I am sensitive to others' feelings",
+"I am wary of people I don't know",
+"I sense danger before anyone else",
+"I have my head in the clouds",
+"I find creative solutions using imagination",
+"I keep my personal information private",
+"I keep my thoughts and feelings to myself",
+"I frequently doubt my abilities",
+"I frequently fear for the worst",
+"I branch out into new experiences",
+"I prefer variety over routine",
+"I prefer doing things independently",
+"I prefer standing out",
+"Everything has its place",
+"I need precision in my life",
+"I am essentially time driven",
+"I am prone to frustration when things go wrong"
 
 Intellect/Reasoning
 

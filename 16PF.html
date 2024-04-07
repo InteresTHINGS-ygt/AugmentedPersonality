@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel = "stylesheet" href = "style.css">
+        <link rel = "stylesheet" href = "16PF.css">
+        <script src="16PF.js"></script>
+        <title>
+            Hexadecimal Factors Test
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="main">
+            <a href="index.html" class="portal">Back to Portal</a>
+        <h1>Hexadecimal Factors Test</h1>
+        <h3>There are 40 questions.</h3>
+        <h3>Indicate the statement that fits your personality more.</h3>
+        <h3>There will be a 10 question intelligence test after the initial 30 personality questions.</h3>
+    </div>
+    <div class="main">
+        <h2 id="question_number"></h2>
+        <h2 id="Statement">Click to start!</h2>
+        <input type="button" onclick=buttonclick(0) id="start" value="Start Test">
+        <h4 id="questions_1"></h4>
+        <div id="test" style="display:none">
+            <input type="button" onclick=buttonclick(0) id="sd" value="Strongly Disagree"><br>
+            <input type="button" onclick=buttonclick(1) id="d" value="Disagree"><br>
+            <input type="button" onclick=buttonclick(2) id="a" value="Agree"><br>
+            <input type="button" onclick=buttonclick(3) id="sa" value="Strongly Agree"><br>
+        </div>
+        <h4 id="questions_2"></h4>
+        <div id = "results" style = "display:none">
+            <h3 id = "result_vam">vam</h3>
+            <div class="results_bar">
+                <div class="bar_vam" id="bar_vam"></div>
+            </div>
+            <h3 id = "result_alc">e</h3>
+            <div class="results_bar">
+                <div class="bar_alc" id="bar_alc"></div>
+            </div>
+            <h3 id = "result_tim">t</h3>
+            <div class="results_bar">
+                <div class="bar_tim" id="bar_tim"></div>
+            </div>
+            <h3 id = "result_cyc">a</h3>
+            <div class="results_bar">
+                <div class="bar_cyc" id="bar_cyc"></div>
+            </div>
+            <h3 id = "result_lum">e</h3>
+            <div class="results_bar">
+                <div class="bar_lum" id="bar_lum"></div>
+            </div>
+            <h3 id = "result_mas">e</h3>
+            <div class="results_bar">
+                <div class="bar_mas" id="bar_mas"></div>
+            </div>
+            <h3 id = "result_rob">t</h3>
+            <div class="results_bar">
+                <div class="bar_rob" id="bar_rob"></div>
+            </div>
+            <h3 id = "result_sha">a</h3>
+            <div class="results_bar">
+                <div class="bar_sha" id="bar_sha"></div>
+            </div>
+            <h3 id = "result_col">e</h3>
+            <div class="results_bar">
+                <div class="bar_col" id="bar_col"></div>
+            </div>
+            <h3 id = "result_hun">e</h3>
+            <div class="results_bar">
+                <div class="bar_hun" id="bar_hun"></div>
+            </div>
+            <h3 id = "result_fan">t</h3>
+            <div class="results_bar">
+                <div class="bar_fan" id="bar_fan"></div>
+            </div>
+            <h3 id = "result_hyp">a</h3>
+            <div class="results_bar">
+                <div class="bar_hyp" id="bar_hyp"></div>
+            </div>
+            <h3 id = "result_Q1">a</h3>
+            <div class="results_bar">
+                <div class="bar_Q1" id="bar_Q1"></div>
+            </div>
+            <h3 id = "result_Q2">a</h3>
+            <div class="results_bar">
+                <div class="bar_Q2" id="bar_Q2"></div>
+            </div>
+            <h3 id = "result_Q3">a</h3>
+            <div class="results_bar">
+                <div class="bar_Q3" id="bar_Q3"></div>
+            </div>
+            <h3 id = "result_Q4">a</h3>
+            <div class="results_bar">
+                <div class="bar_Q4" id="bar_Q4"></div>
+            </div>
+         </div>
+         </div>
+         <div id="desc" style="display:none">
+         <div class="main">
+            <h2>M Style - Managing</h2>
+            <p>High: Confident and decisive teamplayers with good managerial skills. Makes decisions instinctively. May be impatient and gets angry easily.</p>
+            <p>Low: Prone to indecision and insecurity. Has little to no desire to manage others or be a part of a group.</p>
+         </div>
+         <div class="main">
+            <h2>E Style - Enthusiastic</h2>
+            <p>High: Cheerful and enthusiastic, they enjoy interacting with others and living in the moment. Practical, realistic, and opportunistic. May be reckless and impulsive.</p>
+            <p>Low: Prone to melancholy and rigidity. Vastly prefers alone time over the company of others.</p>
+         </div>
+         <div class="main">
+            <h2>T Style - Territorial</h2>
+            <p>High: Willing to fight for independence and individuality. Authentic and not afraid of showing their real identity. May be overly eager to fight and seek conflict.</p>
+            <p>Low: Tends to be overly sensitive to conflict. Prefers fitting in rather than standing out.</p>
+         </div>
+         <div class="main">
+            <h2>A Style - Accurate</h2>
+            <p>High: Often considered as gifted, they want to find the truth in everything. Highly analytical and empathetic. May be perfectionistic and overly serious.</p>
+            <p>Low: Prone to making careless mistakes and derpiness. Has trouble taking things seriously.</p>
+         </div>
+        </div>
+    </body>
+</html>
