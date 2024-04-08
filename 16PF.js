@@ -140,14 +140,70 @@ function buttonclick(score) {
     else if (current_question < 31){
         Q4 += score;
     }
+    else if (current_question < 41){
+        alc += score;
+    }
 
-    if (current_question > (questions_1.length - 1)){
+    if (current_question == 30){
+        document.getElementById("reasoning_1").style.display = "";
+        document.getElementById("test").style.display = "none";
+        document.getElementById("questions_1").style.display = "none";
+        document.getElementById("questions_2").style.display = "none";
+    }
+
+    if (current_question == 31){
+        document.getElementById("reasoning_2").style.display = "";
+        document.getElementById("reasoning_1").style.display = "none";
+    }
+
+    if (current_question == 32){
+        document.getElementById("reasoning_3").style.display = "";
+        document.getElementById("reasoning_2").style.display = "none";
+    }
+
+    if (current_question == 33){
+        document.getElementById("reasoning_4").style.display = "";
+        document.getElementById("reasoning_3").style.display = "none";
+    }
+
+    if (current_question == 34){
+        document.getElementById("reasoning_5").style.display = "";
+        document.getElementById("reasoning_4").style.display = "none";
+    }
+
+    if (current_question == 35){
+        document.getElementById("reasoning_6").style.display = "";
+        document.getElementById("reasoning_5").style.display = "none";
+    }
+
+    if (current_question == 36){
+        document.getElementById("reasoning_7").style.display = "";
+        document.getElementById("reasoning_6").style.display = "none";
+    }
+
+    if (current_question == 37){
+        document.getElementById("reasoning_8").style.display = "";
+        document.getElementById("reasoning_7").style.display = "none";
+    }
+
+    if (current_question == 38){
+        document.getElementById("reasoning_9").style.display = "";
+        document.getElementById("reasoning_8").style.display = "none";
+    }
+
+    if (current_question == 39){
+        document.getElementById("reasoning_10").style.display = "";
+        document.getElementById("reasoning_9").style.display = "none";
+    }
+
+    if (current_question > 39){
         document.getElementById("question_number").style.display = "none";
         document.getElementById("questions_1").style.display = "none";
         document.getElementById("questions_2").style.display = "none";
         document.getElementById("Statement").innerHTML = "Finished!";
+        document.getElementById("reasoning_10").style.display = "none";
         vam = Math.round((vam / 6) * 100)
-        alc = Math.round((alc / 6) * 100)
+        alc = Math.round((alc / 10) * 100)
         tim = Math.round((tim / 6) * 100)
         cyc = Math.round((cyc / 6) * 100)
         lum = Math.round((lum / 6) * 100)
@@ -163,8 +219,7 @@ function buttonclick(score) {
         Q3 = Math.round((Q3 / 6) * 100)
         Q4 = Math.round((Q4 / 6) * 100)
         get_result();
-    }
-    
+    }   
 }
 
 function get_result() {
