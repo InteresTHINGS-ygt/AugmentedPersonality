@@ -146,22 +146,22 @@ function buttonclick(score) {
         document.getElementById("questions_1").style.display = "none";
         document.getElementById("questions_2").style.display = "none";
         document.getElementById("Statement").innerHTML = "Finished!";
-        vam = Math.round((vam / 9) * 100)
-        alc = Math.round((alc / 9) * 100)
-        tim = Math.round((tim / 9) * 100)
-        cyc = Math.round((cyc / 9) * 100)
-        lum = Math.round((lum / 9) * 100)
-        mas = Math.round((mas / 9) * 100)
-        rob = Math.round((rob / 9) * 100)
-        sha = Math.round((sha / 9) * 100)
-        col = Math.round((col / 9) * 100)
-        hun = Math.round((hun / 9) * 100)
-        fan = Math.round((fan / 9) * 100)
-        hyp = Math.round((hyp / 9) * 100)
-        Q1 = Math.round((Q1 / 9) * 100)
-        Q2 = Math.round((Q2 / 9) * 100)
-        Q3 = Math.round((Q3 / 9) * 100)
-        Q4 = Math.round((Q4 / 9) * 100)
+        vam = Math.round((vam / 6) * 100)
+        alc = Math.round((alc / 6) * 100)
+        tim = Math.round((tim / 6) * 100)
+        cyc = Math.round((cyc / 6) * 100)
+        lum = Math.round((lum / 6) * 100)
+        mas = Math.round((mas / 6) * 100)
+        rob = Math.round((rob / 6) * 100)
+        sha = Math.round((sha / 6) * 100)
+        col = Math.round((col / 6) * 100)
+        hun = Math.round((hun / 6) * 100)
+        fan = Math.round((fan / 6) * 100)
+        hyp = Math.round((hyp / 6) * 100)
+        Q1 = Math.round((Q1 / 6) * 100)
+        Q2 = Math.round((Q2 / 6) * 100)
+        Q3 = Math.round((Q3 / 6) * 100)
+        Q4 = Math.round((Q4 / 6) * 100)
         get_result();
     }
     
