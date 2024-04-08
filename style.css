@@ -21,6 +21,26 @@ a {
     font-weight: bold;
 }
 
+#main_link {
+    text-align: left;
+    padding: 3vw;
+}
+
+p {
+    text-align: left;
+    margin: 3vw;
+}
+
+p.table {
+    text-align: center;
+    margin-top: 1vw;
+}
+
+p.main_links {
+    margin: 0;
+    margin-top: 2vw;
+}
+
 h1 {
     font-weight: bold;
 }
@@ -31,6 +51,8 @@ h2 {
 
 h3 {
     font-weight: bold;
+    text-align: left;
+    margin: 4vw;
 }
 
 h4 {
@@ -227,13 +249,18 @@ table {
 }
 
 td, th, tr {
-    text-align: center;
     padding: 1vw;
     margin: 2vw;
 }
 
 th {
     font-size: 3.5vw;
+    text-align: center;
+}
+
+div.pre {
+    text-align: left;
+    margin: 3vw;
 }
 
 input[type="button"] {
@@ -276,6 +303,12 @@ hr {
     border: 0.3vw solid rgb(210, 205, 195);
 }
 
+p.interest_sim_label {
+    margin-top: 2vw;
+    text-align: center;
+    font-weight: bold;
+}
+
 @media only screen and (min-width: 600px){
     a {
         color: rgb(240, 235, 225);
@@ -286,7 +319,26 @@ hr {
         border-radius: 8px;
         display: inline-block;
         box-shadow: 7px 7px 14px rgba(40, 37, 30, 0.2);
-        font-size: 12pt
+        font-size: 12pt;
+    }
+
+    p {
+        margin: 20px;
+    }
+
+    p.table {
+        margin-top: 0;
+    }
+
+    div.pre {
+        margin: 20px;
+    }
+
+    h3 {
+        text-align: left;
+        margin: 32px;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
 
     a:hover {
@@ -461,5 +513,19 @@ hr {
         height: 20px;
         background: #04AA6D;
         cursor: pointer;
+    }
+
+    #main_link {
+        text-align: left;
+        padding: 20px;
+        padding-top: 14px;
+    }
+
+    p.main_links {
+        margin-top: 10px;
+    }
+
+    p.interest_sim_label {
+        margin-top: 0;
     }
 }

@@ -133,73 +133,57 @@ function get_result() {
     if (laterality > 6){
         if (impressionism > 6){
             document.getElementById("result3").innerHTML = "You are a newtype!";
-            document.getElementById("Fascinator").style.display = "";
         }
         else if (impressionism <= 6 && impressionism > 0){
             document.getElementById("result3").innerHTML = "You are a fascinator!";
-            document.getElementById("Inventor").style.display = "";
         }
         else if (impressionism >= -6 && impressionism < 0){
             document.getElementById("result3").innerHTML = "You are an analyst!";
-            document.getElementById("Scientist").style.display = "";
         }
         else {
             document.getElementById("result3").innerHTML = "You are a calculator!";
-            document.getElementById("Technician").style.display = "";
         }
     }
     else if (laterality <= 6 && laterality > 0){
         if (impressionism > 6){
             document.getElementById("result3").innerHTML = "You are an aesthetician!";
-            document.getElementById("Adventurer").style.display = "";
         }
         else if (impressionism <= 6 && impressionism > 0){
             document.getElementById("result3").innerHTML = "You are an overseer!";
-            document.getElementById("Entrepreneur").style.display = "";
         }
         else if (impressionism >= -6 && impressionism < 0){
             document.getElementById("result3").innerHTML = "You are a strategist!";
-            document.getElementById("Professor").style.display = "";
         }
         else {
             document.getElementById("result3").innerHTML = "You are a technician!";
-            document.getElementById("Architect").style.display = "";
         }
     }
     else if (laterality >= -6 && laterality < 0){
         if (impressionism > 6){
             document.getElementById("result3").innerHTML = "You are a sensate!";
-            document.getElementById("Influencer").style.display = "";
         }
         else if (impressionism <= 6 && impressionism > 0){
             document.getElementById("result3").innerHTML = "You are an externalist!";
-            document.getElementById("Coach").style.display = "";
         }
         else if (impressionism >= -6 && impressionism < 0){
             document.getElementById("result3").innerHTML = "You are a caregiver!";
-            document.getElementById("Go-Getter").style.display = "";
         }
         else {
             document.getElementById("result3").innerHTML = "You are a contemplator!";
-            document.getElementById("Inspector").style.display = "";
         }
     }
     else {
         if (impressionism > 6){
             document.getElementById("result3").innerHTML = "You are a survivalist!";
-            document.getElementById("Entertainer").style.display = "";
         }
         else if (impressionism <= 6 && impressionism > 0){
             document.getElementById("result3").innerHTML = "You are a realist!";
-            document.getElementById("Caregiver").style.display = "";
         }
         else if (impressionism >= -6 && impressionism < 0){
             document.getElementById("result3").innerHTML = "You are a protector!";
-            document.getElementById("Guardian").style.display = "";
         }
         else {
             document.getElementById("result3").innerHTML = "You are a bookkeeper!";
-            document.getElementById("Administrator").style.display = "";
         }
     }
 
@@ -211,25 +195,6 @@ function get_result() {
 
     document.getElementById("point").style.bottom = cp;
     document.getElementById("point").style.left = rp;
-}
-
-function show_all() {
-    document.getElementById("Technician").style.display = "";
-    document.getElementById("Scientist").style.display = "";
-    document.getElementById("Inventor").style.display = "";
-    document.getElementById("Fascinator").style.display = "";
-    document.getElementById("Architect").style.display = "";
-    document.getElementById("Professor").style.display = "";
-    document.getElementById("Entrepreneur").style.display = "";
-    document.getElementById("Adventurer").style.display = "";
-    document.getElementById("Inspector").style.display = "";
-    document.getElementById("Go-Getter").style.display = "";
-    document.getElementById("Coach").style.display = "";
-    document.getElementById("Influencer").style.display = "";
-    document.getElementById("Administrator").style.display = "";
-    document.getElementById("Guardian").style.display = "";
-    document.getElementById("Caregiver").style.display = "";
-    document.getElementById("Entertainer").style.display = "";
 }
 
 

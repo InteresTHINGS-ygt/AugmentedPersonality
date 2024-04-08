@@ -135,51 +135,67 @@ function get_result() {
 
     if (type == "ENVU") {
         coffee = "The Adventurer";
+        document.getElementById("ENVU").style.display = "";
     }
     else if (type == "ENVC") {
         coffee = "The Early Adopter";
+        document.getElementById("ENVC").style.display = "";
     }
     else if (type == "ENLU") {
         coffee = "The Nomad";
+        document.getElementById("ENLU").style.display = "";
     }
     else if (type == "ENLC") {
         coffee = "The Voyager";
+        document.getElementById("ENLC").style.display = "";
     }
     else if (type == "ETVU") {
         coffee = "The Time Traveler";
+        document.getElementById("ETVU").style.display = "";
     }
     else if (type == "ETVC") {
-        coffee = "The Musicologist";
+        coffee = "The Lifestyle Master";
+        document.getElementById("ETVC").style.display = "";
     }
     else if (type == "ETLU") {
         coffee = "The Maverick";
+        document.getElementById("ETLU").style.display = "";
     }
     else if (type == "ETLC") {
-        coffee = "The Top Charter";
+        coffee = "The Performer";
+        document.getElementById("ETLC").style.display = "";
     }
     else if (type == "FNVU") {
         coffee = "The Specialist";
+        document.getElementById("FNVU").style.display = "";
     }
     else if (type == "FNVC") {
-        coffee = "The Fanclubber";
+        coffee = "The Supporter";
+        document.getElementById("FNVC").style.display = "";
     }
     else if (type == "FNLU") {
         coffee = "The Devotee";
+        document.getElementById("FNLU").style.display = "";
     }
     else if (type == "FNLC") {
         coffee = "The Enthusiast";
+        document.getElementById("FNLC").style.display = "";
     }
     else if (type == "FTVU") {
         coffee = "The Deep Diver";
+        document.getElementById("FTVU").style.display = "";
     }
     else if (type == "FTVC") {
-        coffee = "The Jukeboxer";
+        coffee = "The Collector";
+        document.getElementById("FTVC").style.display = "";
     }
     else if (type == "FTLU") {
-        coffee = "The Replayer";
+        coffee = "The Comfort Seeker";
+        document.getElementById("FTLU").style.display = "";
     }
     else if (type == "FTLC") {
         coffee = "The Connoisseur";
+        document.getElementById("FTLC").style.display = "";
     }
 
     document.getElementById("type").innerHTML = "Your type is " + type + " - " + coffee;
