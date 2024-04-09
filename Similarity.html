@@ -6,7 +6,7 @@
         <script src="Similarity.js"></script>
         <script src="presets_characters.js"></script>
         <title>
-            Character Comparison Tool
+            Character Comparator
         </title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
@@ -15,12 +15,13 @@
         <div class="main_col">
         <div class="main">
             <a href="index.html" class="portal">Back to Portal</a>
-        <h1>Character Comparison Tool</h1>
+        <h1>Character Comparator</h1>
         <h3>How similar are you to your friend? (or another person or character)</h3>
         <h3>This tool is based on Big Five Aspect Scales from IPIP.</h3>
-        <h3>Enter the trait scores in appropriate areas.</h3>
+        <h3>Enter the trait scores in appropriate areas. You can find the trait descriptions at the bottom.</h3>
         <h3>The result you get is an approximation, not a precise value.</h3>
         <h3>Note: This tool measures similarity, NOT compatibility or desirability.</h3>
+        <a href="Typology Finder.html" style="background-color: rgb(230, 111, 0);">Take Big Five Test!</a>
         </div>
         <div class="main">
         <h2 id="Statement">Enter the trait scores down below:</h2>
@@ -28,63 +29,63 @@
         <input type="button" class="auto_fill" onclick=autofill_dev() value="Use the developer's trait scores!"><br><br>
         <div id="tool">
             <table id="current" class="current">
-                <tr>
-                    <th>Traits</th>
+                <tr class="head_table">
+                    <th class="trait">Traits</th>
                     <th><input type="text" id="you_name" placeholder="Your Name"></th>
                     <th><input type="text" id="oth_name" placeholder="Other's Name"></th>
                 </tr>
-                <tr>
-                    <td>Intellectual Curiosity</td>
+                <tr class="darker">
+                    <td class="trait1">Intellectual Curiosity</td>
                     <td><input type="range" class="slider_a" step="10" id="int_you" min="0" max="100" value = "50" oninput=update_a() onchange=update_a()><p class="table" id="int_youa">50</p></td>
                     <td><input type="range" class="slider_a" step="10" id="int_oth" min="0" max="100" value = "50" oninput=update_a() onchange=update_a()><p class="table" id="int_otha">50</p></td>
                 </tr>
                 <tr>
-                    <td>Unconventionality</td>
+                    <td class="trait2">Unconventionality Creativity</td>
                     <td><input type="range" class="slider_a" step="10" id="opn_you" min="0" max="100" value = "50" oninput=update_a() onchange=update_a()><p class="table" id="opn_youa">50</p></td>
                     <td><input type="range" class="slider_a" step="10" id="opn_oth" min="0" max="100" value = "50" oninput=update_a() onchange=update_a()><p class="table" id="opn_otha">50</p></td>
                 </tr>
-                <tr>
-                    <td>Industriousness</td>
+                <tr class="darker">
+                    <td class="trait3">Industriousness Ambition</td>
                     <td><input type="range" class="slider_a" step="10" id="ind_you" min="0" max="100" value = "50" oninput=update_a() onchange=update_a()><p class="table" id="ind_youa">50</p></td>
                     <td><input type="range" class="slider_a" step="10" id="ind_oth" min="0" max="100" value = "50" oninput=update_a() onchange=update_a()><p class="table" id="ind_otha">50</p></td>
                 </tr>
                 <tr>
-                    <td>Orderliness</td>
+                    <td class="trait4">Orderliness Planning</td>
                     <td><input type="range" class="slider_a" step="10" id="ord_you" min="0" max="100" value = "50" oninput=update_a() onchange=update_a()><p class="table" id="ord_youa">50</p></td>
                     <td><input type="range" class="slider_a" step="10" id="ord_oth" min="0" max="100" value = "50" oninput=update_a() onchange=update_a()><p class="table" id="ord_otha">50</p></td>
                 </tr>
-                <tr>
-                    <td>Enthusiasm</td>
+                <tr class="darker">
+                    <td class="trait5">Enthusiasm Sociability</td>
                     <td><input type="range" class="slider_a" step="10" id="ent_you" min="0" max="100" value = "50" oninput=update_a() onchange=update_a()><p class="table" id="ent_youa">50</p></td>
                     <td><input type="range" class="slider_a" step="10" id="ent_oth" min="0" max="100" value = "50" oninput=update_a() onchange=update_a()><p class="table" id="ent_otha">50</p></td>
                 </tr>
                 <tr>
-                    <td>Assertiveness</td>
+                    <td class="trait6">Assertiveness Dominance</td>
                     <td><input type="range" class="slider_a" step="10" id="asr_you" min="0" max="100" value = "50" oninput=update_a() onchange=update_a()><p class="table" id="asr_youa">50</p></td>
                     <td><input type="range" class="slider_a" step="10" id="asr_oth" min="0" max="100" value = "50" oninput=update_a() onchange=update_a()><p class="table" id="asr_otha">50</p></td>
                 </tr>
-                <tr>
-                    <td>Compassion</td>
+                <tr class="darker">
+                    <td class="trait7">Compassion Altruism</td>
                     <td><input type="range" class="slider_a" step="10" id="com_you" min="0" max="100" value = "50" oninput=update_a() onchange=update_a()><p class="table" id="com_youa">50</p></td>
                     <td><input type="range" class="slider_a" step="10" id="com_oth" min="0" max="100" value = "50" oninput=update_a() onchange=update_a()><p class="table" id="com_otha">50</p></td>
                 </tr>
                 <tr>
-                    <td>Politeness</td>
+                    <td class="trait8">Politeness Cooperativeness</td>
                     <td><input type="range" class="slider_a" step="10" id="pol_you" min="0" max="100" value = "50" oninput=update_a() onchange=update_a()><p class="table" id="pol_youa">50</p></td>
                     <td><input type="range" class="slider_a" step="10" id="pol_oth" min="0" max="100" value = "50" oninput=update_a() onchange=update_a()><p class="table" id="pol_otha">50</p></td>
                 </tr>
-                <tr>
-                    <td>Negative Affect</td>
+                <tr class="darker">
+                    <td class="trait9">Negative Affect Apprehension</td>
                     <td><input type="range" class="slider_a" step="10" id="wtd_you" min="0" max="100" value = "50" oninput=update_a() onchange=update_a()><p class="table" id="wtd_youa">50</p></td>
                     <td><input type="range" class="slider_a" step="10" id="wtd_oth" min="0" max="100" value = "50" oninput=update_a() onchange=update_a()><p class="table" id="wtd_otha">50</p></td>
                 </tr>
                 <tr>
-                    <td>Emotional Instability</td>
+                    <td class="trait10">Emotional Instability</td>
                     <td><input type="range" class="slider_a" step="10" id="vol_you" min="0" max="100" value = "50" oninput=update_a() onchange=update_a()><p class="table" id="vol_youa">50</p></td>
                     <td><input type="range" class="slider_a" step="10" id="vol_oth" min="0" max="100" value = "50" oninput=update_a() onchange=update_a()><p class="table" id="vol_otha">50</p></td>
                 </tr>
             </table>
-            <p style="font-weight: bold;">How similar are your interests and preferences to this person? (Leave it at the middle if you want raw personality similarity)</p>
+            <p style="font-weight: bold;">How similar are your interests and preferences to this person?</p>
             <input type="range" min="0" max="100" step="10" id="interest_sim" class="slider" value="50" oninput=update_a() onchange=update_a()><p id="interest_sim_d" class="interest_sim_label">50</p>
             <input type="button" onclick=log() value="Submit" id="submit_sim">
         </div>
