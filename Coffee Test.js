@@ -64,12 +64,12 @@ function buttonclick(score) {
         F -= score;
     }
     else if (current_question == 13 || current_question == 14){
-        P += score;
-        Q -= score;
-    }
-    else if (current_question == 15 || current_question == 16){
         Q += score;
         P -= score;
+    }
+    else if (current_question == 15 || current_question == 16){
+        P += score;
+        Q -= score;
     }
 
     if (current_question > (questions.length - 1)){

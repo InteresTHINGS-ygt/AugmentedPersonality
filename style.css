@@ -587,7 +587,7 @@ p.interest_sim_label {
     input[type="text"] {
         height: 30px;
         width: 127px;
-        background-color: rgb(240, 235, 225);
+        background-color: rgb(163, 156, 141);
         border: none;
         border-radius: 6px;
         font-family: system-ui, Arial, Helvetica, sans-serif;
