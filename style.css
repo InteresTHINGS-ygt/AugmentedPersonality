@@ -167,13 +167,18 @@ input[type="number"] {
 input[type="text"] {
     height: 6vw;
     width: 24vw;
-    background-color: rgb(240, 235, 225);
+    background-color: rgb(40, 35, 25);
     border: none;
     border-radius: 1vw;
     font-family: system-ui, Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-size: 3.5vw;
     box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
+    color: rgb(199, 199, 199);
+}
+
+::placeholder {
+    color: rgb(100, 95, 85);
 }
 
 .slider {
@@ -207,7 +212,7 @@ input[type="text"] {
     cursor: pointer;
 }
 
-.slider_a {
+.slider_a1, .slider_a2, .slider_a3, .slider_a4, .slider_a5, .slider_a6, .slider_a7, .slider_a8, .slider_a9, .slider_a10 {
     width: 25vw;
     -webkit-appearance: none;
     height: 6vw;
@@ -220,7 +225,7 @@ input[type="text"] {
     box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
 }
 
-.slider_a::-webkit-slider-thumb {
+.slider_a1::-webkit-slider-thumb, .slider_a2::-webkit-slider-thumb, .slider_a3::-webkit-slider-thumb, .slider_a4::-webkit-slider-thumb, .slider_a5::-webkit-slider-thumb, .slider_a6::-webkit-slider-thumb, .slider_a7::-webkit-slider-thumb, .slider_a8::-webkit-slider-thumb, .slider_a9::-webkit-slider-thumb, .slider_a10::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
     width: 6vw;
@@ -231,7 +236,7 @@ input[type="text"] {
     box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
 }
   
-.slider_a::-moz-range-thumb {
+.slider_a1::-moz-slider-thumb, .slider_a2::-moz-slider-thumb, .slider_a3::-moz-slider-thumb, .slider_a4::-moz-slider-thumb, .slider_a5::-moz-slider-thumb, .slider_a6::-moz-slider-thumb, .slider_a7::-moz-slider-thumb, .slider_a8::-moz-slider-thumb, .slider_a9::-moz-slider-thumb, .slider_a10::-moz-slider-thumb {
     width: 6vw;
     height: 6vw;
     background: #04AA6D;
@@ -315,8 +320,54 @@ th {
     color: rgb(240, 240, 240);
 }
 
-.darker {
-    background-color: rgb(200, 195, 185);
+.light_trait1 {
+    background-color: rgb(102, 190, 171);
+    color: rgb(40, 37, 30);
+}
+
+.light_trait2 {
+    background-color: rgb(106, 199, 98);
+    color: rgb(40, 37, 30);
+}
+
+.light_trait3 {
+    background-color: rgb(100, 168, 207);
+    color: rgb(40, 37, 30);
+}
+
+.light_trait4 {
+    background-color: rgb(101, 136, 202);
+    color: rgb(40, 37, 30);
+}
+
+.light_trait5 {
+    background-color: rgb(216, 209, 109);
+    color: rgb(40, 37, 30);
+}
+
+.light_trait6 {
+    background-color: rgb(209, 183, 111);
+    color: rgb(40, 37, 30);
+}
+
+.light_trait7 {
+    background-color: rgb(211, 112, 178);
+    color: rgb(40, 37, 30);
+}
+
+.light_trait8 {
+    background-color: rgb(192, 99, 127);
+    color: rgb(40, 37, 30);
+}
+
+.light_trait9 {
+    background-color: rgb(153, 101, 187);
+    color: rgb(40, 37, 30);
+}
+
+.light_trait10 {
+    background-color: rgb(182, 120, 211);
+    color: rgb(40, 37, 30);
 }
 
 .head_table {
@@ -549,7 +600,7 @@ p.interest_sim_label {
         cursor: pointer;
     }
 
-    .slider_a {
+    .slider_a1, .slider_a2, .slider_a3, .slider_a4, .slider_a5, .slider_a6, .slider_a7, .slider_a8, .slider_a9, .slider_a10 {
         -webkit-appearance: none;
         width: 140px;
         height: 20px;
@@ -563,7 +614,7 @@ p.interest_sim_label {
         margin: 15px
     }
     
-    .slider_a::-webkit-slider-thumb {
+    .slider_a1::-webkit-slider-thumb, .slider_a2::-webkit-slider-thumb, .slider_a3::-webkit-slider-thumb, .slider_a4::-webkit-slider-thumb, .slider_a5::-webkit-slider-thumb, .slider_a6::-webkit-slider-thumb, .slider_a7::-webkit-slider-thumb, .slider_a8::-webkit-slider-thumb, .slider_a9::-webkit-slider-thumb, .slider_a10::-webkit-slider-thumb {
         -webkit-appearance: none;
         appearance: none;
         width: 20px;
@@ -574,7 +625,7 @@ p.interest_sim_label {
         box-shadow: 7px 7px 14px rgba(40, 37, 30, 0.2);
     }
       
-    .slider_a::-moz-range-thumb {
+    .slider_a1::-moz-slider-thumb, .slider_a2::-moz-slider-thumb, .slider_a3::-moz-slider-thumb, .slider_a4::-moz-slider-thumb, .slider_a5::-moz-slider-thumb, .slider_a6::-moz-slider-thumb, .slider_a7::-moz-slider-thumb, .slider_a8::-moz-slider-thumb, .slider_a9::-moz-slider-thumb, .slider_a10::-moz-slider-thumb {
         width: 20px;
         height: 20px;
         background: #04AA6D;

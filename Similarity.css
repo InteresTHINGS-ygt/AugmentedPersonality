@@ -3,23 +3,145 @@ body {
 }
 
 input[type="button"] {
-    background-color: rgb(16, 113, 120);
+    background-color: rgb(7, 0, 105);
 }
 
 .slider::-webkit-slider-thumb {
-    background-color: rgb(16, 113, 120);
+    background-color: rgb(7, 0, 105);
 }
   
 .slider::-moz-range-thumb {
-    background-color: rgb(16, 113, 120);
+    background-color: rgb(7, 0, 105);
 }
 
-.slider_a::-webkit-slider-thumb {
-    background-color: rgb(16, 113, 120);
+.slider_a1::-webkit-slider-thumb {
+    background-color: rgb(0, 160, 125);
 }
   
-.slider_a::-moz-range-thumb {
-    background-color: rgb(16, 113, 120);
+.slider_a1::-moz-range-thumb {
+    background-color: rgb(0, 160, 125);
+}
+
+.slider_a2::-webkit-slider-thumb {
+    background-color: rgb(20, 180, 5);
+}
+  
+.slider_a2::-moz-range-thumb {
+    background-color: rgb(20, 180, 5);
+}
+
+.slider_a3::-webkit-slider-thumb {
+    background-color: rgb(13, 122, 185);
+}
+  
+.slider_a3::-moz-range-thumb {
+    background-color: rgb(13, 122, 185);
+}
+
+.slider_a4::-webkit-slider-thumb {
+    background-color: rgb(0, 58, 167);
+}
+  
+.slider_a4::-moz-range-thumb {
+    background-color: rgb(0, 58, 167);
+}
+
+.slider_a5::-webkit-slider-thumb {
+    background-color: rgb(209, 196, 7);
+}
+  
+.slider_a5::-moz-range-thumb {
+    background-color: rgb(209, 196, 7);
+}
+
+.slider_a6::-webkit-slider-thumb {
+    background-color: rgb(204, 155, 19);
+}
+  
+.slider_a6::-moz-range-thumb {
+    background-color: rgb(204, 155, 19);
+}
+
+.slider_a7::-webkit-slider-thumb {
+    background-color: rgb(192, 11, 132);
+}
+  
+.slider_a7::-moz-range-thumb {
+    background-color: rgb(192, 11, 132);
+}
+
+.slider_a8::-webkit-slider-thumb {
+    background-color: rgb(158, 7, 52);
+}
+  
+.slider_a8::-moz-range-thumb {
+    background-color: rgb(158, 7, 52);
+}
+
+.slider_a9::-webkit-slider-thumb {
+    background-color: rgb(63, 0, 105);
+}
+  
+.slider_a9::-moz-range-thumb {
+    background-color: rgb(63, 0, 105);
+}
+
+.slider_a10::-webkit-slider-thumb {
+    background-color: rgb(118, 0, 173);
+}
+  
+.slider_a10::-moz-range-thumb {
+    background-color: rgb(118, 0, 173);
+}
+
+.slider_a1 {
+    background-color: rgb(145, 219, 203);
+    color: rgb(40, 37, 30);
+}
+
+.slider_a2 {
+    background-color: rgb(145, 221, 138);
+    color: rgb(40, 37, 30);
+}
+
+.slider_a3 {
+    background-color: rgb(134, 193, 226);
+    color: rgb(40, 37, 30);
+}
+
+.slider_a4 {
+    background-color: rgb(142, 171, 224);
+    color: rgb(40, 37, 30);
+}
+
+.slider_a5 {
+    background-color: rgb(233, 228, 155);
+    color: rgb(40, 37, 30);
+}
+
+.slider_a6 {
+    background-color: rgb(230, 207, 146);
+    color: rgb(40, 37, 30);
+}
+
+.slider_a7 {
+    background-color: rgb(230, 152, 204);
+    color: rgb(40, 37, 30);
+}
+
+.slider_a8 {
+    background-color: rgb(226, 145, 169);
+    color: rgb(40, 37, 30);
+}
+
+.slider_a9 {
+    background-color: rgb(192, 146, 223);
+    color: rgb(40, 37, 30);
+}
+
+.slider_a10 {
+    background-color: rgb(207, 156, 231);
+    color: rgb(40, 37, 30);
 }
 
 .indicator_lights {
