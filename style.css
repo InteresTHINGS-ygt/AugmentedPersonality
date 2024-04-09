@@ -167,18 +167,17 @@ input[type="number"] {
 input[type="text"] {
     height: 6vw;
     width: 24vw;
-    background-color: rgb(40, 35, 25);
+    background-color: rgb(163, 156, 141);
     border: none;
     border-radius: 1vw;
     font-family: system-ui, Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-size: 3.5vw;
     box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
-    color: rgb(199, 199, 199);
 }
 
 ::placeholder {
-    color: rgb(100, 95, 85);
+    color: rgb(87, 83, 76);
 }
 
 .slider {
@@ -372,6 +371,56 @@ th {
 
 .head_table {
     background-color: rgb(100, 95, 85);
+}
+
+input[type="number"].number_a1 {
+    background-color: rgb(178, 240, 226);
+    color: rgb(40, 37, 30);
+}
+
+input[type="number"].number_a2 {
+    background-color: rgb(179, 236, 174);
+    color: rgb(40, 37, 30);
+}
+
+input[type="number"].number_a3 {
+    background-color: rgb(173, 213, 236);
+    color: rgb(40, 37, 30);
+}
+
+input[type="number"].number_a4 {
+    background-color: rgb(178, 200, 240);
+    color: rgb(40, 37, 30);
+}
+
+input[type="number"].number_a5 {
+    background-color: rgb(240, 236, 188);
+    color: rgb(40, 37, 30);
+}
+
+input[type="number"].number_a6 {
+    background-color: rgb(243, 228, 185);
+    color: rgb(40, 37, 30);
+}
+
+input[type="number"].number_a7 {
+    background-color: rgb(243, 193, 226);
+    color: rgb(40, 37, 30);
+}
+
+input[type="number"].number_a8 {
+    background-color: rgb(241, 188, 204);
+    color: rgb(40, 37, 30);
+}
+
+input[type="number"].number_a9 {
+    background-color: rgb(220, 192, 240);
+    color: rgb(40, 37, 30);
+}
+
+input[type="number"].number_a10 {
+    background-color: rgb(232, 205, 245);
+    color: rgb(40, 37, 30);
 }
 
 div.pre {

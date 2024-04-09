@@ -15,132 +15,132 @@ input[type="button"] {
 }
 
 .slider_a1::-webkit-slider-thumb {
-    background-color: rgb(0, 160, 125);
+    background-color: rgb(0, 99, 77);
 }
   
 .slider_a1::-moz-range-thumb {
-    background-color: rgb(0, 160, 125);
+    background-color: rgb(0, 99, 77);
 }
 
 .slider_a2::-webkit-slider-thumb {
-    background-color: rgb(20, 180, 5);
+    background-color: rgb(9, 114, 0);
 }
   
 .slider_a2::-moz-range-thumb {
-    background-color: rgb(20, 180, 5);
+    background-color: rgb(9, 114, 0);
 }
 
 .slider_a3::-webkit-slider-thumb {
-    background-color: rgb(13, 122, 185);
+    background-color: rgb(0, 75, 119);
 }
   
 .slider_a3::-moz-range-thumb {
-    background-color: rgb(13, 122, 185);
+    background-color: rgb(0, 75, 119);
 }
 
 .slider_a4::-webkit-slider-thumb {
-    background-color: rgb(0, 58, 167);
+    background-color: rgb(0, 40, 114);
 }
   
 .slider_a4::-moz-range-thumb {
-    background-color: rgb(0, 58, 167);
+    background-color: rgb(0, 40, 114);
 }
 
 .slider_a5::-webkit-slider-thumb {
-    background-color: rgb(209, 196, 7);
+    background-color: rgb(148, 138, 0);
 }
   
 .slider_a5::-moz-range-thumb {
-    background-color: rgb(209, 196, 7);
+    background-color: rgb(148, 138, 0);
 }
 
 .slider_a6::-webkit-slider-thumb {
-    background-color: rgb(204, 155, 19);
+    background-color: rgb(145, 106, 0);
 }
   
 .slider_a6::-moz-range-thumb {
-    background-color: rgb(204, 155, 19);
+    background-color: rgb(145, 106, 0);
 }
 
 .slider_a7::-webkit-slider-thumb {
-    background-color: rgb(192, 11, 132);
+    background-color: rgb(134, 0, 90);
 }
   
 .slider_a7::-moz-range-thumb {
-    background-color: rgb(192, 11, 132);
+    background-color: rgb(134, 0, 90);
 }
 
 .slider_a8::-webkit-slider-thumb {
-    background-color: rgb(158, 7, 52);
+    background-color: rgb(110, 0, 33);
 }
   
 .slider_a8::-moz-range-thumb {
-    background-color: rgb(158, 7, 52);
+    background-color: rgb(110, 0, 33);
 }
 
 .slider_a9::-webkit-slider-thumb {
-    background-color: rgb(63, 0, 105);
+    background-color: rgb(41, 0, 68);
 }
   
 .slider_a9::-moz-range-thumb {
-    background-color: rgb(63, 0, 105);
+    background-color: rgb(41, 0, 68);
 }
 
 .slider_a10::-webkit-slider-thumb {
-    background-color: rgb(118, 0, 173);
+    background-color: rgb(78, 0, 114);
 }
   
 .slider_a10::-moz-range-thumb {
-    background-color: rgb(118, 0, 173);
+    background-color: rgb(78, 0, 114);
 }
 
 .slider_a1 {
-    background-color: rgb(145, 219, 203);
+    background-color: rgb(178, 240, 226);
     color: rgb(40, 37, 30);
 }
 
 .slider_a2 {
-    background-color: rgb(145, 221, 138);
+    background-color: rgb(179, 236, 174);
     color: rgb(40, 37, 30);
 }
 
 .slider_a3 {
-    background-color: rgb(134, 193, 226);
+    background-color: rgb(173, 213, 236);
     color: rgb(40, 37, 30);
 }
 
 .slider_a4 {
-    background-color: rgb(142, 171, 224);
+    background-color: rgb(178, 200, 240);
     color: rgb(40, 37, 30);
 }
 
 .slider_a5 {
-    background-color: rgb(233, 228, 155);
+    background-color: rgb(240, 236, 188);
     color: rgb(40, 37, 30);
 }
 
 .slider_a6 {
-    background-color: rgb(230, 207, 146);
+    background-color: rgb(243, 228, 185);
     color: rgb(40, 37, 30);
 }
 
 .slider_a7 {
-    background-color: rgb(230, 152, 204);
+    background-color: rgb(243, 193, 226);
     color: rgb(40, 37, 30);
 }
 
 .slider_a8 {
-    background-color: rgb(226, 145, 169);
+    background-color: rgb(241, 188, 204);
     color: rgb(40, 37, 30);
 }
 
 .slider_a9 {
-    background-color: rgb(192, 146, 223);
+    background-color: rgb(220, 192, 240);
     color: rgb(40, 37, 30);
 }
 
 .slider_a10 {
-    background-color: rgb(207, 156, 231);
+    background-color: rgb(232, 205, 245);
     color: rgb(40, 37, 30);
 }
 
