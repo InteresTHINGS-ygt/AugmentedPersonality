@@ -84,13 +84,13 @@ function get_result() {
     document.getElementById("question_number").style.display = "none";
 
     document.getElementById("bar_M").style.width = (((9-oi) / 9) * 100) + "%";
-    document.getElementById("bar_S").style.width = (((9-di) / 9) * 100) + "%";
+    document.getElementById("bar_S").style.width = ((di / 9) * 100) + "%";
     document.getElementById("bar_F").style.width = (((9-d) / 9) * 100) + "%";
     document.getElementById("bar_P").style.width = (((9-n) / 9) * 100) + "%";
     document.getElementById("bar_1").style.width = (((9-f) / 9) * 100) + "%";
 
     document.getElementById("bar_B").style.width = ((oi / 9) * 100) + "%";
-    document.getElementById("bar_A").style.width = ((di / 9) * 100) + "%";
+    document.getElementById("bar_A").style.width = (((9-di) / 9) * 100) + "%";
     document.getElementById("bar_V").style.width = ((d / 9) * 100) + "%";
     document.getElementById("bar_Q").style.width = ((n / 9) * 100) + "%";
     document.getElementById("bar_2").style.width = ((f / 9) * 100) + "%";
