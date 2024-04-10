@@ -1,1 +1,1 @@
-# Lichnost
+# Personality Ganutlet
