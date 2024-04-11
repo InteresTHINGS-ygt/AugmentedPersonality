@@ -1,3 +1,5 @@
+
+
 var current_question = -1;
 var score = 0;
 
@@ -352,6 +354,30 @@ function get_result() {
     document.getElementById("bar_NEUs").style.width = neuroticism + "%";
     document.getElementById("bar_wtds").style.width = wtd + "%";
     document.getElementById("bar_vols").style.width = vol + "%";
+
+    // Percentiles
+    var scores = [openness, conscientiousness, extraversion, agreeableness, neuroticism, int, opn, ind, ord, ent, asr, com, pol, wtd, vol];
+    var means = [63, 47, 60, 51, 58, 62, 65, 51, 42, 58, 62, 59, 43, 60, 57];
+    var sds = [21, 27, 27, 26, 25, 25, 27, 31, 29, 28, 31, 30, 30, 29, 30];
+
+    var percentiles = [];
+
+    /*for (i = 0 ; i < means.length() ; i++) {
+        var z = Math.round((scores[i] - means[i]) / sds[i] * 10000) / 100;
+
+        if (z < -3.0) {
+            p = 0;
+            percentiles.push(p);
+        }
+        else if (z >= 3.0 && z < 2.8) {
+            // p is between 0.13 and 0.26
+        }
+        else if (z >= 2.8 && z < 2.6) {
+
+        }
+
+    }*/
+    
 
     // SLOAN
     var s;
