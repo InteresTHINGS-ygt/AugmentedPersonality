@@ -286,8 +286,8 @@ function log() {
         else {
             max_as = Math.max(100-you[i], 100-oth[i]);
             min_as = Math.min(100-you[i], 100-oth[i]);
-            score_per = (min_s / max_s)**1.5 * 100;
-            ascore_per = (min_as / max_as)**1.5 * 100;
+            score_per = (min_s / max_s)**1.7 * 100;
+            ascore_per = (min_as / max_as)**1.7 * 100;
             high_bonus = 10 * ((50 - Math.abs(you[i]-oth[i]))/40)
             if (high_bonus < 0) {
                 high_bonus = 0;
