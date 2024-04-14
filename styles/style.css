@@ -152,7 +152,7 @@ div.main {
 div.grid_menu {
     display: grid;
     grid-template-columns: 41vw 41vw;
-    grid-template-rows: 30vw 30vw 30vw 30vw 30vw 30vw 30vw 30vw 30vw;
+    grid-template-rows: 35vw 35vw 35vw 35vw 35vw 35vw 35vw 35vw 35vw;
     gap: 1vw;
     justify-content: space-evenly;
 }
@@ -522,7 +522,7 @@ p.interest_sim_label {
     div.grid_menu {
         display: grid;
         grid-template-columns: 270px 270px;
-        grid-template-rows: 135px 135px 135px 135px 135px 135px 135px 135px 135px;
+        grid-template-rows: 150px 150px 150px 150px 150px 150px 150px 150px 150px;
         gap: 10px;
         justify-content: space-evenly;
     }
