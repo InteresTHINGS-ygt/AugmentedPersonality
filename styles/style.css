@@ -1,13 +1,3 @@
-@font-face {
-    font-family: int10h_8x8;
-    src: url(fonts/int10h_8x8.woff);
-}
-
-@font-face {
-    font-family: int10h_8x16;
-    src: url(fonts/int10h_8x16.woff);
-}
-
 .submit_sim {
     width: 20vw;
 }
