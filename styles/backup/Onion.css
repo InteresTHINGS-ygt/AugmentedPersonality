@@ -1,0 +1,153 @@
+body {
+    background-color: rgb(185, 121, 0);
+}
+
+input[type="button"] {
+    background-color: rgb(0, 185, 9);
+}
+
+.results_bar {
+    background-color: rgb(173, 173, 173);
+    margin: 4vw;
+    border-radius: 1.5vw;
+    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+.bar_M {
+    background-color: rgb(160, 204, 0);
+    border-radius: 1.5vw 0 0 1.5vw;
+    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
+    width: 50%;
+    height: 6vw;
+    overflow: hidden;
+}
+
+.bar_B {
+    background-color: rgb(147, 0, 192);
+    border-radius: 0 1.5vw 1.5vw 0;
+    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
+    width: 50%;
+    height: 6vw;
+    overflow: hidden;
+}
+
+.bar_S {
+    background-color: rgb(221, 133, 0);
+    border-radius: 1.5vw 0 0 1.5vw;
+    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
+    width: 50%;
+    height: 6vw;
+    overflow: hidden;
+}
+
+.bar_A {
+    background-color: rgb(6, 70, 207);
+    border-radius: 0 1.5vw 1.5vw 0;
+    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
+    width: 50%;
+    height: 6vw;
+    overflow: hidden;
+}
+
+.bar_F {
+    background-color: rgb(212, 0, 149);
+    border-radius: 1.5vw 0 0 1.5vw;
+    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
+    width: 50%;
+    height: 6vw;
+    overflow: hidden;
+}
+
+.bar_V {
+    background-color: rgb(29, 175, 0);
+    border-radius: 0 1.5vw 1.5vw 0;
+    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
+    width: 50%;
+    height: 6vw;
+    overflow: hidden;
+}
+
+.bar_P {
+    background-color: rgb(0, 190, 149);
+    border-radius: 1.5vw 0 0 1.5vw;
+    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
+    width: 50%;
+    height: 6vw;
+    overflow: hidden;
+}
+
+.bar_Q {
+    background-color: rgb(192, 0, 0);
+    border-radius: 0 1.5vw 1.5vw 0;
+    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
+    width: 50%;
+    height: 6vw;
+    overflow: hidden;
+}
+
+@media only screen and (min-width: 600px){
+    .results_bar {
+        margin: 30px;
+        border-radius: 10px;
+        box-shadow: 14px 14px 28px rgba(40, 37, 30, 0.2);
+        position: relative;
+    }
+    
+    .bar_M {
+        border-radius: 10px 0 0 10px;
+        box-shadow: 14px 14px 28px rgba(40, 37, 30, 0.2);
+        width: 50%;
+        height: 40px;
+    }
+    
+    .bar_B {
+        border-radius: 0 10px 10px 0;
+        box-shadow: 14px 14px 28px rgba(40, 37, 30, 0.2);
+        width: 50%;
+        height: 40px;
+    }
+    
+    .bar_S {
+        border-radius: 10px 0 0 10px;
+        box-shadow: 14px 14px 28px rgba(40, 37, 30, 0.2);
+        width: 50%;
+        height: 40px;
+    }
+    
+    .bar_A {
+        border-radius: 0 10px 10px 0;
+        box-shadow: 14px 14px 28px rgba(40, 37, 30, 0.2);
+        width: 50%;
+        height: 40px;
+    }
+    
+    .bar_F {
+        border-radius: 10px 0 0 10px;
+        box-shadow: 14px 14px 28px rgba(40, 37, 30, 0.2);
+        width: 50%;
+        height: 40px;
+    }
+    
+    .bar_V {
+        border-radius: 0 10px 10px 0;
+        box-shadow: 14px 14px 28px rgba(40, 37, 30, 0.2);
+        width: 50%;
+        height: 40px;
+    }
+    
+    .bar_P {
+        border-radius: 10px 0 0 10px;
+        box-shadow: 14px 14px 28px rgba(40, 37, 30, 0.2);
+        width: 50%;
+        height: 40px;
+    }
+    
+    .bar_Q {
+        border-radius: 0 10px 10px 0;
+        box-shadow: 14px 14px 28px rgba(40, 37, 30, 0.2);
+        width: 50%;
+        height: 40px;
+    }
+}

@@ -1,0 +1,164 @@
+body {
+    background-color: rgb(80, 120, 16)
+}
+
+input[type="button"] {
+    background-color: rgb(175, 173, 17)
+}
+
+.visual_container {
+    margin: 3.5vw;
+    position: relative;
+    border-radius: 2vw;
+    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.4);
+}
+
+.point {
+    position: absolute;
+    width: 0.1vw;
+    height: 0.1vw;
+    border-radius: 2vw;
+    outline: rgb(0, 0, 0) solid 2vw;
+    background-color: black;
+    bottom: 0%;
+    left: 0%;
+}
+
+.visual_results {
+    grid-template-columns: 20vw 20vw 20vw 20vw;
+    grid-template-rows: 20vw 20vw 20vw 20vw;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 2.7vw;
+}
+
+.center_text {
+    position: relative;
+    top: 38%;
+    width: 100%;
+    text-align: center;
+}
+
+.Technician {
+    background-color: rgb(0, 102, 255);
+    border-radius: 2vw 0 0 0;
+}
+
+.Scientist {
+    background-color: rgb(0, 155, 226);
+}
+
+.Inventor {
+    background-color: rgb(226, 230, 0);
+}
+
+.Fascinator {
+    background-color: rgb(255, 187, 0);
+    border-radius: 0 2vw 0 0;
+}
+
+.Architect {
+    background-color: rgb(0, 124, 133);
+}
+
+.Professor {
+    background-color: rgb(106, 104, 223);
+}
+
+.Entrepreneur {
+    background-color: rgb(221, 223, 104);
+}
+
+.Adventurer {
+    background-color: rgb(255, 153, 0);
+}
+
+.Inspector {
+    background-color: rgb(0, 145, 56);
+}
+
+.Go-Getter {
+    background-color: rgb(104, 192, 78);
+}
+
+.Coach {
+    background-color: rgb(223, 104, 130);
+}
+
+.Influencer {
+    background-color: rgb(255, 72, 0);
+}
+
+.Administrator {
+    background-color: rgb(0, 182, 15);
+    border-radius: 0 0 0 2vw;
+}
+
+.Guardian {
+    background-color: rgb(72, 136, 0);
+}
+
+.Caregiver {
+    background-color: rgb(202, 0, 78);
+}
+
+.Entertainer {
+    background-color: rgb(255, 0, 0);
+    border-radius: 0 0 2vw 0;
+}
+
+@media only screen and (min-width: 600px) {
+    .visual_container {
+        margin: 26px;
+        position: relative;
+        border-radius: 10px;
+        box-shadow: 7px 7px 14px rgba(40, 37, 30, 0.4);
+    }
+    
+    .point {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        border-radius: 5px;
+        outline: rgb(0, 0, 0) solid 10px;
+        bottom: 0%;
+        left: 0%;
+    }
+    
+    .visual_results {
+        grid-template-columns: 125px 125px 125px 125px;
+        grid-template-rows: 125px 125px 125px 125px;
+        justify-content: center;
+        font-weight: bold;
+        font-size: 12pt;
+    }
+    
+    .center_text {
+        position: relative;
+        top: 40%;
+        width: 100%;
+        text-align: center;
+    }
+
+    .Technician {
+        background-color: rgb(0, 102, 255);
+        border-radius: 10px 0 0 0;
+    }
+
+    .Fascinator {
+        background-color: rgb(255, 187, 0);
+        border-radius: 0 10px 0 0;
+    }
+
+    .Administrator {
+        background-color: rgb(0, 182, 15);
+        border-radius: 0 0 0 10px;
+    }
+
+    .Entertainer {
+        background-color: rgb(255, 0, 0);
+        border-radius: 0 0 10px 0;
+    }
+}
+
+

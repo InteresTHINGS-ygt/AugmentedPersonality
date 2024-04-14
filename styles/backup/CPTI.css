@@ -1,0 +1,320 @@
+body {
+    background-color: rgb(196, 176, 0);
+}
+
+input[type="button"] {
+    background-color: rgb(57, 156, 11);
+}
+
+div.results {
+    grid-template-columns: 25vw 34vw 30vw;
+    gap: 1vw
+}
+
+div.one {
+    text-align: right;
+}
+
+div.three {
+    text-align: left;
+}
+
+span {
+    display: block;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+}
+
+.slider {
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+}
+
+.slider::-webkit-slider-thumb {
+    background: rgb(214, 193, 0);
+}
+  
+.slider::-moz-range-thumb {
+    background: rgb(214, 193, 0);
+}
+
+.results_bar {
+    background-color: rgb(187, 179, 179);
+    margin: 4vw;
+    border-radius: 1.5vw;
+    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
+    position: relative;
+}
+
+.bar_Fe {
+    background-color: rgb(175, 0, 131);
+    border-radius: 1.5vw;
+    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
+    width: 50%;
+    height: 6vw;
+}
+
+.bar_Fi {
+    background-color: rgb(94, 0, 122);
+    border-radius: 1.5vw;
+    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
+    width: 50%;
+    height: 6vw;
+}
+
+.bar_Ne {
+    background-color: rgb(207, 142, 0);
+    border-radius: 1.5vw;
+    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
+    width: 50%;
+    height: 6vw;
+}
+
+.bar_Ni {
+    background-color: rgb(129, 121, 0);
+    border-radius: 1.5vw;
+    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
+    width: 50%;
+    height: 6vw;
+}
+
+.bar_Se {
+    background-color: rgb(26, 153, 0);
+    border-radius: 1.5vw;
+    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
+    width: 50%;
+    height: 6vw;
+}
+
+.bar_Si {
+    background-color: rgb(0, 99, 44);
+    border-radius: 1.5vw;
+    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
+    width: 50%;
+    height: 6vw;
+}
+
+.bar_Te {
+    background-color: rgb(0, 109, 199);
+    border-radius: 1.5vw;
+    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
+    width: 50%;
+    height: 6vw;
+}
+
+.bar_Ti {
+    background-color: rgb(0, 22, 150);
+    border-radius: 1.5vw;
+    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
+    width: 50%;
+    height: 6vw;
+}
+
+.visual_container {
+    margin: 3.5vw;
+    position: relative;
+    border-radius: 2vw;
+    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.4);
+}
+
+.visual_results {
+    grid-template-columns: 20vw 20vw 20vw 20vw;
+    grid-template-rows: 20vw 20vw 20vw 20vw;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 3vw;
+}
+
+.center_text {
+    position: relative;
+    top: 38%;
+    width: 100%;
+    text-align: center;
+}
+
+.INFP {
+    background-color: hsl(157, 100%, 29%);
+    border-radius: 2vw 0 0 0;
+}
+
+.INTP {
+    background-color: hsl(162, 100%, 37%);
+}
+
+.INTJ {
+    background-color: hsl(229, 74%, 53%);
+}
+
+.INFJ {
+    background-color: hsl(271, 83%, 45%);
+    border-radius: 0 2vw 0 0;
+}
+
+.ISFP {
+    background-color: hsl(88, 84%, 37%);
+}
+
+.ISTP {
+    background-color: hsl(78, 92%, 39%);
+}
+
+.ISTJ {
+    background-color: hsl(207, 88%, 41%);
+}
+
+.ISFJ {
+    background-color: hsl(276, 86%, 52%);
+}
+
+.ESFP {
+    background-color: hsl(41, 100%, 43%);
+}
+
+.ESTP {
+    background-color: hsl(36, 100%, 37%);
+}
+
+.ESTJ {
+    background-color: hsl(12, 86%, 39%);
+}
+
+.ESFJ {
+    background-color: hsl(345, 84%, 47%);
+}
+
+.ENFP {
+    background-color: hsl(56, 86%, 45%);
+    border-radius: 0 0 0 2vw;
+}
+
+.ENTP {
+    background-color: hsl(49, 80%, 41%);
+}
+
+.ENTJ {
+    background-color: hsl(0, 84%, 49%);
+}
+
+.ENFJ {
+    background-color: hsl(340, 86%, 38%);
+    border-radius: 0 0 2vw 0;
+}
+
+@media only screen and (min-width: 600px){
+    div.results {
+        grid-template-columns: 150px 230px 150px;
+        gap: 10px
+    }
+
+    span {
+        display: block;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    
+    .slider {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    
+    .results_bar {
+        margin: 30px;
+        border-radius: 10px;
+        box-shadow: 14px 14px 28px rgba(40, 37, 30, 0.2);
+        position: relative;
+    }
+    
+    .bar_Se {
+        border-radius: 10px;
+        box-shadow: 14px 14px 28px rgba(40, 37, 30, 0.2);
+        width: 50%;
+        height: 40px;
+    }
+    
+    .bar_Si {
+        border-radius: 10px;
+        box-shadow: 14px 14px 28px rgba(40, 37, 30, 0.2);
+        width: 50%;
+        height: 40px;
+    }
+    
+    .bar_Ne {
+        border-radius: 10px;
+        box-shadow: 14px 14px 28px rgba(40, 37, 30, 0.2);
+        width: 50%;
+        height: 40px;
+    }
+    
+    .bar_Ni {
+        border-radius: 10px;
+        box-shadow: 14px 14px 28px rgba(40, 37, 30, 0.2);
+        width: 50%;
+        height: 40px;
+    }
+
+    .bar_Te {
+        border-radius: 10px;
+        box-shadow: 14px 14px 28px rgba(40, 37, 30, 0.2);
+        width: 50%;
+        height: 40px;
+    }
+    
+    .bar_Ti {
+        border-radius: 10px;
+        box-shadow: 14px 14px 28px rgba(40, 37, 30, 0.2);
+        width: 50%;
+        height: 40px;
+    }
+    
+    .bar_Fe {
+        border-radius: 10px;
+        box-shadow: 14px 14px 28px rgba(40, 37, 30, 0.2);
+        width: 50%;
+        height: 40px;
+    }
+    
+    .bar_Fi {
+        border-radius: 10px;
+        box-shadow: 14px 14px 28px rgba(40, 37, 30, 0.2);
+        width: 50%;
+        height: 40px;
+    }
+
+    .visual_container {
+        margin: 26px;
+        position: relative;
+        border-radius: 10px;
+        box-shadow: 7px 7px 14px rgba(40, 37, 30, 0.4);
+    }
+
+    .visual_results {
+        grid-template-columns: 125px 125px 125px 125px;
+        grid-template-rows: 125px 125px 125px 125px;
+        justify-content: center;
+        font-weight: bold;
+        font-size: 14pt;
+    }
+    
+    .center_text {
+        position: relative;
+        top: 39%;
+        width: 100%;
+        text-align: center;
+    }
+
+    .INFP {
+        border-radius: 10px 0 0 0;
+    }
+
+    .INFJ {
+        border-radius: 0 10px 0 0;
+    }
+
+    .ENFP {
+        border-radius: 0 0 0 10px;
+    }
+
+    .ENFJ {
+        border-radius: 0 0 10px 0;
+    }
+}

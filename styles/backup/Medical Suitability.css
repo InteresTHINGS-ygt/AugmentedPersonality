@@ -1,0 +1,41 @@
+body {
+    background-color: rgb(180, 34, 20);
+}
+
+input[type="button"] {
+    background-color: rgb(211, 129, 35);
+}
+
+.results_bar {
+    background-color: rgb(202, 160, 149);
+    margin: 4vw;
+    border-radius: 1.5vw;
+    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
+    position: relative;
+}
+
+.bar {
+    background-color: rgb(180, 34, 20);
+    border-radius: 1.5vw;
+    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
+    width: 50%;
+    height: 6vw;
+}
+
+@media only screen and (min-width: 600px){
+    .results_bar {
+        background-color: rgb(202, 160, 149);
+        margin: 30px;
+        border-radius: 10px;
+        box-shadow: 14px 14px 28px rgba(40, 37, 30, 0.2);
+        position: relative;
+    }
+    
+    .bar {
+        background-color: rgb(200, 75, 45);
+        border-radius: 10px;
+        box-shadow: 14px 14px 28px rgba(40, 37, 30, 0.2);
+        width: 50%;
+        height: 40px;
+    }
+}
