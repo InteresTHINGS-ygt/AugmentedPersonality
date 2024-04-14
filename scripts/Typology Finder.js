@@ -395,35 +395,35 @@ function get_result() {
     var a;
     var n;
 
-    if (extraversion > 50) {
+    if (extraversion >= 50) {
         s = "S";
     }
     else if (extraversion < 50) {
         s = "R";
     }
 
-    if (neuroticism > 50) {
+    if (neuroticism >= 50) {
         l = "L";
     }
     else if (neuroticism < 50) {
         l = "C";
     }
 
-    if (conscientiousness > 50) {
+    if (conscientiousness >= 50) {
         o = "O";
     }
     else if (conscientiousness < 50) {
         o = "U";
     }
 
-    if (agreeableness > 50) {
+    if (agreeableness >= 50) {
         a = "A";
     }
     else if (agreeableness < 50) {
         a = "E";
     }
 
-    if (openness > 50) {
+    if (openness >= 50) {
         n = "I";
     }
     else if (openness < 50) {
