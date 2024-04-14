@@ -2,7 +2,11 @@ body {
     background-color: rgb(196, 176, 0);
 }
 
-input[type="button"] {
+div.main {
+    background-color: rgb(92, 85, 29);
+}
+
+input[type="button"], h1 {
     background-color: rgb(57, 156, 11);
 }
 
@@ -41,71 +45,71 @@ span {
 .results_bar {
     background-color: rgb(187, 179, 179);
     margin: 4vw;
-    border-radius: 1.5vw;
-    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
+    
+    box-shadow: 2vw 2vw rgba(0, 0, 0, 0.7);
     position: relative;
 }
 
 .bar_Fe {
     background-color: rgb(175, 0, 131);
-    border-radius: 1.5vw;
-    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
+    
+    
     width: 50%;
     height: 6vw;
 }
 
 .bar_Fi {
     background-color: rgb(94, 0, 122);
-    border-radius: 1.5vw;
-    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
+    
+    
     width: 50%;
     height: 6vw;
 }
 
 .bar_Ne {
     background-color: rgb(207, 142, 0);
-    border-radius: 1.5vw;
-    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
+    
+    
     width: 50%;
     height: 6vw;
 }
 
 .bar_Ni {
     background-color: rgb(129, 121, 0);
-    border-radius: 1.5vw;
-    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
+    
+    
     width: 50%;
     height: 6vw;
 }
 
 .bar_Se {
     background-color: rgb(26, 153, 0);
-    border-radius: 1.5vw;
-    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
+    
+    
     width: 50%;
     height: 6vw;
 }
 
 .bar_Si {
     background-color: rgb(0, 99, 44);
-    border-radius: 1.5vw;
-    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
+    
+    
     width: 50%;
     height: 6vw;
 }
 
 .bar_Te {
     background-color: rgb(0, 109, 199);
-    border-radius: 1.5vw;
-    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
+    
+    
     width: 50%;
     height: 6vw;
 }
 
 .bar_Ti {
     background-color: rgb(0, 22, 150);
-    border-radius: 1.5vw;
-    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
+    
+    
     width: 50%;
     height: 6vw;
 }
@@ -113,8 +117,8 @@ span {
 .visual_container {
     margin: 3.5vw;
     position: relative;
-    border-radius: 2vw;
-    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.4);
+    
+    
 }
 
 .visual_results {
@@ -123,6 +127,7 @@ span {
     justify-content: center;
     font-weight: bold;
     font-size: 3vw;
+    
 }
 
 .center_text {
@@ -130,11 +135,13 @@ span {
     top: 38%;
     width: 100%;
     text-align: center;
+    
 }
 
 .INFP {
     background-color: hsl(157, 100%, 29%);
-    border-radius: 2vw 0 0 0;
+    
+    
 }
 
 .INTP {
@@ -147,7 +154,8 @@ span {
 
 .INFJ {
     background-color: hsl(271, 83%, 45%);
-    border-radius: 0 2vw 0 0;
+    box-shadow: 2vw 2vw rgba(0, 0, 0, 0.7);
+    
 }
 
 .ISFP {
@@ -164,6 +172,7 @@ span {
 
 .ISFJ {
     background-color: hsl(276, 86%, 52%);
+    box-shadow: 2vw 2vw rgba(0, 0, 0, 0.7);
 }
 
 .ESFP {
@@ -180,24 +189,29 @@ span {
 
 .ESFJ {
     background-color: hsl(345, 84%, 47%);
+    box-shadow: 2vw 2vw rgba(0, 0, 0, 0.7);
 }
 
 .ENFP {
     background-color: hsl(56, 86%, 45%);
-    border-radius: 0 0 0 2vw;
+    box-shadow: 2vw 2vw rgba(0, 0, 0, 0.7);
+    
 }
 
 .ENTP {
     background-color: hsl(49, 80%, 41%);
+    box-shadow: 2vw 2vw rgba(0, 0, 0, 0.7);
 }
 
 .ENTJ {
     background-color: hsl(0, 84%, 49%);
+    box-shadow: 2vw 2vw rgba(0, 0, 0, 0.7);
 }
 
 .ENFJ {
     background-color: hsl(340, 86%, 38%);
-    border-radius: 0 0 2vw 0;
+    box-shadow: 2vw 2vw rgba(0, 0, 0, 0.7);
+    
 }
 
 @media only screen and (min-width: 600px){
@@ -219,63 +233,63 @@ span {
     
     .results_bar {
         margin: 30px;
-        border-radius: 10px;
-        box-shadow: 14px 14px 28px rgba(40, 37, 30, 0.2);
+        box-shadow: 12px 12px rgba(0, 0, 0, 0.7);
+        
         position: relative;
     }
     
     .bar_Se {
-        border-radius: 10px;
-        box-shadow: 14px 14px 28px rgba(40, 37, 30, 0.2);
+        
+        
         width: 50%;
         height: 40px;
     }
     
     .bar_Si {
-        border-radius: 10px;
-        box-shadow: 14px 14px 28px rgba(40, 37, 30, 0.2);
+        
+        
         width: 50%;
         height: 40px;
     }
     
     .bar_Ne {
-        border-radius: 10px;
-        box-shadow: 14px 14px 28px rgba(40, 37, 30, 0.2);
+        
+        
         width: 50%;
         height: 40px;
     }
     
     .bar_Ni {
-        border-radius: 10px;
-        box-shadow: 14px 14px 28px rgba(40, 37, 30, 0.2);
+        
+        
         width: 50%;
         height: 40px;
     }
 
     .bar_Te {
-        border-radius: 10px;
-        box-shadow: 14px 14px 28px rgba(40, 37, 30, 0.2);
+        
+        
         width: 50%;
         height: 40px;
     }
     
     .bar_Ti {
-        border-radius: 10px;
-        box-shadow: 14px 14px 28px rgba(40, 37, 30, 0.2);
+        
+        
         width: 50%;
         height: 40px;
     }
     
     .bar_Fe {
-        border-radius: 10px;
-        box-shadow: 14px 14px 28px rgba(40, 37, 30, 0.2);
+        
+        
         width: 50%;
         height: 40px;
     }
     
     .bar_Fi {
-        border-radius: 10px;
-        box-shadow: 14px 14px 28px rgba(40, 37, 30, 0.2);
+        
+        
         width: 50%;
         height: 40px;
     }
@@ -283,8 +297,8 @@ span {
     .visual_container {
         margin: 26px;
         position: relative;
-        border-radius: 10px;
-        box-shadow: 7px 7px 14px rgba(40, 37, 30, 0.4);
+        
+        
     }
 
     .visual_results {
@@ -300,21 +314,12 @@ span {
         top: 39%;
         width: 100%;
         text-align: center;
+        
     }
 
-    .INFP {
-        border-radius: 10px 0 0 0;
+    .INFJ, .ISFJ, .ESFJ, .ENFJ, .ENFP, .ENTJ, .ENTP {
+        
+        box-shadow: 12px 12px rgba(0, 0, 0, 0.7);
     }
 
-    .INFJ {
-        border-radius: 0 10px 0 0;
-    }
-
-    .ENFP {
-        border-radius: 0 0 0 10px;
-    }
-
-    .ENFJ {
-        border-radius: 0 0 10px 0;
-    }
 }

@@ -2,22 +2,26 @@ body {
     background-color: rgb(16, 34, 120)
 }
 
-input[type="button"] {
+div.main {
+    background-color: rgb(68, 83, 155)
+}
+
+input[type="button"], h1 {
     background-color: rgb(133, 39, 11)
 }
 
 .visual_container {
     margin: 3.5vw;
     position: relative;
-    border-radius: 2vw;
-    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.4);
+    box-shadow: 2vw 2vw rgba(0, 0, 0, 0.7);
+    
 }
 
 .point {
     position: absolute;
     width: 0.1vw;
     height: 0.1vw;
-    border-radius: 2vw;
+    
     outline: rgb(0, 0, 0) solid 2vw;
     background-color: black;
     bottom: 0%;
@@ -32,7 +36,7 @@ input[type="button"] {
     font-size: 4vw;
     background-image: url(bc.png);
     background-size: cover;
-    border-radius: 2vw;
+    
 }
 
 .center_text {
@@ -46,15 +50,15 @@ input[type="button"] {
     .visual_container {
         margin: 26px;
         position: relative;
-        border-radius: 10px;
-        box-shadow: 7px 7px 14px rgba(40, 37, 30, 0.4);
+        
+        
     }
     
     .point {
         position: absolute;
         width: 1px;
         height: 1px;
-        border-radius: 5px;
+        
         outline: rgb(0, 0, 0) solid 10px;
         background-color: black;
         bottom: 0%;
@@ -67,7 +71,7 @@ input[type="button"] {
         justify-content: center;
         font-weight: bold;
         font-size: 18pt;
-        border-radius: 10px;
+        
     }
     
     .center_text {

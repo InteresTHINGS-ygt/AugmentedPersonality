@@ -2,22 +2,29 @@ body {
     background-color: rgb(117, 0, 92);
 }
 
+div.main {
+    background-color: rgb(75, 31, 65);
+}
+
 input[type="button"] {
     background-color: rgb(146, 7, 7);
 }
 
+h1 {
+    background-color: rgb(146, 7, 7);
+}
 .visual_container {
     margin: 3.5vw;
     position: relative;
-    border-radius: 2vw;
-    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.4);
+    
+    
 }
 
 .point {
     position: absolute;
     width: 0.1vw;
     height: 0.1vw;
-    border-radius: 2vw;
+    
     outline: rgb(0, 0, 0) solid 2vw;
     background-color: black;
     bottom: 0%;
@@ -42,7 +49,7 @@ input[type="button"] {
 
 .Technician {
     background-color: rgb(0, 199, 33);
-    border-radius: 2vw 0 0 0;
+    
 }
 
 .Scientist {
@@ -55,7 +62,7 @@ input[type="button"] {
 
 .Fascinator {
     background-color: rgb(255, 108, 199);
-    border-radius: 0 2vw 0 0;
+    box-shadow: 12px 12px rgba(0, 0, 0, 0.7);
 }
 
 .Architect {
@@ -72,6 +79,7 @@ input[type="button"] {
 
 .Adventurer {
     background-color: rgb(231, 54, 54);
+    box-shadow: 12px 12px rgba(0, 0, 0, 0.7);
 }
 
 .Inspector {
@@ -88,39 +96,43 @@ input[type="button"] {
 
 .Influencer {
     background-color: rgb(212, 128, 32);
+    box-shadow: 12px 12px rgba(0, 0, 0, 0.7);
 }
 
 .Administrator {
     background-color: rgb(39, 58, 45);
-    border-radius: 0 0 0 2vw;
+    box-shadow: 12px 12px rgba(0, 0, 0, 0.7);
+    
 }
 
 .Guardian {
     background-color: rgb(23, 31, 99);
+    box-shadow: 12px 12px rgba(0, 0, 0, 0.7);
 }
 
 .Caregiver {
     background-color: rgb(87, 13, 74);
+    box-shadow: 12px 12px rgba(0, 0, 0, 0.7);
 }
 
 .Entertainer {
     background-color: rgb(145, 136, 22);
-    border-radius: 0 0 2vw 0;
+    box-shadow: 12px 12px rgba(0, 0, 0, 0.7);
 }
 
 @media only screen and (min-width: 600px) {
     .visual_container {
         margin: 26px;
         position: relative;
-        border-radius: 10px;
-        box-shadow: 7px 7px 14px rgba(40, 37, 30, 0.4);
+        
+        
     }
     
     .point {
         position: absolute;
         width: 1px;
         height: 1px;
-        border-radius: 5px;
+        
         outline: rgb(0, 0, 0) solid 10px;
         bottom: 0%;
         left: 0%;
@@ -141,20 +153,40 @@ input[type="button"] {
         text-align: center;
     }
 
-    .Technician {
-        border-radius: 10px 0 0 0;
-    }
-
     .Fascinator {
-        border-radius: 0 10px 0 0;
+        
+        box-shadow: 12px 12px rgba(0, 0, 0, 0.7);
     }
 
+    .Adventurer {
+        
+        box-shadow: 12px 12px rgba(0, 0, 0, 0.7);
+    }
+
+    .Influencer {
+        
+        box-shadow: 12px 12px rgba(0, 0, 0, 0.7);
+    }
+    
     .Administrator {
-        border-radius: 0 0 0 10px;
+        
+        box-shadow: 12px 12px rgba(0, 0, 0, 0.7);
+        
     }
-
+    
+    .Guardian {
+        
+        box-shadow: 12px 12px rgba(0, 0, 0, 0.7);
+    }
+    
+    .Caregiver {
+        
+        box-shadow: 12px 12px rgba(0, 0, 0, 0.7);
+    }
+    
     .Entertainer {
-        border-radius: 0 0 10px 0;
+        
+        box-shadow: 12px 12px rgba(0, 0, 0, 0.7);
     }
 }
 

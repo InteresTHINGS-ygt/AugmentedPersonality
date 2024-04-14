@@ -1,10 +1,15 @@
+@font-face {
+    font-family: vga;
+    src: url(vga2.woff);
+}
+
 .submit_sim {
     width: 20vw;
 }
 
 body {
-    font-family: system-ui, Arial, Helvetica, sans-serif;
-    background-color: rgb(156, 156, 156);
+    font-family: vga;
+    background-color: rgb(93, 143, 130);
     color: rgb(40, 37, 30);
 }
 
@@ -12,12 +17,10 @@ a {
     color: rgb(240, 235, 225);
     text-decoration: none;
     background-color: rgb(0, 0, 0);
-    margin: 0.8vw;
+    margin: 2vw;
     padding: 1.5vw;
-    border-radius: 1.5vw;
     font-size: 3vw;
-    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
-    transition-duration: 0.2s;
+    box-shadow: 2vw 2vw rgba(0, 0, 0, 0.7);
     font-weight: bold;
 }
 
@@ -44,20 +47,26 @@ p.main_links {
 
 h1 {
     font-weight: bold;
+    background-color: rgb(10, 71, 61);
+    color: rgb(240, 240, 240);
+    box-shadow: 2vw 2vw rgba(0, 0, 0, 0.7);
+    padding: 2.5vw;
+    text-align: center;
+    font-size: 6.5vw;
 }
 
 h2 {
-    font-weight: bold;
+    font-weight: normal;
 }
 
 h3 {
-    font-weight: bold;
+    font-weight: normal;
     text-align: left;
     margin: 4vw;
 }
 
 h4 {
-    font-weight: bold;
+    font-weight: normal;
 }
 
 a.sim {
@@ -100,7 +109,7 @@ a.ops {
     background-color: rgb(22, 95, 190);
 }
 a.portal {
-    background-color: rgb(136, 136, 136);
+    background-color: rgb(93, 143, 130);
 }
 a.hero {
     background-color: rgb(1, 0, 88);
@@ -116,22 +125,22 @@ a.digi {
 }
 
 a:hover {
-    background-color: rgb(94, 94, 94);
-    transition-duration: 0.2s;
-    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.4);
+    background-color: rgb(139, 139, 139);
+    box-shadow: 2vw 2vw rgba(0, 0, 0, 0.7);
 }
 
 a:active {
     background-color: rgb(20, 20, 20);
-    transition-duration: 0.2s;
-    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.6);
+    box-shadow: 2vw 2vw rgba(0, 0, 0, 0.7);
 }
 
 div.main {
-    border-radius: 2.5vw;
-    background-color: rgb(230, 225, 215);
+    background-color: rgb(92, 92, 92);
+    color: rgb(240, 240, 240);
+    box-shadow: 2vw 2vw rgba(0, 0, 0, 0.7);
     padding: 3vw;
-    box-shadow: 2vw 2vw 4vw rgba(40, 37, 30, 0.2);
+    padding-top: 5vw;
+    padding-bottom: 5vw;
     font-size: 3.3vw;
     width: 90%;
     text-align: center;
@@ -157,11 +166,9 @@ input[type="number"] {
     height: 6vw;
     background-color: rgb(240, 235, 225);
     border: none;
-    border-radius: 1vw;
-    font-family: system-ui, Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-size: 3vw;
-    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
+    font-family: vga, system-ui, Arial, Helvetica, sans-serif;
 }
 
 input[type="text"] {
@@ -169,11 +176,9 @@ input[type="text"] {
     width: 24vw;
     background-color: rgb(163, 156, 141);
     border: none;
-    border-radius: 1vw;
-    font-family: system-ui, Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-size: 3.5vw;
-    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
+    font-family: vga, system-ui, Arial, Helvetica, sans-serif;
 }
 
 ::placeholder {
@@ -187,10 +192,7 @@ input[type="text"] {
     background: rgb(210, 205, 195);
     outline: none;
     opacity: 1;
-    -webkit-transition: .2s;
-    transition: opacity .2s;
-    border-radius: 1vw;
-    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
+    box-shadow: 2vw 2vw rgba(0, 0, 0, 0.7);
 }
 
 .slider::-webkit-slider-thumb {
@@ -198,10 +200,8 @@ input[type="text"] {
     appearance: none;
     width: 6vw;
     height: 6vw;
-    border-radius: 1vw;
     background: #04AA6D;
     cursor: pointer;
-    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
 }
   
 .slider::-moz-range-thumb {
@@ -218,10 +218,6 @@ input[type="text"] {
     background: rgb(224, 220, 211);
     outline: none;
     opacity: 1;
-    -webkit-transition: .2s;
-    transition: opacity .2s;
-    border-radius: 1vw;
-    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
 }
 
 .slider_a1::-webkit-slider-thumb, .slider_a2::-webkit-slider-thumb, .slider_a3::-webkit-slider-thumb, .slider_a4::-webkit-slider-thumb, .slider_a5::-webkit-slider-thumb, .slider_a6::-webkit-slider-thumb, .slider_a7::-webkit-slider-thumb, .slider_a8::-webkit-slider-thumb, .slider_a9::-webkit-slider-thumb, .slider_a10::-webkit-slider-thumb {
@@ -229,10 +225,8 @@ input[type="text"] {
     appearance: none;
     width: 6vw;
     height: 6vw;
-    border-radius: 1vw;
     background: #04AA6D;
     cursor: pointer;
-    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
 }
   
 .slider_a1::-moz-slider-thumb, .slider_a2::-moz-slider-thumb, .slider_a3::-moz-slider-thumb, .slider_a4::-moz-slider-thumb, .slider_a5::-moz-slider-thumb, .slider_a6::-moz-slider-thumb, .slider_a7::-moz-slider-thumb, .slider_a8::-moz-slider-thumb, .slider_a9::-moz-slider-thumb, .slider_a10::-moz-slider-thumb {
@@ -245,12 +239,11 @@ input[type="text"] {
 table {
     border-collapse: collapse;
     background-color: rgb(210, 205, 195);
-    border-radius: 1.5vw;
     font-weight: bold;
     font-size: 3vw;
     margin: auto;
     width: 55vw;
-    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
+    box-shadow: 2vw 2vw rgba(0, 0, 0, 0.7);
     overflow: hidden;
 }
 
@@ -428,19 +421,17 @@ div.pre {
 }
 
 input[type="button"] {
-    font-family: system-ui, Arial, Helvetica, sans-serif;
+    font-family: vga, system-ui, Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-size: 3vw;
     background-color: rgb(20, 140, 100);
     border: none;
-    margin: 0.8vw;
-    padding: 1.5vw;
-    border-radius: 1.5vw;
+    margin: 2vw;
+    padding: 3vw;
     min-width: 35vw;
     text-align: center;
     color: rgb(240, 235, 225);
-    transition-duration: 0.2s;
-    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
+    box-shadow: 2vw 2vw rgba(0, 0, 0, 0.7);
 }
 
 input[type="button"].auto_fill {
@@ -448,19 +439,16 @@ input[type="button"].auto_fill {
 }
 
 input[type="button"]:default {
-    transition-duration: 0.2s;
 }
 
 input[type="button"]:hover {
-    background-color: rgb(94, 94, 94);
-    transition-duration: 0.2s;
-    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.4);
+    background-color: rgb(139, 139, 139);
+    box-shadow: 2vw 2vw rgba(0, 0, 0, 0.7);
 }
 
 input[type="button"]:active {
     background-color: rgb(20, 20, 20);
-    transition-duration: 0.2s;
-    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.6);
+    box-shadow: 2vw 2vw rgba(0, 0, 0, 0.7);
 }
 
 hr {
@@ -475,14 +463,10 @@ p.interest_sim_label {
 
 @media only screen and (min-width: 600px){
     a {
-        color: rgb(240, 235, 225);
-        text-decoration: none;
-        background-color: rgb(0, 0, 0);
-        margin: 4px;
-        padding: 8px;
-        border-radius: 8px;
+        margin: 10px;
+        padding: 12px;
         display: inline-block;
-        box-shadow: 7px 7px 14px rgba(40, 37, 30, 0.2);
+        box-shadow: 12px 12px rgba(0, 0, 0, 0.7);
         font-size: 12pt;
     }
 
@@ -500,6 +484,15 @@ p.interest_sim_label {
         margin: 20px;
     }
 
+    h1 {
+        font-weight: bold;
+        
+        box-shadow: 12px 12px rgba(0, 0, 0, 0.7);
+        padding: 15px;
+        text-align: center;
+        font-size: 30pt;
+    }
+
     h3 {
         text-align: left;
         margin: 32px;
@@ -508,18 +501,16 @@ p.interest_sim_label {
     }
 
     a:hover {
-        box-shadow: 7px 7px 14px rgba(40, 37, 30, 0.4);
+        box-shadow: 12px 12px rgba(0, 0, 0, 0.7);
     }
 
     a:active {
-        box-shadow: 7px 7px 14px rgba(40, 37, 30, 0.6);
+        box-shadow: 12px 12px rgba(0, 0, 0, 0.7);
     }
 
     div.main {
-        border-radius: 15px;
-        background-color: rgb(230, 225, 215);
         padding: 12px;
-        box-shadow: 14px 14px 28px rgba(40, 37, 30, 0.2);
+        box-shadow: 12px 12px rgba(0, 0, 0, 0.7);
         font-size: 16px;
         width: 550px;
         text-align: center;
@@ -537,35 +528,31 @@ p.interest_sim_label {
     }
 
     input[type="button"] {
-        font-family: system-ui, Arial, Helvetica, sans-serif;
+        font-family: vga, system-ui, Arial, Helvetica, sans-serif;
         font-weight: bold;
         font-size: 12pt;
-        background-color: rgb(20, 140, 100);
+        
         border: none;
         margin: 4px;
         padding: 8px;
-        border-radius: 8px;
+        
         min-width: 180px;
         text-align: center;
         color: rgb(240, 235, 225);
-        transition-duration: 0.2s;
-        box-shadow: 7px 7px 14px rgba(40, 37, 30, 0.2);
+        
+        box-shadow: 12px 12px rgba(0, 0, 0, 0.7);
     }
-    
-    input[type="button"]:default {
-        transition-duration: 0.2s;
-    }
-    
+
     input[type="button"]:hover {
-        background-color: rgb(94, 94, 94);
-        transition-duration: 0.2s;
-        box-shadow: 7px 7px 14px rgba(40, 37, 30, 0.4);
+
+        
+        box-shadow: 12px 12px rgba(0, 0, 0, 0.7);
     }
     
     input[type="button"]:active {
-        background-color: rgb(20, 20, 20);
-        transition-duration: 0.2s;
-        box-shadow: 7px 7px 14px rgba(40, 37, 30, 0.6);
+        
+        
+        box-shadow: 12px 12px rgba(0, 0, 0, 0.7);
     }
 
     hr {
@@ -575,36 +562,32 @@ p.interest_sim_label {
     input[type="number"] {
         width: 75px;
         height: 30px;
-        background-color: rgb(240, 235, 225);
+        
         border: none;
-        border-radius: 6px;
-        font-family: system-ui, Arial, Helvetica, sans-serif;
+        
+        font-family: vga, system-ui, Arial, Helvetica, sans-serif;
         font-weight: bold;
         font-size: 12pt;
-        box-shadow: 7px 7px 14px rgba(40, 37, 30, 0.2);
     }
     
     input[type="text"] {
         height: 30px;
         width: 127px;
-        background-color: rgb(163, 156, 141);
         border: none;
-        border-radius: 6px;
-        font-family: system-ui, Arial, Helvetica, sans-serif;
+        font-family: vga, system-ui, Arial, Helvetica, sans-serif;
         font-weight: bold;
         font-size: 14pt;
-        box-shadow: 7px 7px 14px rgba(40, 37, 30, 0.2);
     }
     
     table {
         border-collapse: collapse;
-        background-color: rgb(210, 205, 195);
-        border-radius: 10px;
+        
+        
         font-weight: bold;
         font-size: 12pt;
         margin: auto;
         width: 350px;
-        box-shadow: 7px 7px 14px rgba(40, 37, 30, 0.2);
+        box-shadow: 12px 12px rgba(0, 0, 0, 0.7);
     }
     
     td, th, tr {
@@ -624,10 +607,8 @@ p.interest_sim_label {
         background: rgb(210, 205, 195);
         outline: none;
         opacity: 1;
-        -webkit-transition: .2s;
-        transition: opacity .2s;
-        border-radius: 5px;
-        box-shadow: 7px 7px 14px rgba(40, 37, 30, 0.2);
+        
+        box-shadow: 12px 12px rgba(0, 0, 0, 0.7);
         margin: 15px
     }
     
@@ -636,10 +617,9 @@ p.interest_sim_label {
         appearance: none;
         width: 20px;
         height: 20px;
-        border-radius: 5px;
+        
         background: #04AA6D;
         cursor: pointer;
-        box-shadow: 7px 7px 14px rgba(40, 37, 30, 0.2);
     }
       
     .slider::-moz-range-thumb {
@@ -656,10 +636,6 @@ p.interest_sim_label {
         background: rgb(224, 220, 211);
         outline: none;
         opacity: 1;
-        -webkit-transition: .2s;
-        transition: opacity .2s;
-        border-radius: 5px;
-        box-shadow: 7px 7px 14px rgba(40, 37, 30, 0.2);
         margin: 15px
     }
     
@@ -668,10 +644,9 @@ p.interest_sim_label {
         appearance: none;
         width: 20px;
         height: 20px;
-        border-radius: 5px;
+        
         background: #04AA6D;
         cursor: pointer;
-        box-shadow: 7px 7px 14px rgba(40, 37, 30, 0.2);
     }
       
     .slider_a1::-moz-slider-thumb, .slider_a2::-moz-slider-thumb, .slider_a3::-moz-slider-thumb, .slider_a4::-moz-slider-thumb, .slider_a5::-moz-slider-thumb, .slider_a6::-moz-slider-thumb, .slider_a7::-moz-slider-thumb, .slider_a8::-moz-slider-thumb, .slider_a9::-moz-slider-thumb, .slider_a10::-moz-slider-thumb {

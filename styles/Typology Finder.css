@@ -2,8 +2,16 @@ body {
     background-color: rgb(230, 111, 0)
 }
 
+div.main {
+    background-color: rgb(121, 58, 0)
+}
+
 input[type="button"] {
-    background-color: rgb(26, 26, 26)
+    background-color: rgb(56, 56, 56)
+}
+
+h1 {
+    background-color: rgb(56, 56, 56)
 }
 
 .pre {
@@ -13,151 +21,151 @@ input[type="button"] {
 .results_bar {
     background-color: rgb(173, 173, 173);
     margin: 4vw;
-    border-radius: 1.5vw;
-    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
+    box-shadow: 2vw 2vw rgba(0, 0, 0, 0.7);
+    
     position: relative;
 }
 
 .bar_OTEs {
     background-color: rgb(0, 160, 93);
-    border-radius: 1.5vw;
-    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
+    
+    
     width: 50%;
     height: 6vw;
 }
 
 .bar_CONs {
     background-color: rgb(0, 100, 167);
-    border-radius: 1.5vw;
-    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
+    
+    
     width: 50%;
     height: 6vw;
 }
 
 .bar_EXTs {
     background-color: rgb(199, 146, 0);
-    border-radius: 1.5vw;
-    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
+    
+    
     width: 50%;
     height: 6vw;
 }
 
 .bar_AGRs {
     background-color: rgb(190, 0, 57);
-    border-radius: 1.5vw;
-    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
+    
+    
     width: 50%;
     height: 6vw;
 }
 
 .bar_NEUs {
     background-color: rgb(121, 0, 177);
-    border-radius: 1.5vw;
-    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
+    
+    
     width: 50%;
     height: 6vw;
 }
 
 .bar_vit {
     background-color: rgb(80, 177, 0);
-    border-radius: 1.5vw;
-    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
+    
+    
     width: 50%;
     height: 6vw;
 }
 
 .bar_mat {
     background-color: rgb(177, 130, 0);
-    border-radius: 1.5vw;
-    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
+    
+    
     width: 50%;
     height: 6vw;
 }
 
 .bar_gi {
     background-color: rgb(186, 0, 192);
-    border-radius: 1.5vw;
-    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
+    
+    
     width: 50%;
     height: 6vw;
 }
 
 .bar_ap {
     background-color: rgb(204, 0, 0);
-    border-radius: 1.5vw;
-    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
+    
+    
     width: 50%;
     height: 6vw;
 }
 
 .bar_Fe {
     background-color: rgb(175, 0, 131);
-    border-radius: 1.5vw;
-    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
+    
+    
     width: 50%;
     height: 6vw;
 }
 
 .bar_Fi {
     background-color: rgb(94, 0, 122);
-    border-radius: 1.5vw;
-    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
+    
+    
     width: 50%;
     height: 6vw;
 }
 
 .bar_Ne {
     background-color: rgb(207, 142, 0);
-    border-radius: 1.5vw;
-    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
+    
+    
     width: 50%;
     height: 6vw;
 }
 
 .bar_Ni {
     background-color: rgb(129, 121, 0);
-    border-radius: 1.5vw;
-    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
+    
+    
     width: 50%;
     height: 6vw;
 }
 
 .bar_Se {
     background-color: rgb(26, 153, 0);
-    border-radius: 1.5vw;
-    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
+    
+    
     width: 50%;
     height: 6vw;
 }
 
 .bar_Si {
     background-color: rgb(0, 99, 44);
-    border-radius: 1.5vw;
-    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
+    
+    
     width: 50%;
     height: 6vw;
 }
 
 .bar_Te {
     background-color: rgb(0, 109, 199);
-    border-radius: 1.5vw;
-    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
+    
+    
     width: 50%;
     height: 6vw;
 }
 
 .bar_Ti {
     background-color: rgb(0, 22, 150);
-    border-radius: 1.5vw;
-    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
+    
+    
     width: 50%;
     height: 6vw;
 }
 
 .bar_1 {
     background-color: rgb(50, 102, 150);
-    border-radius: 1.5vw;
-    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
+    
+    
     width: 50%;
     height: 6vw;
 }
@@ -165,64 +173,64 @@ input[type="button"] {
 
 .bar_2 {
     background-color: rgb(177, 0, 97);
-    border-radius: 1.5vw;
-    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
+    
+    
     width: 50%;
     height: 6vw;
 }
 
 .bar_3 {
     background-color: rgb(168, 137, 0);
-    border-radius: 1.5vw;
-    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
+    
+    
     width: 50%;
     height: 6vw;
 }
 
 .bar_4 {
     background-color: rgb(71, 0, 165);
-    border-radius: 1.5vw;
-    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
+    
+    
     width: 50%;
     height: 6vw;
 }
 
 .bar_5 {
     background-color: rgb(0, 133, 82);
-    border-radius: 1.5vw;
-    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
+    
+    
     width: 50%;
     height: 6vw;
 }
 
 .bar_6 {
     background-color: rgb(107, 156, 43);
-    border-radius: 1.5vw;
-    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
+    
+    
     width: 50%;
     height: 6vw;
 }
 
 .bar_7 {
     background-color: rgb(201, 64, 0);
-    border-radius: 1.5vw;
-    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
+    
+    
     width: 50%;
     height: 6vw;
 }
 
 .bar_8 {
     background-color: rgb(139, 0, 0);
-    border-radius: 1.5vw;
-    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
+    
+    
     width: 50%;
     height: 6vw;
 }
 
 .bar_9 {
     background-color: rgb(102, 102, 102);
-    border-radius: 1.5vw;
-    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
+    
+    
     width: 50%;
     height: 6vw;
 }
@@ -236,14 +244,12 @@ input[type="button"] {
 
 .visual_container {
     position: relative;
-    border-radius: 2vw;
-    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.4);
+    box-shadow: 2vw 2vw rgba(0, 0, 0, 0.7);
 }
 
 .visual_container_align {
     position: relative;
-    border-radius: 2vw;
-    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.4);
+    
     margin: 1.2vw;
 }
 
@@ -252,32 +258,45 @@ input[type="button"] {
     grid-template-rows: 28vw 28vw 28vw;
     justify-content: center;
     font-weight: bold;
-    font-size: 3.2vw;
+    font-size: 5vw;
 }
 
 .center_text {
     position: relative;
-    top: 38%;
+    top: 40%;
+    width: 100%;
+    text-align: center;
+    color: rgb(20, 20, 20);
+}
+
+
+.center_text_align {
+    position: relative;
+    top: 30%;
     width: 100%;
     text-align: center;
 }
 
 .LG {
     background-color: rgb(89, 231, 224);
-    border-radius: 2vw 0 0 0;
+    color: rgb(20, 20, 20);
 }
 
 .NG {
     background-color: rgb(89, 241, 102);
+    color: rgb(20, 20, 20);
 }
 
 .CG {
     background-color: rgb(221, 238, 71);
-    border-radius: 0 2vw 0 0;
+    color: rgb(20, 20, 20);
+    box-shadow: 2vw 2vw rgba(0, 0, 0, 0.7);
+    
 }
 
 .LN {
     background-color: rgb(27, 118, 223);
+    
 }
 
 .TN {
@@ -286,23 +305,24 @@ input[type="button"] {
 
 .CN {
     background-color: rgb(240, 162, 18);
+    box-shadow: 2vw 2vw rgba(0, 0, 0, 0.7);
 }
 
 .LE {
     background-color: rgb(59, 0, 114);
-    border-radius: 0 0 0 2vw;
-    color: rgb(240,240,240);
+    box-shadow: 2vw 2vw rgba(0, 0, 0, 0.7);
 }
 
 .NE {
     background-color: rgb(2, 71, 0);
-    color: rgb(240,240,240);
+
+    box-shadow: 2vw 2vw rgba(0, 0, 0, 0.7);
 }
 
 .CE {
     background-color: rgb(145, 29, 0);
-    border-radius: 0 0 2vw 0;
-    color: rgb(240,240,240);
+    box-shadow: 2vw 2vw rgba(0, 0, 0, 0.7);
+
 }
 
 .sw_container {
@@ -312,9 +332,7 @@ input[type="button"] {
 }
 
 .strength {
-    border-radius: 1.5vw;
     background-color: rgb(230, 225, 215);
-    box-shadow: 2vw 2vw 4vw rgba(40, 37, 30, 0.2);
     font-size: 3.3vw;
     width: 90%;
     text-align: center;
@@ -325,9 +343,9 @@ input[type="button"] {
 }
 
 .weakness {
-    border-radius: 1.5vw;
+    
     background-color: rgb(230, 225, 215);
-    box-shadow: 2vw 2vw 4vw rgba(40, 37, 30, 0.2);
+    
     font-size: 3.3vw;
     width: 90%;
     text-align: center;
@@ -341,7 +359,7 @@ input[type="button"] {
     position: absolute;
     width: 0.1vw;
     height: 0.1vw;
-    border-radius: 2vw;
+    
     outline: rgb(0, 0, 0) solid 2vw;
     background-color: black;
     bottom: 0%;
@@ -352,7 +370,7 @@ input[type="button"] {
     position: absolute;
     width: 0.1vw;
     height: 0.1vw;
-    border-radius: 2vw;
+    
     outline: rgb(0, 0, 0) solid 2vw;
     background-color: black;
     bottom: 0%;
@@ -367,7 +385,7 @@ input[type="button"] {
     font-size: 2.7vw;
     background-image: url(big5/IMG_3133.png);
     background-size: cover;
-    border-radius: 2vw;
+    
 }
 
 .visual_results_oe {
@@ -378,7 +396,7 @@ input[type="button"] {
     font-size: 2.7vw;
     background-image: url(big5/IMG_3134.png);
     background-size: cover;
-    border-radius: 2vw;
+    
 }
 
 .visual_results_oa {
@@ -389,7 +407,7 @@ input[type="button"] {
     font-size: 2.7vw;
     background-image: url(big5/IMG_3135.png);
     background-size: cover;
-    border-radius: 2vw;
+    
 }
 
 .visual_results_on {
@@ -400,7 +418,7 @@ input[type="button"] {
     font-size: 2.7vw;
     background-image: url(big5/IMG_3136.png);
     background-size: cover;
-    border-radius: 2vw;
+    
 }
 
 .visual_results_ce {
@@ -411,7 +429,7 @@ input[type="button"] {
     font-size: 2.7vw;
     background-image: url(big5/IMG_3137.png);
     background-size: cover;
-    border-radius: 2vw;
+    
 }
 
 .visual_results_ca {
@@ -422,7 +440,7 @@ input[type="button"] {
     font-size: 2.7vw;
     background-image: url(big5/IMG_3138.png);
     background-size: cover;
-    border-radius: 2vw;
+    
 }
 
 .visual_results_cn {
@@ -433,7 +451,7 @@ input[type="button"] {
     font-size: 2.7vw;
     background-image: url(big5/IMG_3139.png);
     background-size: cover;
-    border-radius: 2vw;
+    
 }
 
 .visual_results_ea {
@@ -444,7 +462,7 @@ input[type="button"] {
     font-size: 2.7vw;
     background-image: url(big5/IMG_3140.png);
     background-size: cover;
-    border-radius: 2vw;
+    
 }
 
 .visual_results_en {
@@ -455,7 +473,7 @@ input[type="button"] {
     font-size: 2.7vw;
     background-image: url(big5/IMG_3141.png);
     background-size: cover;
-    border-radius: 2vw;
+    
 }
 
 .visual_results_an {
@@ -466,7 +484,7 @@ input[type="button"] {
     font-size: 2.7vw;
     background-image: url(big5/IMG_3142.png);
     background-size: cover;
-    border-radius: 2vw;
+    
 }
 
 .visual_results_social {
@@ -477,7 +495,7 @@ input[type="button"] {
     font-size: 2.7vw;
     background-image: url(big5/IMG_3150.png);
     background-size: cover;
-    border-radius: 2vw;
+    
 }
 
 .visual_results_kei {
@@ -488,7 +506,7 @@ input[type="button"] {
     font-size: 2.7vw;
     background-image: url(big5/IMG_3149.png);
     background-size: cover;
-    border-radius: 2vw;
+    
 }
 
 .visual_results_mental {
@@ -499,7 +517,7 @@ input[type="button"] {
     font-size: 2.7vw;
     background-image: url(big5/IMG_3148.png);
     background-size: cover;
-    border-radius: 2vw;
+    
 }
 
 .visual_results_org {
@@ -510,7 +528,7 @@ input[type="button"] {
     font-size: 2.7vw;
     background-image: url(big5/IMG_3151.png);
     background-size: cover;
-    border-radius: 2vw;
+    
 }
 
 .visual_results_mtemp {
@@ -521,7 +539,7 @@ input[type="button"] {
     font-size: 2.7vw;
     background-image: url(big5/IMG_3147.png);
     background-size: cover;
-    border-radius: 2vw;
+    
 }
 
 .visual_results_enn {
@@ -532,15 +550,9 @@ input[type="button"] {
     font-size: 2.7vw;
     background-image: url(big5/IMG_3146.png);
     background-size: cover;
-    border-radius: 2vw;
+    
 }
 
-.center_text {
-    position: relative;
-    top: 40%;
-    width: 100%;
-    text-align: center;
-}
 
 .ennea {
     font-weight: bold;
@@ -557,189 +569,189 @@ input[type="button"] {
 @media only screen and (min-width: 600px){
     .results_bar {
         margin: 30px;
-        border-radius: 10px;
-        box-shadow: 14px 14px 28px rgba(40, 37, 30, 0.2);
+        box-shadow: 12px 12px rgba(0, 0, 0, 0.7);
+        
         position: relative;
     }
     
     .bar_OTEs {
-        border-radius: 10px;
-        box-shadow: 14px 14px 28px rgba(40, 37, 30, 0.2);
+        
+        
         width: 50%;
         height: 40px;
     }
     
     .bar_CONs {
-        border-radius: 10px;
-        box-shadow: 14px 14px 28px rgba(40, 37, 30, 0.2);
+        
+        
         width: 50%;
         height: 40px;
     }
     
     .bar_EXTs {
-        border-radius: 10px;
-        box-shadow: 14px 14px 28px rgba(40, 37, 30, 0.2);
+        
+        
         width: 50%;
         height: 40px;
     }
     
     .bar_AGRs {
-        border-radius: 10px;
-        box-shadow: 14px 14px 28px rgba(40, 37, 30, 0.2);
+        
+        
         width: 50%;
         height: 40px;
     }
     
     .bar_NEUs {
-        border-radius: 10px;
-        box-shadow: 14px 14px 28px rgba(40, 37, 30, 0.2);
+        
+        
         width: 50%;
         height: 40px;
     }
     
     .bar_vit {
-        border-radius: 10px;
-        box-shadow: 14px 14px 28px rgba(40, 37, 30, 0.2);
+        
+        
         width: 50%;
         height: 40px;
     }
     
     .bar_mat {
-        border-radius: 10px;
-        box-shadow: 14px 14px 28px rgba(40, 37, 30, 0.2);
+        
+        
         width: 50%;
         height: 40px;
     }
     
     .bar_gi {
-        border-radius: 10px;
-        box-shadow: 14px 14px 28px rgba(40, 37, 30, 0.2);
+        
+        
         width: 50%;
         height: 40px;
     }
     
     .bar_ap {
-        border-radius: 10px;
-        box-shadow: 14px 14px 28px rgba(40, 37, 30, 0.2);
+        
+        
         width: 50%;
         height: 40px;
     }
 
     .bar_Se {
-        border-radius: 10px;
-        box-shadow: 14px 14px 28px rgba(40, 37, 30, 0.2);
+        
+        
         width: 50%;
         height: 40px;
     }
     
     .bar_Si {
-        border-radius: 10px;
-        box-shadow: 14px 14px 28px rgba(40, 37, 30, 0.2);
+        
+        
         width: 50%;
         height: 40px;
     }
     
     .bar_Ne {
-        border-radius: 10px;
-        box-shadow: 14px 14px 28px rgba(40, 37, 30, 0.2);
+        
+        
         width: 50%;
         height: 40px;
     }
     
     .bar_Ni {
-        border-radius: 10px;
-        box-shadow: 14px 14px 28px rgba(40, 37, 30, 0.2);
+        
+        
         width: 50%;
         height: 40px;
     }
 
     .bar_Te {
-        border-radius: 10px;
-        box-shadow: 14px 14px 28px rgba(40, 37, 30, 0.2);
+        
+        
         width: 50%;
         height: 40px;
     }
     
     .bar_Ti {
-        border-radius: 10px;
-        box-shadow: 14px 14px 28px rgba(40, 37, 30, 0.2);
+        
+        
         width: 50%;
         height: 40px;
     }
     
     .bar_Fe {
-        border-radius: 10px;
-        box-shadow: 14px 14px 28px rgba(40, 37, 30, 0.2);
+        
+        
         width: 50%;
         height: 40px;
     }
     
     .bar_Fi {
-        border-radius: 10px;
-        box-shadow: 14px 14px 28px rgba(40, 37, 30, 0.2);
+        
+        
         width: 50%;
         height: 40px;
     }
 
     .bar_1 {
-        border-radius: 10px;
-        box-shadow: 14px 14px 28px rgba(40, 37, 30, 0.2);
+        
+        
         width: 50%;
         height: 40px;
     }
 
     .bar_2 {
-        border-radius: 10px;
-        box-shadow: 14px 14px 28px rgba(40, 37, 30, 0.2);
+        
+        
         width: 50%;
         height: 40px;
     }
     
     .bar_3 {
-        border-radius: 10px;
-        box-shadow: 14px 14px 28px rgba(40, 37, 30, 0.2);
+        
+        
         width: 50%;
         height: 40px;
     }
 
     .bar_4 {
-        border-radius: 10px;
-        box-shadow: 14px 14px 28px rgba(40, 37, 30, 0.2);
+        
+        
         width: 50%;
         height: 40px;
     }
 
     .bar_5 {
-        border-radius: 10px;
-        box-shadow: 14px 14px 28px rgba(40, 37, 30, 0.2);
+        
+        
         width: 50%;
         height: 40px;
     }
 
     .bar_6 {
-        border-radius: 10px;
-        box-shadow: 14px 14px 28px rgba(40, 37, 30, 0.2);
+        
+        
         width: 50%;
         height: 40px;
     }
     
     .bar_7 {
-        border-radius: 10px;
-        box-shadow: 14px 14px 28px rgba(40, 37, 30, 0.2);
+        
+        
         width: 50%;
         height: 40px;
     }
     
     .bar_8 {
-        border-radius: 10px;
-        box-shadow: 14px 14px 28px rgba(40, 37, 30, 0.2);
+        
+        
         width: 50%;
         height: 40px;
     }
     
     .bar_9 {
-        border-radius: 10px;
-        box-shadow: 14px 14px 28px rgba(40, 37, 30, 0.2);
+        
+        
         width: 50%;
         height: 40px;
     }
@@ -747,15 +759,15 @@ input[type="button"] {
     .visual_container {
         margin: 0px;
         position: relative;
-        border-radius: 5%;
-        box-shadow: 7px 7px 14px rgba(40, 37, 30, 0.4);
+        
+        
     }
     
     .point {
         position: absolute;
         width: 1px;
         height: 1px;
-        border-radius: 5px;
+        
         outline: rgb(0, 0, 0) solid 10px;
         background-color: black;
         bottom: 0%;
@@ -766,7 +778,6 @@ input[type="button"] {
         position: absolute;
         width: 1px;
         height: 1px;
-        border-radius: 5px;
         outline: rgb(0, 0, 0) solid 10px;
         background-color: black;
         bottom: 0%;
@@ -785,8 +796,8 @@ input[type="button"] {
         grid-template-rows: 125px 125px;
         justify-content: center;
         font-weight: bold;
-        font-size: 10pt;
-        border-radius: 5%;
+        font-size: 12pt;
+        
     }
     
     .visual_results_oc {
@@ -794,8 +805,8 @@ input[type="button"] {
         grid-template-rows: 125px 125px;
         justify-content: center;
         font-weight: bold;
-        font-size: 10pt;
-        border-radius: 5%;
+        font-size: 12pt;
+        
     }
     
     .visual_results_oe {
@@ -803,8 +814,8 @@ input[type="button"] {
         grid-template-rows: 125px 125px;
         justify-content: center;
         font-weight: bold;
-        font-size: 10pt;
-        border-radius: 5%;
+        font-size: 12pt;
+        
     }
     
     .visual_results_oa {
@@ -812,8 +823,8 @@ input[type="button"] {
         grid-template-rows: 125px 125px;
         justify-content: center;
         font-weight: bold;
-        font-size: 10pt;
-        border-radius: 5%;
+        font-size: 12pt;
+        
     }
     
     .visual_results_on {
@@ -821,8 +832,8 @@ input[type="button"] {
         grid-template-rows: 125px 125px;
         justify-content: center;
         font-weight: bold;
-        font-size: 10pt;
-        border-radius: 5%;
+        font-size: 12pt;
+        
     }
     
     .visual_results_ce {
@@ -830,8 +841,8 @@ input[type="button"] {
         grid-template-rows: 125px 125px;
         justify-content: center;
         font-weight: bold;
-        font-size: 10pt;
-        border-radius: 5%;
+        font-size: 12pt;
+        
     }
     
     .visual_results_ca {
@@ -839,8 +850,8 @@ input[type="button"] {
         grid-template-rows: 125px 125px;
         justify-content: center;
         font-weight: bold;
-        font-size: 10pt;
-        border-radius: 5%;
+        font-size: 12pt;
+        
     }
     
     .visual_results_cn {
@@ -848,8 +859,8 @@ input[type="button"] {
         grid-template-rows: 125px 125px;
         justify-content: center;
         font-weight: bold;
-        font-size: 10pt;
-        border-radius: 5%;
+        font-size: 12pt;
+        
     }
     
     .visual_results_ea {
@@ -857,8 +868,8 @@ input[type="button"] {
         grid-template-rows: 125px 125px;
         justify-content: center;
         font-weight: bold;
-        font-size: 10pt;
-        border-radius: 5%;
+        font-size: 12pt;
+        
     }
     
     .visual_results_en {
@@ -866,8 +877,8 @@ input[type="button"] {
         grid-template-rows: 125px 125px;
         justify-content: center;
         font-weight: bold;
-        font-size: 10pt;
-        border-radius: 5%;
+        font-size: 12pt;
+        
     }
     
     .visual_results_an {
@@ -875,8 +886,8 @@ input[type="button"] {
         grid-template-rows: 125px 125px;
         justify-content: center;
         font-weight: bold;
-        font-size: 10pt;
-        border-radius: 5%;
+        font-size: 12pt;
+        
     }
     
     .visual_results_social {
@@ -884,8 +895,8 @@ input[type="button"] {
         grid-template-rows: 125px 125px;
         justify-content: center;
         font-weight: bold;
-        font-size: 10pt;
-        border-radius: 5%;
+        font-size: 12pt;
+        
     }
     
     .visual_results_kei {
@@ -893,8 +904,8 @@ input[type="button"] {
         grid-template-rows: 125px 125px;
         justify-content: center;
         font-weight: bold;
-        font-size: 10pt;
-        border-radius: 5%;
+        font-size: 12pt;
+        
     }
     
     .visual_results_mental {
@@ -902,8 +913,8 @@ input[type="button"] {
         grid-template-rows: 125px 125px;
         justify-content: center;
         font-weight: bold;
-        font-size: 10pt;
-        border-radius: 5%;
+        font-size: 12pt;
+        
     }
     
     .visual_results_org {
@@ -911,8 +922,8 @@ input[type="button"] {
         grid-template-rows: 125px 125px;
         justify-content: center;
         font-weight: bold;
-        font-size: 10pt;
-        border-radius: 5%;
+        font-size: 12pt;
+        
     }
     
     .visual_results_mtemp {
@@ -920,8 +931,8 @@ input[type="button"] {
         grid-template-rows: 125px 125px;
         justify-content: center;
         font-weight: bold;
-        font-size: 10pt;
-        border-radius: 5%;
+        font-size: 12pt;
+        
     }
     
     .visual_results_enn {
@@ -929,15 +940,8 @@ input[type="button"] {
         grid-template-rows: 125px 125px;
         justify-content: center;
         font-weight: bold;
-        font-size: 10pt;
-        border-radius: 5%;
-    }
-    
-    .center_text {
-        position: relative;
-        top: 42%;
-        width: 100%;
-        text-align: center;
+        font-size: 12pt;
+        
     }
 
     .big5 {
@@ -951,10 +955,8 @@ input[type="button"] {
     }
     
     .strength {
-        border-radius: 10px;
-        background-color: rgb(230, 225, 215);
         padding: 5px;
-        box-shadow: 14px 14px 28px rgba(40, 37, 30, 0.2);
+        box-shadow: 12px 12px rgba(0, 0, 0, 0.7);
         font-size: 16px;
         text-align: center;
         margin: auto;
@@ -963,10 +965,8 @@ input[type="button"] {
     }
     
     .weakness {
-        border-radius: 10px;
-        background-color: rgb(230, 225, 215);
         padding: 5px;
-        box-shadow: 14px 14px 28px rgba(40, 37, 30, 0.2);
+        box-shadow: 12px 12px rgba(0, 0, 0, 0.7);
         font-size: 16px;
         text-align: center;
         margin: auto;
@@ -976,8 +976,8 @@ input[type="button"] {
 
     .visual_container_align {
         position: relative;
-        border-radius: 10px;
-        box-shadow: 14px 14px 28px rgba(40, 37, 30, 0.2);
+        
+        
         margin: 9px;
     }
 
@@ -986,28 +986,24 @@ input[type="button"] {
         grid-template-rows: 178px 178px 178px;
         justify-content: center;
         font-weight: bold;
-        font-size: 16pt;
+        font-size: 24pt;
     }
     
     .center_text {
         position: relative;
-        top: 40%;
+        top: 42%;
         width: 100%;
         text-align: center;
     }
-    .LG {
-        border-radius: 10px 0 0 0;
+
+    .center_text_align {
+        position: relative;
+        top: 32%;
+        width: 100%;
+        text-align: center;
     }
-    
-    .CG {
-        border-radius: 0 10px 0 0;
-    }
-    
-    .LE {
-        border-radius: 0 0 0 10px;
-    }
-    
-    .CE {
-        border-radius: 0 0 10px 0;
+
+    .CG, .CN, .LE, .NE, .CE {
+        box-shadow: 12px 12px rgba(0, 0, 0, 0.7);
     }
 }

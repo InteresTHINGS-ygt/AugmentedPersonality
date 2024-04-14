@@ -2,6 +2,14 @@ body {
     background-color: rgb(86, 87, 139);
 }
 
+div.main {
+    background-color: rgb(52, 52, 87);
+}
+
 input[type="button"] {
+    background-color: rgb(177, 85, 0);
+}
+
+h1 {
     background-color: rgb(177, 85, 0);
 }

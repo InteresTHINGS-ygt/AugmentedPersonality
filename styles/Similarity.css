@@ -1,8 +1,21 @@
+@font-face {
+    font-family: vga;
+    src: url(vga2.woff);
+}
+
 body {
     background-color: rgb(16, 113, 120);
 }
 
+div.main {
+    background-color: rgb(39, 69, 71);
+}
+
 input[type="button"] {
+    background-color: rgb(7, 0, 105);
+}
+
+h1 {
     background-color: rgb(7, 0, 105);
 }
 
@@ -144,68 +157,27 @@ input[type="button"] {
     color: rgb(40, 37, 30);
 }
 
-.indicator_lights {
-    display: flex;
-    gap: 1.5vw;
-    justify-content: center;
-    background-color: rgb(10, 10, 10);
-    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
-    padding: 2vw;
-    border-radius: 1.5vw;;
-}
-
-.light {
-    background-color: rgb(60, 60, 60);
-    width: 5vw;
-    height: 3vw;
-    border-radius: 1vw;
-}
-
 .results_bar {
     background-color: rgb(173, 173, 173);
     margin: 4vw;
-    border-radius: 1.5vw;
-    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
+    box-shadow: 2vw 2vw rgba(0, 0, 0, 0.7);
     position: relative;
 }
 
 .bar {
     background-color: rgb(16, 113, 120);
-    border-radius: 1.5vw;
-    box-shadow: 1vw 1vw 2vw rgba(40, 37, 30, 0.2);
     width: 50%;
     height: 6vw;
 }
 
 @media only screen and (min-width: 600px) {
-    .indicator_lights {
-        display: flex;
-        gap: 10px;
-        justify-content: center;
-        background-color: rgb(10, 10, 10);
-        box-shadow: 7px 7px 14px rgba(40, 37, 30, 0.2);
-        padding: 10px;
-        border-radius: 10px;
-        max-width: 400px;
-        margin-left: 12%;
-    }
-    
-    .light {
-        background-color: rgb(60, 60, 60);
-        height: 20px;
-        border-radius: 6px;
-    }
-
     .results_bar {
         margin: 30px;
-        border-radius: 10px;
-        box-shadow: 14px 14px 28px rgba(40, 37, 30, 0.2);
+        box-shadow: 12px 12px rgba(0, 0, 0, 0.7);
         position: relative;
     }
     
     .bar {
-        border-radius: 10px;
-        box-shadow: 14px 14px 28px rgba(40, 37, 30, 0.2);
         width: 50%;
         height: 40px;
     }
