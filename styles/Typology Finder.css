@@ -760,7 +760,7 @@ h1 {
         margin: 0px;
         position: relative;
         
-        
+        box-shadow: 12px 12px rgba(0, 0, 0, 0.7);
     }
     
     .point {
