@@ -1,12 +1,14 @@
 @font-face {
     font-family: vga;
     src: url(vga2.woff);
+    font-display: block;
 }
 
 @font-face {
     font-family: vga;
     src: url(vga2.woff);
     font-weight: bold;
+    font-display: block;
 }
 
 .submit_sim {
