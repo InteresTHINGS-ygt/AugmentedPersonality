@@ -3,6 +3,12 @@
     src: url(vga2.woff);
 }
 
+@font-face {
+    font-family: vga;
+    src: url(vga2.woff);
+    font-weight: bold;
+}
+
 .submit_sim {
     width: 20vw;
 }
