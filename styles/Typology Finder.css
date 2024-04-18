@@ -16,6 +16,7 @@ h1 {
 
 .pre {
     font-weight: bold;
+    padding: 2vw;
 }
 
 .results_bar {
@@ -340,6 +341,7 @@ h1 {
     margin-top: 3vw;
     margin-bottom: 3vw;
     padding: 1vw;
+    box-shadow: 2vw 2vw rgba(0, 0, 0, 0.7);
 }
 
 .weakness {
@@ -353,6 +355,7 @@ h1 {
     margin-top: 3vw;
     margin-bottom: 3vw;
     padding: 1vw;
+    box-shadow: 2vw 2vw rgba(0, 0, 0, 0.7);
 }
 
 .point {
