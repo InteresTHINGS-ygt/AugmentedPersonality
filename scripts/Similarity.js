@@ -107,11 +107,11 @@ function autofill_dev() {
     document.getElementById("opn_you").value = 70;
     document.getElementById("ind_you").value = 30;
     document.getElementById("ord_you").value = 30;
-    document.getElementById("ent_you").value = 70;
+    document.getElementById("ent_you").value = 60;
     document.getElementById("asr_you").value = 30;
     document.getElementById("com_you").value = 60;
     document.getElementById("pol_you").value = 80;
-    document.getElementById("wtd_you").value = 100;
+    document.getElementById("wtd_you").value = 90;
     document.getElementById("vol_you").value = 70;
 
     int_you = document.getElementById("int_you").valueAsNumber;

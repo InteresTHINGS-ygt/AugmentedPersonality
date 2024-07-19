@@ -26,17 +26,15 @@
         <div id="test" style="display:none">
             <input type="button" onclick=buttonclick(0) id="sd" value="Definitely Top"><br>
             <input type="button" onclick=buttonclick(1) id="d" value="Moderately Top"><br>
-            <input type="button" onclick=buttonclick(2) id="a" value="Slightly Top"><br>
-            <input type="button" onclick=buttonclick(3) id="sa" value="Slightly Bottom"><br>
-            <input type="button" onclick=buttonclick(4) id="a" value="Moderately Bottom"><br>
-            <input type="button" onclick=buttonclick(5) id="sa" value="Definitely Bottom"><br>
+            <input type="button" onclick=buttonclick(2) id="a" value="Moderately Bottom"><br>
+            <input type="button" onclick=buttonclick(3) id="sa" value="Definitely Bottom"><br>
         </div>
         <h4 id="Statement_2"></h4>
         <div id="manual" style="display:none">
             <table id="manual" class="current">
                 <tr class="light_trait1">
                     <td class="trait1">Intellectual Curiosity</td>
-                    <td><input type="number" id="int_m" value="100" class="number_a1" ></td>
+                    <td><input type="number" id="int_m" value="94" class="number_a1" ></td>
                 </tr>
                 <tr class="light_trait2">
                     <td class="trait2">Unconventionality</td>
@@ -44,35 +42,35 @@
                 </tr>
                 <tr class="light_trait3">
                     <td class="trait3">Industriousness</td>
-                    <td><input type="number" id="ind_m" value="40" class="number_a3" ></td>
+                    <td><input type="number" id="ind_m" value="32" class="number_a3" ></td>
                 </tr>
                 <tr class="light_trait4">
                     <td class="trait4">Orderliness</td>
-                    <td><input type="number" id="ord_m" value="44" class="number_a4" ></td>
+                    <td><input type="number" id="ord_m" value="33" class="number_a4" ></td>
                 </tr>
                 <tr class="light_trait5">
                     <td class="trait5">Enthusiasm</td>
-                    <td><input type="number" id="ent_m" value="56" class="number_a5" ></td>
+                    <td><input type="number" id="ent_m" value="59" class="number_a5" ></td>
                 </tr>
                 <tr class="light_trait6">
                     <td class="trait6">Assertiveness</td>
-                    <td><input type="number" id="asr_m" value="32" class="number_a6" ></td>
+                    <td><input type="number" id="asr_m" value="27" class="number_a6" ></td>
                 </tr>
                 <tr class="light_trait7">
                     <td class="trait7">Compassion</td>
-                    <td><input type="number" id="com_m" value="68" class="number_a7" ></td>
+                    <td><input type="number" id="com_m" value="62" class="number_a7" ></td>
                 </tr>
                 <tr class="light_trait8">
                     <td class="trait8">Politeness</td>
-                    <td><input type="number" id="pol_m" value="88" class="number_a8" ></td>
+                    <td><input type="number" id="pol_m" value="83" class="number_a8" ></td>
                 </tr>
                 <tr class="light_trait9">
                     <td class="trait9">Negative Affect</td>
-                    <td><input type="number" id="wtd_m" value="88" class="number_a9" ></td>
+                    <td><input type="number" id="wtd_m" value="92" class="number_a9" ></td>
                 </tr>
                 <tr class="light_trait10">
                     <td class="trait10">Emotional Instability</td>
-                    <td><input type="number" id="vol_m" value="60" class="number_a10" ></td>
+                    <td><input type="number" id="vol_m" value="67" class="number_a10" ></td>
                 </tr>
             </table>
             <br>
@@ -196,6 +194,14 @@
             </div>
             <div class="main" id="compound_traits">
                 <h2>Compound Traits</h2>
+                <h3 id = "pls">Plasticity</h3>
+                <div class="results_bar">
+                    <div class="bar_pls" id="bar_pls"></div>
+                </div>
+                <h3 id = "stab">Stability</h3>
+                <div class="results_bar">
+                    <div class="bar_stab" id="bar_stab"></div>
+                </div>
                 <h3 id = "vit">Vitality</h3>
                 <div class="results_bar">
                     <div class="bar_vit" id="bar_vit"></div>
@@ -204,13 +210,53 @@
                 <div class="results_bar">
                     <div class="bar_mat" id="bar_mat"></div>
                 </div>
-                <h3 id = "gi">General Instability</h3>
-                <div class="results_bar">
-                    <div class="bar_gi" id="bar_gi"></div>
-                </div>
-                <h3 id = "ap">Type A Personality</h3>
+                <h3 id = "ap">Drivenness</h3>
                 <div class="results_bar">
                     <div class="bar_ap" id="bar_ap"></div>
+                </div>
+                <h3 id = "ss">Sensation-Seeking</h3>
+                <div class="results_bar">
+                    <div class="bar_ss" id="bar_ss"></div>
+                </div>
+                <h3 id = "at">Attention-Seeking</h3>
+                <div class="results_bar">
+                    <div class="bar_at" id="bar_at"></div>
+                </div>
+                <h3 id = "pop">Popularity</h3>
+                <div class="results_bar">
+                    <div class="bar_pop" id="bar_pop"></div>
+                </div>
+                <h3 id = "spk">Spunkiness</h3>
+                <div class="results_bar">
+                    <div class="bar_spk" id="bar_spk"></div>
+                </div>
+                <h3 id = "rad">Radioactivity</h3>
+                <div class="results_bar">
+                    <div class="bar_rad" id="bar_rad"></div>
+                </div>
+                <h3 id = "intro">Introspection</h3>
+                <div class="results_bar">
+                    <div class="bar_intro" id="bar_intro"></div>
+                </div>
+                <h3 id = "sen">Sensitivity</h3>
+                <div class="results_bar">
+                    <div class="bar_sen" id="bar_sen"></div>
+                </div>
+                <h3 id = "mr">Maturity</h3>
+                <div class="results_bar">
+                    <div class="bar_mr" id="bar_mr"></div>
+                </div>
+                <h3 id = "myst">Mysteriousness</h3>
+                <div class="results_bar">
+                    <div class="bar_myst" id="bar_myst"></div>
+                </div>
+                <h3 id = "act">Activity</h3>
+                <div class="results_bar">
+                    <div class="bar_act" id="bar_act"></div>
+                </div>
+                <h3 id = "lib">Liberalism</h3>
+                <div class="results_bar">
+                    <div class="bar_lib" id="bar_lib"></div>
                 </div>
             </div>
             <div class="main" id="charts_space">
@@ -374,6 +420,8 @@
             </div>
             <div class="main" id="jung">
                 <h2>Jung Functions / Types</h2>
+                <p>These scores are just predictions based on your Big Five result. If you want to get a better analysis of your MBTI/Jung type, make sure to take the Cognitive Type Test instead.</p>
+                <a href="CPTI.html">Cognitive Type Test</a>
                 <h3 id = "Fe">Extraverted Feeling</h3>
                 <div class="results_bar">
                     <div class="bar_Fe" id="bar_Fe"></div>
@@ -409,6 +457,8 @@
             </div>
             <div class="main" id="ennea">
                 <h2>Enneagram Types</h2>
+                <p>These scores are just predictions based on your Big Five result. If you want to get a better analysis of your Enneagram type, make sure to take the Enneagram Test instead.</p>
+                <a href="Multifactor Enneagram.html">Enneagram Test</a>
                 <h3 id = "one">Type 1</h3>
                 <div class="results_bar">
                     <div class="bar_1" id="bar_1"></div>

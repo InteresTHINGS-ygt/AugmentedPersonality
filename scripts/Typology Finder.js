@@ -54,8 +54,8 @@ function buttonclick(score) {
         "What kind of a role would you choose in a group?",
         "What would you rather do?",
         "In a group, would you rather...",
-        "You have seen someone who is very successful.",
-        "Something went wrong.",
+        "You have seen someone who is very successful in social media.",
+        "You lost in a competitive video game.",
         "I tend to...",
         "I tend to...",
         "I tend to...",
@@ -90,33 +90,33 @@ function buttonclick(score) {
 
     var statement_1 = [
         "practical and concrete thinker",
-        "grounded in reality",
+        "grounded in reality and common sense",
         "prioritizing relaxation over work",
         "unstructured and spontaneous",
         "serious and reserved",
         "someone who prefers following",
         "rather tough-minded and insensitive",
         "willing to fight or compete",
-        "confident without much doubt",
+        "confident without experiencing much doubt",
         "emotionally stable and controlled",
-        "Something more simple and concrete",
-        "Go back to familiar places",
+        "Something in sales, driving, athletics, etc.",
+        "Go back to familiar places for comfort",
         "Involving relaxation without much need for goals",
         "Flexible environment where things can be spontaneous",
         "Focus and get alone time",
-        "Pick a passive or support role",
-        "Something less involved with other people’s feelings",
-        "Compete with others",
-        "Focus on my good qualities",
-        "Control my emotional reactions",
-        "Think in plain and simple terms",
+        "Pick a passive or supportive role",
+        "Something without much involvement with other people’s feelings",
+        "Enjoy a good fight or argument",
+        "Start focusing on my good qualities",
+        "Stay composed and controlled",
+        "Avoid engaging in abstract concepts",
         "Do things the way I have always done them",
         "Do whatever I feel like at the moment",
         "Adapt and go with the flow",
-        "Keep things serious",
+        "Have a serious attitude towards life",
         "Let others initiate things",
-        "Not be swayed by others’ feelings",
-        "Do things for my own gain",
+        "Not be easily swayed by others’ feelings",
+        "Take advantage of situations for my own gain",
         "Feel confident about my abilities",
         "Control my cravings easily",
         "too simple-minded and incurious",
@@ -126,18 +126,18 @@ function buttonclick(score) {
         "too reserved and distant",
         "too much of a follower",
         "prone to selfishness and insensitivity",
-        "prone to insulting",
+        "prone to insulting and arguing with others",
         "prone to overconfidence",
-        "prone to apathy",
+        "prone to being apathetic",
         "I don’t overcomplicate things",
         "I am practical with good common sense",
         "I enjoy free time and relaxation",
         "I am adaptable and spontaneous",
-        "I enjoy my alone time",
+        "I enjoy alone time and silence",
         "I reflect before acting",
         "I am good at making rational and impersonal decisions",
         "I am not afraid of going against others",
-        "I am calm in high-pressure situations",
+        "I am calm in stressful situations",
         "I am patient and composed"
     ]
     var statement_2 = [
@@ -149,28 +149,28 @@ function buttonclick(score) {
         "someone who takes charge",
         "compassionate and helpful",
         "a harmonious person who is cooperative",
-        "prone to worry and doubt",
+        "prone to worry, doubt, and fear",
         "impatient and irritable",
-        "Something like a scientist, academician, philosopher, etc.",
-        "Pursue new adventures",
-        "Involving hard work and clear goals",
-        "Structured environment where I can stay organized",
-        "Socialize in large groups",
-        "Pick an active or leadership role",
+        "Something in science, philosophy, engineering, etc.",
+        "Seek new places, cultures, and adventures",
+        "Involving hard work and clear objectives",
+        "Structured environment where everything is planned",
+        "Engage in large groups",
+        "Pick an active leadership role",
         "Something involved with helping others",
-        "Collaborate with others",
+        "Maintain peace and harmony in the group",
         "Feel envious and discouraged",
         "Feel very upset and annoyed",
-        "Exhibit curiosity towards new ideas",
+        "Enjoy mental challenges and puzzles",
         "Try out new ways to do things",
-        "Squezze in as much work as possible",
-        "Make detailed plans in advance",
-        "Have fun and joke around",
-        "Be the first to act",
-        "Be sensitive towards others’ feelings",
-        "Keep things fair and honest",
+        "Squeeze in as much work as possible",
+        "Plan and organize well in advance",
+        "Highlight the funny moments in life",
+        "Be the first and fastest to act",
+        "Feel sensitivity towards others’ feelings",
+        "Act in a fair and honest way",
         "Frequently doubt my abilities",
-        "Overindulge in certain things",
+        "Overindulge in things such as food or social media",
         "prone to overcomplicating things",
         "too impractical and eccentric",
         "too much of a workaholic",
@@ -178,7 +178,7 @@ function buttonclick(score) {
         "can’t handle alone time",
         "too dominant and overwhelming",
         "too affected by others’ struggles",
-        "too willing to get along with others",
+        "too conflict-avoidant",
         "prone to negative thinking",
         "too much of an emotional rollercoaster",
         "I enjoy learning new things and concepts",
@@ -189,8 +189,8 @@ function buttonclick(score) {
         "I would be a good leader",
         "I am sympathetic and helpful",
         "I am peaceful and respectful",
-        "I sense danger before anyone else",
-        "I am definitely not apathetic"
+        "I notice danger before anyone else",
+        "I am emotionally responsive"
     ]
 
     if (test_status == 0) {
@@ -249,16 +249,16 @@ function buttonclick(score) {
     if (current_question > (questions.length - 1)){
         document.getElementById("question_number").style.display = "none";
         document.getElementById("Statement").innerHTML = "Finished!";
-        int = Math.round((int / 25) * 10000) / 100
-        opn = Math.round((opn / 25) * 10000) / 100
-        ind = Math.round((ind / 25) * 10000) / 100
-        ord = Math.round((ord / 25) * 10000) / 100
-        ent = Math.round((ent / 25) * 10000) / 100
-        asr = Math.round((asr / 25) * 10000) / 100
-        com = Math.round((com / 25) * 10000) / 100
-        pol = Math.round((pol / 25) * 10000) / 100
-        wtd = Math.round((wtd / 25) * 10000) / 100
-        vol = Math.round((vol / 25) * 10000) / 100
+        int = Math.round((int / 15) * 10000) / 100
+        opn = Math.round((opn / 15) * 10000) / 100
+        ind = Math.round((ind / 15) * 10000) / 100
+        ord = Math.round((ord / 15) * 10000) / 100
+        ent = Math.round((ent / 15) * 10000) / 100
+        asr = Math.round((asr / 15) * 10000) / 100
+        com = Math.round((com / 15) * 10000) / 100
+        pol = Math.round((pol / 15) * 10000) / 100
+        wtd = Math.round((wtd / 15) * 10000) / 100
+        vol = Math.round((vol / 15) * 10000) / 100
 
         openness = Math.round((int + opn) / 2)
         conscientiousness = Math.round((ind + ord) / 2)
@@ -266,10 +266,22 @@ function buttonclick(score) {
         agreeableness = Math.round((com + pol) / 2)
         neuroticism = Math.round((wtd + vol) / 2)
 
+        pls = Math.round((extraversion + openness) / 2);
+        stab = Math.round((agreeableness + conscientiousness + (100 - neuroticism)) / 3);
         vit = Math.round(((3 * ent) + (3 * (100 - wtd)) + opn + ind + asr + (100 - vol)) / 10);
         mat = Math.round((ind + (3 * asr) + (3 * (100 - pol)) + ent + (100 - com) + (100 - int) + (100 - opn)) / 11);
-        gi = Math.round(((3 * opn) + (3 * (100 - ord)) + (3 * (100 - pol)) + (3 * vol) + wtd + (100 - com) + (100 - ind)) / 15);
         ap = Math.round(((3 * ind) + (3 * ord) + (3 * asr) + (3 * vol) + wtd + (100 - pol)) / 14);
+        ss = Math.round((3*opn + 3*(100 - ord) + 2*ent + 3*asr + 2*(100 - pol) + 3*(100 - wtd) + vol)/17);
+        at = Math.round((ent + asr + 2*(100-pol) + 2*vol)/6);
+        pop = Math.round((opn + ind + 3*ent + 2*asr + 2*com + pol + 3*(100-wtd) + 2*(100-vol))/15);
+        spk = Math.round((2*opn + 2*(100-ind) + 3*(100-ord) + asr + 2*(100-com) + 3*(100-pol) + (100-wtd) + vol)/15);
+        rad = Math.round((int + opn + (100-ord) + ent + asr + (100-com) + (100-pol) + wtd + vol)/9);
+        intro = Math.round((2*int + 2*opn + ord + 2*(100-ent) + 2*(100-asr) + 2*wtd)/11);
+        sen = Math.round((2*openness + (100-extraversion) + 3*agreeableness + 3*neuroticism)/9);
+        mr = Math.round((openness + 3*conscientiousness + 2*agreeableness + 3*(100-neuroticism))/9);
+        myst = Math.round((3*int + 3*opn + (100-ent) + (100-pol) + wtd + vol)/10);
+        act = Math.round((opn + 3*ind + ord + 2*ent + 3*asr + 2*(100-wtd))/12);
+        lib = Math.round((int + 3*opn + (100-ind) + 3*(100-ord) + (100-asr) + 2*com + wtd)/12);
 
         get_result();
     }
@@ -304,10 +316,22 @@ function manual() {
     agreeableness = ((com + pol) / 2)
     neuroticism = ((wtd + vol) / 2)
 
+    pls = Math.round((extraversion + openness) / 2);
+    stab = Math.round((agreeableness + conscientiousness + (100 - neuroticism)) / 3);
     vit = Math.round(((3 * ent) + (3 * (100 - wtd)) + opn + ind + asr + (100 - vol)) / 10);
     mat = Math.round((ind + (3 * asr) + (3 * (100 - pol)) + ent + (100 - com) + (100 - int) + (100 - opn)) / 11);
-    gi = Math.round(((3 * opn) + (3 * (100 - ord)) + (3 * (100 - pol)) + (3 * vol) + wtd + (100 - com) + (100 - ind)) / 15);
     ap = Math.round(((3 * ind) + (3 * ord) + (3 * asr) + (3 * vol) + wtd + (100 - pol)) / 14);
+    ss = Math.round((3*opn + 3*(100 - ord) + 2*ent + 3*asr + 2*(100 - pol) + 3*(100 - wtd) + vol)/17);
+    at = Math.round((ent + asr + 2*(100-pol) + 2*vol)/6);
+    pop = Math.round((opn + ind + 3*ent + 2*asr + 2*com + pol + 3*(100-wtd) + 2*(100-vol))/15);
+    spk = Math.round((2*opn + 2*(100-ind) + 3*(100-ord) + asr + 2*(100-com) + 3*(100-pol) + (100-wtd) + vol)/15);
+    rad = Math.round((int + opn + (100-ord) + ent + asr + (100-com) + (100-pol) + wtd + vol)/9);
+    intro = Math.round((2*int + 2*opn + ord + 2*(100-ent) + 2*(100-asr) + 2*wtd)/11);
+    sen = Math.round((2*openness + (100-extraversion) + 3*agreeableness + 3*neuroticism)/9);
+    mr = Math.round((openness + 3*conscientiousness + 2*agreeableness + 3*(100-neuroticism))/9);
+    myst = Math.round((3*int + 3*opn + (100-ent) + (100-pol) + wtd + vol)/10);
+    act = Math.round((opn + 3*ind + ord + 2*ent + 3*asr + 2*(100-wtd))/12);
+    lib = Math.round((int + 3*opn + (100-ind) + 3*(100-ord) + (100-asr) + 2*com + wtd)/12);
 
     get_result();
 }
@@ -334,11 +358,11 @@ function get_result() {
                     1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 2,
                     2.1, 2.2, 2.3, 2.4, 2.5];
     var percentiles = [0.5, 0.62, 0.82, 1.07, 1.39, 1.79, 2.28,
-    2.87, 3.59, 4.46, 5.48, 6.68, 8.08, 9.68, 11.5, 13.57, 15.87,
-18.4, 21.19, 24.2, 27.43, 30.85, 34.46, 38.21, 42.07, 46.02, 50,
-53.98, 57.93, 61.79, 65.54, 69.15, 72.58, 75.8, 78.81, 81.59, 84.13,
-86.43, 88.49, 90.32, 91.92, 93.32, 94.52, 95.54, 96.41, 97.13, 97.73,
-98.21, 98.61, 98.93, 99.18, 99.5];
+                        2.87, 3.59, 4.46, 5.48, 6.68, 8.08, 9.68, 11.5, 13.57, 15.87,
+                        18.4, 21.19, 24.2, 27.43, 30.85, 34.46, 38.21, 42.07, 46.02, 50,
+                        53.98, 57.93, 61.79, 65.54, 69.15, 72.58, 75.8, 78.81, 81.59, 84.13,
+                        86.43, 88.49, 90.32, 91.92, 93.32, 94.52, 95.54, 96.41, 97.13, 97.73,
+                        98.21, 98.61, 98.93, 99.18, 99.5];
     var p;
     var perc_results = [];
 
@@ -395,6 +419,14 @@ function get_result() {
     var a;
     var n;
 
+    var res = (100-extraversion);
+    var cal = (100-neuroticism);
+    var uns = (100-conscientiousness);
+    var ego = (100-agreeableness);
+    var non = (100-openness);
+
+    var primary;
+
     if (extraversion >= 50) {
         s = "S";
     }
@@ -430,7 +462,38 @@ function get_result() {
         n = "N";
     }
 
-    document.getElementById("sloan").innerHTML = "SLOAN notation: " + s + l + o + a + n;
+    if (Math.max(openness, conscientiousness, extraversion, agreeableness, neuroticism, res, cal, uns, ego, non) == openness) {
+        primary = "Inquisitive";
+    }
+    else if (Math.max(openness, conscientiousness, extraversion, agreeableness, neuroticism, res, cal, uns, ego, non) == conscientiousness) {
+        primary = "Organized";
+    }
+    else if (Math.max(openness, conscientiousness, extraversion, agreeableness, neuroticism, res, cal, uns, ego, non) == extraversion) {
+        primary = "Social";
+    }
+    else if (Math.max(openness, conscientiousness, extraversion, agreeableness, neuroticism, res, cal, uns, ego, non) == agreeableness) {
+        primary = "Accommodating";
+    }
+    else if (Math.max(openness, conscientiousness, extraversion, agreeableness, neuroticism, res, cal, uns, ego, non) == neuroticism) {
+        primary = "Limbic";
+    }
+    else if (Math.max(openness, conscientiousness, extraversion, agreeableness, neuroticism, res, cal, uns, ego, non) == non) {
+        primary = "Noncurious";
+    }
+    else if (Math.max(openness, conscientiousness, extraversion, agreeableness, neuroticism, res, cal, uns, ego, non) == uns) {
+        primary = "Unstructured";
+    }
+    else if (Math.max(openness, conscientiousness, extraversion, agreeableness, neuroticism, res, cal, uns, ego, non) == res) {
+        primary = "Reserved";
+    }
+    else if (Math.max(openness, conscientiousness, extraversion, agreeableness, neuroticism, res, cal, uns, ego, non) == ego) {
+        primary = "Egocentric";
+    }
+    else if (Math.max(openness, conscientiousness, extraversion, agreeableness, neuroticism, res, cal, uns, ego, non) == cal) {
+        primary = "Calm";
+    }
+
+    document.getElementById("sloan").innerHTML = "SLOAN notation: " + s + l + o + a + n + " - " + primary;
 
     // General profile
     if (int > 70) {
@@ -626,15 +689,39 @@ function get_result() {
 
 
     // Compound traits
+    document.getElementById("pls").innerHTML = "Plasticity: " + pls + "%";
+    document.getElementById("stab").innerHTML = "Stability: " + stab + "%";
     document.getElementById("vit").innerHTML = "Vitality: " + vit + "%";
     document.getElementById("mat").innerHTML = "Materialism: " + mat + "%";
-    document.getElementById("gi").innerHTML = "General Instability: " + gi + "%";
     document.getElementById("ap").innerHTML = "Type A Personality: " + ap + "%";
+    document.getElementById("ss").innerHTML = "Sensation-Seeking: " + ss + "%";
+    document.getElementById("at").innerHTML = "Attention-Seeking: " + at + "%";
+    document.getElementById("pop").innerHTML = "Popularity: " + pop + "%";
+    document.getElementById("spk").innerHTML = "Spunkiness: " + spk + "%";
+    document.getElementById("rad").innerHTML = "Radioactivity: " + rad + "%";
+    document.getElementById("intro").innerHTML = "Introspection: " + intro + "%";
+    document.getElementById("sen").innerHTML = "Sensitivity: " + sen + "%";
+    document.getElementById("mr").innerHTML = "Maturity: " + mr + "%";
+    document.getElementById("myst").innerHTML = "Mysteriousness: " + myst + "%";
+    document.getElementById("act").innerHTML = "Activity: " + act + "%";
+    document.getElementById("lib").innerHTML = "Liberalism: " + lib + "%";
 
+    document.getElementById("bar_pls").style.width = pls + "%";
+    document.getElementById("bar_stab").style.width = stab + "%";
     document.getElementById("bar_vit").style.width = vit + "%";
     document.getElementById("bar_mat").style.width = mat + "%";
-    document.getElementById("bar_gi").style.width = gi + "%";
     document.getElementById("bar_ap").style.width = ap + "%";
+    document.getElementById("bar_ss").style.width = ss + "%";
+    document.getElementById("bar_at").style.width = at + "%";
+    document.getElementById("bar_pop").style.width = pop + "%";
+    document.getElementById("bar_spk").style.width = spk + "%";
+    document.getElementById("bar_rad").style.width = rad + "%";
+    document.getElementById("bar_intro").style.width = intro + "%";
+    document.getElementById("bar_sen").style.width = sen + "%";
+    document.getElementById("bar_mr").style.width = mr + "%";
+    document.getElementById("bar_myst").style.width = myst + "%";
+    document.getElementById("bar_act").style.width = act + "%";
+    document.getElementById("bar_lib").style.width = lib + "%";
 
     // Predominant patterns
     document.getElementById("point_oc").style.left = conscientiousness + "%";
@@ -728,8 +815,8 @@ function get_result() {
 
     // Alignment
 
-    var chaotic = (2*opn + 2*(100-ord) + (100-pol) + (100-ind)) / 6;
-    var good = agreeableness;
+    var chaotic = (3*opn + 3*(100-ord) + (100-pol) + (100-ind) + 2*vol) / 10;
+    var good = (3*com + 3*pol + (100-asr) + (100-vol))/8;
 
     var c = chaotic + "%";
     var g = good + "%";

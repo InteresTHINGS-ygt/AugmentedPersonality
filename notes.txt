@@ -1721,3 +1721,46 @@ Set 1
 "I tend to consider values, likes, and dislikes",
 "I decide based on what is valued",
 "I ignore reasons in favor of what is liked"
+
+
+High Intellect
+
+Low Intellect
+
+High Openness
+
+Low Openness
+
+High Industriousness
+
+Low Industriousness
+
+High Orderliness
+
+Low Orderliness
+
+High Enthusiasm
+
+Low Enthusiasm
+
+High Assertiveness
+
+Low Assertiveness
+
+High Compassion
+
+Low Compassion
+
+High Politeness
+
+Low Politeness
+
+High Withdrawal
+
+Low Withdrawal
+
+High Volatility
+
+Low Volatility
+
+
