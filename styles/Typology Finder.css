@@ -716,32 +716,140 @@ h1 {
         height: 40px;
     }
     
-    .bar_vit {
+    .bar_pls {
+        background-color: rgb(125, 179, 0);
         
         
         width: 50%;
-        height: 40px;
+        height: 6vw;
+    }
+    
+    .bar_stab {
+        background-color: rgb(22, 58, 99);
+        
+        
+        width: 50%;
+        height: 6vw;
+    }
+    
+    .bar_vit {
+        background-color: rgb(206, 209, 15);
+        
+        
+        width: 50%;
+        height: 6vw;
     }
     
     .bar_mat {
+        background-color: rgb(177, 130, 0);
         
         
         width: 50%;
-        height: 40px;
-    }
-    
-    .bar_gi {
-        
-        
-        width: 50%;
-        height: 40px;
+        height: 6vw;
     }
     
     .bar_ap {
+        background-color: rgb(204, 0, 0);
         
         
         width: 50%;
-        height: 40px;
+        height: 6vw;
+    }
+    
+    .bar_ss {
+        background-color: rgb(255, 38, 0);
+        
+        
+        width: 50%;
+        height: 6vw;
+    }
+    
+    .bar_at {
+        background-color: rgb(225, 0, 255);
+        
+        
+        width: 50%;
+        height: 6vw;
+    }
+    
+    .bar_nat {
+        background-color: rgb(31, 97, 29);
+        
+        
+        width: 50%;
+        height: 6vw;
+    }
+    
+    .bar_pop {
+        background-color: rgb(206, 0, 120);
+        
+        
+        width: 50%;
+        height: 6vw;
+    }
+    
+    .bar_spk {
+        background-color: rgb(0, 0, 0);
+        
+        
+        width: 50%;
+        height: 6vw;
+    }
+    
+    .bar_rad {
+        background-color: rgb(0, 255, 13);
+        
+        
+        width: 50%;
+        height: 6vw;
+    }
+    
+    .bar_intro {
+        background-color: rgb(0, 7, 75);
+        
+        
+        width: 50%;
+        height: 6vw;
+    }
+    
+    .bar_sen {
+        background-color: rgb(74, 155, 158);
+        
+        
+        width: 50%;
+        height: 6vw;
+    }
+    
+    .bar_mr {
+        background-color: rgb(49, 43, 110);
+        
+        
+        width: 50%;
+        height: 6vw;
+    }
+    
+    .bar_myst {
+        background-color: rgb(53, 0, 83);
+        
+        
+        width: 50%;
+        height: 6vw;
+    }
+    
+    .bar_act {
+        background-color: rgb(185, 134, 39);
+        
+        
+        width: 50%;
+        height: 6vw;
+    }
+    
+    .bar_lib {
+        background-color: rgb(0, 149, 207);
+        
+        
+        width: 50%;
+        height: 6vw;
     }
 
     .bar_Se {
