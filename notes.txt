@@ -1763,4 +1763,20 @@ High Volatility
 
 Low Volatility
 
+ALL NEW SIMILARITY FORMULA
 
+Big Five - 40%
+MBTI - 20%
+Enneagram - 10%
+V/P - 15%
+Interests - 15%
+
+Big Five part: Simplified formula - Euclidean distance
+
+MBTI part:
+
+Enneagram part:
+
+V/P part: 
+
+Interests part: Will use RIASEC, and a few others

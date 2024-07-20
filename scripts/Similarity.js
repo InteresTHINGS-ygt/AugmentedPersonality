@@ -76,7 +76,6 @@ function update_a() {
     pol_oth = document.getElementById("pol_oth").valueAsNumber;
     wtd_oth = document.getElementById("wtd_oth").valueAsNumber;
     vol_oth = document.getElementById("vol_oth").valueAsNumber;
-    interest_sim = document.getElementById("interest_sim").valueAsNumber;
 
     document.getElementById("int_youa").innerHTML = int_you; 
     document.getElementById("opn_youa").innerHTML = opn_you;
@@ -99,7 +98,6 @@ function update_a() {
     document.getElementById("pol_otha").innerHTML = pol_oth;
     document.getElementById("wtd_otha").innerHTML = wtd_oth;
     document.getElementById("vol_otha").innerHTML = vol_oth;
-    document.getElementById("interest_sim_d").innerHTML = interest_sim;
 }
 
 function autofill_dev() {
@@ -253,61 +251,34 @@ function log() {
     pearson = cov / (Math.sqrt(varYou * varOth));
     similarity = Math.round(((1 + pearson)/2) * 100);
 
-    dis.push(int_dis);
-    dis.push(opn_dis);
-    dis.push(ind_dis);
-    dis.push(ord_dis);
-    dis.push(ent_dis);
-    dis.push(asr_dis);
-    dis.push(com_dis);
-    dis.push(pol_dis);
-    dis.push(wtd_dis);
-    dis.push(vol_dis);
-    var avg_dis = dis.reduce((sum, value) => sum + value, 0) / dis.length;
-    var similarity_b = Math.round(100 - avg_dis);
-    var similarity_c = Math.round((Math.pow((similarity_b / 100),2))*100);
-    var max_s;
-    var min_s;
-    var max_as;
-    var min_as;
-    var score_per;
-    var ascore_per;
-    var high_bonus;
+    var int = int_dis/100;
+    var opn = opn_dis/100;
+    var ind = ind_dis/100;
+    var ord = ord_dis/100;
+    var ent = ent_dis/100;
+    var asr = asr_dis/100;
+    var com = com_dis/100;
+    var pol = pol_dis/100;
+    var wtd = wtd_dis/100;
+    var vol = vol_dis/100;
 
-    for (let i = 0; i < you.length; i++) {
-        max_s = Math.max(you[i], oth[i]);
-        min_s = Math.min(you[i], oth[i]);
-        sim_weight = Math.pow((Math.max(Math.abs(50-you[i]), Math.abs(50-oth[i])) / 50), 1) + 0.25;
-        if (you[i] == oth[i]) {
-            similarity_new = 100 * sim_weight;
-            sim_sum += similarity_new;
-            weight_sum += sim_weight;
-        }
-        else {
-            max_as = Math.max(100-you[i], 100-oth[i]);
-            min_as = Math.min(100-you[i], 100-oth[i]);
-            score_per = (min_s / max_s)**1.7 * 100;
-            ascore_per = (min_as / max_as)**1.7 * 100;
-            high_bonus = 10 * ((50 - Math.abs(you[i]-oth[i]))/40)
-            if (high_bonus < 0) {
-                high_bonus = 0;
-            }
-            similarity_new = ((((score_per * (you[i] + oth[i])) + (ascore_per * (100-you[i] + 100-oth[i]))) / 200) + high_bonus) * sim_weight;
-            sim_sum += similarity_new;
-            weight_sum += sim_weight;
-        }/*(Math.max(Math.abs(50-you[i]), Math.abs(50-oth[i])) / 200 + 0.75)*/
-        lichnost_sim = sim_sum / weight_sum;
-    }
+    dis.push(int);
+    dis.push(opn);
+    dis.push(ind);
+    dis.push(ord);
+    dis.push(ent);
+    dis.push(asr);
+    dis.push(com);
+    dis.push(pol);
+    dis.push(wtd);
+    dis.push(vol);
+    
+    
 
-    var final_sim = 0;
-    interest_sim = document.getElementById("interest_sim").valueAsNumber;
-    final_sim = lichnost_sim * 0.7 + interest_sim * 0.3;
+    var final_sim = (1 - (Math.sqrt(int**2 + opn**2 + ind**2 + ord**2 + ent**2 + asr**2 + com**2 + pol**2 + wtd**2 + vol**2) / Math.sqrt(10))) * 100;
 
     document.getElementById("similarity_percentage").style.display = "";
 
-    document.getElementById("Similarity").innerHTML = "You are " + similarity + "% similar to each other! (Pearson)";
-    document.getElementById("Similarity_b").innerHTML = "You are " + similarity_b + "% similar to each other! (Mean Distance)";
-    document.getElementById("Similarity_c").innerHTML = "You are " + similarity_c + "% similar to each other! (Quadratic Distance)";
     if (oth_name == "" && you_name == "") {
         document.getElementById("Similarity_d").innerHTML = "You are " + Math.round(100 * final_sim) / 100 + "% similar to each other.";
     }
@@ -322,7 +293,6 @@ function log() {
     }
 
     document.getElementById("bar").style.width = Math.round(final_sim) + "%";
-    document.getElementById("personality_sim").innerHTML = "Raw personality similarity: " + Math.round(100 * lichnost_sim) / 100 + "%";
 
     if (final_sim > 90) {
         document.getElementById("sim_class").innerHTML = "That is an OBNOXIOUS level of similarity!"
@@ -365,56 +335,5 @@ function log() {
         document.getElementById("bar").style.backgroundColor = "rgb(97, 102, 102)"
         document.getElementById("sim").style.backgroundColor = "rgb(16, 113, 120)"
     }
-
-    document.getElementById("light_1").style = "background-color: rgb(60, 60, 60)"
-    document.getElementById("light_2").style = "background-color: rgb(60, 60, 60)"
-    document.getElementById("light_3").style = "background-color: rgb(60, 60, 60)"
-    document.getElementById("light_4").style = "background-color: rgb(60, 60, 60)"
-    document.getElementById("light_5").style = "background-color: rgb(60, 60, 60)"
-    document.getElementById("light_6").style = "background-color: rgb(60, 60, 60)"
-
-    document.getElementById("light_7").style = "background-color: rgb(60, 60, 60)"
-    document.getElementById("light_8").style = "background-color: rgb(60, 60, 60)"
-    document.getElementById("light_9").style = "background-color: rgb(60, 60, 60)"
-    document.getElementById("light_10").style = "background-color: rgb(60, 60, 60)"
-    document.getElementById("light_11").style = "background-color: rgb(60, 60, 60)"
-    document.getElementById("light_12").style = "background-color: rgb(60, 60, 60)"
-    
-
-    if (final_sim > 10) {
-        document.getElementById("light_1").style = "background-color: rgb(14, 117, 0)"
-    }
-    if (final_sim > 20) {
-        document.getElementById("light_2").style = "background-color: rgb(14, 117, 0)"
-    }
-    if (final_sim > 30) {
-        document.getElementById("light_3").style = "background-color: rgb(14, 117, 0)"
-    }
-    if (final_sim > 40) {
-        document.getElementById("light_4").style = "background-color: rgb(14, 117, 0)"
-    }
-    if (final_sim > 50) {
-        document.getElementById("light_5").style = "background-color: rgb(255, 140, 0)"
-    }
-    if (final_sim > 55) {
-        document.getElementById("light_6").style = "background-color: rgb(255, 140, 0)"
-    }
-    if (final_sim > 60) {
-        document.getElementById("light_7").style = "background-color: rgb(255, 140, 0)"
-    }
-    if (final_sim > 65) {
-        document.getElementById("light_8").style = "background-color: rgb(255, 140, 0)"
-    }
-    if (final_sim > 70) {
-        document.getElementById("light_9").style = "background-color: rgb(255, 0, 0)"
-    }
-    if (final_sim > 75) {
-        document.getElementById("light_10").style = "background-color: rgb(255, 0, 0)"
-    }
-    if (final_sim > 80) {
-        document.getElementById("light_11").style = "background-color: rgb(255, 0, 0)"
-    }
-    if (final_sim > 85) {
-        document.getElementById("light_12").style = "background-color: rgb(255, 0, 0)"
-    }
 }
+

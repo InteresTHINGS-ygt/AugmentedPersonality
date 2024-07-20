@@ -85,8 +85,7 @@
                     <td><input type="range" class="slider_a10" step="10" id="vol_oth" min="0" max="100" value = "50" oninput=update_a() onchange=update_a()><p class="table" id="vol_otha">50</p></td>
                 </tr>
             </table>
-            <p style="font-weight: bold;">How similar are your interests, preferences, and values to this person or character?</p>
-            <input type="range" min="0" max="100" step="10" id="interest_sim" class="slider" value="50" oninput=update_a() onchange=update_a()><p id="interest_sim_d" class="interest_sim_label">50</p>
+            <br>
             <input type="button" onclick=log() value="Submit" id="submit_sim">
         </div>
         <div id = "similarity_percentage" style="display:none">
@@ -95,7 +94,6 @@
             <h3 id = "Similarity_c" style="display:none"></h3>
             <h3 id = "Similarity_d"></h3>
             <h3 id = "sim_class"></h3>
-            <h3 id = "personality_sim"></h3>
             <div class="results_bar">
                 <div class="bar" id="bar"></div>
             </div>
