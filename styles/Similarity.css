@@ -107,6 +107,54 @@ h1 {
     background-color: rgb(78, 0, 114);
 }
 
+.slider_a11::-webkit-slider-thumb {
+    background-color: rgb(124, 50, 0);
+}
+
+.slider_a12::-webkit-slider-thumb {
+    background-color: rgb(71, 39, 27);
+}
+
+.slider_a13::-webkit-slider-thumb {
+    background-color: rgb(81, 90, 0);
+}
+
+.slider_a14::-webkit-slider-thumb {
+    background-color: rgb(117, 143, 0);
+}
+
+.slider_a15::-webkit-slider-thumb {
+    background-color: rgb(20, 20, 20);
+}
+
+.slider_a16::-webkit-slider-thumb {
+    background-color: rgb(66, 66, 66);
+}
+
+.slider_a11::-moz-range-thumb {
+    background-color: rgb(124, 50, 0);
+}
+
+.slider_a12::-moz-range-thumb {
+    background-color: rgb(71, 39, 27);
+}
+
+.slider_a13::-moz-range-thumb {
+    background-color: rgb(81, 90, 0);
+}
+
+.slider_a14::-moz-range-thumb {
+    background-color: rgb(117, 143, 0);
+}
+
+.slider_a15::-moz-range-thumb {
+    background-color: rgb(20, 20, 20);
+}
+
+.slider_a16::-moz-range-thumb {
+    background-color: rgb(66, 66, 66);
+}
+
 .slider_a1 {
     background-color: rgb(178, 240, 226);
     color: rgb(40, 37, 30);
@@ -154,6 +202,36 @@ h1 {
 
 .slider_a10 {
     background-color: rgb(232, 205, 245);
+    color: rgb(40, 37, 30);
+}
+
+.slider_a11 {
+    background-color: rgb(245, 218, 200);
+    color: rgb(40, 37, 30);
+}
+
+.slider_a12 {
+    background-color: rgb(231, 206, 196);
+    color: rgb(40, 37, 30);
+}
+
+.slider_a13 {
+    background-color: rgb(248, 255, 186);
+    color: rgb(40, 37, 30);
+}
+
+.slider_a14 {
+    background-color: rgb(242, 255, 185);
+    color: rgb(40, 37, 30);
+}
+
+.slider_a15 {
+    background-color: rgb(209, 209, 209);
+    color: rgb(40, 37, 30);
+}
+
+.slider_a16 {
+    background-color: rgb(235, 235, 235);
     color: rgb(40, 37, 30);
 }
 

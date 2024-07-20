@@ -219,7 +219,7 @@ input[type="text"] {
     cursor: pointer;
 }
 
-.slider_a1, .slider_a2, .slider_a3, .slider_a4, .slider_a5, .slider_a6, .slider_a7, .slider_a8, .slider_a9, .slider_a10 {
+.slider_a1, .slider_a2, .slider_a3, .slider_a4, .slider_a5, .slider_a6, .slider_a7, .slider_a8, .slider_a9, .slider_a10, .slider_a11, .slider_a12, .slider_a13, .slider_a14, .slider_a15, .slider_a16 {
     width: 25vw;
     -webkit-appearance: none;
     height: 6vw;
@@ -228,7 +228,7 @@ input[type="text"] {
     opacity: 1;
 }
 
-.slider_a1::-webkit-slider-thumb, .slider_a2::-webkit-slider-thumb, .slider_a3::-webkit-slider-thumb, .slider_a4::-webkit-slider-thumb, .slider_a5::-webkit-slider-thumb, .slider_a6::-webkit-slider-thumb, .slider_a7::-webkit-slider-thumb, .slider_a8::-webkit-slider-thumb, .slider_a9::-webkit-slider-thumb, .slider_a10::-webkit-slider-thumb {
+.slider_a1::-webkit-slider-thumb, .slider_a2::-webkit-slider-thumb, .slider_a3::-webkit-slider-thumb, .slider_a4::-webkit-slider-thumb, .slider_a5::-webkit-slider-thumb, .slider_a6::-webkit-slider-thumb, .slider_a7::-webkit-slider-thumb, .slider_a8::-webkit-slider-thumb, .slider_a9::-webkit-slider-thumb, .slider_a10::-webkit-slider-thumb, .slider_a11::-webkit-slider-thumb, .slider_a12::-webkit-slider-thumb, .slider_a13::-webkit-slider-thumb, .slider_a14::-webkit-slider-thumb, .slider_a15::-webkit-slider-thumb, .slider_a16::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
     width: 6vw;
@@ -237,7 +237,7 @@ input[type="text"] {
     cursor: pointer;
 }
   
-.slider_a1::-moz-slider-thumb, .slider_a2::-moz-slider-thumb, .slider_a3::-moz-slider-thumb, .slider_a4::-moz-slider-thumb, .slider_a5::-moz-slider-thumb, .slider_a6::-moz-slider-thumb, .slider_a7::-moz-slider-thumb, .slider_a8::-moz-slider-thumb, .slider_a9::-moz-slider-thumb, .slider_a10::-moz-slider-thumb {
+.slider_a1::-moz-range-thumb, .slider_a2::-moz-range-thumb, .slider_a3::-moz-range-thumb, .slider_a4::-moz-range-thumb, .slider_a5::-moz-range-thumb, .slider_a6::-moz-range-thumb, .slider_a7::-moz-range-thumb, .slider_a8::-moz-range-thumb, .slider_a9::-moz-range-thumb, .slider_a10::-moz-range-thumb, .slider_a11::-moz-range-thumb, .slider_a12::-moz-range-thumb, .slider_a13::-moz-range-thumb, .slider_a14::-moz-range-thumb, .slider_a15::-moz-range-thumb, .slider_a16::-moz-range-thumb {
     width: 6vw;
     height: 6vw;
     background: #04AA6D;
@@ -320,6 +320,36 @@ th {
     color: rgb(240, 240, 240);
 }
 
+.trait11 {
+    background-color: rgb(206, 82, 0);
+    color: rgb(240, 240, 240);
+}
+
+.trait12 {
+    background-color: rgb(133, 62, 34);
+    color: rgb(240, 240, 240);
+}
+
+.trait13 {
+    background-color: rgb(118, 131, 0);
+    color: rgb(240, 240, 240);
+}
+
+.trait14 {
+    background-color: rgb(157, 192, 0);
+    color: rgb(240, 240, 240);
+}
+
+.trait15 {
+    background-color: rgb(61, 61, 61);
+    color: rgb(240, 240, 240);
+}
+
+.trait16 {
+    background-color: rgb(122, 122, 122);
+    color: rgb(240, 240, 240);
+}
+
 .light_trait1 {
     background-color: rgb(102, 190, 171);
     color: rgb(40, 37, 30);
@@ -370,6 +400,36 @@ th {
     color: rgb(40, 37, 30);
 }
 
+.light_trait11 {
+    background-color: rgb(209, 145, 102);
+    color: rgb(40, 37, 30);
+}
+
+.light_trait12 {
+    background-color: rgb(156, 107, 88);
+    color: rgb(40, 37, 30);
+}
+
+.light_trait13 {
+    background-color: rgb(187, 197, 92);
+    color: rgb(40, 37, 30);
+}
+
+.light_trait14 {
+    background-color: rgb(205, 231, 90);
+    color: rgb(40, 37, 30);
+}
+
+.light_trait15 {
+    background-color: rgb(158, 158, 158);
+    color: rgb(40, 37, 30);
+}
+
+.light_trait16 {
+    background-color: rgb(187, 187, 187);
+    color: rgb(40, 37, 30);
+}
+
 .head_table {
     background-color: rgb(100, 95, 85);
 }
@@ -416,11 +476,6 @@ input[type="number"].number_a8 {
 
 input[type="number"].number_a9 {
     background-color: rgb(220, 192, 240);
-    color: rgb(40, 37, 30);
-}
-
-input[type="number"].number_a10 {
-    background-color: rgb(232, 205, 245);
     color: rgb(40, 37, 30);
 }
 
@@ -637,7 +692,7 @@ p.interest_sim_label {
         cursor: pointer;
     }
 
-    .slider_a1, .slider_a2, .slider_a3, .slider_a4, .slider_a5, .slider_a6, .slider_a7, .slider_a8, .slider_a9, .slider_a10 {
+    .slider_a1, .slider_a2, .slider_a3, .slider_a4, .slider_a5, .slider_a6, .slider_a7, .slider_a8, .slider_a9, .slider_a10, .slider_a11, .slider_a12, .slider_a13, .slider_a14, .slider_a15, .slider_a16 {
         -webkit-appearance: none;
         width: 140px;
         height: 20px;
@@ -647,7 +702,7 @@ p.interest_sim_label {
         margin: 15px
     }
     
-    .slider_a1::-webkit-slider-thumb, .slider_a2::-webkit-slider-thumb, .slider_a3::-webkit-slider-thumb, .slider_a4::-webkit-slider-thumb, .slider_a5::-webkit-slider-thumb, .slider_a6::-webkit-slider-thumb, .slider_a7::-webkit-slider-thumb, .slider_a8::-webkit-slider-thumb, .slider_a9::-webkit-slider-thumb, .slider_a10::-webkit-slider-thumb {
+    .slider_a1::-webkit-slider-thumb, .slider_a2::-webkit-slider-thumb, .slider_a3::-webkit-slider-thumb, .slider_a4::-webkit-slider-thumb, .slider_a5::-webkit-slider-thumb, .slider_a6::-webkit-slider-thumb, .slider_a7::-webkit-slider-thumb, .slider_a8::-webkit-slider-thumb, .slider_a9::-webkit-slider-thumb, .slider_a10::-webkit-slider-thumb, .slider_a11::-webkit-slider-thumb, .slider_a12::-webkit-slider-thumb, .slider_a13::-webkit-slider-thumb, .slider_a14::-webkit-slider-thumb, .slider_a15::-webkit-slider-thumb, .slider_a16::-webkit-slider-thumb {
         -webkit-appearance: none;
         appearance: none;
         width: 20px;
@@ -657,7 +712,7 @@ p.interest_sim_label {
         cursor: pointer;
     }
       
-    .slider_a1::-moz-slider-thumb, .slider_a2::-moz-slider-thumb, .slider_a3::-moz-slider-thumb, .slider_a4::-moz-slider-thumb, .slider_a5::-moz-slider-thumb, .slider_a6::-moz-slider-thumb, .slider_a7::-moz-slider-thumb, .slider_a8::-moz-slider-thumb, .slider_a9::-moz-slider-thumb, .slider_a10::-moz-slider-thumb {
+    .slider_a1::-moz-range-thumb, .slider_a2::-moz-range-thumb, .slider_a3::-moz-range-thumb, .slider_a4::-moz-range-thumb, .slider_a5::-moz-range-thumb, .slider_a6::-moz-range-thumb, .slider_a7::-moz-range-thumb, .slider_a8::-moz-range-thumb, .slider_a9::-moz-range-thumb, .slider_a10::-moz-range-thumb, .slider_a11::-moz-range-thumb, .slider_a12::-moz-range-thumb, .slider_a13::-moz-range-thumb, .slider_a14::-moz-range-thumb, .slider_a15::-moz-range-thumb, .slider_a16::-moz-range-thumb {
         width: 20px;
         height: 20px;
         background: #04AA6D;

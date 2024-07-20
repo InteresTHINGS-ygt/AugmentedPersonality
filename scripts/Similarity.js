@@ -8,6 +8,13 @@ var com_you;
 var pol_you;
 var wtd_you;
 var vol_you;
+var sen_you;
+var mem_you;
+var fut_you;
+var lat_you;
+var emo_you;
+var tru_you;
+
 var int_oth;
 var opn_oth;
 var ind_oth;
@@ -18,8 +25,14 @@ var com_oth;
 var pol_oth;
 var wtd_oth;
 var vol_oth;
+var sen_oth;
+var mem_oth;
+var fut_oth;
+var lat_oth;
+var emo_oth;
+var tru_oth;
 
-var int_dis, opn_dis, ind_dis, ord_dis, ent_dis, asr_dis, com_dis, pol_dis, wtd_dis, vol_dis;
+var int_dis, opn_dis, ind_dis, ord_dis, ent_dis, asr_dis, com_dis, pol_dis, wtd_dis, vol_dis, sen_dis, mem_dis, fut_dis, lat_dis, emo_dis, tru_dis;
 
 var you = [];
 var oth = [];
@@ -66,6 +79,13 @@ function update_a() {
     pol_you = document.getElementById("pol_you").valueAsNumber;
     wtd_you = document.getElementById("wtd_you").valueAsNumber;
     vol_you = document.getElementById("vol_you").valueAsNumber;
+    sen_you = document.getElementById("sen_you").valueAsNumber;
+    mem_you = document.getElementById("mem_you").valueAsNumber;
+    fut_you = document.getElementById("fut_you").valueAsNumber;
+    lat_you = document.getElementById("lat_you").valueAsNumber;
+    emo_you = document.getElementById("emo_you").valueAsNumber;
+    tru_you = document.getElementById("tru_you").valueAsNumber;
+
     int_oth = document.getElementById("int_oth").valueAsNumber;
     opn_oth = document.getElementById("opn_oth").valueAsNumber;
     ind_oth = document.getElementById("ind_oth").valueAsNumber;
@@ -76,6 +96,12 @@ function update_a() {
     pol_oth = document.getElementById("pol_oth").valueAsNumber;
     wtd_oth = document.getElementById("wtd_oth").valueAsNumber;
     vol_oth = document.getElementById("vol_oth").valueAsNumber;
+    sen_oth = document.getElementById("sen_oth").valueAsNumber;
+    mem_oth = document.getElementById("mem_oth").valueAsNumber;
+    fut_oth = document.getElementById("fut_oth").valueAsNumber;
+    lat_oth = document.getElementById("lat_oth").valueAsNumber;
+    emo_oth = document.getElementById("emo_oth").valueAsNumber;
+    tru_oth = document.getElementById("tru_oth").valueAsNumber;
 
     document.getElementById("int_youa").innerHTML = int_you; 
     document.getElementById("opn_youa").innerHTML = opn_you;
@@ -87,6 +113,12 @@ function update_a() {
     document.getElementById("pol_youa").innerHTML = pol_you;
     document.getElementById("wtd_youa").innerHTML = wtd_you;
     document.getElementById("vol_youa").innerHTML = vol_you;
+    document.getElementById("sen_youa").innerHTML = sen_you;
+    document.getElementById("mem_youa").innerHTML = mem_you;
+    document.getElementById("fut_youa").innerHTML = fut_you;
+    document.getElementById("lat_youa").innerHTML = lat_you;
+    document.getElementById("emo_youa").innerHTML = emo_you;
+    document.getElementById("tru_youa").innerHTML = tru_you;
 
     document.getElementById("int_otha").innerHTML = int_oth; 
     document.getElementById("opn_otha").innerHTML = opn_oth;
@@ -98,6 +130,12 @@ function update_a() {
     document.getElementById("pol_otha").innerHTML = pol_oth;
     document.getElementById("wtd_otha").innerHTML = wtd_oth;
     document.getElementById("vol_otha").innerHTML = vol_oth;
+    document.getElementById("sen_otha").innerHTML = sen_oth;
+    document.getElementById("mem_otha").innerHTML = mem_oth;
+    document.getElementById("fut_otha").innerHTML = fut_oth;
+    document.getElementById("lat_otha").innerHTML = lat_oth;
+    document.getElementById("emo_otha").innerHTML = emo_oth;
+    document.getElementById("tru_otha").innerHTML = tru_oth;
 }
 
 function autofill_dev() {
@@ -111,6 +149,12 @@ function autofill_dev() {
     document.getElementById("pol_you").value = 80;
     document.getElementById("wtd_you").value = 90;
     document.getElementById("vol_you").value = 70;
+    document.getElementById("sen_you").value = 40;
+    document.getElementById("mem_you").value = 100;
+    document.getElementById("fut_you").value = 70;
+    document.getElementById("lat_you").value = 80;
+    document.getElementById("emo_you").value = 90;
+    document.getElementById("tru_you").value = 50;
 
     int_you = document.getElementById("int_you").valueAsNumber;
     opn_you = document.getElementById("opn_you").valueAsNumber;
@@ -122,6 +166,13 @@ function autofill_dev() {
     pol_you = document.getElementById("pol_you").valueAsNumber;
     wtd_you = document.getElementById("wtd_you").valueAsNumber;
     vol_you = document.getElementById("vol_you").valueAsNumber;
+    sen_you = document.getElementById("sen_you").valueAsNumber;
+    mem_you = document.getElementById("mem_you").valueAsNumber;
+    fut_you = document.getElementById("fut_you").valueAsNumber;
+    lat_you = document.getElementById("lat_you").valueAsNumber;
+    emo_you = document.getElementById("emo_you").valueAsNumber;
+    tru_you = document.getElementById("tru_you").valueAsNumber;
+
     int_oth = document.getElementById("int_oth").valueAsNumber;
     opn_oth = document.getElementById("opn_oth").valueAsNumber;
     ind_oth = document.getElementById("ind_oth").valueAsNumber;
@@ -132,6 +183,12 @@ function autofill_dev() {
     pol_oth = document.getElementById("pol_oth").valueAsNumber;
     wtd_oth = document.getElementById("wtd_oth").valueAsNumber;
     vol_oth = document.getElementById("vol_oth").valueAsNumber;
+    sen_oth = document.getElementById("sen_oth").valueAsNumber;
+    mem_oth = document.getElementById("mem_oth").valueAsNumber;
+    fut_oth = document.getElementById("fut_oth").valueAsNumber;
+    lat_oth = document.getElementById("lat_oth").valueAsNumber;
+    emo_oth = document.getElementById("emo_oth").valueAsNumber;
+    tru_oth = document.getElementById("tru_oth").valueAsNumber;
 
     document.getElementById("int_youa").innerHTML = int_you; 
     document.getElementById("opn_youa").innerHTML = opn_you;
@@ -143,6 +200,12 @@ function autofill_dev() {
     document.getElementById("pol_youa").innerHTML = pol_you;
     document.getElementById("wtd_youa").innerHTML = wtd_you;
     document.getElementById("vol_youa").innerHTML = vol_you;
+    document.getElementById("sen_youa").innerHTML = sen_you;
+    document.getElementById("mem_youa").innerHTML = mem_you;
+    document.getElementById("fut_youa").innerHTML = fut_you;
+    document.getElementById("lat_youa").innerHTML = lat_you;
+    document.getElementById("emo_youa").innerHTML = emo_you;
+    document.getElementById("tru_youa").innerHTML = tru_you;
 
     document.getElementById("int_otha").innerHTML = int_oth; 
     document.getElementById("opn_otha").innerHTML = opn_oth;
@@ -154,6 +217,12 @@ function autofill_dev() {
     document.getElementById("pol_otha").innerHTML = pol_oth;
     document.getElementById("wtd_otha").innerHTML = wtd_oth;
     document.getElementById("vol_otha").innerHTML = vol_oth;
+    document.getElementById("sen_otha").innerHTML = sen_oth;
+    document.getElementById("mem_otha").innerHTML = mem_oth;
+    document.getElementById("fut_otha").innerHTML = fut_oth;
+    document.getElementById("lat_otha").innerHTML = lat_oth;
+    document.getElementById("emo_otha").innerHTML = emo_oth;
+    document.getElementById("tru_otha").innerHTML = tru_oth;
 }
 
 
@@ -168,6 +237,12 @@ function log() {
     pol_you = document.getElementById("pol_you").valueAsNumber;
     wtd_you = document.getElementById("wtd_you").valueAsNumber;
     vol_you = document.getElementById("vol_you").valueAsNumber;
+    sen_you = document.getElementById("sen_you").valueAsNumber;
+    mem_you = document.getElementById("mem_you").valueAsNumber;
+    fut_you = document.getElementById("fut_you").valueAsNumber;
+    lat_you = document.getElementById("lat_you").valueAsNumber;
+    emo_you = document.getElementById("emo_you").valueAsNumber;
+    tru_you = document.getElementById("tru_you").valueAsNumber;
 
     int_oth = document.getElementById("int_oth").valueAsNumber;
     opn_oth = document.getElementById("opn_oth").valueAsNumber;
@@ -179,6 +254,12 @@ function log() {
     pol_oth = document.getElementById("pol_oth").valueAsNumber;
     wtd_oth = document.getElementById("wtd_oth").valueAsNumber;
     vol_oth = document.getElementById("vol_oth").valueAsNumber;
+    sen_oth = document.getElementById("sen_oth").valueAsNumber;
+    mem_oth = document.getElementById("mem_oth").valueAsNumber;
+    fut_oth = document.getElementById("fut_oth").valueAsNumber;
+    lat_oth = document.getElementById("lat_oth").valueAsNumber;
+    emo_oth = document.getElementById("emo_oth").valueAsNumber;
+    tru_oth = document.getElementById("tru_oth").valueAsNumber;
 
     similarity = 0;
     similarity_b = 0;
@@ -209,6 +290,12 @@ function log() {
     pol_dis = Math.abs(pol_you - pol_oth);
     wtd_dis = Math.abs(wtd_you - wtd_oth);
     vol_dis = Math.abs(vol_you - vol_oth);
+    sen_dis = Math.abs(sen_you - sen_oth);
+    mem_dis = Math.abs(mem_you - mem_oth);
+    fut_dis = Math.abs(fut_you - fut_oth);
+    lat_dis = Math.abs(lat_you - lat_oth);
+    emo_dis = Math.abs(emo_you - emo_oth);
+    tru_dis = Math.abs(tru_you - tru_oth);
 
     you.push(int_you);
     you.push(opn_you);
@@ -232,25 +319,6 @@ function log() {
     oth.push(wtd_oth);
     oth.push(vol_oth);
 
-    avg_you = you.reduce((sum, value) => sum + value, 0) / you.length;
-    avg_oth = oth.reduce((sum, value) => sum + value, 0) / oth.length;
-
-    let cov = 0;
-    let varYou = 0;
-    let varOth = 0;
-
-    for (let i = 0; i < you.length; i++) {
-        const diffYou = you[i] - avg_you;
-        const diffOth = oth[i] - avg_oth;
-
-        cov += diffYou * diffOth;
-        varYou += diffYou * diffYou;
-        varOth += diffOth * diffOth;
-    }
-
-    pearson = cov / (Math.sqrt(varYou * varOth));
-    similarity = Math.round(((1 + pearson)/2) * 100);
-
     var int = int_dis/100;
     var opn = opn_dis/100;
     var ind = ind_dis/100;
@@ -261,6 +329,12 @@ function log() {
     var pol = pol_dis/100;
     var wtd = wtd_dis/100;
     var vol = vol_dis/100;
+    var sen = sen_dis/100;
+    var mem = mem_dis/100;
+    var fut = fut_dis/100;
+    var lat = lat_dis/100;
+    var emo = emo_dis/100;
+    var tru = tru_dis/100;
 
     dis.push(int);
     dis.push(opn);
@@ -273,14 +347,14 @@ function log() {
     dis.push(wtd);
     dis.push(vol);
     
-    var weirdness_you = Math.abs(50-int_you) + Math.abs(50-opn_you) + Math.abs(50-ind_you) + Math.abs(50-ord_you) + Math.abs(50-ent_you) + Math.abs(50-asr_you) + Math.abs(50-com_you) + Math.abs(50-pol_you) + Math.abs(50-wtd_you) + Math.abs(50-vol_you);
-    var weirdness_oth = Math.abs(50-int_oth) + Math.abs(50-opn_oth) + Math.abs(50-ind_oth) + Math.abs(50-ord_oth) + Math.abs(50-ent_oth) + Math.abs(50-asr_oth) + Math.abs(50-com_oth) + Math.abs(50-pol_oth) + Math.abs(50-wtd_oth) + Math.abs(50-vol_oth);
+    var weirdness_you = Math.abs(50-int_you) + Math.abs(50-opn_you) + Math.abs(50-ind_you) + Math.abs(50-ord_you) + Math.abs(50-ent_you) + Math.abs(50-asr_you) + Math.abs(50-com_you) + Math.abs(50-pol_you) + Math.abs(50-wtd_you) + Math.abs(50-vol_you) + Math.abs(50-sen_you) + Math.abs(50-mem_you) + Math.abs(50-fut_you) + Math.abs(50-lat_you) + Math.abs(50-emo_you) + Math.abs(50-tru_you);
+    var weirdness_oth = Math.abs(50-int_oth) + Math.abs(50-opn_oth) + Math.abs(50-ind_oth) + Math.abs(50-ord_oth) + Math.abs(50-ent_oth) + Math.abs(50-asr_oth) + Math.abs(50-com_oth) + Math.abs(50-pol_oth) + Math.abs(50-wtd_oth) + Math.abs(50-vol_oth) + Math.abs(50-sen_oth) + Math.abs(50-mem_oth) + Math.abs(50-fut_oth) + Math.abs(50-lat_oth) + Math.abs(50-emo_oth) + Math.abs(50-tru_oth);
 
-    var weirdness = (Math.min(weirdness_oth, weirdness_you))/500;
+    var weirdness = (Math.min(weirdness_oth, weirdness_you))/800;
     var multiplier = 2/(weirdness + 1);
     var min_score = 50 - (weirdness*50);
     
-    var final_sim = ((1 - (Math.sqrt(int**2 + opn**2 + ind**2 + ord**2 + ent**2 + asr**2 + com**2 + pol**2 + wtd**2 + vol**2) / Math.sqrt(10))) * 100 - min_score) * multiplier;
+    var final_sim = ((1 - (Math.sqrt(int**2 + opn**2 + ind**2 + ord**2 + ent**2 + asr**2 + com**2 + pol**2 + wtd**2 + vol**2 + sen**2 + mem**2 + fut**2 + lat**2 + emo**2 + tru**2) / 4)) * 100 - min_score) * multiplier;
 
     if (final_sim < 0) {
         final_sim = 0;
