@@ -103,11 +103,11 @@ function update_a() {
 }
 
 function autofill_dev() {
-    document.getElementById("int_you").value = 100; 
-    document.getElementById("opn_you").value = 70;
-    document.getElementById("ind_you").value = 30;
+    document.getElementById("int_you").value = 80; 
+    document.getElementById("opn_you").value = 80;
+    document.getElementById("ind_you").value = 20;
     document.getElementById("ord_you").value = 30;
-    document.getElementById("ent_you").value = 60;
+    document.getElementById("ent_you").value = 70;
     document.getElementById("asr_you").value = 30;
     document.getElementById("com_you").value = 60;
     document.getElementById("pol_you").value = 80;
