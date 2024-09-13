@@ -257,14 +257,14 @@ function log() {
     dis.push(wtd);
     dis.push(vol);
     
-    var weirdness_you = Math.abs(50-int_you) + Math.abs(50-opn_you) + Math.abs(50-ind_you) + Math.abs(50-ord_you) + Math.abs(50-ent_you) + Math.abs(50-asr_you) + Math.abs(50-com_you) + Math.abs(50-pol_you) + Math.abs(50-wtd_you) + Math.abs(50-vol_you);
-    var weirdness_oth = Math.abs(50-int_oth) + Math.abs(50-opn_oth) + Math.abs(50-ind_oth) + Math.abs(50-ord_oth) + Math.abs(50-ent_oth) + Math.abs(50-asr_oth) + Math.abs(50-com_oth) + Math.abs(50-pol_oth) + Math.abs(50-wtd_oth) + Math.abs(50-vol_oth);
+    // var weirdness_you = Math.abs(50-int_you) + Math.abs(50-opn_you) + Math.abs(50-ind_you) + Math.abs(50-ord_you) + Math.abs(50-ent_you) + Math.abs(50-asr_you) + Math.abs(50-com_you) + Math.abs(50-pol_you) + Math.abs(50-wtd_you) + Math.abs(50-vol_you);
+    // var weirdness_oth = Math.abs(50-int_oth) + Math.abs(50-opn_oth) + Math.abs(50-ind_oth) + Math.abs(50-ord_oth) + Math.abs(50-ent_oth) + Math.abs(50-asr_oth) + Math.abs(50-com_oth) + Math.abs(50-pol_oth) + Math.abs(50-wtd_oth) + Math.abs(50-vol_oth);
 
-    var weirdness = (Math.min(weirdness_oth, weirdness_you))/500;
-    var multiplier = 2/(weirdness + 1);
-    var min_score = 50 - (weirdness*50);
+    // var weirdness = (Math.min(weirdness_oth, weirdness_you))/500;
+    // var multiplier = 2/(weirdness + 1);
+    // var min_score = 50 - (weirdness*50);
     
-    var final_sim = ((1 - (Math.sqrt(int**2 + opn**2 + ind**2 + ord**2 + ent**2 + asr**2 + com**2 + pol**2 + wtd**2 + vol**2) / Math.sqrt(10))) * 100 - min_score) * multiplier;
+    var final_sim = (1 - (Math.sqrt(int**2 + opn**2 + ind**2 + ord**2 + ent**2 + asr**2 + com**2 + pol**2 + wtd**2 + vol**2) / Math.sqrt(10))) * 100;
 
     if (final_sim < 0) {
         final_sim = 0;
