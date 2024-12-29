@@ -346,55 +346,22 @@ function get_result() {
     document.getElementById("Statement_1").style.display = "none";
     document.getElementById("Statement_2").style.display = "none";
 
-    // Percentiles
-    var scores = [openness, conscientiousness, extraversion, agreeableness, neuroticism, int, opn, ind, ord, ent, asr, com, pol, wtd, vol];
-    var means = [63, 47, 60, 51, 58, 62, 65, 51, 42, 58, 62, 59, 43, 60, 57];
-    var sds = [21, 27, 27, 26, 25, 25, 27, 31, 29, 28, 31, 30, 30, 29, 30];
-
-    var z_scores = [-3, -2.5, -2.4, -2.3, -2.2, -2.1, -2,
-                    -1.9, -1.8, -1.7, -1.6, -1.5, -1.4, -1.3, -1.2, -1.1, -1,
-                    -0.9, -0.8, -0.7, -0.6, -0.5, -0.4, -0.3, -0.2, -0.1, 0,
-                    0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1,
-                    1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 2,
-                    2.1, 2.2, 2.3, 2.4, 2.5];
-    var percentiles = [0.5, 0.62, 0.82, 1.07, 1.39, 1.79, 2.28,
-                        2.87, 3.59, 4.46, 5.48, 6.68, 8.08, 9.68, 11.5, 13.57, 15.87,
-                        18.4, 21.19, 24.2, 27.43, 30.85, 34.46, 38.21, 42.07, 46.02, 50,
-                        53.98, 57.93, 61.79, 65.54, 69.15, 72.58, 75.8, 78.81, 81.59, 84.13,
-                        86.43, 88.49, 90.32, 91.92, 93.32, 94.52, 95.54, 96.41, 97.13, 97.73,
-                        98.21, 98.61, 98.93, 99.18, 99.5];
-    var p;
-    var perc_results = [];
-
-    for (i = 0 ; i < means.length ; i++) {
-        var z = (scores[i] - means[i]) / sds[i];
-        console.log(z);
-        for (a = 0; a < z_scores.length; a++) {
-            if (z_scores[a] >= z) {
-                p = percentiles[a];
-                break;
-            }
-        }
-        perc_results.push(p);
-    }
-    
-    console.log(perc_results);
     // Trait scores
-    document.getElementById("OTE").innerHTML = "Openess to Experience: " + openness + "% - " + perc_results[0] + " Percentile";
-    document.getElementById("int").innerHTML = "Intellectual Curiosity: " + int + "% - " + perc_results[5] + " Percentile";
-    document.getElementById("opn").innerHTML = "Unconventionality: " + opn + "% - " + perc_results[6] + " Percentile";
-    document.getElementById("CON").innerHTML = "Conscientiousness: " + conscientiousness + "% - " + perc_results[1] + " Percentile";
-    document.getElementById("ind").innerHTML = "Industriousness: " + ind + "% - " + perc_results[7] + " Percentile";
-    document.getElementById("ord").innerHTML = "Orderliness: " + ord + "% - " + perc_results[8] + " Percentile";
-    document.getElementById("EXT").innerHTML = "Extraversion: " + extraversion + "% - " + perc_results[2] + " Percentile";
-    document.getElementById("ent").innerHTML = "Enthusiasm: " + ent + "% - " + perc_results[9] + " Percentile";
-    document.getElementById("asr").innerHTML = "Assertiveness: " + asr + "% - " + perc_results[10] + " Percentile";
-    document.getElementById("AGR").innerHTML = "Agreeableness: " + agreeableness + "% - " + perc_results[3] + " Percentile";
-    document.getElementById("com").innerHTML = "Compassion: " + com + "% - " + perc_results[11] + " Percentile";
-    document.getElementById("pol").innerHTML = "Politeness: " + pol + "% - " + perc_results[12] + " Percentile";
-    document.getElementById("NEU").innerHTML = "Neuroticism: " + neuroticism + "% - " + perc_results[4] + " Percentile";
-    document.getElementById("wtd").innerHTML = "Negative Affect: " + wtd + "% - " + perc_results[13] + " Percentile";
-    document.getElementById("vol").innerHTML = "Emotional Instability: " + vol + "% - " + perc_results[14] + " Percentile";
+    document.getElementById("OTE").innerHTML = "Openess to Experience: " + openness + "%";
+    document.getElementById("int").innerHTML = "Intellectual Curiosity: " + int + "%";
+    document.getElementById("opn").innerHTML = "Unconventionality: " + opn + "%";
+    document.getElementById("CON").innerHTML = "Conscientiousness: " + conscientiousness + "%";
+    document.getElementById("ind").innerHTML = "Industriousness: " + ind + "%";
+    document.getElementById("ord").innerHTML = "Orderliness: " + ord + "%";
+    document.getElementById("EXT").innerHTML = "Extraversion: " + extraversion + "%";
+    document.getElementById("ent").innerHTML = "Enthusiasm: " + ent + "%";
+    document.getElementById("asr").innerHTML = "Assertiveness: " + asr + "%";
+    document.getElementById("AGR").innerHTML = "Agreeableness: " + agreeableness + "%";
+    document.getElementById("com").innerHTML = "Compassion: " + com + "%";
+    document.getElementById("pol").innerHTML = "Politeness: " + pol + "%";
+    document.getElementById("NEU").innerHTML = "Neuroticism: " + neuroticism + "%";
+    document.getElementById("wtd").innerHTML = "Negative Affect: " + wtd + "%";
+    document.getElementById("vol").innerHTML = "Emotional Instability: " + vol + "%";
 
     document.getElementById("bar_OTEs").style.width = openness + "%";
     document.getElementById("bar_ints").style.width = int + "%";
